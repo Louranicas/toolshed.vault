@@ -1,0 +1,905 @@
+{
+  "source_commit": "ab519ce",
+  "notes": [
+    {
+      "path": "00 - Toolshed Index.md",
+      "sha256": "45ffe8251d6b2ffdcffd9b59d91ad85d470dc157003484990954d669fa424e5c"
+    },
+    {
+      "path": "00 - Jev Master Index.md",
+      "sha256": "e25ef329db4571542671c1959f4896c4726bba8541ae04e7a34a51ef46d9cac0"
+    },
+    {
+      "path": "herdr-habitat-prompt-library.md",
+      "sha256": "a55d0be42ebbd8b3ccb8ce27e705aafd93d7db2fdc6ed95ce724872b662dae3f"
+    },
+    {
+      "path": "10 Tools/atuin.md",
+      "sha256": "d0d5dea6b179d7ea23e8161853c27354713b24834e74804c256d7572dd1d9616"
+    },
+    {
+      "path": "10 Tools/bacon.md",
+      "sha256": "ec7f427c292bfb74e90e41fc44a6c650d1a4481438a5115231b23e2593b46e99"
+    },
+    {
+      "path": "10 Tools/bottom.md",
+      "sha256": "e4c3bd362346559fbef2b621eefa7445077c2e6b4e41516c283557b6a5cd462b"
+    },
+    {
+      "path": "10 Tools/firstmate.md",
+      "sha256": "58efdeb31f08db911c9e3d4310068fb862d0fb74bce922805851484664b4c313"
+    },
+    {
+      "path": "10 Tools/fzf.md",
+      "sha256": "c70bc3965d7f1a0b07a07444d87271d38fc7cb2a30dde38aa38c7ffcaf7ca056"
+    },
+    {
+      "path": "10 Tools/gh-dash.md",
+      "sha256": "0c7e1dc17477f643e523d5f113d88ac1e90067b2acf95c3829f19a3f47df5f4b"
+    },
+    {
+      "path": "10 Tools/herdr.md",
+      "sha256": "5710cdfe039b0036f20086553163d6d8dd573619e9c2537034a2e19aa68f1280"
+    },
+    {
+      "path": "10 Tools/hunk.md",
+      "sha256": "10e0e67e4c5cafa95e6fdc8253eef66a0d345b1708e1e027a63bcc0d5bcf039b"
+    },
+    {
+      "path": "10 Tools/Jev - The Model.md",
+      "sha256": "27d852f736b20e0f9dc3c8a37caef608817290acd8df0824f0d54a552f93c921"
+    },
+    {
+      "path": "10 Tools/jev-axi.md",
+      "sha256": "2fe6aa5be6a0801ec24ee25e83095efc33c71ae2f294e9fb8d9068d524b2d8cf"
+    },
+    {
+      "path": "10 Tools/jqp.md",
+      "sha256": "a552795b8207c471cc300594ce81ea9f5c295f60720ec05902ee6d76a3208922"
+    },
+    {
+      "path": "10 Tools/just.md",
+      "sha256": "0ffcb6a3fd9abce7e8be89ac39bd684cb817dab1a0419568e0ddb243719207af"
+    },
+    {
+      "path": "10 Tools/lazygit.md",
+      "sha256": "717f4c24c55bc7bcd8f2a31a22069c3951769e0508cc341e90d2a3d28cd2785b"
+    },
+    {
+      "path": "10 Tools/lazyvim.md",
+      "sha256": "e14a3da825bb543ead31c5c9a0ac8c27c534fe11cd3e3102399a542800f5ee04"
+    },
+    {
+      "path": "10 Tools/mempalace.md",
+      "sha256": "c6a4dc28d6b2cce10f5dffb503c2c4f0202f9a55dfbf151717cfa1f30ac6ca49"
+    },
+    {
+      "path": "10 Tools/nushell.md",
+      "sha256": "03941addf1f9cabcfd78206f19a6c01e842474c0d36445e162af2ecd71437766"
+    },
+    {
+      "path": "10 Tools/podman-tui.md",
+      "sha256": "26905604ddfface43a25f9031685e8e437c08276fa6693acc3d16b6c76d78606"
+    },
+    {
+      "path": "10 Tools/podman.md",
+      "sha256": "4694a46bf3d6f561c99a0be6610fd95902a02e345bc0418a4f702e071b137800"
+    },
+    {
+      "path": "10 Tools/repo-fleet-status.md",
+      "sha256": "a130450d9f24b248ad907e40adc6321ba0b8ec0ec8aff24d507a4a155f329c15"
+    },
+    {
+      "path": "10 Tools/television.md",
+      "sha256": "9d78ab1272ff25c1955329d879f58066b0dd5802cdd8b85b857be7495de66336"
+    },
+    {
+      "path": "10 Tools/tuicr.md",
+      "sha256": "504b3e16d050db0fbb1706933b28a1eaf7e1251aa80e8b2223e4d2e795639b3a"
+    },
+    {
+      "path": "10 Tools/yazi.md",
+      "sha256": "95ad63a8a49cb228c3e4d475ed43d786014189aa62a0f8deb47d255524f5924d"
+    },
+    {
+      "path": "20 Chaining/Clustering Shapes.md",
+      "sha256": "22e6fd90d6ac5ea12452e67a8c6d5203f7e92a838b58d2cd2ccdeda159630fc8"
+    },
+    {
+      "path": "20 Chaining/Tool Chaining Patterns.md",
+      "sha256": "834ddb2b9cee10b3673d1e4ff9b7bf58df06b85d8960e64753dbe1e89923ff8b"
+    },
+    {
+      "path": "20 Chaining/Tool Clusters.md",
+      "sha256": "842dc33c1ced1effaf136eecfc5f81db05e53353d19c206e857b3788d7973349"
+    },
+    {
+      "path": "20 Chaining/Workflow Recipes.md",
+      "sha256": "d6656a8cb5438df978e7d92c5b65835e44b972e34faeb287f8223de0f449017c"
+    },
+    {
+      "path": "30 Analysis/Most-Used Tools.md",
+      "sha256": "b0ef66818d4c6f5eb1211b5845fcbdf1a12fa0c8752645699ec7af224557c56f"
+    },
+    {
+      "path": "40 Reference/Cascade and Runbook Catalogue.md",
+      "sha256": "49ab3635f89c3cccfb5871479cbf47c4cd45d664f7846243796716c2f0ec90ed"
+    },
+    {
+      "path": "40 Reference/Command Matrix.md",
+      "sha256": "335f3b8bcb8deb5ae1f8038cb92f67a39dae4e0986a95e4681cfa0ceb60827f0"
+    },
+    {
+      "path": "40 Reference/Documented Surface and Source.md",
+      "sha256": "6008cf80740fba8e0ae906af1096334a2a96fad4398d113a893649320fbc6307"
+    },
+    {
+      "path": "40 Reference/herdr-keybindings/2026-09-06/persistent-navigation/README.md",
+      "sha256": "d1f350ae04b4858822239218933d8522e6223624cea7a3be10b65b33a2b5b311"
+    },
+    {
+      "path": "40 Reference/herdr-keybindings/2026-09-06/README.md",
+      "sha256": "cf867d87edd89cba120a8d1bc867f1c0e84b16bdd1a543c08d2e240bd08781e0"
+    },
+    {
+      "path": "40 Reference/inotify/2026-09-06/Prime Receipt.md",
+      "sha256": "902f4f952fe0bc56fbdcf36be1d282de4c7293db505cf78c84f5f887e761a856"
+    },
+    {
+      "path": "40 Reference/inotify/2026-09-06/README.md",
+      "sha256": "17aa4a70fae35dcb11c7f901e54a4a05a21416776ca947558198c16ebb0063a1"
+    },
+    {
+      "path": "40 Reference/lukes-workflows/2026-09-06/README.md",
+      "sha256": "e6cbf0d8bd736c5b967f985586cef10c6e45eca5e6c2be2dd9f0cb8f8dcc6046"
+    },
+    {
+      "path": "40 Reference/Perfecting Rust - Performance Engineering.md",
+      "sha256": "1602b40f8b29abc9d9ba8260e1d41b8417952ff601710e3d13f16aa5fac7fc74"
+    },
+    {
+      "path": "40 Reference/rust-mastery/2026-09-06/Learning Status and Next Steps.md",
+      "sha256": "4fa0fc9e1dd3c1166b8e79e831b0ea70cfa046ba40f4b7e90f1901e2577ad7a2"
+    },
+    {
+      "path": "40 Reference/rust-mastery/2026-09-06/prime-receipt.md",
+      "sha256": "bf3dacc30ad6e159157084e667c0958c09643070d65806f95049964ebe309761"
+    },
+    {
+      "path": "40 Reference/rust-mastery/2026-09-06/README.md",
+      "sha256": "a0b6c36e32e930fb4213b971bf742ab65b1ed09ae26f7a57304b1b267afe0a27"
+    },
+    {
+      "path": "40 Reference/rust-mastery/2026-09-06/Source and Reading Map.md",
+      "sha256": "6db45b718e88eb27b029e5e5458231431b742557c4e564da0a923b42b07950c2"
+    },
+    {
+      "path": "40 Reference/rust-mastery/README.md",
+      "sha256": "b446920516408ca4c966a9d048c2cfe01ed2095aca1e3e19cb3beaf1a47bc801"
+    },
+    {
+      "path": "40 Reference/workflow-review/2026-09-06/README.md",
+      "sha256": "f0eb5993dc2ab9e8d5e7288c160c7bae8a4311d5bbf25812a9c53b3242d0b029"
+    },
+    {
+      "path": "50 Field Notes/00 - Field Findings.md",
+      "sha256": "06f7a7100b91eb4bdf1d6c235d0af7d3b66e00eb96befcf5f7f3d8e9612e8bbb"
+    },
+    {
+      "path": "50 Field Notes/Jev - Field Findings.md",
+      "sha256": "7499907176d3775a5074a9f36bc526dacc35a621ba68df234a50afafff33c3e0"
+    },
+    {
+      "path": "50 Field Notes/Linux Inotify Capacity - Herdr Habitat.md",
+      "sha256": "a73296f7a08e0efb350f6d9965a69931435f40121348bff5b33b7ac0846d1e90"
+    },
+    {
+      "path": "50 Field Notes/lukes workflows.md",
+      "sha256": "8985fce331c31e52d7f431bcf8598883f59fe1e2fe814673a84e8600ddddaef1"
+    },
+    {
+      "path": "60 Workflows/00 - Workflows.md",
+      "sha256": "2dbe588590d7631940844660362bfb92fa1235fb475a82892b8c1b6b133aeb82"
+    },
+    {
+      "path": "60 Workflows/Arena Practice Ground.md",
+      "sha256": "1e3ecf775b5f30a0f8e63538302065970b651b5fcb6a55381d1d33443c583865"
+    },
+    {
+      "path": "60 Workflows/Assimilation - Rules That Fire.md",
+      "sha256": "e2343124d050bf7086cc978859cff965c94045e923745079630ed97f4ec245c3"
+    },
+    {
+      "path": "60 Workflows/Autonomous Triggers.md",
+      "sha256": "ab8c45f5f2d005531cb61e5ef4673fd198eae4b00fe6a6f9103091a54f93b429"
+    },
+    {
+      "path": "60 Workflows/Axiom Conformance.md",
+      "sha256": "d83a424f4b68e05596ba014044b3fdd955eae279bca2de2914abf45f5b324d8f"
+    },
+    {
+      "path": "60 Workflows/Bridge - Coverage to Review.md",
+      "sha256": "dc7dd196c6e745809b4d5cac2b43f21827edaede9ac3aaeb38f819d18980e45d"
+    },
+    {
+      "path": "60 Workflows/Bridge - Diagnostics to Review.md",
+      "sha256": "87b397363b19fcd597d6e71c75023afbddaa64ba1dabc8f5368720ce2d179fce"
+    },
+    {
+      "path": "60 Workflows/Cascade Engine.md",
+      "sha256": "f9a7289de295751dc24df47c8459ab6ee4f283a5aac11ceff4c52c33338d7e1a"
+    },
+    {
+      "path": "60 Workflows/Claim-Time Guard.md",
+      "sha256": "98e6bf850f985fa73328e3482f30326aa1d5d79db084dc04f403f21ae42ae856"
+    },
+    {
+      "path": "60 Workflows/Code Anchors - Notes That Land on Source.md",
+      "sha256": "11786b2b88d258f54cf9a40b56b73bb9e0a27dd91f916f148992f45baa3ea68f"
+    },
+    {
+      "path": "60 Workflows/Cross-Workspace Review Gate.md",
+      "sha256": "3788637469706bae1cb1f884be126b6c68c82e4c24abf1f9db81c4bc4744c508"
+    },
+    {
+      "path": "60 Workflows/Entering an Unfamiliar Corpus.md",
+      "sha256": "e1c9356c81feab1c695319866d7f6f902fc53382279c8fee9b3713f7f77ef7d3"
+    },
+    {
+      "path": "60 Workflows/Fabric Bash Command Plane.md",
+      "sha256": "e5f0073a98b7c361b820a8a2db60ecce7f5e246c21284f06c57e1026407c80eb"
+    },
+    {
+      "path": "60 Workflows/Fabric Habitat 90-Point Promotion and Practice.md",
+      "sha256": "b1dc62a5758ebeea333d09c5d510705540a864269e1fca2d7172d0301a5f6782"
+    },
+    {
+      "path": "60 Workflows/Fabric Habitat Seven-Facet Assessment.md",
+      "sha256": "cd1baa6b89acf33a29453fedb64747b314fbe80a2a7850a3941a6e1eb887a2af"
+    },
+    {
+      "path": "60 Workflows/Factory Roster Expansion - DevOps Toolbox.md",
+      "sha256": "f83c62849948c81d524bde02ec9b04e19194ce15d11f9f11de6d632228ae2a28"
+    },
+    {
+      "path": "60 Workflows/Habitat Introspection.md",
+      "sha256": "6de694fc30be396e01bbcd47c9df815d4f254ffabf15ec0f9a1d9bb578eed5fe"
+    },
+    {
+      "path": "60 Workflows/Habitat Reactor.md",
+      "sha256": "f2d4fd5a61d4f9e29486817d69a6a50a54caaec6da906f288b7c1d62b843af81"
+    },
+    {
+      "path": "60 Workflows/Hermes Recovery Location.md",
+      "sha256": "79e4de692bda810ed7ea40122c42a9a3ec448ece29fa45c347bee3f19bb3e9dd"
+    },
+    {
+      "path": "60 Workflows/Insights Reports - Opening Them Past the Sandbox.md",
+      "sha256": "cd0f6ba8017da7643f83e08b98c236ac2604e67683107f31e38a5a2d89f0d22f"
+    },
+    {
+      "path": "60 Workflows/Jev - Applications Here.md",
+      "sha256": "caab858d69d50d22ee4bef3585d37dd56472fff6b342730bc071f57d534be7c0"
+    },
+    {
+      "path": "60 Workflows/Jev - Error Reduction Loop.md",
+      "sha256": "527020f4fd73955cc2709cf1493798565ea5e400724c35eb72a58bb46c4256bb"
+    },
+    {
+      "path": "60 Workflows/Jev - Search Routing and Cascades.md",
+      "sha256": "7da6dbe197e56b9681db4588a96c27fbd32c1bc57ff9a662eb4c2a7f09cb4c80"
+    },
+    {
+      "path": "60 Workflows/Jev - Validation Discipline.md",
+      "sha256": "4bb394ba0d37e9aaaa7086cfb0aa3656ca97b862004a32d76b4f6c6d71e23540"
+    },
+    {
+      "path": "60 Workflows/Jev - Ways of Working.md",
+      "sha256": "39634662b154495ba3e364d3f66979d21ba1b7b27af622fefc5231f22b31df9e"
+    },
+    {
+      "path": "60 Workflows/Jev and Fabric - Vendor-Free Chains.md",
+      "sha256": "855ff1beb656ca339af99ac30a0c658b2e0565a8f0dd5744bc6bbc04daa8ac72"
+    },
+    {
+      "path": "60 Workflows/Knowledge Audit.md",
+      "sha256": "39b94f50a2b01ff7274538c17c73cef9a1c314c7893b819cdecfc24cac639d64"
+    },
+    {
+      "path": "60 Workflows/Mitigation Plan.md",
+      "sha256": "d62498c75173fbaa4f12e9b444f322f4be1f4f411035afd3b1a5fd8fdf8f0128"
+    },
+    {
+      "path": "60 Workflows/Runbooks.md",
+      "sha256": "942e665f70b5285d2675ddb11b25f3c1cf10dca2749eff7d07d26e59ef586393"
+    },
+    {
+      "path": "60 Workflows/Sandbox Fanout and Fusion.md",
+      "sha256": "afe1101de3f5bc95a98a1ecde742db855a3ac1d13c79b71e343e16197df01c59"
+    },
+    {
+      "path": "60 Workflows/Shape-Directed Tool Chaining.md",
+      "sha256": "3942199d6725acb6fea687edd867dcd19b4e799666cdfd58b2ad2460a698b7ac"
+    },
+    {
+      "path": "60 Workflows/Synchronised Review and Editor.md",
+      "sha256": "2ac66413203002a9dcb540d5905a911125fe1c35849c554d95b48e6c875bca37"
+    },
+    {
+      "path": "60 Workflows/Weight Matrix - Which Gate Bore the Weight.md",
+      "sha256": "483cc76be214e92831838f7384ab860c1da647d220b6f8857f8d320d4d6af247"
+    },
+    {
+      "path": "60 Workflows/Workflow Candidates - Mined From 19 Runs.md",
+      "sha256": "362538186fedaec0e7e2d8f37fb9f6ec26eb1beca4443bab833bdcfe6e3d7327"
+    },
+    {
+      "path": "70 Toolkit/00 - Habitat Toolkit.md",
+      "sha256": "ef2c54f6b2d60abf5b687e0f57deba5457f303432962c9b84c4f061f4608ea3f"
+    },
+    {
+      "path": "70 Toolkit/ASTRA Coding Prompts.md",
+      "sha256": "172ece001d4b97eeeee79ff958c3fe6baa1e4a8f9523f368e9a4497bbeac82d4"
+    },
+    {
+      "path": "70 Toolkit/ASTRA Evidence and Sources.md",
+      "sha256": "fbd639e092ce341879d068589bf526d229fb271e7c85e1f3ad259054cd15f1f9"
+    },
+    {
+      "path": "70 Toolkit/ASTRA Prompting Guide.md",
+      "sha256": "67dd12b2de8597cc5f3f983fa4fbff712f70843a114c4acc897d2e6227fd41c4"
+    },
+    {
+      "path": "70 Toolkit/ASTRA Quality Review.md",
+      "sha256": "3659e1d9114e836d4409a69e6540646be8bb92665f23a524c936b9583566311d"
+    },
+    {
+      "path": "70 Toolkit/Authored Skills.md",
+      "sha256": "c8bf7f7d02bc3429c374b3bfd8ab406bece43c1835a6c0c4361631f6d733a90a"
+    },
+    {
+      "path": "70 Toolkit/Forge - Deployment Framework.md",
+      "sha256": "11d486cc641324dc5f7384530faf4e6c01fd60005089a1053efcdb9f552d35d7"
+    },
+    {
+      "path": "70 Toolkit/Justfile Update Check.md",
+      "sha256": "d5d8313a1f43f6bb268946825131cb6a68b68d04521f1cc095590d18c6089f24"
+    },
+    {
+      "path": "70 Toolkit/MCP Servers.md",
+      "sha256": "3884299366aa3ede629cbbedaa4eca90a61d3953b04c4cf33b3d3dd0fbf3c2f2"
+    },
+    {
+      "path": "70 Toolkit/Skill Usage Guide.md",
+      "sha256": "b5bc513fcad63b68bf70fab1ed98d64317158324fdd60676d94fe33d3d2259c2"
+    },
+    {
+      "path": "70 Toolkit/skills.md",
+      "sha256": "13b603c3cfd68820d60168d201bb7322654e96029f0b914d46f5d77b2086761a"
+    },
+    {
+      "path": "80 Prompt Library/# Prompting Claude Opus 5.5.md",
+      "sha256": "c54b5716486e2bb96ce554f5966dbfc2dae7a82c91bd4ca1795bc6439c5a51dc"
+    },
+    {
+      "path": "Lukes-Scratchpad/luke-scratchpad.md",
+      "sha256": "54b78c257b0809a883c9d2afd37cf33d09785cb8a2b5ab8b6a92bc7adef79ce1"
+    }
+  ],
+  "diagrams": [
+    {
+      "note": "20 Chaining/Tool Clusters.md",
+      "number": 1
+    },
+    {
+      "note": "40 Reference/Perfecting Rust - Performance Engineering.md",
+      "number": 2
+    },
+    {
+      "note": "50 Field Notes/Linux Inotify Capacity - Herdr Habitat.md",
+      "number": 3
+    },
+    {
+      "note": "50 Field Notes/Linux Inotify Capacity - Herdr Habitat.md",
+      "number": 4
+    },
+    {
+      "note": "50 Field Notes/lukes workflows.md",
+      "number": 5
+    },
+    {
+      "note": "70 Toolkit/skills.md",
+      "number": 6
+    }
+  ],
+  "external_or_unresolved_local_links": [
+    {
+      "note": "00 - Toolshed Index.md",
+      "target": "../pi.vault/20 Habitat/Herdr Integration.md"
+    },
+    {
+      "note": "00 - Toolshed Index.md",
+      "target": "../pi.vault/Home.md"
+    },
+    {
+      "note": "00 - Toolshed Index.md",
+      "target": "/var/mnt/STORAGE-10TB/fedora-obsidian-vaults/herdr-engineering-engine-v3.vault/90 Evidence/Cross-vault Context.md"
+    },
+    {
+      "note": "00 - Toolshed Index.md",
+      "target": "/var/mnt/STORAGE-10TB/fedora-obsidian-vaults/herdr-engineering-engine-v3.vault/Home.md"
+    },
+    {
+      "note": "00 - Toolshed Index.md",
+      "target": "/var/mnt/STORAGE-10TB/fedora-obsidian-vaults/herdr-fedora-habitat.vault/00 - LLM Traversal Map.md"
+    },
+    {
+      "note": "00 - Toolshed Index.md",
+      "target": "/var/mnt/STORAGE-10TB/fedora-obsidian-vaults/herdr-fedora-habitat.vault/50 Automation/Practice Map - What Earns Its Keep.md"
+    },
+    {
+      "note": "00 - Toolshed Index.md",
+      "target": "/var/mnt/STORAGE-10TB/fedora-obsidian-vaults/herdr-fedora-habitat.vault/80 Architecture/Corpus Insights - Thematic Analysis.md"
+    },
+    {
+      "note": "00 - Toolshed Index.md",
+      "target": "/var/mnt/STORAGE-10TB/fedora-obsidian-vaults/herdr-fedora-habitat.vault/80 Architecture/LLM Traversal - Cross-Vault Routes.md"
+    },
+    {
+      "note": "00 - Toolshed Index.md",
+      "target": "/var/mnt/STORAGE-10TB/fedora-obsidian-vaults/herdr-fedora-habitat.vault/80 Architecture/Synergy - Human and Agent Evidence Views.md"
+    },
+    {
+      "note": "00 - Toolshed Index.md",
+      "target": "/var/mnt/STORAGE-10TB/fedora-obsidian-vaults/herdr-fedora-habitat.vault/80 Architecture/Synergy - Recovery as a Test Environment.md"
+    },
+    {
+      "note": "00 - Toolshed Index.md",
+      "target": "/var/mnt/STORAGE-10TB/fedora-obsidian-vaults/herdr-fedora-habitat.vault/80 Architecture/Synergy - Source-Owned Status and Memory.md"
+    },
+    {
+      "note": "00 - Toolshed Index.md",
+      "target": "/var/mnt/STORAGE-10TB/fedora-obsidian-vaults/herdr-fedora-habitat.vault/80 Architecture/Synergy - Verified Throughput and Review Capacity.md"
+    },
+    {
+      "note": "40 Reference/Command Matrix.md",
+      "target": "/var/mnt/STORAGE-10TB/fedora-obsidian-vaults/herdr-fedora-habitat.vault/80 Architecture/LLM Traversal - Cross-Vault Routes.md"
+    },
+    {
+      "note": "40 Reference/Perfecting Rust - Performance Engineering.md",
+      "target": "/var/mnt/STORAGE-10TB/Book Library/Brenden Matthews - Code Like a Pro in Rust (2024, Manning) - libgen.li.pdf"
+    },
+    {
+      "note": "40 Reference/Perfecting Rust - Performance Engineering.md",
+      "target": "/var/mnt/STORAGE-10TB/Book Library/David Drysdale - Effective Rust (2024, O'Reilly Media, Inc.) - libgen.li.epub"
+    },
+    {
+      "note": "40 Reference/Perfecting Rust - Performance Engineering.md",
+      "target": "/var/mnt/STORAGE-10TB/Book Library/Jim Blandy, Jason Orendorff, and Leonora F. S. Tindall - Programming Rust (2025, O'Reilly Media, Inc.) - libgen.li.epub"
+    },
+    {
+      "note": "40 Reference/Perfecting Rust - Performance Engineering.md",
+      "target": "/var/mnt/STORAGE-10TB/Book Library/Jim Blandy_ Jason Orendorff_ Leonora F.S. Tindall - Programming Rust, 2nd Edition (2021, O'Reilly Media, Inc.) - libgen.li.epub"
+    },
+    {
+      "note": "40 Reference/Perfecting Rust - Performance Engineering.md",
+      "target": "/var/mnt/STORAGE-10TB/Book Library/Jon Gjengset - Rust For Rustaceans_ Idiomatic Programming for Experienced Developers (2021, No Starch Press) - libgen.li.pdf"
+    },
+    {
+      "note": "40 Reference/Perfecting Rust - Performance Engineering.md",
+      "target": "/var/mnt/STORAGE-10TB/Book Library/Ken Youens-Clark - Command-Line Rust_ A Project-Based Primer for Writing Rust CLIs 1 (2022, O'Reilly Media) - libgen.li.pdf"
+    },
+    {
+      "note": "40 Reference/Perfecting Rust - Performance Engineering.md",
+      "target": "/var/mnt/STORAGE-10TB/Book Library/Luca Palmieri - Zero To Production In Rust_ An introduction to backend development (Updated) (2023) - libgen.li.epub"
+    },
+    {
+      "note": "40 Reference/Perfecting Rust - Performance Engineering.md",
+      "target": "/var/mnt/STORAGE-10TB/Book Library/Mara Bos - Rust Atomics and Locks (2023, O'Reilly Media) - libgen.li.pdf"
+    },
+    {
+      "note": "40 Reference/Perfecting Rust - Performance Engineering.md",
+      "target": "/var/mnt/STORAGE-10TB/Book Library/Prabhu Eshwarla - Rust Servers, Services, and Apps (Final Release) (2023, Manning) - libgen.li.pdf"
+    },
+    {
+      "note": "40 Reference/Perfecting Rust - Performance Engineering.md",
+      "target": "/var/mnt/STORAGE-10TB/Book Library/Shashank Mohan Jain - Linux Containers and Virtualization_ Utilizing Rust for Linux Containers (2023, Apress) [10.1007_978-1-4842-9768-1] - libgen.li.epub"
+    },
+    {
+      "note": "40 Reference/Perfecting Rust - Performance Engineering.md",
+      "target": "/var/mnt/STORAGE-10TB/Book Library/Steve Klabnik_ Carol Nichols - The Rust Programming Language, 2nd Edition (2023, No Starch Press) - libgen.li.epub"
+    },
+    {
+      "note": "40 Reference/Perfecting Rust - Performance Engineering.md",
+      "target": "/var/mnt/STORAGE-10TB/Book Library/Tim McNamara - Rust in Action_ Systems programming concepts and techniques (2021, Manning Publications Co.) - libgen.li.epub"
+    },
+    {
+      "note": "40 Reference/Perfecting Rust - Performance Engineering.md",
+      "target": "/var/mnt/STORAGE-10TB/Book Library/Tim McNamara - Smart Pointers in Rust (2023, Accelerant Press) - libgen.li.pdf"
+    },
+    {
+      "note": "40 Reference/Perfecting Rust - Performance Engineering.md",
+      "target": "/var/mnt/STORAGE-10TB/Book Library/Van Overmeire, Sam_ - Write Powerful Rust Macros (2024, Manning Publications Co. LLC) - libgen.li.epub"
+    },
+    {
+      "note": "40 Reference/herdr-keybindings/2026-09-06/README.md",
+      "target": "compatibility-result.json"
+    },
+    {
+      "note": "40 Reference/herdr-keybindings/2026-09-06/README.md",
+      "target": "ghostty.after.conf"
+    },
+    {
+      "note": "40 Reference/herdr-keybindings/2026-09-06/README.md",
+      "target": "ghostty.before.conf"
+    },
+    {
+      "note": "40 Reference/herdr-keybindings/2026-09-06/README.md",
+      "target": "herdr.after.toml"
+    },
+    {
+      "note": "40 Reference/herdr-keybindings/2026-09-06/README.md",
+      "target": "herdr.before.toml"
+    },
+    {
+      "note": "40 Reference/herdr-keybindings/2026-09-06/README.md",
+      "target": "native-attempt.json"
+    },
+    {
+      "note": "40 Reference/herdr-keybindings/2026-09-06/README.md",
+      "target": "verification.json"
+    },
+    {
+      "note": "40 Reference/herdr-keybindings/2026-09-06/persistent-navigation/README.md",
+      "target": "../README.md"
+    },
+    {
+      "note": "40 Reference/herdr-keybindings/2026-09-06/persistent-navigation/README.md",
+      "target": "evidence/ghostty.after.conf"
+    },
+    {
+      "note": "40 Reference/herdr-keybindings/2026-09-06/persistent-navigation/README.md",
+      "target": "evidence/ghostty.before.conf"
+    },
+    {
+      "note": "40 Reference/herdr-keybindings/2026-09-06/persistent-navigation/README.md",
+      "target": "evidence/herdr.after.toml"
+    },
+    {
+      "note": "40 Reference/herdr-keybindings/2026-09-06/persistent-navigation/README.md",
+      "target": "evidence/herdr.before.toml"
+    },
+    {
+      "note": "40 Reference/herdr-keybindings/2026-09-06/persistent-navigation/README.md",
+      "target": "evidence/receipt.json"
+    },
+    {
+      "note": "40 Reference/lukes-workflows/2026-09-06/README.md",
+      "target": "SHA256SUMS"
+    },
+    {
+      "note": "40 Reference/lukes-workflows/2026-09-06/README.md",
+      "target": "atuin-cli-receipt.json"
+    },
+    {
+      "note": "40 Reference/lukes-workflows/2026-09-06/README.md",
+      "target": "atuin-current-and-backups.json"
+    },
+    {
+      "note": "40 Reference/lukes-workflows/2026-09-06/README.md",
+      "target": "atuin-legacy-checkpoint.json"
+    },
+    {
+      "note": "40 Reference/lukes-workflows/2026-09-06/README.md",
+      "target": "herdr-layout.json"
+    },
+    {
+      "note": "40 Reference/lukes-workflows/2026-09-06/README.md",
+      "target": "history-analysis.py"
+    },
+    {
+      "note": "40 Reference/lukes-workflows/2026-09-06/README.md",
+      "target": "history-discovery.json"
+    },
+    {
+      "note": "40 Reference/lukes-workflows/2026-09-06/README.md",
+      "target": "io-attribution-sample.json"
+    },
+    {
+      "note": "40 Reference/lukes-workflows/2026-09-06/README.md",
+      "target": "memory-audit.py"
+    },
+    {
+      "note": "40 Reference/lukes-workflows/2026-09-06/README.md",
+      "target": "memory-baseline.json"
+    },
+    {
+      "note": "40 Reference/lukes-workflows/2026-09-06/README.md",
+      "target": "memory-followup.json"
+    },
+    {
+      "note": "40 Reference/lukes-workflows/2026-09-06/README.md",
+      "target": "storage-and-vmstat.json"
+    },
+    {
+      "note": "40 Reference/lukes-workflows/2026-09-06/README.md",
+      "target": "tmp-attribution.json"
+    },
+    {
+      "note": "40 Reference/lukes-workflows/2026-09-06/README.md",
+      "target": "tmp-attribution.py"
+    },
+    {
+      "note": "40 Reference/lukes-workflows/2026-09-06/README.md",
+      "target": "tmp-claude-subtrees.json"
+    },
+    {
+      "note": "40 Reference/lukes-workflows/2026-09-06/README.md",
+      "target": "tmp-usage.json"
+    },
+    {
+      "note": "40 Reference/rust-mastery/2026-09-06/Learning Status and Next Steps.md",
+      "target": "/var/mnt/STORAGE-10TB/Book Library/Jim Blandy, Jason Orendorff, and Leonora F. S. Tindall - Programming Rust (2025, O'Reilly Media, Inc.) - libgen.li.epub"
+    },
+    {
+      "note": "40 Reference/rust-mastery/2026-09-06/Learning Status and Next Steps.md",
+      "target": "/var/mnt/STORAGE-10TB/Book Library/Jim Blandy_ Jason Orendorff_ Leonora F.S. Tindall - Programming Rust, 2nd Edition (2021, O'Reilly Media, Inc.) - libgen.li.epub"
+    },
+    {
+      "note": "40 Reference/rust-mastery/2026-09-06/Learning Status and Next Steps.md",
+      "target": "/var/mnt/STORAGE-10TB/Book Library/Jon Gjengset - Rust For Rustaceans_ Idiomatic Programming for Experienced Developers (2021, No Starch Press) - libgen.li.pdf"
+    },
+    {
+      "note": "40 Reference/rust-mastery/2026-09-06/Learning Status and Next Steps.md",
+      "target": "/var/mnt/STORAGE-10TB/Book Library/Mara Bos - Rust Atomics and Locks (2023, O'Reilly Media) - libgen.li.pdf"
+    },
+    {
+      "note": "40 Reference/rust-mastery/2026-09-06/Learning Status and Next Steps.md",
+      "target": "evidence/criterion-smoke.log"
+    },
+    {
+      "note": "40 Reference/rust-mastery/2026-09-06/Learning Status and Next Steps.md",
+      "target": "evidence/semantic-tests.log"
+    },
+    {
+      "note": "40 Reference/rust-mastery/2026-09-06/Learning Status and Next Steps.md",
+      "target": "evidence/verification.json"
+    },
+    {
+      "note": "40 Reference/rust-mastery/2026-09-06/Learning Status and Next Steps.md",
+      "target": "local-library.json"
+    },
+    {
+      "note": "40 Reference/rust-mastery/2026-09-06/Learning Status and Next Steps.md",
+      "target": "sources.json"
+    },
+    {
+      "note": "40 Reference/rust-mastery/2026-09-06/README.md",
+      "target": "evidence/criterion-smoke.log"
+    },
+    {
+      "note": "40 Reference/rust-mastery/2026-09-06/README.md",
+      "target": "evidence/environment.json"
+    },
+    {
+      "note": "40 Reference/rust-mastery/2026-09-06/README.md",
+      "target": "evidence/repeated-owned.dhat.json"
+    },
+    {
+      "note": "40 Reference/rust-mastery/2026-09-06/README.md",
+      "target": "evidence/repeated-reused.dhat.json"
+    },
+    {
+      "note": "40 Reference/rust-mastery/2026-09-06/README.md",
+      "target": "evidence/semantic-tests.log"
+    },
+    {
+      "note": "40 Reference/rust-mastery/2026-09-06/README.md",
+      "target": "evidence/unique-owned.dhat.json"
+    },
+    {
+      "note": "40 Reference/rust-mastery/2026-09-06/README.md",
+      "target": "evidence/unique-reused.dhat.json"
+    },
+    {
+      "note": "40 Reference/rust-mastery/2026-09-06/README.md",
+      "target": "evidence/verification.json"
+    },
+    {
+      "note": "40 Reference/rust-mastery/2026-09-06/README.md",
+      "target": "lab/Cargo.lock"
+    },
+    {
+      "note": "40 Reference/rust-mastery/2026-09-06/README.md",
+      "target": "lab/Cargo.toml"
+    },
+    {
+      "note": "40 Reference/rust-mastery/2026-09-06/README.md",
+      "target": "lab/benches/allocations.rs"
+    },
+    {
+      "note": "40 Reference/rust-mastery/2026-09-06/README.md",
+      "target": "lab/src/lib.rs"
+    },
+    {
+      "note": "40 Reference/rust-mastery/2026-09-06/README.md",
+      "target": "lab/src/main.rs"
+    },
+    {
+      "note": "40 Reference/rust-mastery/2026-09-06/README.md",
+      "target": "local-library.json"
+    },
+    {
+      "note": "40 Reference/rust-mastery/2026-09-06/README.md",
+      "target": "manifest.json"
+    },
+    {
+      "note": "40 Reference/rust-mastery/2026-09-06/README.md",
+      "target": "sources.json"
+    },
+    {
+      "note": "40 Reference/rust-mastery/2026-09-06/README.md",
+      "target": "verify_lab.py"
+    },
+    {
+      "note": "40 Reference/rust-mastery/2026-09-06/Source and Reading Map.md",
+      "target": "/var/mnt/STORAGE-10TB/Book Library/Brenden Matthews - Code Like a Pro in Rust (2024, Manning) - libgen.li.pdf"
+    },
+    {
+      "note": "40 Reference/rust-mastery/2026-09-06/Source and Reading Map.md",
+      "target": "/var/mnt/STORAGE-10TB/Book Library/David Drysdale - Effective Rust (2024, O'Reilly Media, Inc.) - libgen.li.epub"
+    },
+    {
+      "note": "40 Reference/rust-mastery/2026-09-06/Source and Reading Map.md",
+      "target": "/var/mnt/STORAGE-10TB/Book Library/Jim Blandy, Jason Orendorff, and Leonora F. S. Tindall - Programming Rust (2025, O'Reilly Media, Inc.) - libgen.li.epub"
+    },
+    {
+      "note": "40 Reference/rust-mastery/2026-09-06/Source and Reading Map.md",
+      "target": "/var/mnt/STORAGE-10TB/Book Library/Jim Blandy_ Jason Orendorff_ Leonora F.S. Tindall - Programming Rust, 2nd Edition (2021, O'Reilly Media, Inc.) - libgen.li.epub"
+    },
+    {
+      "note": "40 Reference/rust-mastery/2026-09-06/Source and Reading Map.md",
+      "target": "/var/mnt/STORAGE-10TB/Book Library/Jon Gjengset - Rust For Rustaceans_ Idiomatic Programming for Experienced Developers (2021, No Starch Press) - libgen.li.pdf"
+    },
+    {
+      "note": "40 Reference/rust-mastery/2026-09-06/Source and Reading Map.md",
+      "target": "/var/mnt/STORAGE-10TB/Book Library/Ken Youens-Clark - Command-Line Rust_ A Project-Based Primer for Writing Rust CLIs 1 (2022, O'Reilly Media) - libgen.li.pdf"
+    },
+    {
+      "note": "40 Reference/rust-mastery/2026-09-06/Source and Reading Map.md",
+      "target": "/var/mnt/STORAGE-10TB/Book Library/Luca Palmieri - Zero To Production In Rust_ An introduction to backend development (Updated) (2023) - libgen.li.epub"
+    },
+    {
+      "note": "40 Reference/rust-mastery/2026-09-06/Source and Reading Map.md",
+      "target": "/var/mnt/STORAGE-10TB/Book Library/Mara Bos - Rust Atomics and Locks (2023, O'Reilly Media) - libgen.li.pdf"
+    },
+    {
+      "note": "40 Reference/rust-mastery/2026-09-06/Source and Reading Map.md",
+      "target": "/var/mnt/STORAGE-10TB/Book Library/Prabhu Eshwarla - Rust Servers, Services, and Apps (Final Release) (2023, Manning) - libgen.li.pdf"
+    },
+    {
+      "note": "40 Reference/rust-mastery/2026-09-06/Source and Reading Map.md",
+      "target": "/var/mnt/STORAGE-10TB/Book Library/Shashank Mohan Jain - Linux Containers and Virtualization_ Utilizing Rust for Linux Containers (2023, Apress) [10.1007_978-1-4842-9768-1] - libgen.li.epub"
+    },
+    {
+      "note": "40 Reference/rust-mastery/2026-09-06/Source and Reading Map.md",
+      "target": "/var/mnt/STORAGE-10TB/Book Library/Steve Klabnik_ Carol Nichols - The Rust Programming Language, 2nd Edition (2023, No Starch Press) - libgen.li.epub"
+    },
+    {
+      "note": "40 Reference/rust-mastery/2026-09-06/Source and Reading Map.md",
+      "target": "/var/mnt/STORAGE-10TB/Book Library/Tim McNamara - Rust in Action_ Systems programming concepts and techniques (2021, Manning Publications Co.) - libgen.li.epub"
+    },
+    {
+      "note": "40 Reference/rust-mastery/2026-09-06/Source and Reading Map.md",
+      "target": "/var/mnt/STORAGE-10TB/Book Library/Tim McNamara - Smart Pointers in Rust (2023, Accelerant Press) - libgen.li.pdf"
+    },
+    {
+      "note": "40 Reference/rust-mastery/2026-09-06/Source and Reading Map.md",
+      "target": "/var/mnt/STORAGE-10TB/Book Library/Van Overmeire, Sam_ - Write Powerful Rust Macros (2024, Manning Publications Co. LLC) - libgen.li.epub"
+    },
+    {
+      "note": "40 Reference/rust-mastery/2026-09-06/Source and Reading Map.md",
+      "target": "local-library.json"
+    },
+    {
+      "note": "40 Reference/rust-mastery/2026-09-06/Source and Reading Map.md",
+      "target": "sources.json"
+    },
+    {
+      "note": "40 Reference/workflow-review/2026-09-06/README.md",
+      "target": "SHA256SUMS"
+    },
+    {
+      "note": "40 Reference/workflow-review/2026-09-06/README.md",
+      "target": "changes.patch"
+    },
+    {
+      "note": "40 Reference/workflow-review/2026-09-06/README.md",
+      "target": "review-inputs.json"
+    },
+    {
+      "note": "40 Reference/workflow-review/2026-09-06/README.md",
+      "target": "validate-review.py"
+    },
+    {
+      "note": "40 Reference/workflow-review/2026-09-06/README.md",
+      "target": "validation.json"
+    },
+    {
+      "note": "60 Workflows/Code Anchors - Notes That Land on Source.md",
+      "target": "/var/home/Louranicas/fedora-arena/scripts/audit/codeanchors.py:42"
+    },
+    {
+      "note": "60 Workflows/Code Anchors - Notes That Land on Source.md",
+      "target": "/var/mnt/STORAGE-10TB/fedora-obsidian-vaults/herdr-fedora-habitat.vault/80 Architecture/Synergy - Source-Owned Status and Memory.md"
+    },
+    {
+      "note": "60 Workflows/Cross-Workspace Review Gate.md",
+      "target": "/var/home/Louranicas/fedora-arena/scripts/review-gate.sh:25"
+    },
+    {
+      "note": "60 Workflows/Cross-Workspace Review Gate.md",
+      "target": "/var/mnt/STORAGE-10TB/fedora-obsidian-vaults/herdr-fedora-habitat.vault/80 Architecture/Corpus Insights - Thematic Analysis.md"
+    },
+    {
+      "note": "60 Workflows/Cross-Workspace Review Gate.md",
+      "target": "/var/mnt/STORAGE-10TB/fedora-obsidian-vaults/herdr-fedora-habitat.vault/80 Architecture/LLM Traversal - Cross-Vault Routes.md"
+    },
+    {
+      "note": "60 Workflows/Cross-Workspace Review Gate.md",
+      "target": "/var/mnt/STORAGE-10TB/fedora-obsidian-vaults/herdr-fedora-habitat.vault/80 Architecture/Synergy - Human and Agent Evidence Views.md"
+    },
+    {
+      "note": "60 Workflows/Knowledge Audit.md",
+      "target": "/var/mnt/STORAGE-10TB/fedora-obsidian-vaults/herdr-fedora-habitat.vault/80 Architecture/Corpus Insights - Thematic Analysis.md"
+    },
+    {
+      "note": "60 Workflows/Knowledge Audit.md",
+      "target": "/var/mnt/STORAGE-10TB/fedora-obsidian-vaults/herdr-fedora-habitat.vault/80 Architecture/LLM Traversal - Cross-Vault Routes.md"
+    },
+    {
+      "note": "60 Workflows/Knowledge Audit.md",
+      "target": "/var/mnt/STORAGE-10TB/fedora-obsidian-vaults/herdr-fedora-habitat.vault/80 Architecture/Synergy - Source-Owned Status and Memory.md"
+    },
+    {
+      "note": "60 Workflows/Weight Matrix - Which Gate Bore the Weight.md",
+      "target": "/var/home/Louranicas/fedora-arena/scripts/audit/weight_matrix.py:205"
+    },
+    {
+      "note": "60 Workflows/Weight Matrix - Which Gate Bore the Weight.md",
+      "target": "/var/mnt/STORAGE-10TB/fedora-obsidian-vaults/herdr-fedora-habitat.vault/80 Architecture/LLM Traversal - Cross-Vault Routes.md"
+    },
+    {
+      "note": "60 Workflows/Weight Matrix - Which Gate Bore the Weight.md",
+      "target": "/var/mnt/STORAGE-10TB/fedora-obsidian-vaults/herdr-fedora-habitat.vault/80 Architecture/Synergy - Recovery as a Test Environment.md"
+    },
+    {
+      "note": "70 Toolkit/skills.md",
+      "target": "../../pi.vault/20 Habitat/Herdr Integration.md"
+    },
+    {
+      "note": "70 Toolkit/skills.md",
+      "target": "../../pi.vault/30 Resources/Extensions Skills and Plugins.md"
+    },
+    {
+      "note": "70 Toolkit/skills.md",
+      "target": "/var/home/Louranicas/.codex/skills/context-handoff/SKILL.md"
+    },
+    {
+      "note": "70 Toolkit/skills.md",
+      "target": "/var/home/Louranicas/.codex/skills/context-handoff/references/atlas-reading.md"
+    },
+    {
+      "note": "70 Toolkit/skills.md",
+      "target": "/var/home/Louranicas/.codex/skills/context-handoff/references/handoff-note.md"
+    },
+    {
+      "note": "70 Toolkit/skills.md",
+      "target": "/var/home/Louranicas/.codex/skills/prime/SKILL.md"
+    },
+    {
+      "note": "herdr-habitat-prompt-library.md",
+      "target": "/var/mnt/STORAGE-10TB/repos/GRAND_MASTER_INDEX.md"
+    }
+  ]
+}
