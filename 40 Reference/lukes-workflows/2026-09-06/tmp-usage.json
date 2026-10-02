@@ -1,0 +1,996 @@
+{
+  "timestamp_utc": "2026-09-05T20:17:25.835072+00:00",
+  "exit_code": 1,
+  "coverage_note": "Read-only du, 30-second cap; excludes unreadable service-private directories. Allocated tmpfs bytes can reside in RAM or swap. Not a cleanup authorization.",
+  "error_count": 12,
+  "entries": [
+    {
+      "path": "/tmp",
+      "allocated_bytes": 17568776192
+    },
+    {
+      "path": "/tmp/claude-1000",
+      "allocated_bytes": 5897043968
+    },
+    {
+      "path": "/tmp/.tmpwMcd2m",
+      "allocated_bytes": 2201739264
+    },
+    {
+      "path": "/tmp/.tmpD0g5Ez",
+      "allocated_bytes": 2198446080
+    },
+    {
+      "path": "/tmp/.tmpKHO6XS",
+      "allocated_bytes": 2178572288
+    },
+    {
+      "path": "/tmp/tmp.mLOUgZMLCN",
+      "allocated_bytes": 182796288
+    },
+    {
+      "path": "/tmp/tmp.gHW9eBLdyu",
+      "allocated_bytes": 182796288
+    },
+    {
+      "path": "/tmp/tmp.jHlTqjjKmq",
+      "allocated_bytes": 182796288
+    },
+    {
+      "path": "/tmp/tmp.FHCCRjCpA8",
+      "allocated_bytes": 182796288
+    },
+    {
+      "path": "/tmp/tmp.57ktTk85FJ",
+      "allocated_bytes": 182796288
+    },
+    {
+      "path": "/tmp/tmp.h0QlO3jFye",
+      "allocated_bytes": 182796288
+    },
+    {
+      "path": "/tmp/tmp.8YuEWrsmzj",
+      "allocated_bytes": 182796288
+    },
+    {
+      "path": "/tmp/tmp.zci0ha0SWr",
+      "allocated_bytes": 182796288
+    },
+    {
+      "path": "/tmp/tmp.MGwu6VVpnc",
+      "allocated_bytes": 182796288
+    },
+    {
+      "path": "/tmp/tmp.T6t877fxCd",
+      "allocated_bytes": 182796288
+    },
+    {
+      "path": "/tmp/tmp.CO9OSvIGN6",
+      "allocated_bytes": 182796288
+    },
+    {
+      "path": "/tmp/tmp.HokJ7lfup2",
+      "allocated_bytes": 182796288
+    },
+    {
+      "path": "/tmp/tmp.MYyudGqEAk",
+      "allocated_bytes": 182796288
+    },
+    {
+      "path": "/tmp/tmp.bcmW9MNGPa",
+      "allocated_bytes": 182796288
+    },
+    {
+      "path": "/tmp/tmp.1SNSNN2jxJ",
+      "allocated_bytes": 182796288
+    },
+    {
+      "path": "/tmp/tmp.ytsDPArqZk",
+      "allocated_bytes": 182796288
+    },
+    {
+      "path": "/tmp/tmp.TNzRE7VI3y",
+      "allocated_bytes": 182796288
+    },
+    {
+      "path": "/tmp/tmp.JbsXTagcWe",
+      "allocated_bytes": 182796288
+    },
+    {
+      "path": "/tmp/tmp.9XuV6spBJ4",
+      "allocated_bytes": 182796288
+    },
+    {
+      "path": "/tmp/tmp.4qoNqzlJkR",
+      "allocated_bytes": 182796288
+    },
+    {
+      "path": "/tmp/tmp.W7gbvmdlFv",
+      "allocated_bytes": 182796288
+    },
+    {
+      "path": "/tmp/tmp.r6x6SI7yI9",
+      "allocated_bytes": 182796288
+    },
+    {
+      "path": "/tmp/tmp.ctws4dGYri",
+      "allocated_bytes": 182796288
+    },
+    {
+      "path": "/tmp/tmp.gywVmddf9K",
+      "allocated_bytes": 182796288
+    },
+    {
+      "path": "/tmp/tmp.FhpY0sF9tj",
+      "allocated_bytes": 182796288
+    },
+    {
+      "path": "/tmp/tmp.cj9oG6SvDU",
+      "allocated_bytes": 182796288
+    },
+    {
+      "path": "/tmp/glab-install.4SIANV",
+      "allocated_bytes": 50819072
+    },
+    {
+      "path": "/tmp/stacked-search-loom-review.GTBZp6",
+      "allocated_bytes": 7159808
+    },
+    {
+      "path": "/tmp/node-compile-cache",
+      "allocated_bytes": 2736128
+    },
+    {
+      "path": "/tmp/hwe-python-security-deps",
+      "allocated_bytes": 1318912
+    },
+    {
+      "path": "/tmp/hee-plan-integration.inyo2L",
+      "allocated_bytes": 667648
+    },
+    {
+      "path": "/tmp/.tmpPXgT1l",
+      "allocated_bytes": 270336
+    },
+    {
+      "path": "/tmp/.tmp79HiZF",
+      "allocated_bytes": 270336
+    },
+    {
+      "path": "/tmp/.tmpESUp1k",
+      "allocated_bytes": 270336
+    },
+    {
+      "path": "/tmp/.tmp1h1KO7",
+      "allocated_bytes": 270336
+    },
+    {
+      "path": "/tmp/.tmpUL815F",
+      "allocated_bytes": 270336
+    },
+    {
+      "path": "/tmp/.tmp133UWK",
+      "allocated_bytes": 270336
+    },
+    {
+      "path": "/tmp/ghostty-tabs-notes-20260905",
+      "allocated_bytes": 147456
+    },
+    {
+      "path": "/tmp/toolshed-skills-review",
+      "allocated_bytes": 110592
+    },
+    {
+      "path": "/tmp/toolshed-consolidate-and-code-note",
+      "allocated_bytes": 36864
+    },
+    {
+      "path": "/tmp/composio",
+      "allocated_bytes": 36864
+    },
+    {
+      "path": "/tmp/codex-bwrap-synthetic-mount-targets-1000",
+      "allocated_bytes": 20480
+    },
+    {
+      "path": "/tmp/codex-skill-draft",
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "/tmp/hermes_kernel_zemhu8j9",
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "/tmp/hermes_kernel_4phaf7vk",
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "/tmp/hermes_kernel_4zl54okz",
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "/tmp/hermes_kernel_0sb6p2_j",
+      "allocated_bytes": 16384
+    },
+    {
+      "path": "/tmp/gate-fix-red-za_ukk3i",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-s4cgmk3_",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-h0f6fkwd",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-5nw9n_xe",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-uo45z0dq",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-0bm_kz1v",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-x2t29xlq",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-rifhzyf9",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-zkjjlsqz",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-phmzppmy",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-re05j_03",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-jxkyygf0",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-c6a7b3wh",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-5ae5k1ld",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-c7nr8a7i",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-0qsbpwfh",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-52igtvgj",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-57gcjf5h",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-34qldaoj",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-k4h3g89v",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-3x0yxvcp",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-rh8tmqro",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-koofrviq",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-r21fs784",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-g93vmg8h",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-tl490ioj",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-i1h_b3ek",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-0i1ko26m",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-1lza6c9a",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-5k7honxs",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-2hpqapj2",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-nf8wdsap",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-pcxnm8ca",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-igmxxq6g",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-26u5l7f0",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-i6n5yj0w",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-issr6clg",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-yv7_5e_h",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-cfrybtom",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-o45w3igt",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-787qacks",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-k4b8xi7o",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-yao5ra3r",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-33cwbdyj",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-y3dmci3e",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-zvco4i7r",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-8vqe073j",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-wdao4w0p",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-u_tb4rno",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-sucmuy2p",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-2l6fnha_",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-tgswg45p",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-pn5ww6ne",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-m4d2mn1j",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-qh4lghso",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-ellpf8c7",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-rdfvgt8w",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-vozu7s64",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/provoke-bmxc6am0",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/jiti",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "/tmp/planwright-forward-WtZEGo",
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "/tmp/ddf-explicit-3174041-regularfile",
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "/tmp/ddf-explicit-3174041-symlink-at-path",
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "/tmp/ddf-srv-3174041-cleanup-regular-file",
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "/tmp/ddf-srv-3174041-secure-regular-file",
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "/tmp/ddf-explicit-1575411-regularfile",
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "/tmp/ddf-explicit-1575411-symlink-at-path",
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "/tmp/ddf-srv-1575411-cleanup-regular-file",
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "/tmp/ddf-srv-1575411-secure-regular-file",
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "/tmp/ddf-explicit-503-regularfile",
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "/tmp/ddf-explicit-503-symlink-at-path",
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "/tmp/.tmpTsu820",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/.tmpO85YPF",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/.tmp8FnJwf",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/.tmpOG9sAX",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/.tmpYatjCO",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/org.chromium.Chromium.91fUQS",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/org.chromium.Chromium.HcSQBp",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/gate-fix-e7836i9p",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/.tmpO1lc9A",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/tmpb_sg8fla",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/tmpyu815eqc",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/.tmpthDJ2t",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/.tmpS4u7WH",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/.tmp4NeJt2",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/.tmpy40Gup",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/.tmp57QNum",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/.tmpSpMw0u",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/.tmp6Eygyr",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/.tmpW1DqpH",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/.tmp0YckMp",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/tmux-1000",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-explicit-3174041-atloc",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-explicit-3174041-atloc-wr",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-srv-3174041-run",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-srv-3174041-plan",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-explicit-3174041-resolve-explicit",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-explicit-3174041-staleexplicit",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-explicit-3174041-worldread",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-srv-3174041-bind",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-explicit-3174041-nochmod",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-srv-3174041-stale",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-sec-3174041-symtarget",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-sec-3174041-perm",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-sec-3174041-ok",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-sec-3174041-ensure-sym-target",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-sec-3174041-grp",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-sec-ensure-3174041",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-clid-3771-life",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/.tmpDtGLbv",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/.tmple5AEB",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/.tmpWPFmB0",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/.tmpOWD7Nm",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/.tmpYmIE1L",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/.tmpppxk4Y",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/org.chromium.Chromium.VZCp6Q",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/.codex",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/.agents",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/.git",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-explicit-1575411-atloc",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-explicit-1575411-atloc-wr",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-srv-1575411-run",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-srv-1575411-plan",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-explicit-1575411-resolve-explicit",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-explicit-1575411-staleexplicit",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-explicit-1575411-worldread",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-explicit-1575411-nochmod",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-srv-1575411-bind",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-srv-1575411-stale",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-sec-1575411-perm",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-sec-1575411-symtarget",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-sec-1575411-ok",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-sec-1575411-grp",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-sec-1575411-ensure-sym-target",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-sec-ensure-1575411",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-sec-801-perm",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-sec-801-symtarget",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-sec-801-ok",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-sec-801-grp",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-sec-801-ensure-sym-target",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-sec-ensure-801",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/.tmp8ftTN2",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/.tmp93pnKc",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/.tmpHGnpBa",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/.tmpsqPsXq",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-srv-56-bind",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-srv-503-run",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-explicit-503-atloc",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-explicit-503-atloc-wr",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-srv-503-plan",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-explicit-503-resolve-explicit",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-explicit-503-staleexplicit",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-explicit-503-worldread",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-explicit-503-nochmod",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-explicit-503-mkparent",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-sec-503-symtarget",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-srv-503-bind",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-sec-503-perm",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-srv-503-stale",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-sec-503-ok",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-sec-503-grp",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-sec-503-ensure-sym-target",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-sec-ensure-503",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/ddf-clid-5218-life",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/.tmpc6COzE",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/pulse-PKdhtXMmr18n",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/.tmpyNae4Y",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/.tmphq7NZ2",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/.tmpZzJl3V",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/.tmpDAtS0z",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/.tmppPRyva",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/org.chromium.Chromium.7wz194",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/codex-browser-use",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/org.chromium.Chromium.AKKU1I",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/systemd-private-a2724a3df69f425ebe22b327beb066cd-passim.service-ennNIF",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/systemd-private-a2724a3df69f425ebe22b327beb066cd-fwupd.service-vK4q9u",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/.tmpxBlIgv",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/systemd-private-a2724a3df69f425ebe22b327beb066cd-pcscd.service-B0vnYW",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/.tmp0vCxbz",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/yazi-1000",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/lazygit-2817336777",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/plasma-csd-generator.OoiWyx",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/systemd-private-a2724a3df69f425ebe22b327beb066cd-ModemManager.service-zpO3Ml",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/systemd-private-a2724a3df69f425ebe22b327beb066cd-systemd-logind.service-tj8ccq",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/systemd-private-a2724a3df69f425ebe22b327beb066cd-upower.service-hCAQ4s",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/systemd-private-a2724a3df69f425ebe22b327beb066cd-switcheroo-control.service-7revnX",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/systemd-private-a2724a3df69f425ebe22b327beb066cd-rtkit-daemon.service-x6lchM",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/systemd-private-a2724a3df69f425ebe22b327beb066cd-polkit.service-9heUb1",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/systemd-private-a2724a3df69f425ebe22b327beb066cd-chronyd.service-dYeXEL",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/systemd-private-a2724a3df69f425ebe22b327beb066cd-bluetooth.service-2r7UCw",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/systemd-private-a2724a3df69f425ebe22b327beb066cd-dbus-broker.service-XysrkO",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/.font-unix",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/.XIM-unix",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/.ICE-unix",
+      "allocated_bytes": 0
+    },
+    {
+      "path": "/tmp/.X11-unix",
+      "allocated_bytes": 0
+    }
+  ]
+}

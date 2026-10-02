@@ -1,0 +1,182 @@
+{
+  "timestamp_utc": "2026-09-05T20:30:24.437792+00:00",
+  "interval_seconds": 3.102,
+  "before_blocked_threads": [],
+  "after_blocked_threads": [],
+  "errors": 0,
+  "pressure_before": {
+    "cpu": "some avg10=0.00 avg60=0.00 avg300=0.00 total=1884317119\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+    "memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=169186338\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=160829660\n",
+    "io": "some avg10=86.87 avg60=80.01 avg300=77.59 total=134583830326\nfull avg10=85.05 avg60=78.51 avg300=76.21 total=127695645777\n"
+  },
+  "pressure_after": {
+    "cpu": "some avg10=0.00 avg60=0.00 avg300=0.00 total=1884319962\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+    "memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=169186338\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=160829660\n",
+    "io": "some avg10=87.98 avg60=80.43 avg300=77.70 total=134586709642\nfull avg10=86.13 avg60=78.92 avg300=76.31 total=127698474745\n"
+  },
+  "disk_deltas": [
+    {
+      "device": "nvme0n1",
+      "read_bytes": 0,
+      "write_bytes": 1220608,
+      "io_in_progress": 0,
+      "busy_percent": 0.81,
+      "weighted_io_ms": 280
+    },
+    {
+      "device": "nvme0n1p3",
+      "read_bytes": 0,
+      "write_bytes": 1220608,
+      "io_in_progress": 0,
+      "busy_percent": 0.81,
+      "weighted_io_ms": 281
+    },
+    {
+      "device": "dm-0",
+      "read_bytes": 0,
+      "write_bytes": 1220608,
+      "io_in_progress": 0,
+      "busy_percent": 0.81,
+      "weighted_io_ms": 593
+    }
+  ],
+  "block_devices": {
+    "blockdevices": [
+      {
+        "name": "sda",
+        "type": "disk",
+        "size": "931.5G",
+        "model": "Samsung SSD 850 EVO 1TB",
+        "mountpoints": [],
+        "children": [
+          {
+            "name": "sda1",
+            "type": "part",
+            "size": "186.3G",
+            "model": null,
+            "mountpoints": []
+          },
+          {
+            "name": "sda2",
+            "type": "part",
+            "size": "1K",
+            "model": null,
+            "mountpoints": []
+          },
+          {
+            "name": "sda5",
+            "type": "part",
+            "size": "714.9G",
+            "model": null,
+            "mountpoints": []
+          },
+          {
+            "name": "sda6",
+            "type": "part",
+            "size": "29.8G",
+            "model": null,
+            "mountpoints": []
+          },
+          {
+            "name": "sda7",
+            "type": "part",
+            "size": "572M",
+            "model": null,
+            "mountpoints": []
+          }
+        ]
+      },
+      {
+        "name": "sdb",
+        "type": "disk",
+        "size": "9.1T",
+        "model": "WDC WD101FZBX-00ATAA0",
+        "mountpoints": [],
+        "children": [
+          {
+            "name": "sdb1",
+            "type": "part",
+            "size": "9.1T",
+            "model": null,
+            "mountpoints": [
+              "/var/mnt/STORAGE-10TB"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "sdc",
+        "type": "disk",
+        "size": "3.6T",
+        "model": "WDC WD40EZRX-00SPEB0",
+        "mountpoints": [],
+        "children": [
+          {
+            "name": "sdc1",
+            "type": "part",
+            "size": "3.6T",
+            "model": null,
+            "mountpoints": []
+          }
+        ]
+      },
+      {
+        "name": "zram0",
+        "type": "disk",
+        "size": "8G",
+        "model": null,
+        "mountpoints": [
+          "[SWAP]"
+        ]
+      },
+      {
+        "name": "nvme0n1",
+        "type": "disk",
+        "size": "1.8T",
+        "model": "Samsung SSD 990 PRO with Heatsink 2TB",
+        "mountpoints": [],
+        "children": [
+          {
+            "name": "nvme0n1p1",
+            "type": "part",
+            "size": "1M",
+            "model": null,
+            "mountpoints": []
+          },
+          {
+            "name": "nvme0n1p2",
+            "type": "part",
+            "size": "2G",
+            "model": null,
+            "mountpoints": [
+              "/boot"
+            ]
+          },
+          {
+            "name": "nvme0n1p3",
+            "type": "part",
+            "size": "1.8T",
+            "model": null,
+            "mountpoints": [],
+            "children": [
+              {
+                "name": "luks-97a2c76e-e11a-4782-8bfe-4370fadfa706",
+                "type": "crypt",
+                "size": "1.8T",
+                "model": null,
+                "mountpoints": [
+                  "/var/home",
+                  "/var",
+                  "/sysroot/ostree/deploy/fedora/var",
+                  "/sysroot",
+                  "/etc"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "limitations": "Three-second sample; blocked threads may be persistent and do not alone identify a failed device. Stacked device statistics overlap. No file contents or command arguments captured."
+}

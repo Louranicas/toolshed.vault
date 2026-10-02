@@ -1,0 +1,124 @@
+{
+  "timestamp_utc": "2026-09-05T20:18:26.319065+00:00",
+  "roots": [
+    {
+      "root": "/tmp/claude-1000",
+      "top_level_names": [
+        "-var-home-Louranicas"
+      ],
+      "entries_visited": 1192,
+      "truncated": false,
+      "largest_files": [
+        {
+          "path": "/tmp/claude-1000/-var-home-Louranicas/fed345e6-1267-4a1e-8fba-43c9d6c675b1/tasks/big0uj57u.output",
+          "bytes": 794065,
+          "allocated_bytes": 794624,
+          "mtime_utc": "2026-09-05T02:44:05.087220+00:00"
+        },
+        {
+          "path": "/tmp/claude-1000/-var-home-Louranicas/fed345e6-1267-4a1e-8fba-43c9d6c675b1/tasks/w0mgznyv8.output",
+          "bytes": 588117,
+          "allocated_bytes": 589824,
+          "mtime_utc": "2026-09-04T07:00:59.027885+00:00"
+        },
+        {
+          "path": "/tmp/claude-1000/-var-home-Louranicas/fed345e6-1267-4a1e-8fba-43c9d6c675b1/tasks/wayqdxbfh.output",
+          "bytes": 397818,
+          "allocated_bytes": 401408,
+          "mtime_utc": "2026-09-04T21:24:55.191094+00:00"
+        },
+        {
+          "path": "/tmp/claude-1000/-var-home-Louranicas/fed345e6-1267-4a1e-8fba-43c9d6c675b1/scratchpad/w4-design.json",
+          "bytes": 379504,
+          "allocated_bytes": 380928,
+          "mtime_utc": "2026-09-04T21:25:19.744869+00:00"
+        },
+        {
+          "path": "/tmp/claude-1000/-var-home-Louranicas/989c455a-9387-43a9-8d71-6e6ddc60efa2/scratchpad/corpus.json",
+          "bytes": 303503,
+          "allocated_bytes": 307200,
+          "mtime_utc": "2026-09-03T20:41:20.949291+00:00"
+        },
+        {
+          "path": "/tmp/claude-1000/-var-home-Louranicas/fed345e6-1267-4a1e-8fba-43c9d6c675b1/tasks/w0m2hny2e.output",
+          "bytes": 198350,
+          "allocated_bytes": 200704,
+          "mtime_utc": "2026-09-04T12:01:11.984257+00:00"
+        },
+        {
+          "path": "/tmp/claude-1000/-var-home-Louranicas/989c455a-9387-43a9-8d71-6e6ddc60efa2/scratchpad/rev.json",
+          "bytes": 145715,
+          "allocated_bytes": 147456,
+          "mtime_utc": "2026-09-03T09:00:24.465678+00:00"
+        },
+        {
+          "path": "/tmp/claude-1000/-var-home-Louranicas/fed345e6-1267-4a1e-8fba-43c9d6c675b1/scratchpad/hardening-vs-head.diff",
+          "bytes": 136469,
+          "allocated_bytes": 139264,
+          "mtime_utc": "2026-09-04T11:38:26.891288+00:00"
+        }
+      ]
+    },
+    {
+      "root": "/tmp/.tmpwMcd2m",
+      "top_level_names": [
+        "journal"
+      ],
+      "entries_visited": 2,
+      "truncated": false,
+      "largest_files": [
+        {
+          "path": "/tmp/.tmpwMcd2m/journal/seg-000001-000001.ndjson",
+          "bytes": 2201739054,
+          "allocated_bytes": 2201739264,
+          "mtime_utc": "2026-09-04T05:34:38.335366+00:00"
+        }
+      ]
+    },
+    {
+      "root": "/tmp/.tmpD0g5Ez",
+      "top_level_names": [
+        "journal"
+      ],
+      "entries_visited": 2,
+      "truncated": false,
+      "largest_files": [
+        {
+          "path": "/tmp/.tmpD0g5Ez/journal/seg-000001-000001.ndjson",
+          "bytes": 2198443124,
+          "allocated_bytes": 2198446080,
+          "mtime_utc": "2026-09-04T05:12:47.109433+00:00"
+        }
+      ]
+    },
+    {
+      "root": "/tmp/.tmpKHO6XS",
+      "top_level_names": [
+        "journal"
+      ],
+      "entries_visited": 2,
+      "truncated": false,
+      "largest_files": [
+        {
+          "path": "/tmp/.tmpKHO6XS/journal/seg-000001-000001.ndjson",
+          "bytes": 2178572240,
+          "allocated_bytes": 2178572288,
+          "mtime_utc": "2026-09-04T05:28:51.636613+00:00"
+        }
+      ]
+    }
+  ],
+  "observed_live_references": [
+    {
+      "pid": 1475830,
+      "name": "claude",
+      "reference": "41",
+      "target": "/tmp/claude-1000/-var-home-Louranicas/fed345e6-1267-4a1e-8fba-43c9d6c675b1/tasks"
+    }
+  ],
+  "reference_count": 1,
+  "errors": {
+    "fd_list_inaccessible": 35
+  },
+  "limitations": "Metadata only; depth and entry bounds apply. No open FD in this snapshot does not prove data is disposable: processes can reopen paths, retain mappings, or require logs as evidence. No cleanup performed."
+}

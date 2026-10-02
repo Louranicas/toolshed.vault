@@ -1,0 +1,66 @@
+{
+  "largest_subtrees": [
+    {
+      "path": "/tmp/claude-1000/-var-home-Louranicas",
+      "allocated_bytes": 5897043968
+    },
+    {
+      "path": "/tmp/claude-1000",
+      "allocated_bytes": 5897043968
+    },
+    {
+      "path": "/tmp/claude-1000/-var-home-Louranicas/fed345e6-1267-4a1e-8fba-43c9d6c675b1",
+      "allocated_bytes": 5675331584
+    },
+    {
+      "path": "/tmp/claude-1000/-var-home-Louranicas/fed345e6-1267-4a1e-8fba-43c9d6c675b1/scratchpad",
+      "allocated_bytes": 5659287552
+    },
+    {
+      "path": "/tmp/claude-1000/-var-home-Louranicas/fed345e6-1267-4a1e-8fba-43c9d6c675b1/scratchpad/cold-out",
+      "allocated_bytes": 2574897152
+    },
+    {
+      "path": "/tmp/claude-1000/-var-home-Louranicas/fed345e6-1267-4a1e-8fba-43c9d6c675b1/scratchpad/cold-out/target",
+      "allocated_bytes": 2574704640
+    },
+    {
+      "path": "/tmp/claude-1000/-var-home-Louranicas/fed345e6-1267-4a1e-8fba-43c9d6c675b1/scratchpad/wt-verify-target",
+      "allocated_bytes": 855166976
+    },
+    {
+      "path": "/tmp/claude-1000/-var-home-Louranicas/fed345e6-1267-4a1e-8fba-43c9d6c675b1/scratchpad/wt-verify-target/debug",
+      "allocated_bytes": 855158784
+    },
+    {
+      "path": "/tmp/claude-1000/-var-home-Louranicas/fed345e6-1267-4a1e-8fba-43c9d6c675b1/scratchpad/wt-anchor-target",
+      "allocated_bytes": 849686528
+    },
+    {
+      "path": "/tmp/claude-1000/-var-home-Louranicas/fed345e6-1267-4a1e-8fba-43c9d6c675b1/scratchpad/wt-anchor-target/debug",
+      "allocated_bytes": 849678336
+    },
+    {
+      "path": "/tmp/claude-1000/-var-home-Louranicas/fed345e6-1267-4a1e-8fba-43c9d6c675b1/scratchpad/cold-target",
+      "allocated_bytes": 730292224
+    },
+    {
+      "path": "/tmp/claude-1000/-var-home-Louranicas/fed345e6-1267-4a1e-8fba-43c9d6c675b1/scratchpad/cold-target/debug",
+      "allocated_bytes": 730284032
+    },
+    {
+      "path": "/tmp/claude-1000/-var-home-Louranicas/989c455a-9387-43a9-8d71-6e6ddc60efa2",
+      "allocated_bytes": 221388800
+    },
+    {
+      "path": "/tmp/claude-1000/-var-home-Louranicas/989c455a-9387-43a9-8d71-6e6ddc60efa2/scratchpad",
+      "allocated_bytes": 221179904
+    },
+    {
+      "path": "/tmp/claude-1000/-var-home-Louranicas/989c455a-9387-43a9-8d71-6e6ddc60efa2/scratchpad/wm",
+      "allocated_bytes": 218648576
+    }
+  ],
+  "exit_code": 0,
+  "note": "Metadata only; ancestor/descendant sizes overlap and must not be summed."
+}

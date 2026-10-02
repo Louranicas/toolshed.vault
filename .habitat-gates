@@ -1,0 +1,7 @@
+# This vault OPTS IN to the habitat's shared link/path/orphan gates.
+# Participation is declared, never inferred: a vault that appears in this directory is COUNTED by
+# every gate, but only blocks one if it has agreed to be held to that standard. Without this, the
+# arrival of turso.vault on 2026-09-04 silently reddened three shared gates for content whose
+# owner had never opted in — and the alternative (a hardcoded vault list) is the stale denominator
+# that made codeanchors.py blind to that same vault.
+gates = backlinks orphans deadpaths anchors

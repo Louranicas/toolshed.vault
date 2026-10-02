@@ -1,0 +1,15 @@
+{
+  "timestamp_utc": "2026-09-05T21:19:51.025385+00:00",
+  "backup": "/var/home/Louranicas/.config/herdr/config.toml.before-ctrl-alt-end-20260906",
+  "config_check": {
+    "exit_code": 1,
+    "stdout": "config: issues found\ninvalid keybinding: keys.next_tab = \"ctrl+alt+end\"; disabling binding\n",
+    "stderr": ""
+  },
+  "applied_binding": [
+    "prefix+n",
+    "ctrl+alt+end"
+  ],
+  "rolled_back": true,
+  "after_sha256": "a8a894af9af204464431a083f6fbe4afb5209562cdd339f4c7d4f85c03c93202"
+}

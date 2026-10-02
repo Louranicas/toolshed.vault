@@ -1,0 +1,2311 @@
+{
+  "timestamp_utc": "2026-09-05T20:22:55.290738+00:00",
+  "hostname": "orac",
+  "uid": 1000,
+  "meminfo_kib": {
+    "MemTotal": 98561264,
+    "MemFree": 24437364,
+    "MemAvailable": 69717324,
+    "Buffers": 5017124,
+    "Cached": 47460328,
+    "SwapCached": 2848,
+    "Active": 20032608,
+    "Inactive": 41031120,
+    "Active(anon)": 13820952,
+    "Inactive(anon)": 5829604,
+    "Active(file)": 6211656,
+    "Inactive(file)": 35201516,
+    "Unevictable": 116,
+    "Mlocked": 116,
+    "SwapTotal": 8388604,
+    "SwapFree": 2188,
+    "Zswap": 0,
+    "Zswapped": 0,
+    "Dirty": 1956,
+    "Writeback": 0,
+    "AnonPages": 8584388,
+    "Mapped": 2198920,
+    "Shmem": 11064820,
+    "KReclaimable": 4856432,
+    "Slab": 6191352,
+    "SReclaimable": 4856432,
+    "SUnreclaim": 1334920,
+    "KernelStack": 52624,
+    "PageTables": 155604,
+    "SecPageTables": 6352,
+    "NFS_Unstable": 0,
+    "Bounce": 0,
+    "WritebackTmp": 0,
+    "CommitLimit": 57669236,
+    "Committed_AS": 75158452,
+    "VmallocTotal": 34359738367,
+    "VmallocUsed": 175708,
+    "VmallocChunk": 0,
+    "Percpu": 22528,
+    "HardwareCorrupted": 0,
+    "AnonHugePages": 0,
+    "ShmemHugePages": 0,
+    "ShmemPmdMapped": 0,
+    "FileHugePages": 673792,
+    "FilePmdMapped": 0,
+    "CmaTotal": 0,
+    "CmaFree": 0,
+    "Unaccepted": 0,
+    "Balloon": 0,
+    "GPUActive": 1177028,
+    "GPUReclaim": 807516,
+    "HugePages_Total": 0,
+    "HugePages_Free": 0,
+    "HugePages_Rsvd": 0,
+    "HugePages_Surp": 0,
+    "Hugepagesize": 2048,
+    "Hugetlb": 0,
+    "DirectMap4k": 94852856,
+    "DirectMap2M": 5509120,
+    "DirectMap1G": 0
+  },
+  "pressure": {
+    "cpu": "some avg10=0.00 avg60=0.00 avg300=0.00 total=1883868968\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0",
+    "memory": "some avg10=0.00 avg60=0.07 avg300=0.02 total=169075346\nfull avg10=0.00 avg60=0.07 avg300=0.02 total=160721165",
+    "io": "some avg10=77.74 avg60=74.83 avg300=75.76 total=134239047827\nfull avg10=76.54 avg60=73.38 avg300=74.33 total=127356937512"
+  },
+  "zram": {
+    "original_bytes": 8477155328,
+    "compressed_bytes": 3612966299,
+    "physical_total_bytes": 3696361472
+  },
+  "process_groups": {
+    "chrome": {
+      "processes": 34,
+      "pss_readable_processes": 34,
+      "pss_kib": 1953193,
+      "rss_kib": 5672668,
+      "swap_pss_kib": 0
+    },
+    "obsidian": {
+      "processes": 16,
+      "pss_readable_processes": 16,
+      "pss_kib": 1380750,
+      "rss_kib": 2851396,
+      "swap_pss_kib": 1472
+    },
+    "codex": {
+      "processes": 9,
+      "pss_readable_processes": 9,
+      "pss_kib": 1135980,
+      "rss_kib": 1718268,
+      "swap_pss_kib": 97492
+    },
+    "hermes": {
+      "processes": 2,
+      "pss_readable_processes": 2,
+      "pss_kib": 1092567,
+      "rss_kib": 1119772,
+      "swap_pss_kib": 136252
+    },
+    "ChatGPT": {
+      "processes": 13,
+      "pss_readable_processes": 13,
+      "pss_kib": 786989,
+      "rss_kib": 1179268,
+      "swap_pss_kib": 309423
+    },
+    "hermes-tools-mc": {
+      "processes": 5,
+      "pss_readable_processes": 5,
+      "pss_kib": 728382,
+      "rss_kib": 850220,
+      "swap_pss_kib": 0
+    },
+    "claude": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 480805,
+      "rss_kib": 483508,
+      "swap_pss_kib": 61524
+    },
+    "python": {
+      "processes": 9,
+      "pss_readable_processes": 9,
+      "pss_kib": 294990,
+      "rss_kib": 361156,
+      "swap_pss_kib": 244208
+    },
+    "konsole": {
+      "processes": 5,
+      "pss_readable_processes": 5,
+      "pss_kib": 286959,
+      "rss_kib": 789968,
+      "swap_pss_kib": 4
+    },
+    "plasmashell": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 267541,
+      "rss_kib": 350924,
+      "swap_pss_kib": 165764
+    },
+    "pi": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 176191,
+      "rss_kib": 180760,
+      "swap_pss_kib": 2820
+    },
+    "ghostty": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 144470,
+      "rss_kib": 173040,
+      "swap_pss_kib": 23756
+    },
+    "podman": {
+      "processes": 5,
+      "pss_readable_processes": 5,
+      "pss_kib": 123762,
+      "rss_kib": 199856,
+      "swap_pss_kib": 10380
+    },
+    "drkonqi-coredum": {
+      "processes": 13,
+      "pss_readable_processes": 13,
+      "pss_kib": 112318,
+      "rss_kib": 354696,
+      "swap_pss_kib": 1956
+    },
+    "hunk": {
+      "processes": 2,
+      "pss_readable_processes": 2,
+      "pss_kib": 105218,
+      "rss_kib": 127084,
+      "swap_pss_kib": 129180
+    },
+    "krunner": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 90650,
+      "rss_kib": 200700,
+      "swap_pss_kib": 0
+    },
+    "codex-code-mode": {
+      "processes": 8,
+      "pss_readable_processes": 8,
+      "pss_kib": 90174,
+      "rss_kib": 171476,
+      "swap_pss_kib": 6156
+    },
+    "nvim": {
+      "processes": 2,
+      "pss_readable_processes": 2,
+      "pss_kib": 88898,
+      "rss_kib": 92788,
+      "swap_pss_kib": 4064
+    },
+    "bash": {
+      "processes": 44,
+      "pss_readable_processes": 44,
+      "pss_kib": 84599,
+      "rss_kib": 155656,
+      "swap_pss_kib": 132008
+    },
+    "herdr": {
+      "processes": 2,
+      "pss_readable_processes": 2,
+      "pss_kib": 59904,
+      "rss_kib": 63448,
+      "swap_pss_kib": 6360
+    },
+    "p11-kit-remote": {
+      "processes": 4,
+      "pss_readable_processes": 4,
+      "pss_kib": 57953,
+      "rss_kib": 67452,
+      "swap_pss_kib": 11224
+    },
+    "plasma-keyboard": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 54329,
+      "rss_kib": 108932,
+      "swap_pss_kib": 34928
+    },
+    "jqp": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 40897,
+      "rss_kib": 40972,
+      "swap_pss_kib": 1744
+    },
+    "gh-dash": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 30472,
+      "rss_kib": 30488,
+      "swap_pss_kib": 1376
+    },
+    "xdg-desktop-por": {
+      "processes": 3,
+      "pss_readable_processes": 3,
+      "pss_kib": 27396,
+      "rss_kib": 48676,
+      "swap_pss_kib": 60
+    },
+    "lazygit": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 22059,
+      "rss_kib": 22976,
+      "swap_pss_kib": 616
+    },
+    "kded6": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 21320,
+      "rss_kib": 44404,
+      "swap_pss_kib": 100
+    },
+    "podman-tui": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 18709,
+      "rss_kib": 18788,
+      "swap_pss_kib": 3012
+    },
+    "xwaylandvideobr": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 18401,
+      "rss_kib": 34400,
+      "swap_pss_kib": 5400
+    },
+    "DiscoverNotifie": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 17781,
+      "rss_kib": 35084,
+      "swap_pss_kib": 44
+    },
+    "toolbox": {
+      "processes": 4,
+      "pss_readable_processes": 4,
+      "pss_kib": 16457,
+      "rss_kib": 22452,
+      "swap_pss_kib": 3936
+    },
+    "node_repl": {
+      "processes": 6,
+      "pss_readable_processes": 6,
+      "pss_kib": 14938,
+      "rss_kib": 46164,
+      "swap_pss_kib": 1144
+    },
+    "python3": {
+      "processes": 5,
+      "pss_readable_processes": 5,
+      "pss_kib": 14167,
+      "rss_kib": 22312,
+      "swap_pss_kib": 33092
+    },
+    "gh": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 13337,
+      "rss_kib": 13416,
+      "swap_pss_kib": 7132
+    },
+    "kdeconnectd": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 12176,
+      "rss_kib": 21728,
+      "swap_pss_kib": 0
+    },
+    "Xwayland": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 11499,
+      "rss_kib": 24416,
+      "swap_pss_kib": 43020
+    },
+    "wireplumber": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 11483,
+      "rss_kib": 17472,
+      "swap_pss_kib": 0
+    },
+    "pipewire-pulse": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 11460,
+      "rss_kib": 16368,
+      "swap_pss_kib": 100
+    },
+    "org_kde_powerde": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 10497,
+      "rss_kib": 23972,
+      "swap_pss_kib": 40
+    },
+    "yazi": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 10482,
+      "rss_kib": 12296,
+      "swap_pss_kib": 8092
+    },
+    "ksecretd": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 9775,
+      "rss_kib": 22872,
+      "swap_pss_kib": 0
+    },
+    "pipewire": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 9708,
+      "rss_kib": 13924,
+      "swap_pss_kib": 0
+    },
+    "kwalletd6": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 8963,
+      "rss_kib": 19136,
+      "swap_pss_kib": 0
+    },
+    "plasma-browser-": {
+      "processes": 2,
+      "pss_readable_processes": 2,
+      "pss_kib": 8637,
+      "rss_kib": 37356,
+      "swap_pss_kib": 16644
+    },
+    "baloorunner": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 7925,
+      "rss_kib": 19280,
+      "swap_pss_kib": 184
+    },
+    "cua-driver": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 7584,
+      "rss_kib": 10584,
+      "swap_pss_kib": 11388
+    },
+    "ksmserver": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 7400,
+      "rss_kib": 15788,
+      "swap_pss_kib": 116
+    },
+    "kaccess": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 7304,
+      "rss_kib": 16204,
+      "swap_pss_kib": 140
+    },
+    "kactivitymanage": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 6886,
+      "rss_kib": 20740,
+      "swap_pss_kib": 40
+    },
+    "flatpak-spawn": {
+      "processes": 5,
+      "pss_readable_processes": 5,
+      "pss_kib": 6530,
+      "rss_kib": 30952,
+      "swap_pss_kib": 0
+    },
+    "baloo_file": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 5684,
+      "rss_kib": 12584,
+      "swap_pss_kib": 96
+    },
+    "btm": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 5360,
+      "rss_kib": 6128,
+      "swap_pss_kib": 324
+    },
+    "startplasma-way": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 4944,
+      "rss_kib": 5020,
+      "swap_pss_kib": 0
+    },
+    "dbus-broker": {
+      "processes": 2,
+      "pss_readable_processes": 2,
+      "pss_kib": 4715,
+      "rss_kib": 7520,
+      "swap_pss_kib": 0
+    },
+    "bwrap": {
+      "processes": 21,
+      "pss_readable_processes": 21,
+      "pss_kib": 4001,
+      "rss_kib": 42876,
+      "swap_pss_kib": 168
+    },
+    "kunifiedpush-di": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 3360,
+      "rss_kib": 10524,
+      "swap_pss_kib": 136
+    },
+    "xembedsniproxy": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 3200,
+      "rss_kib": 10276,
+      "swap_pss_kib": 28
+    },
+    "gmenudbusmenupr": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 3184,
+      "rss_kib": 9720,
+      "swap_pss_kib": 36
+    },
+    "chrome_crashpad": {
+      "processes": 4,
+      "pss_readable_processes": 4,
+      "pss_kib": 3142,
+      "rss_kib": 15528,
+      "swap_pss_kib": 0
+    },
+    "tv": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 3043,
+      "rss_kib": 4036,
+      "swap_pss_kib": 4280
+    },
+    "codex-linux-san": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 2994,
+      "rss_kib": 3032,
+      "swap_pss_kib": 2308
+    },
+    "xdg-dbus-proxy": {
+      "processes": 4,
+      "pss_readable_processes": 4,
+      "pss_kib": 2729,
+      "rss_kib": 25576,
+      "swap_pss_kib": 4
+    },
+    "conmon": {
+      "processes": 8,
+      "pss_readable_processes": 8,
+      "pss_kib": 1727,
+      "rss_kib": 10524,
+      "swap_pss_kib": 592
+    },
+    "tuicr": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 1718,
+      "rss_kib": 2300,
+      "swap_pss_kib": 2024
+    },
+    "uresourced": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 1538,
+      "rss_kib": 6088,
+      "swap_pss_kib": 4
+    },
+    "pasta.avx2": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 1525,
+      "rss_kib": 2304,
+      "swap_pss_kib": 11332
+    },
+    "cat": {
+      "processes": 8,
+      "pss_readable_processes": 8,
+      "pss_kib": 1387,
+      "rss_kib": 16604,
+      "swap_pss_kib": 0
+    },
+    "nu": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 1314,
+      "rss_kib": 1872,
+      "swap_pss_kib": 27260
+    },
+    "xdg-document-po": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 1190,
+      "rss_kib": 4488,
+      "swap_pss_kib": 0
+    },
+    "flatpak-portal": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 1023,
+      "rss_kib": 5148,
+      "swap_pss_kib": 1216
+    },
+    "dbus-broker-lau": {
+      "processes": 2,
+      "pss_readable_processes": 2,
+      "pss_kib": 1015,
+      "rss_kib": 4108,
+      "swap_pss_kib": 0
+    },
+    "browser_crashpa": {
+      "processes": 2,
+      "pss_readable_processes": 2,
+      "pss_kib": 911,
+      "rss_kib": 1752,
+      "swap_pss_kib": 504
+    },
+    "obexd": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 901,
+      "rss_kib": 2684,
+      "swap_pss_kib": 4
+    },
+    "agent": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 856,
+      "rss_kib": 996,
+      "swap_pss_kib": 0
+    },
+    "at-spi2-registr": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 847,
+      "rss_kib": 2892,
+      "swap_pss_kib": 0
+    },
+    "at-spi-bus-laun": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 821,
+      "rss_kib": 4012,
+      "swap_pss_kib": 4
+    },
+    "bacon": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 804,
+      "rss_kib": 1448,
+      "swap_pss_kib": 1892
+    },
+    "tmux: server": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 731,
+      "rss_kib": 1120,
+      "swap_pss_kib": 380
+    },
+    "mpris-proxy": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 666,
+      "rss_kib": 2588,
+      "swap_pss_kib": 0
+    },
+    "xdg-permission-": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 629,
+      "rss_kib": 3624,
+      "swap_pss_kib": 4
+    },
+    "dconf-service": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 607,
+      "rss_kib": 3796,
+      "swap_pss_kib": 0
+    },
+    "flatpak-session": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 547,
+      "rss_kib": 4144,
+      "swap_pss_kib": 196
+    },
+    "xsettingsd": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 388,
+      "rss_kib": 460,
+      "swap_pss_kib": 0
+    },
+    "p11-kit-server": {
+      "processes": 2,
+      "pss_readable_processes": 2,
+      "pss_kib": 292,
+      "rss_kib": 928,
+      "swap_pss_kib": 200
+    },
+    "node": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 221,
+      "rss_kib": 552,
+      "swap_pss_kib": 11044
+    },
+    "sleep": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 148,
+      "rss_kib": 156,
+      "swap_pss_kib": 12
+    },
+    "catatonit": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 60,
+      "rss_kib": 64,
+      "swap_pss_kib": 0
+    },
+    "kwin_wayland_wr": {
+      "processes": 1,
+      "pss_readable_processes": 1,
+      "pss_kib": 20,
+      "rss_kib": 96,
+      "swap_pss_kib": 2180
+    },
+    "systemd": {
+      "processes": 1,
+      "pss_readable_processes": 0,
+      "pss_kib": 0,
+      "rss_kib": 13576,
+      "swap_pss_kib": 0
+    },
+    "(sd-pam)": {
+      "processes": 1,
+      "pss_readable_processes": 0,
+      "pss_kib": 0,
+      "rss_kib": 1580,
+      "swap_pss_kib": 0
+    },
+    "kwin_wayland": {
+      "processes": 1,
+      "pss_readable_processes": 0,
+      "pss_kib": 0,
+      "rss_kib": 527608,
+      "swap_pss_kib": 0
+    },
+    "polkit-kde-auth": {
+      "processes": 1,
+      "pss_readable_processes": 0,
+      "pss_kib": 0,
+      "rss_kib": 185024,
+      "swap_pss_kib": 0
+    },
+    "ssh-agent": {
+      "processes": 1,
+      "pss_readable_processes": 0,
+      "pss_kib": 0,
+      "rss_kib": 3272,
+      "swap_pss_kib": 0
+    },
+    "fusermount3": {
+      "processes": 1,
+      "pss_readable_processes": 0,
+      "pss_kib": 0,
+      "rss_kib": 188,
+      "swap_pss_kib": 0
+    },
+    "zypak-sandbox": {
+      "processes": 4,
+      "pss_readable_processes": 0,
+      "pss_kib": 0,
+      "rss_kib": 0,
+      "swap_pss_kib": 0
+    }
+  },
+  "top_processes": [
+    {
+      "pid": 4919,
+      "ppid": 4696,
+      "name": "hermes",
+      "rss_kib": 1014952,
+      "swap_kib": 130496,
+      "pss_kib": 999139,
+      "pss_anon_kib": 992108,
+      "pss_file_kib": 7031,
+      "pss_shmem_kib": 0,
+      "swappss_kib": 130496,
+      "private_dirty_kib": 992108,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/user.slice/libpod-63d3c03b0b779632a4d2d8012a644517f09ff623ddc32855a6e0d8b7e4a09eda.scope/container"
+    },
+    {
+      "pid": 1475830,
+      "ppid": 3495,
+      "name": "claude",
+      "rss_kib": 483508,
+      "swap_kib": 61524,
+      "pss_kib": 480805,
+      "pss_anon_kib": 451276,
+      "pss_file_kib": 29529,
+      "pss_shmem_kib": 0,
+      "swappss_kib": 61524,
+      "private_dirty_kib": 451276,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/user.slice/libpod-63d3c03b0b779632a4d2d8012a644517f09ff623ddc32855a6e0d8b7e4a09eda.scope/container"
+    },
+    {
+      "pid": 1386850,
+      "ppid": 1386686,
+      "name": "chrome",
+      "rss_kib": 525792,
+      "swap_kib": 0,
+      "pss_kib": 313399,
+      "pss_anon_kib": 219464,
+      "pss_file_kib": 75011,
+      "pss_shmem_kib": 18924,
+      "swappss_kib": 0,
+      "private_dirty_kib": 234944,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-flatpak-com.google.Chrome-3514571131.scope"
+    },
+    {
+      "pid": 3791616,
+      "ppid": 2577722,
+      "name": "codex",
+      "rss_kib": 305284,
+      "swap_kib": 45240,
+      "pss_kib": 305179,
+      "pss_anon_kib": 183360,
+      "pss_file_kib": 121819,
+      "pss_shmem_kib": 0,
+      "swappss_kib": 45240,
+      "private_dirty_kib": 183360,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/user.slice/libpod-63d3c03b0b779632a4d2d8012a644517f09ff623ddc32855a6e0d8b7e4a09eda.scope/container"
+    },
+    {
+      "pid": 2692,
+      "ppid": 2352,
+      "name": "plasmashell",
+      "rss_kib": 350924,
+      "swap_kib": 165764,
+      "pss_kib": 267541,
+      "pss_anon_kib": 236328,
+      "pss_file_kib": 30998,
+      "pss_shmem_kib": 215,
+      "swappss_kib": 165764,
+      "private_dirty_kib": 236332,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/session.slice/plasma-plasmashell.service"
+    },
+    {
+      "pid": 3936630,
+      "ppid": 3936629,
+      "name": "chrome",
+      "rss_kib": 452476,
+      "swap_kib": 0,
+      "pss_kib": 239300,
+      "pss_anon_kib": 143324,
+      "pss_file_kib": 75076,
+      "pss_shmem_kib": 20900,
+      "swappss_kib": 0,
+      "private_dirty_kib": 160640,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-flatpak-com.google.Chrome-4188893414.scope"
+    },
+    {
+      "pid": 1671638,
+      "ppid": 1669766,
+      "name": "ChatGPT",
+      "rss_kib": 279096,
+      "swap_kib": 53120,
+      "pss_kib": 227436,
+      "pss_anon_kib": 215425,
+      "pss_file_kib": 10984,
+      "pss_shmem_kib": 1027,
+      "swappss_kib": 41362,
+      "private_dirty_kib": 215480,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/flatpak-session-helper.service"
+    },
+    {
+      "pid": 3984838,
+      "ppid": 1523885,
+      "name": "obsidian",
+      "rss_kib": 344940,
+      "swap_kib": 0,
+      "pss_kib": 221340,
+      "pss_anon_kib": 195344,
+      "pss_file_kib": 19357,
+      "pss_shmem_kib": 6638,
+      "swappss_kib": 0,
+      "private_dirty_kib": 200120,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-flatpak-md.obsidian.Obsidian-3912366327.scope"
+    },
+    {
+      "pid": 1671643,
+      "ppid": 1669766,
+      "name": "ChatGPT",
+      "rss_kib": 276248,
+      "swap_kib": 20816,
+      "pss_kib": 219555,
+      "pss_anon_kib": 205570,
+      "pss_file_kib": 13171,
+      "pss_shmem_kib": 813,
+      "swappss_kib": 9097,
+      "private_dirty_kib": 205672,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/flatpak-session-helper.service"
+    },
+    {
+      "pid": 1483729,
+      "ppid": 1387343,
+      "name": "chrome",
+      "rss_kib": 381240,
+      "swap_kib": 0,
+      "pss_kib": 218706,
+      "pss_anon_kib": 200604,
+      "pss_file_kib": 12884,
+      "pss_shmem_kib": 5217,
+      "swappss_kib": 0,
+      "private_dirty_kib": 199612,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-flatpak-com.google.Chrome-725773659.scope"
+    },
+    {
+      "pid": 1527623,
+      "ppid": 1523885,
+      "name": "obsidian",
+      "rss_kib": 283712,
+      "swap_kib": 272,
+      "pss_kib": 185426,
+      "pss_anon_kib": 168040,
+      "pss_file_kib": 10874,
+      "pss_shmem_kib": 6512,
+      "swappss_kib": 272,
+      "private_dirty_kib": 172844,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-flatpak-md.obsidian.Obsidian-3912366327.scope"
+    },
+    {
+      "pid": 4105077,
+      "ppid": 4691,
+      "name": "pi",
+      "rss_kib": 180760,
+      "swap_kib": 2820,
+      "pss_kib": 176191,
+      "pss_anon_kib": 122072,
+      "pss_file_kib": 54119,
+      "pss_shmem_kib": 0,
+      "swappss_kib": 2820,
+      "private_dirty_kib": 122088,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/user.slice/libpod-63d3c03b0b779632a4d2d8012a644517f09ff623ddc32855a6e0d8b7e4a09eda.scope/container"
+    },
+    {
+      "pid": 4054886,
+      "ppid": 4042580,
+      "name": "obsidian",
+      "rss_kib": 296536,
+      "swap_kib": 0,
+      "pss_kib": 176150,
+      "pss_anon_kib": 152044,
+      "pss_file_kib": 18322,
+      "pss_shmem_kib": 5784,
+      "swappss_kib": 0,
+      "private_dirty_kib": 156760,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-flatpak-md.obsidian.Obsidian-3937077660.scope"
+    },
+    {
+      "pid": 3926127,
+      "ppid": 3926011,
+      "name": "hermes-tools-mc",
+      "rss_kib": 186984,
+      "swap_kib": 0,
+      "pss_kib": 161768,
+      "pss_anon_kib": 157488,
+      "pss_file_kib": 4280,
+      "pss_shmem_kib": 0,
+      "swappss_kib": 0,
+      "private_dirty_kib": 157488,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/user.slice/libpod-63d3c03b0b779632a4d2d8012a644517f09ff623ddc32855a6e0d8b7e4a09eda.scope/container"
+    },
+    {
+      "pid": 1583959,
+      "ppid": 3769,
+      "name": "codex",
+      "rss_kib": 261248,
+      "swap_kib": 0,
+      "pss_kib": 148348,
+      "pss_anon_kib": 119928,
+      "pss_file_kib": 28420,
+      "pss_shmem_kib": 0,
+      "swappss_kib": 0,
+      "private_dirty_kib": 119928,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/user.slice/libpod-63d3c03b0b779632a4d2d8012a644517f09ff623ddc32855a6e0d8b7e4a09eda.scope/container"
+    },
+    {
+      "pid": 4001402,
+      "ppid": 1562917,
+      "name": "codex",
+      "rss_kib": 264488,
+      "swap_kib": 0,
+      "pss_kib": 146376,
+      "pss_anon_kib": 115580,
+      "pss_file_kib": 30796,
+      "pss_shmem_kib": 0,
+      "swappss_kib": 0,
+      "private_dirty_kib": 115580,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/user.slice/libpod-63d3c03b0b779632a4d2d8012a644517f09ff623ddc32855a6e0d8b7e4a09eda.scope/container"
+    },
+    {
+      "pid": 9062,
+      "ppid": 2352,
+      "name": "ghostty",
+      "rss_kib": 173040,
+      "swap_kib": 23756,
+      "pss_kib": 144470,
+      "pss_anon_kib": 126532,
+      "pss_file_kib": 17847,
+      "pss_shmem_kib": 90,
+      "swappss_kib": 23756,
+      "private_dirty_kib": 126616,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-com.mitchellh.ghostty.service"
+    },
+    {
+      "pid": 3989190,
+      "ppid": 3989064,
+      "name": "hermes-tools-mc",
+      "rss_kib": 166528,
+      "swap_kib": 0,
+      "pss_kib": 142438,
+      "pss_anon_kib": 138664,
+      "pss_file_kib": 3774,
+      "pss_shmem_kib": 0,
+      "swappss_kib": 0,
+      "private_dirty_kib": 138664,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/user.slice/libpod-63d3c03b0b779632a4d2d8012a644517f09ff623ddc32855a6e0d8b7e4a09eda.scope/container"
+    },
+    {
+      "pid": 4001490,
+      "ppid": 4001402,
+      "name": "hermes-tools-mc",
+      "rss_kib": 166524,
+      "swap_kib": 0,
+      "pss_kib": 142407,
+      "pss_anon_kib": 138668,
+      "pss_file_kib": 3739,
+      "pss_shmem_kib": 0,
+      "swappss_kib": 0,
+      "private_dirty_kib": 138668,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/user.slice/libpod-63d3c03b0b779632a4d2d8012a644517f09ff623ddc32855a6e0d8b7e4a09eda.scope/container"
+    },
+    {
+      "pid": 1584099,
+      "ppid": 1583959,
+      "name": "hermes-tools-mc",
+      "rss_kib": 165292,
+      "swap_kib": 0,
+      "pss_kib": 141187,
+      "pss_anon_kib": 137336,
+      "pss_file_kib": 3851,
+      "pss_shmem_kib": 0,
+      "swappss_kib": 0,
+      "private_dirty_kib": 137336,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/user.slice/libpod-63d3c03b0b779632a4d2d8012a644517f09ff623ddc32855a6e0d8b7e4a09eda.scope/container"
+    },
+    {
+      "pid": 4042674,
+      "ppid": 4042580,
+      "name": "obsidian",
+      "rss_kib": 262252,
+      "swap_kib": 0,
+      "pss_kib": 140719,
+      "pss_anon_kib": 118036,
+      "pss_file_kib": 17085,
+      "pss_shmem_kib": 5598,
+      "swappss_kib": 0,
+      "private_dirty_kib": 122728,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-flatpak-md.obsidian.Obsidian-3937077660.scope"
+    },
+    {
+      "pid": 4030568,
+      "ppid": 4030433,
+      "name": "hermes-tools-mc",
+      "rss_kib": 164892,
+      "swap_kib": 0,
+      "pss_kib": 140582,
+      "pss_anon_kib": 136712,
+      "pss_file_kib": 3870,
+      "pss_shmem_kib": 0,
+      "swappss_kib": 0,
+      "private_dirty_kib": 136712,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/user.slice/libpod-63d3c03b0b779632a4d2d8012a644517f09ff623ddc32855a6e0d8b7e4a09eda.scope/container"
+    },
+    {
+      "pid": 4044464,
+      "ppid": 4042580,
+      "name": "obsidian",
+      "rss_kib": 259632,
+      "swap_kib": 0,
+      "pss_kib": 139309,
+      "pss_anon_kib": 116100,
+      "pss_file_kib": 17902,
+      "pss_shmem_kib": 5306,
+      "swappss_kib": 0,
+      "private_dirty_kib": 120808,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-flatpak-md.obsidian.Obsidian-3937077660.scope"
+    },
+    {
+      "pid": 3989064,
+      "ppid": 4686,
+      "name": "codex",
+      "rss_kib": 253824,
+      "swap_kib": 0,
+      "pss_kib": 136474,
+      "pss_anon_kib": 106240,
+      "pss_file_kib": 30234,
+      "pss_shmem_kib": 0,
+      "swappss_kib": 0,
+      "private_dirty_kib": 106240,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/user.slice/libpod-63d3c03b0b779632a4d2d8012a644517f09ff623ddc32855a6e0d8b7e4a09eda.scope/container"
+    },
+    {
+      "pid": 1673070,
+      "ppid": 1669766,
+      "name": "ChatGPT",
+      "rss_kib": 187992,
+      "swap_kib": 69656,
+      "pss_kib": 133911,
+      "pss_anon_kib": 117230,
+      "pss_file_kib": 15293,
+      "pss_shmem_kib": 1387,
+      "swappss_kib": 57996,
+      "private_dirty_kib": 117040,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/flatpak-session-helper.service"
+    },
+    {
+      "pid": 3926011,
+      "ppid": 4683,
+      "name": "codex",
+      "rss_kib": 248572,
+      "swap_kib": 0,
+      "pss_kib": 132144,
+      "pss_anon_kib": 102248,
+      "pss_file_kib": 29896,
+      "pss_shmem_kib": 0,
+      "swappss_kib": 0,
+      "private_dirty_kib": 102248,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/user.slice/libpod-63d3c03b0b779632a4d2d8012a644517f09ff623ddc32855a6e0d8b7e4a09eda.scope/container"
+    },
+    {
+      "pid": 4042684,
+      "ppid": 4042580,
+      "name": "obsidian",
+      "rss_kib": 253192,
+      "swap_kib": 0,
+      "pss_kib": 131461,
+      "pss_anon_kib": 108476,
+      "pss_file_kib": 17261,
+      "pss_shmem_kib": 5724,
+      "swappss_kib": 0,
+      "private_dirty_kib": 113264,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-flatpak-md.obsidian.Obsidian-3937077660.scope"
+    },
+    {
+      "pid": 1387537,
+      "ppid": 1386916,
+      "name": "chrome",
+      "rss_kib": 255644,
+      "swap_kib": 0,
+      "pss_kib": 131085,
+      "pss_anon_kib": 112752,
+      "pss_file_kib": 17327,
+      "pss_shmem_kib": 1006,
+      "swappss_kib": 0,
+      "private_dirty_kib": 105648,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-flatpak-com.google.Chrome-3514571131.scope"
+    },
+    {
+      "pid": 1669753,
+      "ppid": 2352,
+      "name": "ChatGPT",
+      "rss_kib": 185644,
+      "swap_kib": 107268,
+      "pss_kib": 125400,
+      "pss_anon_kib": 97168,
+      "pss_file_kib": 26742,
+      "pss_shmem_kib": 1489,
+      "swappss_kib": 107268,
+      "private_dirty_kib": 97308,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-org.chromium.Chromium-1669753.scope"
+    },
+    {
+      "pid": 4030433,
+      "ppid": 1563076,
+      "name": "codex",
+      "rss_kib": 242372,
+      "swap_kib": 0,
+      "pss_kib": 125153,
+      "pss_anon_kib": 94972,
+      "pss_file_kib": 30181,
+      "pss_shmem_kib": 0,
+      "swappss_kib": 0,
+      "private_dirty_kib": 94972,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/user.slice/libpod-63d3c03b0b779632a4d2d8012a644517f09ff623ddc32855a6e0d8b7e4a09eda.scope/container"
+    },
+    {
+      "pid": 4075844,
+      "ppid": 1387343,
+      "name": "chrome",
+      "rss_kib": 268652,
+      "swap_kib": 0,
+      "pss_kib": 117161,
+      "pss_anon_kib": 102817,
+      "pss_file_kib": 9194,
+      "pss_shmem_kib": 5149,
+      "swappss_kib": 0,
+      "private_dirty_kib": 102092,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-flatpak-com.google.Chrome-725773659.scope"
+    },
+    {
+      "pid": 1671734,
+      "ppid": 1669753,
+      "name": "codex",
+      "rss_kib": 105144,
+      "swap_kib": 16396,
+      "pss_kib": 105076,
+      "pss_anon_kib": 42664,
+      "pss_file_kib": 62412,
+      "pss_shmem_kib": 0,
+      "swappss_kib": 16396,
+      "private_dirty_kib": 42664,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-org.chromium.Chromium-1669753.scope"
+    },
+    {
+      "pid": 4076050,
+      "ppid": 1387343,
+      "name": "chrome",
+      "rss_kib": 253396,
+      "swap_kib": 0,
+      "pss_kib": 104805,
+      "pss_anon_kib": 87189,
+      "pss_file_kib": 12288,
+      "pss_shmem_kib": 5327,
+      "swappss_kib": 0,
+      "private_dirty_kib": 86544,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-flatpak-com.google.Chrome-725773659.scope"
+    },
+    {
+      "pid": 3806379,
+      "ppid": 3806376,
+      "name": "python",
+      "rss_kib": 99280,
+      "swap_kib": 38480,
+      "pss_kib": 98773,
+      "pss_anon_kib": 98752,
+      "pss_file_kib": 21,
+      "pss_shmem_kib": 0,
+      "swappss_kib": 38480,
+      "private_dirty_kib": 98752,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/user.slice/libpod-63d3c03b0b779632a4d2d8012a644517f09ff623ddc32855a6e0d8b7e4a09eda.scope/container"
+    },
+    {
+      "pid": 957112,
+      "ppid": 904956,
+      "name": "hermes",
+      "rss_kib": 104820,
+      "swap_kib": 5756,
+      "pss_kib": 93428,
+      "pss_anon_kib": 91976,
+      "pss_file_kib": 1452,
+      "pss_shmem_kib": 0,
+      "swappss_kib": 5756,
+      "private_dirty_kib": 91976,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/user.slice/libpod-63d3c03b0b779632a4d2d8012a644517f09ff623ddc32855a6e0d8b7e4a09eda.scope/container"
+    },
+    {
+      "pid": 3791726,
+      "ppid": 3791616,
+      "name": "python",
+      "rss_kib": 93188,
+      "swap_kib": 67872,
+      "pss_kib": 92681,
+      "pss_anon_kib": 92660,
+      "pss_file_kib": 21,
+      "pss_shmem_kib": 0,
+      "swappss_kib": 67872,
+      "private_dirty_kib": 92660,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/user.slice/libpod-63d3c03b0b779632a4d2d8012a644517f09ff623ddc32855a6e0d8b7e4a09eda.scope/container"
+    },
+    {
+      "pid": 328583,
+      "ppid": 2352,
+      "name": "krunner",
+      "rss_kib": 200700,
+      "swap_kib": 0,
+      "pss_kib": 90650,
+      "pss_anon_kib": 53152,
+      "pss_file_kib": 37497,
+      "pss_shmem_kib": 0,
+      "swappss_kib": 0,
+      "private_dirty_kib": 53152,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/background.slice/plasma-krunner.service"
+    },
+    {
+      "pid": 5459,
+      "ppid": 5322,
+      "name": "nvim",
+      "rss_kib": 90004,
+      "swap_kib": 2968,
+      "pss_kib": 87797,
+      "pss_anon_kib": 84592,
+      "pss_file_kib": 3205,
+      "pss_shmem_kib": 0,
+      "swappss_kib": 2968,
+      "private_dirty_kib": 84612,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/user.slice/libpod-63d3c03b0b779632a4d2d8012a644517f09ff623ddc32855a6e0d8b7e4a09eda.scope/container"
+    },
+    {
+      "pid": 4019228,
+      "ppid": 3936679,
+      "name": "chrome",
+      "rss_kib": 220160,
+      "swap_kib": 0,
+      "pss_kib": 85472,
+      "pss_anon_kib": 76085,
+      "pss_file_kib": 8055,
+      "pss_shmem_kib": 1330,
+      "swappss_kib": 0,
+      "private_dirty_kib": 75224,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-flatpak-com.google.Chrome-1451779305.scope"
+    },
+    {
+      "pid": 1523885,
+      "ppid": 1523880,
+      "name": "obsidian",
+      "rss_kib": 209864,
+      "swap_kib": 404,
+      "pss_kib": 80443,
+      "pss_anon_kib": 53996,
+      "pss_file_kib": 19027,
+      "pss_shmem_kib": 7420,
+      "swappss_kib": 404,
+      "private_dirty_kib": 59468,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-flatpak-md.obsidian.Obsidian-3912366327.scope"
+    },
+    {
+      "pid": 373391,
+      "ppid": 373308,
+      "name": "hunk",
+      "rss_kib": 89496,
+      "swap_kib": 102944,
+      "pss_kib": 78201,
+      "pss_anon_kib": 62892,
+      "pss_file_kib": 14773,
+      "pss_shmem_kib": 536,
+      "swappss_kib": 102944,
+      "private_dirty_kib": 63428,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/user.slice/libpod-63d3c03b0b779632a4d2d8012a644517f09ff623ddc32855a6e0d8b7e4a09eda.scope/container"
+    },
+    {
+      "pid": 4042662,
+      "ppid": 4042606,
+      "name": "obsidian",
+      "rss_kib": 176560,
+      "swap_kib": 0,
+      "pss_kib": 77750,
+      "pss_anon_kib": 54752,
+      "pss_file_kib": 21827,
+      "pss_shmem_kib": 1170,
+      "swappss_kib": 0,
+      "private_dirty_kib": 50224,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-flatpak-md.obsidian.Obsidian-3937077660.scope"
+    },
+    {
+      "pid": 4042580,
+      "ppid": 4042571,
+      "name": "obsidian",
+      "rss_kib": 214348,
+      "swap_kib": 0,
+      "pss_kib": 76819,
+      "pss_anon_kib": 40452,
+      "pss_file_kib": 30572,
+      "pss_shmem_kib": 5794,
+      "swappss_kib": 0,
+      "private_dirty_kib": 44772,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-flatpak-md.obsidian.Obsidian-3937077660.scope"
+    },
+    {
+      "pid": 1524965,
+      "ppid": 1524003,
+      "name": "obsidian",
+      "rss_kib": 168708,
+      "swap_kib": 432,
+      "pss_kib": 73828,
+      "pss_anon_kib": 56612,
+      "pss_file_kib": 16409,
+      "pss_shmem_kib": 806,
+      "swappss_kib": 398,
+      "private_dirty_kib": 52060,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-flatpak-md.obsidian.Obsidian-3912366327.scope"
+    },
+    {
+      "pid": 1707742,
+      "ppid": 8681,
+      "name": "konsole",
+      "rss_kib": 181180,
+      "swap_kib": 4,
+      "pss_kib": 68895,
+      "pss_anon_kib": 15800,
+      "pss_file_kib": 7303,
+      "pss_shmem_kib": 45792,
+      "swappss_kib": 4,
+      "private_dirty_kib": 15800,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-org.kde.konsole-1707742.scope/main.scope"
+    },
+    {
+      "pid": 3936711,
+      "ppid": 3936662,
+      "name": "chrome",
+      "rss_kib": 189152,
+      "swap_kib": 0,
+      "pss_kib": 68120,
+      "pss_anon_kib": 48048,
+      "pss_file_kib": 19109,
+      "pss_shmem_kib": 963,
+      "swappss_kib": 0,
+      "private_dirty_kib": 40996,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-flatpak-com.google.Chrome-4188893414.scope"
+    },
+    {
+      "pid": 1479617,
+      "ppid": 1387343,
+      "name": "chrome",
+      "rss_kib": 174680,
+      "swap_kib": 0,
+      "pss_kib": 58906,
+      "pss_anon_kib": 52726,
+      "pss_file_kib": 5656,
+      "pss_shmem_kib": 523,
+      "swappss_kib": 0,
+      "private_dirty_kib": 51708,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-flatpak-com.google.Chrome-725773659.scope"
+    },
+    {
+      "pid": 3966637,
+      "ppid": 8681,
+      "name": "konsole",
+      "rss_kib": 159152,
+      "swap_kib": 0,
+      "pss_kib": 58092,
+      "pss_anon_kib": 17352,
+      "pss_file_kib": 8024,
+      "pss_shmem_kib": 32716,
+      "swappss_kib": 0,
+      "private_dirty_kib": 17352,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-org.kde.konsole-3966637.scope/main.scope"
+    },
+    {
+      "pid": 4094170,
+      "ppid": 1387343,
+      "name": "chrome",
+      "rss_kib": 160280,
+      "swap_kib": 0,
+      "pss_kib": 57165,
+      "pss_anon_kib": 52455,
+      "pss_file_kib": 4305,
+      "pss_shmem_kib": 405,
+      "swappss_kib": 0,
+      "private_dirty_kib": 51460,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-flatpak-com.google.Chrome-725773659.scope"
+    },
+    {
+      "pid": 3442,
+      "ppid": 3439,
+      "name": "herdr",
+      "rss_kib": 58524,
+      "swap_kib": 5748,
+      "pss_kib": 56752,
+      "pss_anon_kib": 48112,
+      "pss_file_kib": 8640,
+      "pss_shmem_kib": 0,
+      "swappss_kib": 5748,
+      "private_dirty_kib": 48112,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/user.slice/libpod-63d3c03b0b779632a4d2d8012a644517f09ff623ddc32855a6e0d8b7e4a09eda.scope/container"
+    }
+  ],
+  "named_mux_processes": [
+    {
+      "pid": 3442,
+      "ppid": 3439,
+      "name": "herdr",
+      "rss_kib": 58524,
+      "swap_kib": 5748,
+      "pss_kib": 56752,
+      "pss_anon_kib": 48112,
+      "pss_file_kib": 8640,
+      "pss_shmem_kib": 0,
+      "swappss_kib": 5748,
+      "private_dirty_kib": 48112,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/user.slice/libpod-63d3c03b0b779632a4d2d8012a644517f09ff623ddc32855a6e0d8b7e4a09eda.scope/container"
+    },
+    {
+      "pid": 9062,
+      "ppid": 2352,
+      "name": "ghostty",
+      "rss_kib": 173040,
+      "swap_kib": 23756,
+      "pss_kib": 144470,
+      "pss_anon_kib": 126532,
+      "pss_file_kib": 17847,
+      "pss_shmem_kib": 90,
+      "swappss_kib": 23756,
+      "private_dirty_kib": 126616,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-com.mitchellh.ghostty.service"
+    },
+    {
+      "pid": 9200,
+      "ppid": 9197,
+      "name": "herdr",
+      "rss_kib": 4924,
+      "swap_kib": 612,
+      "pss_kib": 3152,
+      "pss_anon_kib": 1316,
+      "pss_file_kib": 1836,
+      "pss_shmem_kib": 0,
+      "swappss_kib": 612,
+      "private_dirty_kib": 1316,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/user.slice/libpod-63d3c03b0b779632a4d2d8012a644517f09ff623ddc32855a6e0d8b7e4a09eda.scope/container"
+    },
+    {
+      "pid": 194703,
+      "ppid": 3439,
+      "name": "tmux: server",
+      "rss_kib": 1120,
+      "swap_kib": 380,
+      "pss_kib": 731,
+      "pss_anon_kib": 604,
+      "pss_file_kib": 127,
+      "pss_shmem_kib": 0,
+      "swappss_kib": 380,
+      "private_dirty_kib": 604,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/user.slice/libpod-63d3c03b0b779632a4d2d8012a644517f09ff623ddc32855a6e0d8b7e4a09eda.scope/container"
+    },
+    {
+      "pid": 1707742,
+      "ppid": 8681,
+      "name": "konsole",
+      "rss_kib": 181180,
+      "swap_kib": 4,
+      "pss_kib": 68895,
+      "pss_anon_kib": 15800,
+      "pss_file_kib": 7303,
+      "pss_shmem_kib": 45792,
+      "swappss_kib": 4,
+      "private_dirty_kib": 15800,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-org.kde.konsole-1707742.scope/main.scope"
+    },
+    {
+      "pid": 3932488,
+      "ppid": 2352,
+      "name": "konsole",
+      "rss_kib": 149736,
+      "swap_kib": 0,
+      "pss_kib": 53602,
+      "pss_anon_kib": 15368,
+      "pss_file_kib": 7706,
+      "pss_shmem_kib": 30528,
+      "swappss_kib": 0,
+      "private_dirty_kib": 15368,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-org.kde.konsole-3932488.scope/main.scope"
+    },
+    {
+      "pid": 3932689,
+      "ppid": 2352,
+      "name": "konsole",
+      "rss_kib": 149796,
+      "swap_kib": 0,
+      "pss_kib": 53221,
+      "pss_anon_kib": 15368,
+      "pss_file_kib": 7325,
+      "pss_shmem_kib": 30528,
+      "swappss_kib": 0,
+      "private_dirty_kib": 15368,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-org.kde.konsole-3932689.scope/main.scope"
+    },
+    {
+      "pid": 3932870,
+      "ppid": 2352,
+      "name": "konsole",
+      "rss_kib": 150104,
+      "swap_kib": 0,
+      "pss_kib": 53149,
+      "pss_anon_kib": 15412,
+      "pss_file_kib": 7209,
+      "pss_shmem_kib": 30528,
+      "swappss_kib": 0,
+      "private_dirty_kib": 15412,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-org.kde.konsole-3932870.scope/main.scope"
+    },
+    {
+      "pid": 3966637,
+      "ppid": 8681,
+      "name": "konsole",
+      "rss_kib": 159152,
+      "swap_kib": 0,
+      "pss_kib": 58092,
+      "pss_anon_kib": 17352,
+      "pss_file_kib": 8024,
+      "pss_shmem_kib": 32716,
+      "swappss_kib": 0,
+      "private_dirty_kib": 17352,
+      "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-org.kde.konsole-3966637.scope/main.scope"
+    }
+  ],
+  "cgroups": [
+    {
+      "scope": "libpod-63d3c03b0b779632a4d2d8012a644517f09ff623ddc32855a6e0d8b7e4a09eda.scope",
+      "branch": "user.slice",
+      "current_bytes": 31699218432,
+      "anon_bytes": 3933204480,
+      "file_bytes": 26679820288,
+      "shmem_bytes": 8106610688,
+      "swap_bytes": 7792582656
+    },
+    {
+      "scope": "flatpak-session-helper.service",
+      "branch": "app.slice",
+      "current_bytes": 1019985920,
+      "anon_bytes": 725041152,
+      "file_bytes": 240209920,
+      "shmem_bytes": 10129408,
+      "swap_bytes": 271175680
+    },
+    {
+      "scope": "app-flatpak-com.google.Chrome-3514571131.scope",
+      "branch": "app.slice",
+      "current_bytes": 907206656,
+      "anon_bytes": 397963264,
+      "file_bytes": 474636288,
+      "shmem_bytes": 83759104,
+      "swap_bytes": 0
+    },
+    {
+      "scope": "app-flatpak-md.obsidian.Obsidian-3912366327.scope",
+      "branch": "app.slice",
+      "current_bytes": 826699776,
+      "anon_bytes": 503984128,
+      "file_bytes": 304517120,
+      "shmem_bytes": 39931904,
+      "swap_bytes": 1380352
+    },
+    {
+      "scope": "app-flatpak-com.google.Chrome-725773659.scope",
+      "branch": "app.slice",
+      "current_bytes": 716337152,
+      "anon_bytes": 665505792,
+      "file_bytes": 22724608,
+      "shmem_bytes": 10862592,
+      "swap_bytes": 0
+    },
+    {
+      "scope": "app-flatpak-md.obsidian.Obsidian-3937077660.scope",
+      "branch": "app.slice",
+      "current_bytes": 714199040,
+      "anon_bytes": 622936064,
+      "file_bytes": 68722688,
+      "shmem_bytes": 57987072,
+      "swap_bytes": 0
+    },
+    {
+      "scope": "app-flatpak-com.google.Chrome-4188893414.scope",
+      "branch": "app.slice",
+      "current_bytes": 468119552,
+      "anon_bytes": 252313600,
+      "file_bytes": 188088320,
+      "shmem_bytes": 56414208,
+      "swap_bytes": 0
+    },
+    {
+      "scope": "plasma-plasmashell.service",
+      "branch": "session.slice",
+      "current_bytes": 334442496,
+      "anon_bytes": 241999872,
+      "file_bytes": 82161664,
+      "shmem_bytes": 7684096,
+      "swap_bytes": 169746432
+    },
+    {
+      "scope": "app-org.chromium.Chromium-1669753.scope",
+      "branch": "app.slice",
+      "current_bytes": 313458688,
+      "anon_bytes": 123035648,
+      "file_bytes": 172367872,
+      "shmem_bytes": 7512064,
+      "swap_bytes": 153739264
+    },
+    {
+      "scope": "app-flatpak-com.google.Chrome-1451779305.scope",
+      "branch": "app.slice",
+      "current_bytes": 292859904,
+      "anon_bytes": 246452224,
+      "file_bytes": 23392256,
+      "shmem_bytes": 3055616,
+      "swap_bytes": 0
+    },
+    {
+      "scope": "plasma-kwin_wayland.service",
+      "branch": "session.slice",
+      "current_bytes": 275210240,
+      "anon_bytes": 143609856,
+      "file_bytes": 115130368,
+      "shmem_bytes": 2723840,
+      "swap_bytes": 124174336
+    },
+    {
+      "scope": "flatpak-portal.service",
+      "branch": "app.slice",
+      "current_bytes": 232226816,
+      "anon_bytes": 638976,
+      "file_bytes": 229289984,
+      "shmem_bytes": 28672,
+      "swap_bytes": 1257472
+    },
+    {
+      "scope": "plasma-krunner.service",
+      "branch": "background.slice",
+      "current_bytes": 185085952,
+      "anon_bytes": 54427648,
+      "file_bytes": 126390272,
+      "shmem_bytes": 999424,
+      "swap_bytes": 0
+    },
+    {
+      "scope": "app-com.mitchellh.ghostty.service",
+      "branch": "app.slice",
+      "current_bytes": 156000256,
+      "anon_bytes": 129568768,
+      "file_bytes": 21385216,
+      "shmem_bytes": 241664,
+      "swap_bytes": 24342528
+    },
+    {
+      "scope": "app-org.kde.konsole-1707742.scope",
+      "branch": "app.slice",
+      "current_bytes": 95887360,
+      "anon_bytes": 1556480,
+      "file_bytes": 93782016,
+      "shmem_bytes": 93782016,
+      "swap_bytes": 4096
+    },
+    {
+      "scope": "podman.service",
+      "branch": "app.slice",
+      "current_bytes": 71888896,
+      "anon_bytes": 23105536,
+      "file_bytes": 44224512,
+      "shmem_bytes": 0,
+      "swap_bytes": 3993600
+    },
+    {
+      "scope": "app-org.kde.konsole-3966637.scope",
+      "branch": "app.slice",
+      "current_bytes": 71806976,
+      "anon_bytes": 3141632,
+      "file_bytes": 67096576,
+      "shmem_bytes": 67084288,
+      "swap_bytes": 0
+    },
+    {
+      "scope": "app-org.kde.konsole-3932488.scope",
+      "branch": "app.slice",
+      "current_bytes": 69255168,
+      "anon_bytes": 4210688,
+      "file_bytes": 64622592,
+      "shmem_bytes": 62521344,
+      "swap_bytes": 0
+    },
+    {
+      "scope": "plasma-polkit-agent.service",
+      "branch": "background.slice",
+      "current_bytes": 68800512,
+      "anon_bytes": 61427712,
+      "file_bytes": 5218304,
+      "shmem_bytes": 12288,
+      "swap_bytes": 73728
+    },
+    {
+      "scope": "app-org.kde.konsole-3932870.scope",
+      "branch": "app.slice",
+      "current_bytes": 67825664,
+      "anon_bytes": 4882432,
+      "file_bytes": 62521344,
+      "shmem_bytes": 62521344,
+      "swap_bytes": 0
+    },
+    {
+      "scope": "app-org.kde.konsole-3932689.scope",
+      "branch": "app.slice",
+      "current_bytes": 67198976,
+      "anon_bytes": 4255744,
+      "file_bytes": 62521344,
+      "shmem_bytes": 62521344,
+      "swap_bytes": 0
+    },
+    {
+      "scope": "plasma-kded6.service",
+      "branch": "session.slice",
+      "current_bytes": 29429760,
+      "anon_bytes": 17522688,
+      "file_bytes": 9875456,
+      "shmem_bytes": 0,
+      "swap_bytes": 102400
+    },
+    {
+      "scope": "app-ghostty-surface-transient-473113.scope",
+      "branch": "app.slice",
+      "current_bytes": 28233728,
+      "anon_bytes": 17813504,
+      "file_bytes": 9035776,
+      "shmem_bytes": 0,
+      "swap_bytes": 0
+    },
+    {
+      "scope": "herdr-server.service",
+      "branch": "app.slice",
+      "current_bytes": 21463040,
+      "anon_bytes": 19030016,
+      "file_bytes": 266240,
+      "shmem_bytes": 163840,
+      "swap_bytes": 462848
+    },
+    {
+      "scope": "habitat-reactor.service",
+      "branch": "app.slice",
+      "current_bytes": 19095552,
+      "anon_bytes": 15847424,
+      "file_bytes": 1773568,
+      "shmem_bytes": 0,
+      "swap_bytes": 1961984
+    },
+    {
+      "scope": "app-org.kde.xwaylandvideobridge@autostart.service",
+      "branch": "app.slice",
+      "current_bytes": 19017728,
+      "anon_bytes": 17354752,
+      "file_bytes": 77824,
+      "shmem_bytes": 8192,
+      "swap_bytes": 5529600
+    },
+    {
+      "scope": "app-ghostty-surface-transient-9122.scope",
+      "branch": "app.slice",
+      "current_bytes": 18849792,
+      "anon_bytes": 9617408,
+      "file_bytes": 7606272,
+      "shmem_bytes": 0,
+      "swap_bytes": 8454144
+    },
+    {
+      "scope": "app-org.kde.discover.notifier@autostart.service",
+      "branch": "app.slice",
+      "current_bytes": 17285120,
+      "anon_bytes": 15175680,
+      "file_bytes": 1028096,
+      "shmem_bytes": 0,
+      "swap_bytes": 45056
+    },
+    {
+      "scope": "app-org.kde.konsole@57d280e5ed4f47b2af069a721bcffb2d.service",
+      "branch": "app.slice",
+      "current_bytes": 16982016,
+      "anon_bytes": 15945728,
+      "file_bytes": 77824,
+      "shmem_bytes": 0,
+      "swap_bytes": 0
+    },
+    {
+      "scope": "app-org.kde.konsole@f286675cdb684f4585311ddb220f79ea.service",
+      "branch": "app.slice",
+      "current_bytes": 16846848,
+      "anon_bytes": 15896576,
+      "file_bytes": 0,
+      "shmem_bytes": 0,
+      "swap_bytes": 0
+    },
+    {
+      "scope": "app-org.kde.konsole@a70bf7f706e44683b1287771a971985c.service",
+      "branch": "app.slice",
+      "current_bytes": 16281600,
+      "anon_bytes": 15319040,
+      "file_bytes": 0,
+      "shmem_bytes": 0,
+      "swap_bytes": 0
+    },
+    {
+      "scope": "plasma-xdg-desktop-portal-kde.service",
+      "branch": "session.slice",
+      "current_bytes": 16142336,
+      "anon_bytes": 14098432,
+      "file_bytes": 1273856,
+      "shmem_bytes": 0,
+      "swap_bytes": 0
+    },
+    {
+      "scope": "pipewire-pulse.service",
+      "branch": "session.slice",
+      "current_bytes": 13869056,
+      "anon_bytes": 11063296,
+      "file_bytes": 2400256,
+      "shmem_bytes": 4096,
+      "swap_bytes": 102400
+    },
+    {
+      "scope": "app-org.kde.kdeconnect.daemon@autostart.service",
+      "branch": "app.slice",
+      "current_bytes": 12910592,
+      "anon_bytes": 11120640,
+      "file_bytes": 1060864,
+      "shmem_bytes": 0,
+      "swap_bytes": 0
+    },
+    {
+      "scope": "drkonqi-coredump-launcher@13-22-2638854_23580316-0.service",
+      "branch": "app.slice",
+      "current_bytes": 12857344,
+      "anon_bytes": 7897088,
+      "file_bytes": 4292608,
+      "shmem_bytes": 0,
+      "swap_bytes": 0
+    },
+    {
+      "scope": "drkonqi-coredump-launcher@12-21-2638860_23568380-0.service",
+      "branch": "app.slice",
+      "current_bytes": 12406784,
+      "anon_bytes": 7725056,
+      "file_bytes": 4046848,
+      "shmem_bytes": 0,
+      "swap_bytes": 0
+    },
+    {
+      "scope": "app-flatpak-md.obsidian.Obsidian-363174938.scope",
+      "branch": "app.slice",
+      "current_bytes": 12075008,
+      "anon_bytes": 10661888,
+      "file_bytes": 114688,
+      "shmem_bytes": 106496,
+      "swap_bytes": 0
+    },
+    {
+      "scope": "plasma-powerdevil.service",
+      "branch": "background.slice",
+      "current_bytes": 12025856,
+      "anon_bytes": 7995392,
+      "file_bytes": 2863104,
+      "shmem_bytes": 0,
+      "swap_bytes": 40960
+    },
+    {
+      "scope": "wireplumber.service",
+      "branch": "session.slice",
+      "current_bytes": 11931648,
+      "anon_bytes": 8613888,
+      "file_bytes": 2535424,
+      "shmem_bytes": 8192,
+      "swap_bytes": 0
+    },
+    {
+      "scope": "app-flatpak-md.obsidian.Obsidian-1710201038.scope",
+      "branch": "app.slice",
+      "current_bytes": 11542528,
+      "anon_bytes": 10231808,
+      "file_bytes": 20480,
+      "shmem_bytes": 20480,
+      "swap_bytes": 507904
+    },
+    {
+      "scope": "pipewire.service",
+      "branch": "session.slice",
+      "current_bytes": 10756096,
+      "anon_bytes": 7757824,
+      "file_bytes": 2502656,
+      "shmem_bytes": 36864,
+      "swap_bytes": 0
+    },
+    {
+      "scope": "drkonqi-coredump-launcher@11-36865-2830516_19590111-0.service",
+      "branch": "app.slice",
+      "current_bytes": 10694656,
+      "anon_bytes": 8208384,
+      "file_bytes": 1814528,
+      "shmem_bytes": 0,
+      "swap_bytes": 0
+    },
+    {
+      "scope": "drkonqi-coredump-launcher@14-23-2638835_23580315-0.service",
+      "branch": "app.slice",
+      "current_bytes": 9863168,
+      "anon_bytes": 7798784,
+      "file_bytes": 1425408,
+      "shmem_bytes": 0,
+      "swap_bytes": 0
+    },
+    {
+      "scope": "app-md.obsidian.Obsidian@a324846718c84ff5a69f12c42ece585f.service",
+      "branch": "app.slice",
+      "current_bytes": 9633792,
+      "anon_bytes": 0,
+      "file_bytes": 9383936,
+      "shmem_bytes": 8192,
+      "swap_bytes": 0
+    },
+    {
+      "scope": "dbus-:1.3-org.kde.kwalletd6@0.service",
+      "branch": "app.slice",
+      "current_bytes": 9232384,
+      "anon_bytes": 7876608,
+      "file_bytes": 557056,
+      "shmem_bytes": 0,
+      "swap_bytes": 0
+    },
+    {
+      "scope": "drkonqi-coredump-launcher@15-16387-2793919_23785475-0.service",
+      "branch": "app.slice",
+      "current_bytes": 8364032,
+      "anon_bytes": 7729152,
+      "file_bytes": 0,
+      "shmem_bytes": 0,
+      "swap_bytes": 208896
+    },
+    {
+      "scope": "drkonqi-coredump-launcher@10-4221-833347_13431758-0.service",
+      "branch": "app.slice",
+      "current_bytes": 8355840,
+      "anon_bytes": 7716864,
+      "file_bytes": 0,
+      "shmem_bytes": 0,
+      "swap_bytes": 0
+    },
+    {
+      "scope": "drkonqi-coredump-launcher@9-4220-833344_13408961-0.service",
+      "branch": "app.slice",
+      "current_bytes": 8261632,
+      "anon_bytes": 7639040,
+      "file_bytes": 0,
+      "shmem_bytes": 0,
+      "swap_bytes": 53248
+    },
+    {
+      "scope": "drkonqi-coredump-launcher@6-8196-806472_13384109-0.service",
+      "branch": "app.slice",
+      "current_bytes": 8232960,
+      "anon_bytes": 7598080,
+      "file_bytes": 0,
+      "shmem_bytes": 0,
+      "swap_bytes": 442368
+    },
+    {
+      "scope": "drkonqi-coredump-launcher@8-8198-806575_13402714-0.service",
+      "branch": "app.slice",
+      "current_bytes": 8228864,
+      "anon_bytes": 7602176,
+      "file_bytes": 0,
+      "shmem_bytes": 0,
+      "swap_bytes": 425984
+    },
+    {
+      "scope": "plasma-ksmserver.service",
+      "branch": "session.slice",
+      "current_bytes": 8216576,
+      "anon_bytes": 7004160,
+      "file_bytes": 544768,
+      "shmem_bytes": 8192,
+      "swap_bytes": 118784
+    },
+    {
+      "scope": "drkonqi-coredump-launcher@3-16385-1600911_9956592-0.service",
+      "branch": "app.slice",
+      "current_bytes": 8118272,
+      "anon_bytes": 7483392,
+      "file_bytes": 0,
+      "shmem_bytes": 0,
+      "swap_bytes": 28672
+    },
+    {
+      "scope": "drkonqi-coredump-launcher@7-8197-806986_13395932-0.service",
+      "branch": "app.slice",
+      "current_bytes": 8024064,
+      "anon_bytes": 7393280,
+      "file_bytes": 0,
+      "shmem_bytes": 0,
+      "swap_bytes": 487424
+    },
+    {
+      "scope": "xdg-desktop-portal-gtk.service",
+      "branch": "app.slice",
+      "current_bytes": 7954432,
+      "anon_bytes": 5623808,
+      "file_bytes": 1769472,
+      "shmem_bytes": 1634304,
+      "swap_bytes": 0
+    },
+    {
+      "scope": "drkonqi-coredump-launcher@4-19-1893301_10270470-0.service",
+      "branch": "app.slice",
+      "current_bytes": 7938048,
+      "anon_bytes": 7311360,
+      "file_bytes": 0,
+      "shmem_bytes": 0,
+      "swap_bytes": 163840
+    },
+    {
+      "scope": "drkonqi-coredump-launcher@5-28673-2808090_11183885-0.service",
+      "branch": "app.slice",
+      "current_bytes": 7905280,
+      "anon_bytes": 7274496,
+      "file_bytes": 0,
+      "shmem_bytes": 0,
+      "swap_bytes": 192512
+    },
+    {
+      "scope": "plasma-kaccess.service",
+      "branch": "background.slice",
+      "current_bytes": 7749632,
+      "anon_bytes": 6979584,
+      "file_bytes": 139264,
+      "shmem_bytes": 0,
+      "swap_bytes": 143360
+    },
+    {
+      "scope": "plasma-baloorunner.service",
+      "branch": "background.slice",
+      "current_bytes": 7700480,
+      "anon_bytes": 6934528,
+      "file_bytes": 94208,
+      "shmem_bytes": 0,
+      "swap_bytes": 188416
+    },
+    {
+      "scope": "plasma-kactivitymanagerd.service",
+      "branch": "background.slice",
+      "current_bytes": 7180288,
+      "anon_bytes": 5865472,
+      "file_bytes": 610304,
+      "shmem_bytes": 0,
+      "swap_bytes": 40960
+    },
+    {
+      "scope": "xdg-desktop-portal.service",
+      "branch": "session.slice",
+      "current_bytes": 6627328,
+      "anon_bytes": 4952064,
+      "file_bytes": 1183744,
+      "shmem_bytes": 0,
+      "swap_bytes": 61440
+    },
+    {
+      "scope": "kde-baloo.service",
+      "branch": "background.slice",
+      "current_bytes": 5947392,
+      "anon_bytes": 5337088,
+      "file_bytes": 212992,
+      "shmem_bytes": 0,
+      "swap_bytes": 98304
+    },
+    {
+      "scope": "dbus-broker.service",
+      "branch": "session.slice",
+      "current_bytes": 5718016,
+      "anon_bytes": 4489216,
+      "file_bytes": 167936,
+      "shmem_bytes": 4096,
+      "swap_bytes": 0
+    },
+    {
+      "scope": "tmux-spawn-48206a39-60e3-4880-90c9-6fd4863f0d6c.scope",
+      "branch": "user.slice",
+      "current_bytes": 5095424,
+      "anon_bytes": 4997120,
+      "file_bytes": 0,
+      "shmem_bytes": 0,
+      "swap_bytes": 126976
+    },
+    {
+      "scope": "tmux-spawn-f07ca304-651f-4286-81af-73f16e6e7fb4.scope",
+      "branch": "user.slice",
+      "current_bytes": 5050368,
+      "anon_bytes": 4947968,
+      "file_bytes": 0,
+      "shmem_bytes": 0,
+      "swap_bytes": 180224
+    },
+    {
+      "scope": "kunifiedpush-distributor.service",
+      "branch": "background.slice",
+      "current_bytes": 3563520,
+      "anon_bytes": 2994176,
+      "file_bytes": 180224,
+      "shmem_bytes": 0,
+      "swap_bytes": 139264
+    },
+    {
+      "scope": "plasma-xembedsniproxy.service",
+      "branch": "background.slice",
+      "current_bytes": 3391488,
+      "anon_bytes": 2977792,
+      "file_bytes": 16384,
+      "shmem_bytes": 0,
+      "swap_bytes": 28672
+    },
+    {
+      "scope": "plasma-gmenudbusmenuproxy.service",
+      "branch": "background.slice",
+      "current_bytes": 3366912,
+      "anon_bytes": 2965504,
+      "file_bytes": 0,
+      "shmem_bytes": 0,
+      "swap_bytes": 36864
+    },
+    {
+      "scope": "at-spi-dbus-bus.service",
+      "branch": "session.slice",
+      "current_bytes": 2174976,
+      "anon_bytes": 1523712,
+      "file_bytes": 28672,
+      "shmem_bytes": 12288,
+      "swap_bytes": 4096
+    },
+    {
+      "scope": "xdg-document-portal.service",
+      "branch": "session.slice",
+      "current_bytes": 2023424,
+      "anon_bytes": 892928,
+      "file_bytes": 512000,
+      "shmem_bytes": 0,
+      "swap_bytes": 0
+    },
+    {
+      "scope": "ssh-agent.service",
+      "branch": "app.slice",
+      "current_bytes": 1404928,
+      "anon_bytes": 1019904,
+      "file_bytes": 299008,
+      "shmem_bytes": 0,
+      "swap_bytes": 8192
+    },
+    {
+      "scope": "libpod-conmon-63d3c03b0b779632a4d2d8012a644517f09ff623ddc32855a6e0d8b7e4a09eda.scope",
+      "branch": "user.slice",
+      "current_bytes": 1359872,
+      "anon_bytes": 417792,
+      "file_bytes": 131072,
+      "shmem_bytes": 0,
+      "swap_bytes": 0
+    },
+    {
+      "scope": "obex.service",
+      "branch": "app.slice",
+      "current_bytes": 1183744,
+      "anon_bytes": 675840,
+      "file_bytes": 368640,
+      "shmem_bytes": 0,
+      "swap_bytes": 4096
+    },
+    {
+      "scope": "app-geoclue\\x2ddemo\\x2dagent@autostart.service",
+      "branch": "app.slice",
+      "current_bytes": 1179648,
+      "anon_bytes": 876544,
+      "file_bytes": 0,
+      "shmem_bytes": 0,
+      "swap_bytes": 0
+    },
+    {
+      "scope": "dbus-:1.21-org.a11y.atspi.Registry@0.service",
+      "branch": "app.slice",
+      "current_bytes": 1073152,
+      "anon_bytes": 729088,
+      "file_bytes": 86016,
+      "shmem_bytes": 0,
+      "swap_bytes": 0
+    },
+    {
+      "scope": "xdg-permission-store.service",
+      "branch": "session.slice",
+      "current_bytes": 847872,
+      "anon_bytes": 507904,
+      "file_bytes": 86016,
+      "shmem_bytes": 0,
+      "swap_bytes": 4096
+    },
+    {
+      "scope": "dconf.service",
+      "branch": "app.slice",
+      "current_bytes": 794624,
+      "anon_bytes": 499712,
+      "file_bytes": 73728,
+      "shmem_bytes": 0,
+      "swap_bytes": 0
+    },
+    {
+      "scope": "mpris-proxy.service",
+      "branch": "app.slice",
+      "current_bytes": 770048,
+      "anon_bytes": 581632,
+      "file_bytes": 90112,
+      "shmem_bytes": 0,
+      "swap_bytes": 0
+    },
+    {
+      "scope": "podman-pause-2b35be81.scope",
+      "branch": "user.slice",
+      "current_bytes": 311296,
+      "anon_bytes": 0,
+      "file_bytes": 307200,
+      "shmem_bytes": 0,
+      "swap_bytes": 0
+    },
+    {
+      "scope": "libpod-6dfc0ab4a32bf98ae7ef8f9e14235c9fff1be03cdecbff6561278a33aa9f8ba9.scope",
+      "branch": "user.slice",
+      "current_bytes": 286720,
+      "anon_bytes": 86016,
+      "file_bytes": 0,
+      "shmem_bytes": 0,
+      "swap_bytes": 12288
+    },
+    {
+      "scope": "app-com.google.Chrome@f906f96ef10144d2864181a478074e90.service",
+      "branch": "app.slice",
+      "current_bytes": 40960,
+      "anon_bytes": 0,
+      "file_bytes": 8192,
+      "shmem_bytes": 8192,
+      "swap_bytes": 0
+    },
+    {
+      "scope": "dbus.socket",
+      "branch": "app.slice",
+      "current_bytes": 0,
+      "anon_bytes": 0,
+      "file_bytes": 0,
+      "shmem_bytes": 0,
+      "swap_bytes": 0
+    }
+  ],
+  "errors": {
+    "smaps_permission_denied": 6,
+    "smaps_unavailable": 4,
+    "process_exited_or_unavailable": 2
+  },
+  "limitations": "PSS proportionally apportions mapped shared memory; process totals omit inaccessible/system processes, unmapped tmpfs and kernel memory. Cgroup current includes descendants and file cache; shmem is a subset of file. Do not sum these different views together. Names, counts and memory only; no process arguments, browsing state or files read."
+}

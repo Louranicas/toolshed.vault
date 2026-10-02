@@ -1,0 +1,15 @@
+wing: fedora_obsidian_vaults
+rooms:
+- name: toolshed.vault
+  description: Complete command and feature reference for every habitat tool; chaining and clustering workflows
+  keywords:
+  - toolshed
+  - command
+  - cli
+  - flag
+  - chaining
+  - cluster
+  - workflow
+- name: general
+  description: Files that don't fit other rooms
+  keywords: []

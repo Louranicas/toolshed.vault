@@ -1,0 +1,24 @@
+
+running 4 tests
+test tests::invalid_utf8_is_an_error_in_both_versions ... ok
+test tests::io_errors_are_propagated ... ok
+test tests::line_semantics_match_with_tiny_reader_buffers ... ok
+test tests::long_line_and_retained_capacity_preserve_results ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Compiling rust-mastery-lab v0.1.0 (/var/home/Louranicas/rust-mastery-20260906/lab)
+    Finished `release` profile [optimized] target(s) in 0.24s
+     Running unittests src/lib.rs (target/release/deps/rust_mastery_lab-82381569e2fbe671)
+     Running unittests src/main.rs (target/release/deps/rust_mastery_lab-3204fc3e8ad3c2c0)
+   Doc-tests rust_mastery_lab

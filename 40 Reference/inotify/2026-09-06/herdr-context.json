@@ -1,0 +1,499 @@
+{
+  "capture_time": "2026-09-05T19:36:34.518Z",
+  "note": "Only layout, role and working-directory metadata retained; agent session IDs and terminal content excluded.",
+  "workspaces": [
+    {
+      "agent_status": "working",
+      "label": "herdr-habitat",
+      "pane_count": 34,
+      "tab_count": 13,
+      "workspace_id": "w1"
+    },
+    {
+      "agent_status": "unknown",
+      "label": "~",
+      "pane_count": 1,
+      "tab_count": 1,
+      "workspace_id": "w2"
+    }
+  ],
+  "tabs": [
+    {
+      "agent_status": "working",
+      "label": "Orchistrator",
+      "pane_count": 3,
+      "tab_id": "w1:t1",
+      "workspace_id": "w1"
+    },
+    {
+      "agent_status": "idle",
+      "label": "Zen",
+      "pane_count": 1,
+      "tab_id": "w1:t2",
+      "workspace_id": "w1"
+    },
+    {
+      "agent_status": "working",
+      "label": "Hermes",
+      "pane_count": 1,
+      "tab_id": "w1:t3",
+      "workspace_id": "w1"
+    },
+    {
+      "agent_status": "idle",
+      "label": "Fabric",
+      "pane_count": 1,
+      "tab_id": "w1:tD",
+      "workspace_id": "w1"
+    },
+    {
+      "agent_status": "unknown",
+      "label": "Workspace 1",
+      "pane_count": 4,
+      "tab_id": "w1:t4",
+      "workspace_id": "w1"
+    },
+    {
+      "agent_status": "unknown",
+      "label": "Workspace 2",
+      "pane_count": 3,
+      "tab_id": "w1:t5",
+      "workspace_id": "w1"
+    },
+    {
+      "agent_status": "unknown",
+      "label": "Workspace 3",
+      "pane_count": 3,
+      "tab_id": "w1:t6",
+      "workspace_id": "w1"
+    },
+    {
+      "agent_status": "unknown",
+      "label": "Workspace 4",
+      "pane_count": 3,
+      "tab_id": "w1:t7",
+      "workspace_id": "w1"
+    },
+    {
+      "agent_status": "unknown",
+      "label": "Workspace 5",
+      "pane_count": 3,
+      "tab_id": "w1:tC",
+      "workspace_id": "w1"
+    },
+    {
+      "agent_status": "working",
+      "label": "Fleet-Alpha",
+      "pane_count": 3,
+      "tab_id": "w1:t8",
+      "workspace_id": "w1"
+    },
+    {
+      "agent_status": "unknown",
+      "label": "Fleet-Beta",
+      "pane_count": 3,
+      "tab_id": "w1:t9",
+      "workspace_id": "w1"
+    },
+    {
+      "agent_status": "unknown",
+      "label": "Fleet-Gamma",
+      "pane_count": 3,
+      "tab_id": "w1:tB",
+      "workspace_id": "w1"
+    },
+    {
+      "agent_status": "unknown",
+      "label": "Fleet-Delta",
+      "pane_count": 3,
+      "tab_id": "w1:tA",
+      "workspace_id": "w1"
+    },
+    {
+      "agent_status": "unknown",
+      "label": "1",
+      "pane_count": 1,
+      "tab_id": "w2:t1",
+      "workspace_id": "w2"
+    }
+  ],
+  "panes": [
+    {
+      "agent": "claude",
+      "agent_status": "idle",
+      "cwd": "/var/home/Louranicas",
+      "foreground_cwd": "/var/home/Louranicas",
+      "label": "Cmd1 | Director | Claude",
+      "pane_id": "w1:p1",
+      "tab_id": "w1:t1",
+      "workspace_id": "w1"
+    },
+    {
+      "agent": "codex",
+      "agent_status": "working",
+      "cwd": "/var/home/Louranicas",
+      "foreground_cwd": "/var/home/Louranicas",
+      "label": "Cmd2 | Dispatch | Codex",
+      "pane_id": "w1:p3",
+      "tab_id": "w1:t1",
+      "workspace_id": "w1"
+    },
+    {
+      "agent": "codex",
+      "agent_status": "working",
+      "cwd": "/var/home/Louranicas",
+      "foreground_cwd": "/var/home/Louranicas",
+      "label": "Cmd3 | Assurance | Codex",
+      "pane_id": "w1:p4",
+      "tab_id": "w1:t1",
+      "workspace_id": "w1"
+    },
+    {
+      "agent": "pi",
+      "agent_status": "idle",
+      "cwd": "/var/home/Louranicas",
+      "foreground_cwd": "/var/home/Louranicas",
+      "pane_id": "w1:p5",
+      "tab_id": "w1:t2",
+      "workspace_id": "w1"
+    },
+    {
+      "agent": "hermes",
+      "agent_status": "working",
+      "cwd": "/var/home/Louranicas",
+      "foreground_cwd": "/var/home/Louranicas",
+      "pane_id": "w1:p6",
+      "tab_id": "w1:t3",
+      "workspace_id": "w1"
+    },
+    {
+      "agent": "codex",
+      "agent_status": "idle",
+      "cwd": "/var/home/Louranicas",
+      "foreground_cwd": "/var/home/Louranicas",
+      "pane_id": "w1:pY",
+      "tab_id": "w1:tD",
+      "workspace_id": "w1"
+    },
+    {
+      "agent_status": "unknown",
+      "cwd": "/var/home/Louranicas",
+      "foreground_cwd": "/var/home/Louranicas",
+      "pane_id": "w1:p7",
+      "tab_id": "w1:t4",
+      "workspace_id": "w1"
+    },
+    {
+      "agent_status": "unknown",
+      "cwd": "/var/home/Louranicas",
+      "foreground_cwd": "/var/home/Louranicas",
+      "pane_id": "w1:pF",
+      "tab_id": "w1:t4",
+      "workspace_id": "w1"
+    },
+    {
+      "agent_status": "unknown",
+      "cwd": "/var/home/Louranicas",
+      "foreground_cwd": "/var/home/Louranicas",
+      "pane_id": "w1:pG",
+      "tab_id": "w1:t4",
+      "workspace_id": "w1"
+    },
+    {
+      "agent_status": "unknown",
+      "cwd": "/var/mnt/STORAGE-10TB/fedora-obsidian-vaults",
+      "foreground_cwd": "/var/mnt/STORAGE-10TB/fedora-obsidian-vaults",
+      "pane_id": "w1:pQ",
+      "tab_id": "w1:t4",
+      "workspace_id": "w1"
+    },
+    {
+      "agent_status": "unknown",
+      "cwd": "/var/home/Louranicas",
+      "foreground_cwd": "/var/home/Louranicas",
+      "pane_id": "w1:p8",
+      "tab_id": "w1:t5",
+      "workspace_id": "w1"
+    },
+    {
+      "agent_status": "unknown",
+      "cwd": "/var/mnt/STORAGE-10TB/repos/deep-diff-forge",
+      "foreground_cwd": "/var/mnt/STORAGE-10TB/repos/deep-diff-forge",
+      "pane_id": "w1:pJ",
+      "tab_id": "w1:t5",
+      "workspace_id": "w1"
+    },
+    {
+      "agent_status": "unknown",
+      "cwd": "/var/mnt/STORAGE-10TB/repos/deep-diff-forge",
+      "foreground_cwd": "/var/mnt/STORAGE-10TB/repos/deep-diff-forge",
+      "label": "--name just",
+      "pane_id": "w1:pS",
+      "tab_id": "w1:t5",
+      "workspace_id": "w1"
+    },
+    {
+      "agent_status": "unknown",
+      "cwd": "/var/mnt/STORAGE-10TB/repos/herdr",
+      "foreground_cwd": "/var/mnt/STORAGE-10TB/repos/herdr",
+      "pane_id": "w1:p9",
+      "tab_id": "w1:t6",
+      "workspace_id": "w1"
+    },
+    {
+      "agent_status": "unknown",
+      "cwd": "/var/mnt/STORAGE-10TB/repos/deep-diff-forge",
+      "foreground_cwd": "/var/mnt/STORAGE-10TB/repos/deep-diff-forge",
+      "pane_id": "w1:pM",
+      "tab_id": "w1:t6",
+      "workspace_id": "w1"
+    },
+    {
+      "agent_status": "unknown",
+      "cwd": "/var/mnt/STORAGE-10TB/repos/herdr",
+      "foreground_cwd": "/var/mnt/STORAGE-10TB/repos/herdr",
+      "pane_id": "w1:pK",
+      "tab_id": "w1:t6",
+      "workspace_id": "w1"
+    },
+    {
+      "agent_status": "unknown",
+      "cwd": "/var/home/Louranicas",
+      "foreground_cwd": "/var/home/Louranicas",
+      "pane_id": "w1:pA",
+      "tab_id": "w1:t7",
+      "workspace_id": "w1"
+    },
+    {
+      "agent_status": "unknown",
+      "cwd": "/var/home/Louranicas",
+      "foreground_cwd": "/var/mnt/STORAGE-10TB/repos",
+      "pane_id": "w1:pN",
+      "tab_id": "w1:t7",
+      "workspace_id": "w1"
+    },
+    {
+      "agent_status": "unknown",
+      "cwd": "/var/home/Louranicas",
+      "foreground_cwd": "/var/home/Louranicas",
+      "pane_id": "w1:pP",
+      "tab_id": "w1:t7",
+      "workspace_id": "w1"
+    },
+    {
+      "agent_status": "unknown",
+      "cwd": "/var/mnt/STORAGE-10TB/repos/deep-diff-forge",
+      "foreground_cwd": "/var/mnt/STORAGE-10TB/repos/deep-diff-forge",
+      "pane_id": "w1:pR",
+      "tab_id": "w1:tC",
+      "workspace_id": "w1"
+    },
+    {
+      "agent_status": "unknown",
+      "cwd": "/var/mnt/STORAGE-10TB/repos",
+      "pane_id": "w1:pT",
+      "tab_id": "w1:tC",
+      "workspace_id": "w1"
+    },
+    {
+      "agent_status": "unknown",
+      "cwd": "/var/mnt/STORAGE-10TB/repos",
+      "foreground_cwd": "/var/mnt/STORAGE-10TB/repos",
+      "pane_id": "w1:pV",
+      "tab_id": "w1:tC",
+      "workspace_id": "w1"
+    },
+    {
+      "agent": "codex",
+      "agent_status": "working",
+      "cwd": "/var/home/Louranicas",
+      "foreground_cwd": "/var/home/Louranicas",
+      "label": "Alpha1 | Build | SOL2/Codex",
+      "pane_id": "w1:pB",
+      "tab_id": "w1:t8",
+      "workspace_id": "w1"
+    },
+    {
+      "agent": "codex",
+      "agent_status": "working",
+      "cwd": "/var/home/Louranicas",
+      "foreground_cwd": "/var/home/Louranicas",
+      "label": "Alpha2 | Trial | SOL3/Codex",
+      "pane_id": "w1:pZ",
+      "tab_id": "w1:t8",
+      "workspace_id": "w1"
+    },
+    {
+      "agent_status": "unknown",
+      "cwd": "/var/home/Louranicas",
+      "foreground_cwd": "/var/home/Louranicas",
+      "label": "Alpha3 | Observe | Unassigned",
+      "pane_id": "w1:p0",
+      "tab_id": "w1:t8",
+      "workspace_id": "w1"
+    },
+    {
+      "agent_status": "unknown",
+      "cwd": "/var/home/Louranicas",
+      "foreground_cwd": "/var/home/Louranicas",
+      "label": "Beta1 | Monitor | Unassigned",
+      "pane_id": "w1:pC",
+      "tab_id": "w1:t9",
+      "workspace_id": "w1"
+    },
+    {
+      "agent_status": "unknown",
+      "cwd": "/var/home/Louranicas",
+      "foreground_cwd": "/var/home/Louranicas",
+      "label": "Beta2 | Events | Unassigned",
+      "pane_id": "w1:p11",
+      "tab_id": "w1:t9",
+      "workspace_id": "w1"
+    },
+    {
+      "agent_status": "unknown",
+      "cwd": "/var/home/Louranicas",
+      "foreground_cwd": "/var/home/Louranicas",
+      "label": "Beta3 | Health | Unassigned",
+      "pane_id": "w1:p12",
+      "tab_id": "w1:t9",
+      "workspace_id": "w1"
+    },
+    {
+      "agent_status": "unknown",
+      "cwd": "/var/home/Louranicas",
+      "foreground_cwd": "/var/home/Louranicas",
+      "label": "Gamma1 | Verify | Unassigned",
+      "pane_id": "w1:pE",
+      "tab_id": "w1:tB",
+      "workspace_id": "w1"
+    },
+    {
+      "agent_status": "unknown",
+      "cwd": "/var/home/Louranicas",
+      "foreground_cwd": "/var/home/Louranicas",
+      "label": "Gamma2 | Challenge | Unassigned",
+      "pane_id": "w1:p13",
+      "tab_id": "w1:tB",
+      "workspace_id": "w1"
+    },
+    {
+      "agent_status": "unknown",
+      "cwd": "/var/home/Louranicas",
+      "foreground_cwd": "/var/home/Louranicas",
+      "label": "Gamma3 | Evidence | Unassigned",
+      "pane_id": "w1:p14",
+      "tab_id": "w1:tB",
+      "workspace_id": "w1"
+    },
+    {
+      "agent_status": "unknown",
+      "cwd": "/var/home/Louranicas",
+      "foreground_cwd": "/var/home/Louranicas",
+      "label": "Delta1 | Synergy | Unassigned",
+      "pane_id": "w1:pD",
+      "tab_id": "w1:tA",
+      "workspace_id": "w1"
+    },
+    {
+      "agent_status": "unknown",
+      "cwd": "/var/home/Louranicas",
+      "foreground_cwd": "/var/home/Louranicas",
+      "label": "Delta2 | Shadow | Unassigned",
+      "pane_id": "w1:p15",
+      "tab_id": "w1:tA",
+      "workspace_id": "w1"
+    },
+    {
+      "agent_status": "unknown",
+      "cwd": "/var/home/Louranicas",
+      "foreground_cwd": "/var/home/Louranicas",
+      "label": "Delta3 | Proposals | Unassigned",
+      "pane_id": "w1:p16",
+      "tab_id": "w1:tA",
+      "workspace_id": "w1"
+    },
+    {
+      "agent_status": "unknown",
+      "cwd": "/var/home/Louranicas",
+      "foreground_cwd": "/var/home/Louranicas",
+      "pane_id": "w2:p1",
+      "tab_id": "w2:t1",
+      "workspace_id": "w2"
+    }
+  ],
+  "agents": [
+    {
+      "agent": "claude",
+      "agent_status": "idle",
+      "cwd": "/var/home/Louranicas",
+      "foreground_cwd": "/var/home/Louranicas",
+      "pane_id": "w1:p1",
+      "tab_id": "w1:t1",
+      "workspace_id": "w1"
+    },
+    {
+      "agent": "codex",
+      "agent_status": "working",
+      "cwd": "/var/home/Louranicas",
+      "foreground_cwd": "/var/home/Louranicas",
+      "pane_id": "w1:p3",
+      "tab_id": "w1:t1",
+      "workspace_id": "w1"
+    },
+    {
+      "agent": "codex",
+      "agent_status": "working",
+      "cwd": "/var/home/Louranicas",
+      "foreground_cwd": "/var/home/Louranicas",
+      "pane_id": "w1:p4",
+      "tab_id": "w1:t1",
+      "workspace_id": "w1"
+    },
+    {
+      "agent": "pi",
+      "agent_status": "idle",
+      "cwd": "/var/home/Louranicas",
+      "foreground_cwd": "/var/home/Louranicas",
+      "pane_id": "w1:p5",
+      "tab_id": "w1:t2",
+      "workspace_id": "w1"
+    },
+    {
+      "agent": "hermes",
+      "agent_status": "working",
+      "cwd": "/var/home/Louranicas",
+      "foreground_cwd": "/var/home/Louranicas",
+      "pane_id": "w1:p6",
+      "tab_id": "w1:t3",
+      "workspace_id": "w1"
+    },
+    {
+      "agent": "codex",
+      "agent_status": "idle",
+      "cwd": "/var/home/Louranicas",
+      "foreground_cwd": "/var/home/Louranicas",
+      "pane_id": "w1:pY",
+      "tab_id": "w1:tD",
+      "workspace_id": "w1"
+    },
+    {
+      "agent": "codex",
+      "agent_status": "working",
+      "cwd": "/var/home/Louranicas",
+      "foreground_cwd": "/var/home/Louranicas",
+      "pane_id": "w1:pB",
+      "tab_id": "w1:t8",
+      "workspace_id": "w1"
+    },
+    {
+      "agent": "codex",
+      "agent_status": "working",
+      "cwd": "/var/home/Louranicas",
+      "foreground_cwd": "/var/home/Louranicas",
+      "pane_id": "w1:pZ",
+      "tab_id": "w1:t8",
+      "workspace_id": "w1"
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "date": "2026-09-06",
+  "scope": "Educational fixture; not a production performance result",
+  "checks": [
+    {
+      "command": [
+        "rustc",
+        "-Vv"
+      ],
+      "exit_code": 0,
+      "log": null
+    },
+    {
+      "command": [
+        "cargo",
+        "-V"
+      ],
+      "exit_code": 0,
+      "log": null
+    },
+    {
+      "command": [
+        "cargo",
+        "test",
+        "--release",
+        "--locked",
+        "--offline"
+      ],
+      "exit_code": 0,
+      "log": "semantic-tests.log"
+    },
+    {
+      "command": [
+        "cargo",
+        "bench",
+        "--bench",
+        "allocations",
+        "--locked",
+        "--offline",
+        "--",
+        "--test"
+      ],
+      "exit_code": 0,
+      "log": "criterion-smoke.log"
+    },
+    {
+      "command": [
+        "cargo",
+        "build",
+        "--profile",
+        "profiling",
+        "--features",
+        "dhat-heap",
+        "--locked",
+        "--offline"
+      ],
+      "exit_code": 0,
+      "log": "profile-build.log"
+    },
+    {
+      "command": [
+        "/var/home/Louranicas/rust-mastery-20260906/lab/target/profiling/rust-mastery-lab",
+        "owned",
+        "/var/home/Louranicas/rust-mastery-20260906/evidence/repeated.txt"
+      ],
+      "exit_code": 0,
+      "log": "repeated-owned.log"
+    },
+    {
+      "command": [
+        "/var/home/Louranicas/rust-mastery-20260906/lab/target/profiling/rust-mastery-lab",
+        "reused",
+        "/var/home/Louranicas/rust-mastery-20260906/evidence/repeated.txt"
+      ],
+      "exit_code": 0,
+      "log": "repeated-reused.log"
+    },
+    {
+      "command": [
+        "/var/home/Louranicas/rust-mastery-20260906/lab/target/profiling/rust-mastery-lab",
+        "owned",
+        "/var/home/Louranicas/rust-mastery-20260906/evidence/unique.txt"
+      ],
+      "exit_code": 0,
+      "log": "unique-owned.log"
+    },
+    {
+      "command": [
+        "/var/home/Louranicas/rust-mastery-20260906/lab/target/profiling/rust-mastery-lab",
+        "reused",
+        "/var/home/Louranicas/rust-mastery-20260906/evidence/unique.txt"
+      ],
+      "exit_code": 0,
+      "log": "unique-reused.log"
+    }
+  ],
+  "profiles": [
+    {
+      "fixture": "repeated",
+      "mode": "owned",
+      "input_bytes": 110000,
+      "input_sha256": "94dd1b9b3f667452d80ed948ad93dc8b04ab4e17a024ef0bef56bbc88eccdb69",
+      "output": "lines=10000 distinct=1",
+      "dhat_summary": "dhat: Total:     119,846 bytes in 10,020 blocks\ndhat: At t-gmax: 8,616 bytes in 8 blocks\ndhat: At t-end:  1,024 bytes in 1 blocks\ndhat: The data has been saved to dhat-heap.json, and is viewable with dhat/dh_view.html",
+      "profile": "repeated-owned.dhat.json"
+    },
+    {
+      "fixture": "repeated",
+      "mode": "reused",
+      "input_bytes": 110000,
+      "input_sha256": "94dd1b9b3f667452d80ed948ad93dc8b04ab4e17a024ef0bef56bbc88eccdb69",
+      "output": "lines=10000 distinct=1",
+      "dhat_summary": "dhat: Total:     9,703 bytes in 10 blocks\ndhat: At t-gmax: 8,607 bytes in 8 blocks\ndhat: At t-end:  1,024 bytes in 1 blocks\ndhat: The data has been saved to dhat-heap.json, and is viewable with dhat/dh_view.html",
+      "profile": "repeated-reused.dhat.json"
+    },
+    {
+      "fixture": "unique",
+      "mode": "owned",
+      "input_bytes": 150000,
+      "input_sha256": "11a11044e49b500847ac0e7b083306f41ef7a610d6fd66aabbdaa280970a05bf",
+      "output": "lines=10000 distinct=10000",
+      "dhat_summary": "dhat: Total:     1,241,167 bytes in 10,037 blocks\ndhat: At t-gmax: 927,055 bytes in 7,176 blocks\ndhat: At t-end:  1,024 bytes in 1 blocks\ndhat: The data has been saved to dhat-heap.json, and is viewable with dhat/dh_view.html",
+      "profile": "unique-owned.dhat.json"
+    },
+    {
+      "fixture": "unique",
+      "mode": "reused",
+      "input_bytes": 150000,
+      "input_sha256": "11a11044e49b500847ac0e7b083306f41ef7a610d6fd66aabbdaa280970a05bf",
+      "output": "lines=10000 distinct=10000",
+      "dhat_summary": "dhat: Total:     1,230,967 bytes in 10,021 blocks\ndhat: At t-gmax: 919,857 bytes in 7,177 blocks\ndhat: At t-end:  1,024 bytes in 1 blocks\ndhat: The data has been saved to dhat-heap.json, and is viewable with dhat/dh_view.html",
+      "profile": "unique-reused.dhat.json"
+    }
+  ],
+  "rustc": "rustc 1.98.0 (88d9e12ae 2026-08-18)\nbinary: rustc\ncommit-hash: 88d9e12ae178fab0fb5cc050a94da85685d449ea\ncommit-date: 2026-08-18\nhost: x86_64-unknown-linux-gnu\nrelease: 1.98.0\nLLVM version: 22.1.8",
+  "cargo": "cargo 1.98.0 (797e8a9bc 2026-08-05)",
+  "tools_on_current_path": {
+    "perf": null,
+    "valgrind": null,
+    "hyperfine": null,
+    "samply": null,
+    "heaptrack": null
+  },
+  "profile_binary_sha256": "07705fad0450f6dd9e52e9f337d79f98ec9a95e90a066f586581d34954388a93",
+  "lab_sources": {
+    "Cargo.lock": "77adc276123011e6d2bbbe70eee5e3edb879a2c1701a324ee5d065fc6782ebe4",
+    "Cargo.toml": "ffa20efe111b541effe5394925a6dd979b112429baa0086ba446e8a42b6a59cc",
+    "benches/allocations.rs": "93878efe7b49943c19eb2a0433a369be464c8a0e2e91df482e2405f7a831175a",
+    "src/lib.rs": "b73a0a8d1f0989783a8ab6082f5bf4c278f36a6af7689a53e5c7ef20e1a639f9",
+    "src/main.rs": "8b3e14b91138fedd8439cb974b1a5c9816e9802733817e0cfcbc350ebf053b9b"
+  }
+}

@@ -1,0 +1,1076 @@
+--- a/00 - Toolshed Index.md
++++ b/00 - Toolshed Index.md
+@@ -38,7 +38,7 @@
+ - [[Tool Chaining Patterns]] — **the nine shapes**: filter · JSON · watch · capture · two-door · escape · discovery · session · verify
+ - [[Clustering Shapes]] ⭐ — **chain · tree · matrix · web**: who decides the fan-out width, and the engine change that made runtime fan-out possible
+ - [[Tool Clusters]] — **the seven groups**, with a map and an honest list of where each is thin
+-- [[Workflow Recipes]] — **ten runnable workflows** (R1 recall · R3 change→verdict→review · R5 CI triage · R9 promote-to-script …)
++- [[20 Chaining/Workflow Recipes|Workflow Recipes]] — **eleven workflow recipes**, reviewed 2026-09-06: recall, build-status preservation, aggregate Atuin analysis, reviewed script capture, worktree-aware discovery, and workload handoff.
+ - [[Most-Used Tools]] — what the history actually says, and its limits
+ 
+ > **New 2026-09-04:** [[Claim-Time Guard]] 🛡️ — a `PreToolUse` hook that fires the
+@@ -56,8 +56,8 @@
+ 
+ - [[00 - Field Findings]] — **25 corrections** from running things, grouped by failure class
+   (silent wrong answers · hangs · wrong mental model · ergonomic traps · corrections to this vault)
+-- [[00 - Workflows]] — the compositions that came out of it, and the layered stack
+-  `atuin → just → bridge → tools`
++- [[60 Workflows/00 - Workflows|Workflows]] — the compositions and layered stack
++  `atuin → just → bridge → tools`, plus the [[60 Workflows/00 - Workflows#Daily operating cycle — reviewed 2026-09-06|daily operating cycle]] for project scope, scratch, concurrency, verification and session retirement.
+ - [[Bridge - Diagnostics to Review]] · [[Bridge - Coverage to Review]] — compiler findings and
+   coverage gaps as **inline notes in the human's live diff**
+ - [[Cross-Workspace Review Gate]] — W2→W5 readiness verdict, proven to block
+@@ -108,6 +108,7 @@
+ 
+ ## Reference
+ 
++- [[40 Reference/workflow-review/2026-09-06/README|Workflow documentation review — 2026-09-06]] — applied note corrections, inspected source hashes, runtime limitations, validation and a reviewable change patch; no workflows executed or supervisors changed.
+ - [[40 Reference/lukes-workflows/2026-09-06/README|Luke's workflow evidence — 2026-09-06]] — proportional memory, tmpfs ownership metadata, Herdr layout, installed Atuin query receipt, deduplicated Fedora histories and an older archive's aggregate analysis; methods, coverage gaps, reusable read-only scripts and SHA-256 manifest. No raw history imported.
+ - [[40 Reference/inotify/2026-09-06/README|Inotify capacity evidence — 2026-09-06]] — before/after measurements, workspace context, exact host configuration, audit/apply/rollback/verification scripts, functional-test receipts, hardware/pressure and Kinoite state snapshots, source provenance, and checked SHA-256 manifest.
+ - [[Command Matrix]] — every service's agent door, pane door, JSON capability, cluster
+--- a/50 Field Notes/lukes workflows.md
++++ b/50 Field Notes/lukes workflows.md
+@@ -13,6 +13,14 @@
+ This assessment combines live Fedora process and filesystem measurements, the current Herdr layout, installed Atuin queries, ten Fedora history backups, and an older Atuin archive covering the Zellij/Herdr lineage. It documents recommendations; no agents were stopped, temporary data deleted, history imported, or runtime configuration changed during this workflow audit.
+ 
+ Navigation: [[00 - Toolshed Index]] · [[10 Tools/atuin|atuin]] · [[10 Tools/just|just]] · [[10 Tools/herdr|herdr]] · [[Most-Used Tools]] · [[50 Field Notes/Linux Inotify Capacity - Herdr Habitat|Inotify capacity and future habitat management]]. Measurements, methods, coverage and scripts: [[40 Reference/lukes-workflows/2026-09-06/README|workflow evidence bundle]].
++
++**Workflow integration — 2026-09-06:** the recommendations now feed the
++[[60 Workflows/00 - Workflows#Daily operating cycle — reviewed 2026-09-06|daily operating cycle]],
++[[20 Chaining/Workflow Recipes|revised recipes]] and their supporting workflow notes.
++[[40 Reference/workflow-review/2026-09-06/README|The review receipt]] records source-confirmed
++limits: uncapped ready-stage concurrency, probes/preconditions that still run during dry-run,
++and reactor respawn that can undo an intentional service shutdown. Those behaviours were
++documented; no runtime scheduler or supervisor changes were made.
+ 
+ ## What is using memory now
+ 
+@@ -87,6 +95,12 @@
+ 
+ F118 already documents a mutation runner that owns its NVMe `TMPDIR` and deliberately **unsets inherited `CARGO_TARGET_DIR`** so disposable copies use isolated targets. Preserve that runner's isolation contract. Confirm the current project recipe implements it, then use that recipe instead of wrapping every tool in one global target-directory override.
+ 
++The subsequent workflow review checked `repos/herdr-engineering-engine-v2/scripts/mutants.py`
++directly: it sets `TMPDIR` to `~/.cache/hee-mutants-tmp`, removes inherited `CARGO_TARGET_DIR`
++and requests six mutation jobs. Thus an additional outer fleet can multiply that concurrency;
++the earlier two-worker/two-Cargo-job idea must not be assumed to cap this runner's mutation jobs.
++Its scratch comment still mentions tmpfs, but the executable assignment points to home cache.
++
+ ## What Atuin reveals, and what it cannot tell us
+ 
+ Installed **Atuin 18.12.1** was actually queried. Its local help and a metadata-only search are saved with the evidence. SQLite sources were opened read-only; the older compressed database was streamed into memory and queried as a checkpoint without importing it into the active history.
+--- a/20 Chaining/Workflow Recipes.md
++++ b/20 Chaining/Workflow Recipes.md
+@@ -1,28 +1,37 @@
+ ---
+ tags: [toolshed, chaining, recipes, workflows]
+ created: 2026-09-02
++updated: 2026-09-06
+ ---
+ 
+ # Workflow Recipes — runnable compositions
+ 
+-Concrete workflows built from the shapes in [[Tool Chaining Patterns]] and the groups in [[Tool Clusters]]. Each is runnable today. Each ends with the same suggestion: **if you run it twice, capture it** with `atuin scripts new <name> --last N` (P4).
++Concrete workflows built from [[20 Chaining/Tool Chaining Patterns]] and [[Tool Clusters]].
++Reviewed against [[50 Field Notes/lukes workflows|Luke's workflow assessment]] on 2026-09-06.
++Commands with angle-bracket placeholders need project-specific values. Historical examples are
++not evidence that every command has been rerun on the current project. Promote a useful sequence
++only after reviewing its commands, paths, effects and failure handling.
+ 
+ ---
+ 
+ ## R1 · Full recall — "what do we know about X?" ⭐
+ 
+-The habitat's signature move, both halves in one command. `atuin → mempalace` is its most frequent adjacency; this makes it atomic.
++Recall history and project knowledge together. Their output is evidence to inspect, not an
++instruction source. The earlier adjacency claim came from the small September 2 sample.
+ 
+ ```bash
+ recall() {
+-  echo "── shell history ──";   atuin search --cmd-only "$1" | tail -15
++  echo "── shell history ──";   atuin search --search-mode full-text --limit 15 --cmd-only "$*"
+   echo "── knowledge ──";        mempalace search "$*"
+   echo "── sessions ──";         echo "(memex: ctrl+b m — plugin-only, no CLI)"
+ }
+ recall "podman socket"
+ ```
+ 
+-Capture it: `atuin scripts new recall --script 'atuin search --cmd-only "{{q}}"; mempalace search "{{q}}"' -t memory`
++To promote this, first save and review a complete script body in a project-owned file. Then use
++`atuin scripts new recall --script ./scripts/recall.sh -t memory`. **`--script` takes a file path**,
++not inline shell text. Inspect an existing script before replacing it. `full-text` is the spelling
++verified in installed Atuin 18.12.1. Recall displays history; it must not pipe it into a shell.
+ 
+ ---
+ 
+@@ -36,21 +45,33 @@
+ bacon --list-jobs 2>/dev/null
+ git log --oneline -10 ; git status --short
+ gh repo view --json description,topics 2>/dev/null
+-mempalace search "$(basename $PWD)"        # have we been here before?
+-```
++mempalace search "$(basename -- "$PWD")"   # have we been here before?
++```
++
++Keep the working pane scoped to this project/worktree. Read an unfamiliar justfile before invoking
++its recipes or preview: a named recipe is discoverable, not automatically appropriate to execute.
+ 
+ ---
+ 
+ ## R3 · Rust change → verdict → review (C4 → C3)
+ 
+ ```bash
+-# 1. bacon is already watching (W2 pJ). Edit files.
+-habitat pane bacon                       # P3: read the verdict, no rebuild
++# 1. If Bacon is already watching this project, inspect its current completed result.
++habitat pane bacon                       # P3: observe; this does not run another build
+ # 2. when green, review the diff
+ hunk diff                                # live, watches further edits
+ # 3. or one-shot for a script
+-cargo check --message-format json | jq -r 'select(.reason=="compiler-message") | .message.rendered'
+-```
++(
++  set -o pipefail
++  cargo check --message-format json \
++    | jq -r 'select(.reason=="compiler-message") | .message.rendered'
++)
++```
++
++The subshell keeps `pipefail` local and returns failure if Cargo or jq fails. The formatter's
++success alone is not a build verdict. Use owned NVMe scratch and compatible per-worktree targets;
++avoid a second resident build watcher for the same feedback loop. Final gates still need the
++required checks for the current revision, not merely an old green screen.
+ 
+ **The agent-collaboration variant** (P8) — I annotate *your* live view:
+ 
+@@ -67,10 +88,14 @@
+ ```bash
+ repo-fleet-status                        # 31 repos: what's dirty?
+ habitat status                           # 16 services: what's live?
+-flatpak-spawn --host rpm-ostree status | head -6
++flatpak-spawn --host rpm-ostree status
+ mempalace status                         # palace intact?
+-habitat-settings-backup                  # snapshot, then proceed
+-```
++```
++
++These inspect the starting state; repository/service counts vary. Before a planned state-changing
++operation, review backup scope and run the existing backup procedure where needed. A backup is a
++separate write operation and should not be repeated as part of every passive health poll. Kinoite
++deployment details can matter, so the status command above no longer truncates them to six lines.
+ 
+ ---
+ 
+@@ -89,41 +114,33 @@
+ ## R6 · Jump to the dirty repo and operate it (P1)
+ 
+ ```bash
+-cd "$REPOS_DIR/$(repo-fleet-status | awk '$3 ~ /±/ {print $1}' | fzf)" && lazygit
++(
++  set -o pipefail
++  workflow_repo=$(repo-fleet-status | awk '$3 ~ /±/ {print $1}' | fzf) || exit
++  [ -n "$workflow_repo" ] || exit
++  cd -- "${REPOS_DIR:?Set REPOS_DIR}/$workflow_repo" && lazygit
++)
+ ```
+ 
+ One line: survey → pick → operate. `lazygit`'s `@` panel then shows the plain-git equivalent of everything you did, so it can become a script.
+ 
+ ---
+ 
+-## R7 · Re-run the tool-usage analysis (feeds [[Most-Used Tools]])
+-
+-```bash
+-atuin history list --cmd-only > /tmp/hist.txt
+-python3 - <<'PY'
+-import re,collections,itertools,os
+-TOOLS={"atuin","fzf","nu","tv","mempalace","nvim","bacon","just","lazygit","hunk","gh","btm",
+-       "yazi","podman-tui","podman","tuicr","jqp","jq","herdr","rg","fd","git","cargo","habitat"}
+-lines=[l.strip() for l in open("/tmp/hist.txt") if l.strip()]
+-def toks(l):
+-    out=[]
+-    for s in re.split(r'\|\||&&|\||;', l):
+-        w=s.strip().split(); i=0
+-        while i<len(w) and "=" in w[i] and not w[i].startswith("-"): i+=1
+-        if i<len(w) and os.path.basename(w[i]) in TOOLS: out.append(os.path.basename(w[i]))
+-    return out
+-freq=collections.Counter(); pipe=collections.Counter(); adj=collections.Counter(); prev=None
+-for l in lines:
+-    t=toks(l)
+-    for x in t: freq[x]+=1
+-    for a,b in itertools.combinations(sorted(set(t)),2): pipe[(a,b)]+=1
+-    if t:
+-        if prev: adj[(prev,t[0])]+=1
+-        prev=t[-1]
+-print("FREQ",freq.most_common(15)); print("PIPES",pipe.most_common(10))
+-print("ADJ",[(k,v) for k,v in adj.most_common(12) if k[0]!=k[1]])
+-PY
+-```
++## R7 · Review or refresh aggregate tool-usage evidence
++
++```bash
++python3 '/var/mnt/STORAGE-10TB/fedora-obsidian-vaults/toolshed.vault/40 Reference/lukes-workflows/2026-09-06/history-analysis.py'
++```
++
++Start with [[40 Reference/lukes-workflows/2026-09-06/README|the saved aggregates]]; run the collector
++only when a fresh question needs it. Its default reads the active SQLite database and the adjacent
++ten-backup discovery list in read-only mode, deduplicates IDs and prints aggregates. It does not
++export commands into `/tmp`, import history or replay a command. Archive mode is separate and
++should not be part of a frequent poll.
++
++The old recipe labelled within-command co-occurrence as “PIPES” and joined adjacency across
++session boundaries. Those are not reliable execution graphs. Keep conservative tool counts,
++within-session transitions, source coverage and unknown outcomes explicit; none measures RAM.
+ 
+ ---
+ 
+@@ -131,10 +148,24 @@
+ 
+ ```bash
+ herdr pane list | jq '.result.panes[] | {pane_id, tab_id, cwd}'
+-herdr pane list | nu -c 'from json | get result.panes | select pane_id tab_id | table'
+-herdr api schema --json > /tmp/schema.json && jqp -f /tmp/schema.json   # explore the API interactively
+ habitat map                                   # service → live pane
+ ```
++
++For interactive schema inspection, use a unique scratch directory and retire only that directory:
++
++```bash
++(
++  set -euo pipefail
++  mkdir -p -- "$HOME/.cache"
++  workflow_schema_dir=$(mktemp -d "$HOME/.cache/herdr-schema.XXXXXX")
++  trap 'rm -rf -- "$workflow_schema_dir"' EXIT
++  herdr api schema --json > "$workflow_schema_dir/schema.json"
++  jqp -f "$workflow_schema_dir/schema.json"
++)
++```
++
++On this host `$HOME/.cache` is on the existing NVMe. This small inspection example avoids a shared
++fixed filename; it is not a cleanup recipe for anyone else's temporary data.
+ 
+ ---
+ 
+@@ -145,11 +176,15 @@
+ ```bash
+ atuin scripts new <name> --last <N> -t <tag> -d "<what it does>"
+ atuin scripts list
++atuin scripts get <name> -s        # the executable body, for review or export
++# After review, execute the script only for the intended current task:
+ atuin scripts run <name> -v key=value
+-atuin scripts get <name> -s        # the executable body, for review or export
+-```
+-
+-Because bodies are minijinja templates, one script replaces a family of near-duplicate aliases. Because they ride e2e-encrypted sync, they follow you to any machine.
++```
++
++Bodies support minijinja templates. Review captured context, quoting, secrets and resource paths
++before retaining or syncing one. `--last N` captures history; it does not prove those commands
++belong together or remain suitable. Prefer a thin wrapper around the maintained project recipe.
++Cross-machine availability depends on configured sync and the destination's actual tools/paths.
+ 
+ ---
+ 
+@@ -157,13 +192,34 @@
+ 
+ ```bash
+ for d in "$REPOS_DIR"/*/; do
+-  [ -d "$d/.git" ] || continue
++  [ -e "$d/.git" ] || continue             # directories AND worktree .git files
+   [ -f "$d/justfile" ] || continue
+-  echo "── $(basename $d)"; ( cd "$d" && just --summary 2>/dev/null )
++  echo "── $(basename -- "$d")"; ( cd "$d" && just --summary 2>/dev/null )
+ done
+ ```
+ 
+ Answers *"which of my repos have a `test` recipe"* — the cross-repo `just` runner C4 is missing.
++
++This lists immediate children of `REPOS_DIR`; it is not a complete nested-worktree inventory.
++Inspect each selected recipe before scheduling it. Do not turn a repo listing into unrestricted
++parallel builds.
++
++---
++
++## R11 · Start, measure and hand off a workload
++
++1. Record the project/worktree, active executor, worker count and owning recipe.
++2. Confirm temporary and target directories from inside the worker. Preserve recipes that own
++   their isolation, especially the HEE mutation runner's removal of inherited `CARGO_TARGET_DIR`.
++3. Sample memory and I/O during the representative task; keep correctness results alongside timing.
++4. Save the result, running-job status and retained-output locations at handoff.
++5. Retire only completed sessions and eligible owned scratch. Check supervisor policy first so an
++   intentional shutdown is not immediately respawned.
++
++Follow [[60 Workflows/00 - Workflows#Daily operating cycle — reviewed 2026-09-06|the operating cycle]],
++[[60 Workflows/Habitat Introspection#Resource measurements alongside timing|measurement guidance]],
++and [[50 Field Notes/lukes workflows|Luke's findings]]. These steps are guidance, not an installed
++automatic scheduler or cleanup service.
+ 
+ ---
+ 
+--- a/20 Chaining/Tool Chaining Patterns.md
++++ b/20 Chaining/Tool Chaining Patterns.md
+@@ -1,11 +1,15 @@
+ ---
+ tags: [toolshed, chaining, patterns, workflows]
+ created: 2026-09-02
++updated: 2026-09-06
+ ---
+ 
+ # Tool Chaining Patterns — the nine shapes
+ 
+-[[Most-Used Tools]] found only **one** genuine pipe pair in 156 recorded commands. Sixteen capable tools were being used as sixteen destinations. These are the composition shapes that close that gap — each one general, each one runnable today.
++The original [[Most-Used Tools]] sample contained 156 records. It motivated these composition
++patterns; it is not a current account of all habitat activity. The September 6 review applies
++[[50 Field Notes/lukes workflows|Luke's measured workflow findings]] and separates historical
++examples from current source checks. Use [[60 Workflows/00 - Workflows#Daily operating cycle — reviewed 2026-09-06|the operating cycle]] when choosing which patterns to keep running.
+ 
+ ---
+ 
+@@ -17,8 +21,12 @@
+ git branch | fzf | xargs git switch
+ podman ps --format '{{.Names}}' | fzf | xargs -r podman logs
+ repo-fleet-status | awk '$3 ~ /±/ {print $1}' | fzf | xargs -I{} sh -c 'cd $REPOS_DIR/{} && lazygit'
+-atuin search --cmd-only --exit 0 cargo | fzf | bash        # rerun a *proven* command
+-```
++atuin search --cmd-only --exit 0 cargo | fzf               # display a candidate for review
++```
++
++An exit-zero history record is not permission or proof that a command is suitable now. Inspect
++the selected text and current project context; never pipe recall into an interpreter. For a
++guarded repository picker, see [[20 Chaining/Workflow Recipes#R6 · Jump to the dirty repo and operate it (P1)|R6]].
+ 
+ **Non-interactive variant** (scriptable): `fzf --filter=QUERY` ranks without a UI; `--select-1 --exit-0` auto-picks a lone match.
+ 
+@@ -33,8 +41,15 @@
+ gh pr list --json number,title,statusCheckRollup | nu -c 'from json | where statusCheckRollup != []'
+ just --dump --dump-format json | jq '.recipes | keys'
+ podman ps --format json | nu -c 'from json | select Names State'
+-cargo check --message-format json | jq -r 'select(.reason=="compiler-message") | .message.rendered'
+-```
++(
++  set -o pipefail
++  cargo check --message-format json \
++    | jq -r 'select(.reason=="compiler-message") | .message.rendered'
++)
++```
++
++Preserve the producer's failure status when a pipeline supplies a verdict. A data default such
++as `// []` fills a missing value; it does not turn failed collection into valid evidence.
+ 
+ **Emitters worth remembering:** `herdr … ` (NDJSON everywhere) · `gh … --json` · `podman --format json` · `just --dump --dump-format json` · `cargo --message-format json` · `hunk session … --json` · `bottom` (no — display only).
+ 
+@@ -42,7 +57,10 @@
+ 
+ ## P3 · The watch chain — resident watcher + `pane read`
+ 
+-The habitat's cheapest pattern, and the one nothing else can imitate: a **TUI already running in a pane has computed the answer**. Reading its screen costs nothing and re-runs nothing.
++A **TUI already running in a pane may have computed the answer**. Reading it can avoid another
++build, but the watcher remains a resident workload. Check project, revision and completion state;
++screen contents alone are not a fresh success receipt. Keep one useful loop per worktree and
++include any separate [[60 Workflows/Autonomous Triggers#Probe cost and lifecycle|polling probe]] in its resource budget.
+ 
+ ```bash
+ habitat pane bacon      # current Rust verdict — no rebuild
+@@ -60,8 +78,10 @@
+ The loop [[atuin]] Scripts closes: work something out interactively, then promote **the exact sequence you just ran** into a named, parameterised, synced script — without retyping it.
+ 
+ ```bash
+-# ... you experiment: three commands that finally work ...
++# Capture a candidate, then inspect it before any run:
+ atuin scripts new ship --last 3 -t release -d "Tag, build, publish"
++atuin scripts get ship -s
++# Only after reviewing the captured body for the intended task:
+ atuin scripts run ship -v version=0.3.0
+ ```
+ 
+@@ -92,7 +112,7 @@
+ On Kinoite the toolbox is a container; anything managing the **host** or the **containers themselves** escapes outward.
+ 
+ ```bash
+-flatpak-spawn --host podman ps                       # podman is NOT in the toolbox
++flatpak-spawn --host podman ps                       # inspect the host container engine
+ flatpak-spawn --host rpm-ostree status
+ flatpak-spawn --host systemctl --user status podman.socket
+ toolbox run --container fedora-toolbox-44 <cmd>      # the reverse: host → toolbox
+@@ -115,7 +135,10 @@
+ mempalace wake-up                    # ~600-900 token orientation brief
+ ```
+ 
+-`just -n` and `--dry-run` (mempalace) are the *safe probes* — the habitat has already been bitten once by mining without one (13,881 junk drawers).
++Inspect unfamiliar definitions before using their preview modes. A flag named `--dry-run` does
++not promise zero effects: the installed [[60 Workflows/Runbooks]] executor still runs preconditions,
++and [[60 Workflows/Autonomous Triggers]] still executes probes. A successful preview is not a
++successful workload. Treat old recalled commands and notes as evidence, not activation instructions.
+ 
+ ---
+ 
+@@ -154,6 +177,7 @@
+ [verify]
+ run       = "just gate"
+ contains  = "READY"
++expect_rc = 0
+ retries   = 2
+ remediate = "just annotate-all"     # runs only BETWEEN attempts
+ backoff   = 1
+@@ -179,6 +203,11 @@
+ Proven: killed a service, ran the loop —
+ `✗ machine → ↻ habitat respawn → ✓ machine (attempt 2/3)`.
+ 
++The example now requires both the expected content and exit zero for `[verify]`. See
++[[60 Workflows/Runbooks#Inspection and execution boundaries — source checked 2026-09-06|executor limitations]]
++before using retrying steps. Distinguish a failed wanted service from one intentionally retired
++to save resources; remediation must not repeatedly undo deliberate shutdown.
++
+ Before this, the reactor's 20-second poll was the **only** component in the habitat that closed
+ act→verify→act; everything else checked once and reported.
+ 
+--- a/60 Workflows/00 - Workflows.md
++++ b/60 Workflows/00 - Workflows.md
+@@ -1,13 +1,35 @@
+ ---
+ tags: [toolshed, workflows, moc, chaining]
+ created: 2026-09-02
++updated: 2026-09-06
+ ---
+ 
+ # ⚙️ Workflows — what was actually built
+ 
+-[[Most-Used Tools]] found **one** genuine pipe pair in 156 recorded commands: sixteen capable
+-tools used as sixteen destinations. These are the compositions built to close that gap. Every
+-one runs today; every one was proven against real code in [[Arena Practice Ground]].
++The original [[Most-Used Tools]] analysis found **one** genuine pipe pair in 156 recorded
++commands on 2 September. That small historical sample motivated these compositions. The newer
++[[50 Field Notes/lukes workflows|workflow assessment]] separates 287 Fedora records from a
++127,613-record older checkpoint and explains their coverage limits. Demonstrations below record
++what was tested at the time; this index is not a fresh runtime certification of every workflow.
++
++## Daily operating cycle — reviewed 2026-09-06
++
++The measured session had about **66 GiB available RAM**, while readable `/tmp` allocation was
++**16.36 GiB** and Herdr itself used about **59 MiB PSS**. Preserve useful pane organisation and
++manage the workloads and temporary data within it. These are dated observations, not live limits.
++
++| Phase | Operating guidance | Detail |
++|---|---|---|
++| Orient | Choose the project/worktree and inspect its maintained recipe; recall history as evidence. | [[20 Chaining/Workflow Recipes#R1 · Full recall — "what do we know about X?" ⭐\|Recall]] · [[20 Chaining/Workflow Recipes#R2 · Orient in an unfamiliar repo (P7)\|Project entry]] |
++| Focus | Keep one primary feedback loop for that worktree; use a current watcher result when suitable. | [[20 Chaining/Tool Chaining Patterns#P3 · The watch chain — resident watcher + `pane read`\|Watcher use]] |
++| Build/review | Assign NVMe scratch, isolated targets and a bounded set of workers. Preserve runners that own these settings. | [[50 Field Notes/lukes workflows#The largest actionable finding: temporary data\|Scratch]] · [[60 Workflows/Cascade Engine#Capacity and scheduling — source checked 2026-09-06\|Scheduling]] |
++| Verify | Require the operation's exit status and its intended result; collect pressure during the same workload. | [[60 Workflows/Cross-Workspace Review Gate\|Review gate]] · [[60 Workflows/Habitat Introspection#Resource measurements alongside timing\|Resource measurement]] |
++| Handoff | Save results, active-job ownership and retained-output locations before retiring a completed session. | [[50 Field Notes/lukes workflows#Recommended working rhythm\|Working rhythm]] |
++| Retire | Review only completed, owned scratch. Check restart policy so intentionally closed services stay closed. | [[60 Workflows/Habitat Reactor#Intentional shutdown and recovery policy\|Reactor lifecycle]] · [[60 Workflows/Sandbox Fanout and Fusion#Capacity and ownership — source checked 2026-09-06\|Sandbox ownership]] |
++
++This is operating guidance. Per-service suspension, a global worker queue and automated retention
++have not been installed. Source-confirmed limitations and the documentation changes are recorded in
++[[40 Reference/workflow-review/2026-09-06/README|the workflow review receipt]].
+ 
+ > [!success] [[Claim-Time Guard]] 🛡️ — the rule that fires WHERE THE CLAIM IS MADE
+ > `PIPE_SWALLOWS_VERDICT` recurred three days running with a working detector, because the
+@@ -44,7 +66,7 @@
+ | **Cross-workspace readiness gate** | W2 → W3 → W4 → W5 | [[Cross-Workspace Review Gate]] |
+ | **Review ⇄ editor in lockstep** | W3 ⇄ W2 | [[Synchronised Review and Editor]] |
+ | **Self-healing habitat** | herdr event bus + poll | [[Habitat Reactor]] |
+-| **Parallel cascades** ⭐ | DAG across W1–W5, 2.24× | [[Cascade Engine]] |
++| **Parallel cascades** ⭐ | DAG across W1–W5; historical 2.24× demonstration | [[Cascade Engine]] |
+ | **Autonomous triggers** ⭐ | edge-detected state → cascade | [[Autonomous Triggers]] |
+ | **Weight matrix** ⭐ | faults × gates → which gate bore the weight | [[Weight Matrix - Which Gate Bore the Weight]] |
+ | **Agent supervision** | `habitat-fleet --why` | [[Cascade Engine]] §doctor |
+@@ -93,7 +115,7 @@
+ 
+ | Script | Template vars | Does |
+ |---|---|---|
+-| `recall` | `{{ q }}` | shell history (fulltext) + palace search |
++| `recall` | `{{ q }}` | shell-history recall + palace search; installed Atuin mode spelling is `full-text` |
+ | `arena-pulse` | — | five-cluster health JSON |
+ | `arena-slice` | `{{ cluster }}` | telemetry rows for one cluster |
+ | `gate` | `{{ repo }}` `{{ base }}` | cross-workspace readiness verdict |
+@@ -113,13 +135,16 @@
+ 1. **Agent annotations are ephemeral; human notes persist.** Every bridge retracts its own
+    prior pass (keyed on `--author`) before re-annotating, so fixing a lint retracts its advice
+    automatically. Nothing an agent writes accumulates as stale advice.
+-2. **Read what is already computed.** A resident TUI has the answer; `herdr pane read` costs
+-   nothing and re-runs nothing. Prefer it to recomputing.
+-3. **Dry-run anything new.** `--dry-run`, `just -n`, `mempalace mine --dry-run`. This habitat
+-   has been bitten once (13,881 junk drawers) by skipping it.
++2. **Reuse a suitable current result.** A pane read avoids another build, but the watcher still
++   consumes resources. Check its project, revision and completion state before relying on it.
++3. **Inspect before running.** Read the recipe/source and its preview behaviour. Some dry-runs
++   still execute probes or preconditions: see [[60 Workflows/Autonomous Triggers]] and
++   [[60 Workflows/Runbooks]]. A preview is not a successful execution receipt.
+ 4. **Verify the door before trusting it.** Two documented agent doors in this very vault were
+    wrong (`bacon --headless`, `nu -c`). Run it once before writing it down.
+ 5. **Gate on evidence, not intent.** The readiness gate was only trustworthy once it was shown
+    to *block* — injected a type error and a failing assertion to prove it.
++6. **Budget work, not pane count.** Separate worker count, compiler/test concurrency, scratch
++   allocation and service lifetime. The operating cycle above is the default review path.
+ 
+ Related: [[00 - Toolshed Index]] · [[00 - Field Findings]] · [[Tool Chaining Patterns]] · [[Tool Clusters]]
+--- a/60 Workflows/Cascade Engine.md
++++ b/60 Workflows/Cascade Engine.md
+@@ -1,6 +1,7 @@
+ ---
+ tags: [toolshed, workflow, cascade, parallel, dag, W1, W2, W3, W4, W5]
+ created: 2026-09-02
++updated: 2026-09-06
+ source: ~/.local/bin/habitat-cascade
+ ---
+ 
+@@ -18,7 +19,7 @@
+ atuin scripts run cascade -v name=doctor
+ ```
+ 
+-## Measured
++## Measured in the original demonstration
+ 
+ Identical work, same 14 stages:
+ 
+@@ -29,6 +30,23 @@
+ 
+ **2.24× on the whole cascade**; wave 1 alone reports `605 ms wall vs 2324 ms serial — saved 1719 ms`.
+ The engine prints that saving per wave, so the parallelism is visible rather than claimed.
++
++## Capacity and scheduling — source checked 2026-09-06
++
++The installed `~/.local/bin/habitat-cascade` sizes its thread pool to the number of ready
++stages (`max_workers=max(1, len(ready))`). Its CLI exposes `--seq` but **no configurable worker
++cap**. A dependency graph expresses ordering; it does not establish a safe resource budget.
++
++For heavy builds, begin with `--seq` or split the workload into deliberately bounded groups.
++Limit compiler/test concurrency inside each worker as well. The older 14-/20-child discovery
++demonstrations are not evidence that 14 or 20 simultaneous Rust builds will be efficient.
++Measure a representative run before expanding width; a global scheduler limit remains a future
++implementation task, not an available flag.
++
++Give each independent worktree appropriate NVMe scratch and target ownership. Preserve the
++mutation runner's explicit removal of inherited `CARGO_TARGET_DIR`; it owns isolated copies.
++See [[50 Field Notes/lukes workflows#The largest actionable finding: temporary data|scratch placement]]
++and [[60 Workflows/00 - Workflows#Daily operating cycle — reviewed 2026-09-06|the daily cycle]].
+ 
+ ## Spec format
+ 
+@@ -115,8 +133,9 @@
+   — greedy `.*` eats the `1` of `12`. The doctor cheerfully reported 2 running services out of 12.
+   Use `grep -oE` per field.
+ - TOML forbids `id = "x"; ws = "W1"` on one line — each pair needs its own line.
+-- `cmd | jq ... || echo fallback` never reaches the fallback: jq succeeds on empty input. Use
+-  `(.field // [])` inside the filter instead.
++- `cmd | jq ... || echo fallback` can hide producer failure because the pipeline normally
++  reports jq's status. Use Bash `pipefail` when the producer's status matters. `(.field // [])`
++  supplies a data default; it does not prove the producer succeeded.
+ 
+ Related: [[Habitat Reactor]] · [[Cross-Workspace Review Gate]] · [[00 - Workflows]] ·
+ [[00 - Field Findings]] · [[00 - Habitat Toolkit]] · [[00 - Toolshed Index]] ·
+--- a/60 Workflows/Runbooks.md
++++ b/60 Workflows/Runbooks.md
+@@ -1,6 +1,7 @@
+ ---
+ tags: [toolshed, workflow, runbook, synthesis, atuin, just, cascade, mcp]
+ created: 2026-09-02
++updated: 2026-09-06
+ source: ~/.local/bin/habitat-runbook · fedora-arena/runbooks/
+ ---
+ 
+@@ -12,9 +13,9 @@
+ 
+ | Layer | Gives you | Cannot |
+ |---|---|---|
+-| **atuin script** | synced, templated, portable | be read — the steps are opaque |
+-| **just recipe** | discoverable per repo | travel, or take template variables |
+-| **cascade spec** | parallel, receipted, verifiable | express order, preconditions, or non-DAG steps |
++| **atuin script** | inspectable with `atuin scripts get NAME -s`, templated, syncable | by itself provide structured preconditions and verification |
++| **just recipe** | discoverable per repo, parameterised | by itself synchronise a procedure across every entry point |
++| **cascade spec** | dependencies, parallel stages and receipts | by itself provide the ordered procedure's full precondition/recovery contract |
+ 
+ An `atuin script` wrapping a `just` recipe running a `cascade` is a *chain*, not a system —
+ three places to edit, three places to drift.
+@@ -23,11 +24,15 @@
+ **preconditions**, ordered **steps** (each of which may be a just recipe, a cascade, an MCP call,
+ or a plain command), and a **verification** that says whether it actually worked.
+ 
+-**It does not become a fourth silo.** `export` *generates* the just recipe and the atuin script
+-from the same definition, so the layers stay in sync **by construction rather than by discipline**.
++`export` derives entry-point material from the definition. The inspected implementation prints
++the Just recipe, writes an Atuin body file and prints a registration command. It does **not**
++automatically install both surfaces or prove they match the current definition. Review and
++regenerate through the existing deployment workflow when the source procedure changes.
+ 
+ ```bash
+-habitat-runbook list | show <name> | run <name> [-v K=V] [--dry-run] | export <name>
++habitat-runbook list
++habitat-runbook show ship
++# run and export are separate actions; review their effects before invoking them.
+ ```
+ 
+ ## A runbook spanning four layers
+@@ -39,6 +44,7 @@
+ [[precondition]]
+ check      = "git rev-parse --abbrev-ref HEAD"
+ expect_not = "master"
++expect_rc  = 0
+ message    = "ship runs on a feature branch — you are on master"
+ 
+ [[step]]
+@@ -56,7 +62,12 @@
+ [verify]
+ run      = "just gate"
+ contains = "READY"
++expect_rc = 0
+ ```
++
++This example adds explicit exit-status checks to the original demonstration. Use the project's
++actual protected-branch policy; excluding `master` alone does not exclude `main`. The sample
++transcripts below are historical, not reruns of this revised example.
+ 
+ Run:
+ 
+@@ -105,6 +116,31 @@
+ 
+ ## The verify loop
+ 
++### Inspection and execution boundaries — source checked 2026-09-06
++
++`run --dry-run` **executes preconditions** before skipping steps and final verification.
++Inspect the TOML and `show` output first; a dry-run can still run an expensive or mutating
++precondition. `export` writes an Atuin body file, so it is not a read-only inspection command.
++
++For preconditions and `[verify]`, specify `expect_rc = 0` when success is required. A content
++check alone does not imply a zero exit status in the installed executor. The retrying-step
++path has a related limitation: a configured `expect` is passed as a content check without an
++exit-status requirement. `expect_rc` is not accepted as a step key. Use a reviewed project
++script that enforces the complete condition and a step gated by its exit status, or change
++and test the executor separately. Adding an unsupported field is not enforcement.
++
++### Resource ownership
++
++Record the procedure's project/worktree, worker count, build/test concurrency, NVMe scratch,
++outputs to retain and normal shutdown path. Put operational settings in the owning project
++recipe or worker launcher; the current runbook schema has no general resource-policy block.
++Do not hand-edit generated entry points to add a second competing policy.
++
++The HEE mutation runner already owns `TMPDIR` and removes inherited `CARGO_TARGET_DIR` for
++isolated copies. Preserve that contract. A lightweight audit recipe and a mutation campaign
++need different budgets even if both are reachable through the same runbook interface.
++See [[60 Workflows/00 - Workflows#Daily operating cycle — reviewed 2026-09-06|the daily cycle]].
++
+ `[verify]` and any step may declare `retries`, `remediate` and `backoff`, turning a one-shot check
+ into a loop — see [[Tool Chaining Patterns|P9]]. `audit`'s first step demonstrates it:
+ 
+@@ -117,7 +153,7 @@
+ `ship`'s verify remediates an unannotated diff — but **not** the gate's "no human note yet" rung,
+ which is deliberately outside what an agent may fix.
+ 
+-## The two shipped runbooks
++## The two original demonstrated runbooks
+ 
+ | Runbook | Purpose |
+ |---|---|
+@@ -130,9 +166,9 @@
+ ## Fabric command-plane seam
+ 
+ Fabric should emit a typed, non-executable plan; the runbook layer should validate its service,
+-recipe, step and approval class before rendering Bash or generated entry points. The current live
+-surface still has three runbook specs but only two generated Just/Atuin surfaces, so freshness must
+-be checked before claiming convergence. The contract and promotion path live in
++recipe, step and approval class before rendering Bash or generated entry points. The earlier
++review recorded three runbook specs but only two generated Just/Atuin surfaces. That count is dated;
++freshness must be checked before claiming convergence. The contract and promotion path live in
+ [[Fabric Bash Command Plane]].
+ 
+ Related: [[Factory Roster Expansion - DevOps Toolbox]] · [[Fabric Bash Command Plane]] · [[Fabric Habitat 90-Point Promotion and Practice]] · [[Cascade Engine]] · [[Clustering Shapes]] · [[MCP Servers]] · [[00 - Habitat Toolkit]] · [[atuin]] · [[just]]
+--- a/60 Workflows/Autonomous Triggers.md
++++ b/60 Workflows/Autonomous Triggers.md
+@@ -1,6 +1,7 @@
+ ---
+ tags: [toolshed, workflow, trigger, autonomous, event-driven]
+ created: 2026-09-02
++updated: 2026-09-06
+ source: ~/.local/bin/habitat-trigger
+ ---
+ 
+@@ -29,7 +30,7 @@
+ Armed while the build was green; one edit introduced a type error; ten seconds later the cascade
+ had run and annotated. **No command was issued between the edit and the result.**
+ 
+-## Spec
++## Existing spec — inspected 2026-09-06
+ 
+ ```toml
+ [[trigger]]
+@@ -44,6 +45,27 @@
+ A trigger may watch a **`probe`** (a command) or a **`pane`**/`service`. Fires on the **rising
+ edge** only — the transition from not-matching to matching — never on a level that is merely
+ still true. `debounce` guards against a rebuild emitting many matching lines.
++
++## Probe cost and lifecycle
++
++Source inspection confirms that the default four-second poll executes each `probe` even when
++no action fires. **Debounce limits actions, not probe execution.** `--dry-run` also executes
++the probes; it only suppresses the triggered action. Do not treat it as a passive preview of
++an unfamiliar command.
++
++The checked Arena configuration still contains the `cargo check | tail -5` probe above. It is
++an output-pattern detector, not a compiler-exit-status gate. Pairing it with an active Bacon
++watcher can duplicate build work; the short tail can also omit relevant diagnostics. The
++configuration was inspected, not changed or activated during this documentation review.
++
++Before keeping a trigger resident, establish its owner, project, useful poll interval, scratch
++location and normal shutdown path. Prefer a lightweight current result where its freshness
++and error handling can be established. Otherwise choose an explicit probe interval for the
++workload; changing `HABITAT_TRIGGER_POLL` is a trial to measure, not an automatic improvement.
++Repeated scans, build probes and resulting cascades all belong in the resource budget.
++
++See [[60 Workflows/00 - Workflows#Daily operating cycle — reviewed 2026-09-06|the daily cycle]]
++and [[50 Field Notes/lukes workflows#Recommended working rhythm|Luke's working rhythm]].
+ 
+ ## Why it watches state, not screens ⭐
+ 
+--- a/60 Workflows/Habitat Reactor.md
++++ b/60 Workflows/Habitat Reactor.md
+@@ -1,6 +1,7 @@
+ ---
+ tags: [toolshed, workflow, herdr, event-bus, self-healing, systemd]
+ created: 2026-09-02
++updated: 2026-09-06
+ source: ~/.local/bin/habitat-reactor · ~/.config/systemd/user/habitat-reactor.service
+ ---
+ 
+@@ -19,7 +20,7 @@
+ systemctl --user status habitat-reactor        # via flatpak-spawn --host
+ journalctl --user -u habitat-reactor -f
+ tail -f ~/.local/state/habitat/reactor.log
+-habitat-reactor --dry-run                      # report, change nothing
++habitat-reactor --dry-run                      # observe/log; suppress respawn
+ habitat-reactor --once                         # print the next event and exit
+ ```
+ 
+@@ -76,9 +77,27 @@
+ against `herdr pane process-info`, and respawns only panes that are genuinely idle
+ (`fg ⊆ {bash, sh}` — a pane busy with something else is left alone).
+ 
+-**This is the honest engineering answer**: use the event bus for what it is good at, and stop
+-pretending a poll is avoidable when the required event does not exist. If herdr ever adds a
+-foreground-process event, `sweep()` becomes a fallback rather than the primary path.
++The code excerpt above illustrates the original approach. The installed implementation also
++checks elapsed time in the event loop, so a busy bus cannot indefinitely postpone a sweep.
++The `pane.output_matched` descriptions here and in [[60 Workflows/Autonomous Triggers]] record
++different earlier experiments; they are not a new verification of current Herdr event semantics.
++
++## Intentional shutdown and recovery policy
++
++The installed reactor examines registered process names and respawns missing services in idle
++panes. It has **no explicit per-service intentional-suspension field in the inspected logic**.
++Closing a managed TUI to save resources can therefore be undone by the next sweep. The
++`--dry-run` path suppresses respawn but still connects, observes and appends to its log.
++
++Before retiring a heavyweight service, identify whether this reactor, another supervisor or
++the session-start configuration owns it. A future demand-based service policy needs an explicit
++distinction between wanted, intentionally stopped and unexpectedly failed. Until that exists,
++coordinate shutdown with the owning supervisor; do not use repeated process killing as a
++resource-management loop. No supervisor was stopped or reconfigured by this review.
++
++The sweep also launches several process-info commands, so its own polling cost belongs in the
++budget. See [[50 Field Notes/lukes workflows#Process groups worth reviewing|measured process groups]]
++and [[60 Workflows/00 - Workflows#Daily operating cycle — reviewed 2026-09-06|the daily cycle]].
+ 
+ ## The envelope trap
+ 
+@@ -116,8 +135,9 @@
+ WantedBy=graphical-session.target
+ ```
+ 
+-`BindsTo=herdr-server.service` matters: the reactor consumes that server's socket, so it should
+-die and restart with it.
++`BindsTo=herdr-server.service`, together with `After=`, ties reactor lifetime to server
++availability. It does not by itself guarantee the reactor will be started again whenever the
++server returns; check the actual activation relationships when changing this policy.
+ 
+ ## Proven
+ 
+--- a/60 Workflows/Sandbox Fanout and Fusion.md
++++ b/60 Workflows/Sandbox Fanout and Fusion.md
+@@ -1,15 +1,18 @@
+ ---
+ tags: [toolshed, workflow, podman, sandbox, parallel, fusion, W4]
+ created: 2026-09-02
++updated: 2026-09-06
+ source: ~/.local/bin/habitat-sandbox · fedora-arena/scripts/fuse-modules.sh
+ ---
+ 
+ # 📦 Sandbox Fanout & Fusion — isolated parallel workers
+ 
+-Fan work out to N podman containers that **cannot see each other**, then fuse what they
+-produce and *verify the join*. Each sandbox gets the source **read-only** and its own
+-writable `/out`, so two workers can never corrupt each other's results and a crashed
+-worker costs nothing but its own container.
++Fan work out to N Podman containers, then fuse their outputs and verify the join. Each worker
++gets the source mounted **read-only** and its own writable `/out`. This separates their normal
++output paths; the mounts, container names and lifecycle still need ownership.
++
++The following commands describe the original four-worker demonstration. Inspect existing workers
++and output ownership before repeating it; `create` replaces containers with the same names.
+ 
+ ```bash
+ just sb-create 4          # habitat-sandbox create --n 4 --src <dir>
+@@ -19,8 +22,28 @@
+ just sb-destroy
+ ```
+ 
+-podman lives on the **host** (the toolbox has no `podman` binary), so every call escapes
+-through `flatpak-spawn --host`.
++The installed sandbox wrapper explicitly uses **host Podman** through `flatpak-spawn --host`.
++The presence of a separate Podman binary inside a Toolbx does not change that execution boundary.
++
++## Capacity and ownership — source checked 2026-09-06
++
++`create` accepts `--n`, `--memory` and `--cpus`; its defaults are three workers, 512 MiB and one
++CPU quota per worker. `fanout` sizes its pool to all task pairs and exposes no separate worker
++cap. The demonstration's 512 MiB limit is not a measured allowance for large Rust builds.
++
++The wrapper reuses names such as `hbx-1` and forcibly removes a same-named container during
++creation. A different `--work` directory alone does not isolate concurrent experiment names.
++Check ownership before creation/destruction; concurrent independent factories need a deliberate
++naming/lease mechanism, which has not been added here.
++
++Choose NVMe-backed `--work` storage and verify scratch paths inside each container. An isolated
++`/out` does not redirect a program's `/tmp` automatically. Apply TMPDIR/target policy through the
++actual worker environment, preserve mutation-runner isolation, and record what must survive
++container retirement. The existing `--keep-out` option preserves outputs; automatic deletion of
++untracked output is not proof that the output is unwanted.
++
++See [[50 Field Notes/lukes workflows#The largest actionable finding: temporary data|the measured scratch issue]]
++and [[60 Workflows/00 - Workflows#Daily operating cycle — reviewed 2026-09-06|the operating cycle]].
+ 
+ ## Two demonstrations
+ 
+@@ -63,24 +86,26 @@
+ 
+ ## Two traps
+ 
+-**[[00 - Field Findings|F33]] `:Z` cannot be used on a read-only bind mount.** The private
+-SELinux label **relabels** the mount, which needs write access, so `-v src:/src:ro,Z` fails at
+-runtime with `Permission denied` on every path inside — and podman reports the container as
+-started, so it looks like a container bug. Use the lowercase **shared** label: `:ro,z`.
+-(`--security-opt label=disable` also works but gives up the confinement.)
++**[[00 - Field Findings|F33]] records a SELinux mount-label failure in the original experiment.**
++The former blanket claim that `:Z` cannot accompany a read-only bind was too broad. Both `:z`
++and `:Z` relabel host content; `z` is shared and `Z` is private. `ro` controls container write
++access separately. Shared source across these workers needs compatible shared labelling and
++appropriate host permissions; inspect the actual error instead of automatically disabling
++SELinux labelling. [Podman volume labelling](https://docs.podman.io/en/latest/markdown/podman-run.1.html).
+ 
+ **[[00 - Field Findings|F34]] Alpine's BusyBox `grep` has no `--include`.** Analysis tasks
+ written against GNU grep returned confident zeros rather than errors — `test_fns: 0` on a crate
+-with five tests. Portable form: collect paths with `find` first, then `cat "$FILES" | grep -cE`.
++with five tests. The earlier `cat "$FILES"` example treated a multi-path string as one filename; use argument-safe
++path handling such as `find … -exec grep … {} +`, with a checked aggregate/counting contract.
+ **A minimal sandbox image is a different userland, not just a smaller one.**
+ 
+ ## Why this shape
+ 
+-- **Read-only source** means a worker cannot corrupt the thing being analysed.
+-- **Per-sandbox `/out`** means no write contention and no partial-result interleaving.
++- **Read-only source mount** prevents writes through that mount from the worker.
++- **Per-sandbox `/out`** separates ordinary outputs when names and directories are uniquely owned.
+ - **`--memory 512m --cpus 1.0`** caps a runaway worker.
+-- **Disposable** — `sb-destroy` and the whole experiment is gone; nothing leaks into `$HOME`.
+-  **Corrected 2026-09-03:** it removed the *containers* and left the `/out` trees — 609 MB across
++- **Explicit output retention** — destruction and retention are separate decisions.
++  **Corrected 2026-09-03:** the original destroy removed the *containers* and left the `/out` trees — 609 MB across
+   five stale workers, which is also what inflated `roundtrip`'s discovery walk. `destroy` now
+   clears them, but **enumerates `git ls-files` first and skips any directory holding a tracked
+   file, printing which**: four `hbx-*` dirs hold the fused code modules this note documents as
+--- a/60 Workflows/Habitat Introspection.md
++++ b/60 Workflows/Habitat Introspection.md
+@@ -1,6 +1,7 @@
+ ---
+ tags: [toolshed, workflow, introspection, profiling, telemetry, self-improvement]
+ created: 2026-09-02
++updated: 2026-09-06
+ source: ~/.local/bin/habitat-introspect
+ ---
+ 
+@@ -23,6 +24,21 @@
+ - **Most erratic** — coefficient of variation, to find unreliable stages
+ - **Parallel efficiency** per cascade — serial cost ÷ wall time
+ - **Cost by workspace**, and any failing stages
++
++## Resource measurements alongside timing
++
++The receipt-based timing analysis below does not measure peak RAM, tmpfs growth or the cause of
++I/O stalls. Pair a representative run with available memory, PSS, memory/I/O pressure, worker
++counts and scratch sizes from [[40 Reference/lukes-workflows/2026-09-06/README|the resource collectors]].
++Take comparable before/during/after observations; `just reprofile` actually reruns work.
++
++Change one variable at a time: scratch placement, worker count, polling interval or session
++lifecycle. Require equivalent correctness results before accepting a faster run. The September 6
++audit found about 66 GiB available but unresolved high I/O pressure; neither an old speedup ratio
++nor Atuin elapsed command duration explains that signal. See [[50 Field Notes/lukes workflows#An unresolved performance signal: I/O pressure|the open measurement question]].
++
++The timings and ratios below remain historical receipts, not measurements of today's maximum
++useful factory concurrency.
+ 
+ ## The loop it closed ⭐
+ 
+--- a/60 Workflows/Arena Practice Ground.md
++++ b/60 Workflows/Arena Practice Ground.md
+@@ -1,6 +1,7 @@
+ ---
+ tags: [toolshed, workflow, arena, practice]
+ created: 2026-09-02
++updated: 2026-09-06
+ path: /var/home/Louranicas/fedora-arena
+ ---
+ 
+@@ -73,7 +74,11 @@
+ 3. Read the full diagnostic with `habitat pane bacon`
+ 4. Reverted → green
+ 
+-A resident watcher has already computed the answer; reading its screen costs nothing.
++A pane read can avoid another build. The watcher itself consumes resources, and its result must
++match the current project, revision and completed run before it is treated as evidence. Keep one
++useful feedback loop per worktree; do not duplicate it with frequent build probes by default.
++See [[60 Workflows/Autonomous Triggers#Probe cost and lifecycle]] and
++[[60 Workflows/00 - Workflows#Daily operating cycle — reviewed 2026-09-06|the operating cycle]].
+ 
+ ## Reproducing the arena
+ 
+--- a/60 Workflows/Cross-Workspace Review Gate.md
++++ b/60 Workflows/Cross-Workspace Review Gate.md
+@@ -1,6 +1,7 @@
+ ---
+ tags: [toolshed, workflow, gate, W2, W3, W4, W5]
+ created: 2026-09-02
++updated: 2026-09-06
+ source: fedora-arena/scripts/review-gate.sh
+ chain: W2 → W3 → W4 → W5
+ ---
+@@ -8,7 +9,13 @@
+ # Cross-Workspace Review Gate
+ 
+ One command that asks all four workspaces whether a change is ready, and returns a single
+-verdict. Read-only.
++verdict. It runs builds and tests, which write outputs and can execute project code; it is not
++a passive resource snapshot. It does not itself mean a change has been approved or published.
++
++Use it at an intentional review boundary. Give the build/test worker owned scratch and preserve
++the underlying exit status when formatting its output. Repeated health polling should not rerun
++this entire gate. A current watcher can help orientation but does not replace this gate's required
++checks. See [[60 Workflows/00 - Workflows#Daily operating cycle — reviewed 2026-09-06|the daily cycle]].
+ 
+ ## Usage
+ 
+--- a/60 Workflows/Bridge - Diagnostics to Review.md
++++ b/60 Workflows/Bridge - Diagnostics to Review.md
+@@ -1,6 +1,7 @@
+ ---
+ tags: [toolshed, workflow, bridge, W2, W3]
+ created: 2026-09-02
++updated: 2026-09-06
+ source: fedora-arena/scripts/clippy-to-hunk.sh
+ chain: W2 build → W3 review
+ ---
+@@ -30,6 +31,12 @@
+ ```
+ 
+ ## How it works
++
++The fragment below illustrates data flow, not a standalone success gate. It launches a new
++compiler job and mutates live review annotations. Capture compiler status independently when
++diagnostics must still be processed after failure; a successful jq filter is not a successful
++build. Coordinate target ownership with any existing watcher and avoid duplicate bridge passes.
++For a one-shot pipeline whose exit status matters, see [[20 Chaining/Workflow Recipes#R3 · Rust change → verdict → review (C4 → C3)|the revised recipe]].
+ 
+ ```bash
+ # 1. W2 — diagnostics as structured data
+--- a/60 Workflows/Weight Matrix - Which Gate Bore the Weight.md
++++ b/60 Workflows/Weight Matrix - Which Gate Bore the Weight.md
+@@ -1,6 +1,7 @@
+ ---
+ tags: [toolshed, workflow, mutation, gates, falsify, verified]
+ built: 2026-09-03
++updated: 2026-09-06
+ source: ~/fedora-arena/scripts/audit/weight_matrix.py · cascades/weightweb.toml
+ ---
+ 
+@@ -105,6 +106,13 @@
+ worse than none, and this one had never been asked. Each fault gets its own tree copy and its own
+ `CARGO_TARGET_DIR`, which is what makes the parallel run reproducible rather than merely fast.
+ 
++**Resource review — 2026-09-06:** preserve per-fault isolation while choosing storage and
++concurrency. A fresh target directory can still be on RAM-backed `/tmp`; inspect both target
++and general temporary paths. Use owned NVMe scratch and retain the receipt before retiring
++completed copies. Do not replace per-copy target ownership with one shared inherited directory.
++See [[50 Field Notes/lukes workflows#The largest actionable finding: temporary data|scratch findings]]
++and [[60 Workflows/00 - Workflows#Daily operating cycle — reviewed 2026-09-06|the operating cycle]].
++
+ ## The floors that make it a measurement rather than a scoreboard
+ 
+ - **Non-vacuity.** Every gate must be GREEN on an unmutated copy first. A gate red at baseline
+--- a/60 Workflows/Assimilation - Rules That Fire.md
++++ b/60 Workflows/Assimilation - Rules That Fire.md
+@@ -1,6 +1,7 @@
+ ---
+ tags: [toolshed, workflow, detectors, assimilation, antipatterns, verified]
+ built: 2026-09-03
++updated: 2026-09-06
+ source: ~/fedora-arena/scripts/detectors + cascades/assimilation.toml
+ ---
+ 
+@@ -84,6 +85,12 @@
+ controls=all_tripped session=26hits build=PASS detect=1hits cold=PASS claim=PASS_WITH_GAPS
+ ```
+ 
++**Resource review — 2026-09-06:** retain the cold-build check's independent target directory,
++but verify its filesystem and general temporary-file destination. Cold isolation does not require
++RAM-backed `/tmp`. Use owned NVMe scratch, record a retention decision and bound simultaneous
++heavy checks; the timing below belongs to its original small demonstration. See
++[[60 Workflows/00 - Workflows#Daily operating cycle — reviewed 2026-09-06|the operating cycle]].
++
+ `cold` (W4) is the stage that bears the weight — a fresh `CARGO_TARGET_DIR`, which is what caught
+ the target-dir inheritance bug when the warm host passed it every single time. With zero external
+ dependencies a full cold build of 5 crates and 445 tests costs **1.08 s**, so there is no longer
+--- a/10 Tools/atuin.md
++++ b/10 Tools/atuin.md
+@@ -1,6 +1,7 @@
+ ---
+ tags: [toolshed, tool, workspace-1, memory, scripting]
+ tool: atuin
++updated: 2026-09-06
+ version: 18.12.1
+ upstream: https://github.com/atuinsh/atuin
+ docs: https://docs.atuin.sh
+@@ -85,11 +86,16 @@
+ atuin stats day
+ ```
+ 
+-**Search-mode precision (measured in the arena):** the default is *fuzzy* and over-matches badly — the query `nu` returned **19** results fuzzy, **3** fulltext, **1** prefix. For scripts use `--search-mode fulltext`.
++**Search-mode precision (historical Arena sample):** the query `nu` returned **19** results fuzzy,
++**3** full-text, **1** prefix. Installed 18.12.1 help and a real query were checked on 2026-09-06:
++the flag spelling is **`--search-mode full-text`**. Choose the mode for the question; these old
++result counts are not a current inventory.
+ 
+-Filter flags worth knowing: `--exit` / `--exclude-exit`, `--exclude-cwd`, `--before` / `--after`, `--limit`, `--offset`, `--search-mode` (`prefix|fulltext|fuzzy|skim`), `--filter-mode` (`global|host|session|directory|workspace`), `--format` (`{command} {directory} {duration} {user} {host} {time} {exit} {relativetime}`), `--delete` / `--delete-it-all`, `--reverse`, `--print0`.
++Filter flags worth knowing: `--exit` / `--exclude-exit`, `--exclude-cwd`, `--before` / `--after`, `--limit`, `--offset`, `--search-mode` (`prefix|full-text|fuzzy|skim`), `--filter-mode` (`global|host|session|directory|workspace`), `--format` (`{command} {directory} {duration} {user} {host} {time} {exit} {relativetime}`), `--delete` / `--delete-it-all`, `--reverse`, `--print0`.
+ 
+-`--print0` + `--cmd-only` is the safe pairing for feeding history into another program.
++`--print0` + `--cmd-only` preserves record boundaries for a NUL-aware consumer. It does not make
++historical commands safe to execute. `global` searches the current database's contexts, not
++separate archives across drives; see [[50 Field Notes/lukes workflows#What Atuin reveals, and what it cannot tell us|coverage and interpretation]].
+ 
+ ## Interactive keys
+ 
+@@ -105,9 +111,14 @@
+ **Feeds into:** `fzf` / `tv` (pick a past command) · `atuin scripts new --last` (promote to script) · [[mempalace]] (shell recall → knowledge recall — the most common adjacency in this habitat's own history).
+ 
+ ```bash
+-atuin search --cmd-only --exit 0 cargo | fzf | bash        # rerun a proven command
++atuin search --cmd-only --exit 0 cargo | fzf                # display a candidate for review
+ atuin search --cmd-only --cwd . | tv                       # directory history through television
+ ```
++
++Inspect the selected command against today's task, paths and resource policy before deciding
++to run it. A recorded exit zero is not current verification. Do not pipe history into an
++interpreter. The revised [[20 Chaining/Workflow Recipes|workflow recipes]] use reviewed capture
++and aggregate analysis without exporting raw history into `/tmp`.
+ 
+ ## ⚠️ Upstream has an AI/agent surface this build does not
+ 

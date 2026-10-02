@@ -1,0 +1,122 @@
+{
+  "date": "2026-09-06",
+  "hash_algorithm": "SHA-256",
+  "main_note": {
+    "vault_path": "40 Reference/Perfecting Rust - Performance Engineering.md",
+    "sha256": "1602b40f8b29abc9d9ba8260e1d41b8417952ff601710e3d13f16aa5fac7fc74"
+  },
+  "files": {
+    "README.md": {
+      "sha256": "a0b6c36e32e930fb4213b971bf742ab65b1ed09ae26f7a57304b1b267afe0a27",
+      "bytes": 8316
+    },
+    "evidence/criterion-smoke.log": {
+      "sha256": "ed2643a698a9ef09c69dff589180c7040fb8d43fb2ea3949586c654c5f029732",
+      "bytes": 656
+    },
+    "evidence/environment.json": {
+      "sha256": "8741a6be380f5bbed249f95df1b4d39b4f4cfdb9bc346eae57ef97b946f52f50",
+      "bytes": 1151
+    },
+    "evidence/profile-build.log": {
+      "sha256": "0cacd0fab6475d2e5d340bde53a435c603b6986efac0b58dc66dbc20a0193a76",
+      "bytes": 1115
+    },
+    "evidence/repeated-owned.dhat.json": {
+      "sha256": "f0a808bb46f06f39e35aba234c04d1372d2eec3209872729cac303a83f939b49",
+      "bytes": 13754
+    },
+    "evidence/repeated-owned.log": {
+      "sha256": "4d1e1fad4e7882539d8f9fe4231a13e5e2bb69b1ec1f6d152917dd2f06444f22",
+      "bytes": 241
+    },
+    "evidence/repeated-reused.dhat.json": {
+      "sha256": "af7fbd397e6f2b924ab11240c37ff8541deeb849891d0a94afcf7f63760cc030",
+      "bytes": 13692
+    },
+    "evidence/repeated-reused.log": {
+      "sha256": "f1cd4a64073b7a6e50f4024ea31e4265a824bf3ed8ca8215a66411f54efc7df0",
+      "bytes": 235
+    },
+    "evidence/repeated.txt": {
+      "sha256": "94dd1b9b3f667452d80ed948ad93dc8b04ab4e17a024ef0bef56bbc88eccdb69",
+      "bytes": 110000
+    },
+    "evidence/semantic-tests.log": {
+      "sha256": "b189e68a797f58d5a1be39cd7c12beea0c946d082f155b62596f3994c6e27c6d",
+      "bytes": 936
+    },
+    "evidence/unique-owned.dhat.json": {
+      "sha256": "c19b1d79e10e90d21aa805299edf8c187075f13f1c175226057324d7f1614010",
+      "bytes": 13785
+    },
+    "evidence/unique-owned.log": {
+      "sha256": "53754ba459b7ae27051504f321801d01da1785e1a5925b932d895b061b3b8d69",
+      "bytes": 253
+    },
+    "evidence/unique-reused.dhat.json": {
+      "sha256": "cd5595f2b4b4d487eedc034c160b1b5d94248199594fcf1d0b866d82a04bd9d0",
+      "bytes": 13747
+    },
+    "evidence/unique-reused.log": {
+      "sha256": "3ac3764e701cb8df625952602dc23c39777fae243a1717b5cf392736d5048668",
+      "bytes": 253
+    },
+    "evidence/unique.txt": {
+      "sha256": "11a11044e49b500847ac0e7b083306f41ef7a610d6fd66aabbdaa280970a05bf",
+      "bytes": 150000
+    },
+    "evidence/verification.json": {
+      "sha256": "4d34e3e3b1ed43ddf1e94a2eb47212de47acf58f9cd88b9980f80e5226ee3cd3",
+      "bytes": 5215
+    },
+    "lab/Cargo.lock": {
+      "sha256": "77adc276123011e6d2bbbe70eee5e3edb879a2c1701a324ee5d065fc6782ebe4",
+      "bytes": 21327
+    },
+    "lab/Cargo.toml": {
+      "sha256": "ffa20efe111b541effe5394925a6dd979b112429baa0086ba446e8a42b6a59cc",
+      "bytes": 373
+    },
+    "lab/benches/allocations.rs": {
+      "sha256": "93878efe7b49943c19eb2a0433a369be464c8a0e2e91df482e2405f7a831175a",
+      "bytes": 1680
+    },
+    "lab/src/lib.rs": {
+      "sha256": "b73a0a8d1f0989783a8ab6082f5bf4c278f36a6af7689a53e5c7ef20e1a639f9",
+      "bytes": 3662
+    },
+    "lab/src/main.rs": {
+      "sha256": "8b3e14b91138fedd8439cb974b1a5c9816e9802733817e0cfcbc350ebf053b9b",
+      "bytes": 875
+    },
+    "local-library.json": {
+      "sha256": "2130d9971dab6ee56fb7694eabf6d7874093f0caeac47133e5fb8077850afd4d",
+      "bytes": 8992
+    },
+    "prime-receipt.md": {
+      "sha256": "bf3dacc30ad6e159157084e667c0958c09643070d65806f95049964ebe309761",
+      "bytes": 2076
+    },
+    "sources.json": {
+      "sha256": "3a1138a63da05df9f6346fe18a06059e52cc7f02c2a3915fc147ccb361613d9b",
+      "bytes": 23714
+    },
+    "verify_lab.py": {
+      "sha256": "37306c329ad368c6cd10f8c45f2856e8534c8a0eee9a5924fb3273310e35436a",
+      "bytes": 2751
+    },
+    "Learning Status and Next Steps.md": {
+      "sha256": "4fa0fc9e1dd3c1166b8e79e831b0ea70cfa046ba40f4b7e90f1901e2577ad7a2",
+      "bytes": 6210
+    },
+    "Source and Reading Map.md": {
+      "sha256": "6db45b718e88eb27b029e5e5458231431b742557c4e564da0a923b42b07950c2",
+      "bytes": 10388
+    }
+  },
+  "corpus_index": {
+    "vault_path": "40 Reference/rust-mastery/README.md",
+    "sha256": "b446920516408ca4c966a9d048c2cfe01ed2095aca1e3e19cb3beaf1a47bc801"
+  }
+}

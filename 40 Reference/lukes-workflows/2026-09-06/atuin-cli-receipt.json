@@ -1,0 +1,44 @@
+{
+  "timestamp_utc": "2026-09-05T20:29:44.705183+00:00",
+  "note": "Installed Atuin invoked read-only. Search output is metadata only; command text intentionally omitted. Global covers the current database, not separate archived databases.",
+  "commands": [
+    {
+      "argv": [
+        "atuin",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "atuin 18.12.1 (NO_GIT)\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "atuin",
+        "search",
+        "--help"
+      ],
+      "exit_code": 0,
+      "stdout": "Interactive history search\n\nUsage: atuin search [OPTIONS] [QUERY]...\n\nArguments:\n  [QUERY]...\n          \n\nOptions:\n  -c, --cwd <CWD>\n          Filter search result by directory\n\n      --exclude-cwd <EXCLUDE_CWD>\n          Exclude directory from results\n\n  -e, --exit <EXIT>\n          Filter search result by exit code\n\n      --exclude-exit <EXCLUDE_EXIT>\n          Exclude results with this exit code\n\n  -b, --before <BEFORE>\n          Only include results added before this date\n\n      --after <AFTER>\n          Only include results after this date\n\n      --limit <LIMIT>\n          How many entries to return at most\n\n      --offset <OFFSET>\n          Offset from the start of the results\n\n  -i, --interactive\n          Open interactive search UI\n\n      --filter-mode <FILTER_MODE>\n          Allow overriding filter mode over config\n          \n          [possible values: global, host, session, directory, workspace, session-preload]\n\n      --search-mode <SEARCH_MODE>\n          Allow overriding search mode over config\n          \n          [possible values: prefix, full-text, fuzzy, skim]\n\n      --keymap-mode <KEYMAP_MODE>\n          Notify the keymap at the shell's side\n          \n          [default: auto]\n          [possible values: emacs, vim-normal, vim-insert, auto]\n\n      --human\n          Use human-readable formatting for time\n\n      --cmd-only\n          Show only the text of the command\n\n      --print0\n          Terminate the output with a null, for better multiline handling\n\n      --delete\n          Delete anything matching this query. Will not print out the match\n\n      --delete-it-all\n          Delete EVERYTHING!\n\n  -r, --reverse\n          Reverse the order of results, oldest first\n\n      --timezone [<TIMEZONE>]\n          Display the command time in another timezone other than the configured default.\n          \n          This option takes one of the following kinds of values: - the special value \"local\" (or \"l\") which refers to the system time zone - an offset from UTC (e.g. \"+9\", \"-2:30\")\n          \n          [aliases: --tz]\n\n  -f, --format <FORMAT>\n          Available variables: {command}, {directory}, {duration}, {user}, {host}, {time}, {exit} and {relativetime}. Example: --format \"{time} - [{duration}] - {directory}$\\t{command}\"\n\n      --inline-height <INLINE_HEIGHT>\n          Set the maximum number of lines Atuin's interface should take up\n\n      --include-duplicates\n          Include duplicate commands in the output (non-interactive only)\n\n  -h, --help\n          Print help (see a summary with '-h')\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "atuin",
+        "search",
+        "--filter-mode",
+        "global",
+        "--search-mode",
+        "full-text",
+        "--include-duplicates",
+        "--limit",
+        "5",
+        "--format",
+        "{time} | {host} | {directory} | {exit} | {duration}",
+        "herdr"
+      ],
+      "exit_code": 0,
+      "stdout": "2026-09-03 17:43:01 | toolbx | /var/home/Louranicas/fedora-arena | 0 | 1h\n2026-09-03 17:43:01 | toolbx | /var/mnt/STORAGE-10TB/repos | 137 | 29m\n2026-09-03 17:43:01 | toolbx | /var/mnt/STORAGE-10TB/repos/herdr | -1 | 0s\n2026-09-03 18:12:31 | toolbx | /var/mnt/STORAGE-10TB/repos | -1 | 0s\n2026-09-03 19:03:45 | toolbx | /var/mnt/STORAGE-10TB/repos/herdr | -1 | 0s\n",
+      "stderr": ""
+    }
+  ]
+}

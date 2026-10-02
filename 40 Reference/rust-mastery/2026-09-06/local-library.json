@@ -1,0 +1,146 @@
+{
+  "review_date": "2026-09-06",
+  "search": "Immediate local-library filenames containing rust or atomics",
+  "candidate_count": 92,
+  "candidate_limit": "Includes duplicate editions, formats, archives and unrelated matches; not a unique-book count",
+  "selected": [
+    {
+      "id": "rustaceans",
+      "path": "/var/mnt/STORAGE-10TB/Book Library/Jon Gjengset - Rust For Rustaceans_ Idiomatic Programming for Experienced Developers (2021, No Starch Press) - libgen.li.pdf",
+      "bytes": 2527958,
+      "sha256": "19ddd1f6ab52948d529adf3d94816c2b8d8aab9f294fd6731b53145f029666cc",
+      "title": "Rust for Rustaceans",
+      "edition_evidence": "Partial early access; see main note",
+      "inspection": "Metadata/front matter and contents; not full-book review; contents PDF page 4 rendered to inspect included-chapter colors"
+    },
+    {
+      "id": "atomics",
+      "path": "/var/mnt/STORAGE-10TB/Book Library/Mara Bos - Rust Atomics and Locks (2023, O'Reilly Media) - libgen.li.pdf",
+      "bytes": 2689396,
+      "sha256": "648cf454822d942785d9848d520051fdd6101407607f43a770b60907cac8ad1a",
+      "title": "Rust Atomics and Locks — Mara Bos",
+      "edition_evidence": "2023 PDF; 252 PDF pages",
+      "proposed_reading": "Ch. 3 memory ordering → 6 Arc → 7 processor → 8 operating-system primitives",
+      "inspection": "Metadata/front matter and contents; not full-book review"
+    },
+    {
+      "id": "programming-rust-2025",
+      "path": "/var/mnt/STORAGE-10TB/Book Library/Jim Blandy, Jason Orendorff, and Leonora F. S. Tindall - Programming Rust (2025, O'Reilly Media, Inc.) - libgen.li.epub",
+      "bytes": 3745116,
+      "sha256": "5d6262f270165cb632e9ad57285ce4a93e9881b44818eebe90bdaa1c2f23a899",
+      "title": "Programming Rust, third edition early release",
+      "edition_evidence": "Partial early access; see main note",
+      "inspection": "Metadata/front matter and contents; not full-book review"
+    },
+    {
+      "id": "programming-rust-2021",
+      "path": "/var/mnt/STORAGE-10TB/Book Library/Jim Blandy_ Jason Orendorff_ Leonora F.S. Tindall - Programming Rust, 2nd Edition (2021, O'Reilly Media, Inc.) - libgen.li.epub",
+      "bytes": 5585888,
+      "sha256": "ffb4f84e7a116ae1644596dcbbf6315bfc2debbe54e9e9ffc02138511b70e4a6",
+      "title": "Programming Rust, 2nd edition — Blandy, Orendorff, Tindall",
+      "edition_evidence": "2021 EPUB; contents list 23 chapters",
+      "proposed_reading": "Ch. 4–5 ownership/references → 15–18 iterators, collections, text and I/O → 19–20 concurrency/async → 22 unsafe",
+      "inspection": "Metadata/front matter and contents; not full-book review"
+    },
+    {
+      "id": "effective-rust",
+      "path": "/var/mnt/STORAGE-10TB/Book Library/David Drysdale - Effective Rust (2024, O'Reilly Media, Inc.) - libgen.li.epub",
+      "bytes": 2887027,
+      "sha256": "6832ca3a9bd41703d5da57c327e220b5f8b1636a9a2feab9025795347ada0f6e",
+      "title": "Effective Rust — David Drysdale",
+      "edition_evidence": "2024 EPUB; 35 items",
+      "proposed_reading": "Items 8–9 pointers/iterators, 11–12 RAII/dispatch, 14–17 lifetimes/parallelism, 20 optimization, 25–32 dependencies/tooling/CI",
+      "inspection": "Metadata and contents; selected prose from Items 20 and 32"
+    },
+    {
+      "id": "zero-to-production",
+      "path": "/var/mnt/STORAGE-10TB/Book Library/Luca Palmieri - Zero To Production In Rust_ An introduction to backend development (Updated) (2023) - libgen.li.epub",
+      "bytes": 2905644,
+      "sha256": "451a047edbc15bc7d8188be269022756ebd0e4306aa825a50128a534d959b123",
+      "title": "Zero To Production In Rust — Luca Palmieri",
+      "edition_evidence": "Updated EPUB with 2023-09-21 package date",
+      "proposed_reading": "Ch. 4 telemetry, 5 deployment, 8 errors, 11 fault-tolerant workflows",
+      "inspection": "Metadata/front matter and contents; not full-book review"
+    },
+    {
+      "id": "rust-in-action",
+      "path": "/var/mnt/STORAGE-10TB/Book Library/Tim McNamara - Rust in Action_ Systems programming concepts and techniques (2021, Manning Publications Co.) - libgen.li.epub",
+      "bytes": 6252174,
+      "sha256": "1fbd3aa643ea6a1599c3bd33ca10888c05b8319a7d1fbb74d464cd9ecdbdff43",
+      "title": "Rust in Action — Tim McNamara",
+      "edition_evidence": "2021-named EPUB; contents list 12 chapters",
+      "proposed_reading": "Ch. 4 ownership → 6 memory → 7 storage → 8 networking → 10 processes/threads/containers",
+      "inspection": "Metadata/front matter and contents; not full-book review"
+    },
+    {
+      "id": "command-line-rust",
+      "path": "/var/mnt/STORAGE-10TB/Book Library/Ken Youens-Clark - Command-Line Rust_ A Project-Based Primer for Writing Rust CLIs 1 (2022, O'Reilly Media) - libgen.li.pdf",
+      "bytes": 5795354,
+      "sha256": "05fc14c57ee757355621988315978280bbf41158646be3fc7f25ced25ac78de9",
+      "title": "Command-Line Rust — Ken Youens-Clark",
+      "edition_evidence": "2022 PDF; 399 PDF pages",
+      "proposed_reading": "Ch. 3–6 cat, head, wc and uniq; then Ch. 9 grep",
+      "inspection": "Metadata/front matter and contents; not full-book review"
+    },
+    {
+      "id": "code-like-pro",
+      "path": "/var/mnt/STORAGE-10TB/Book Library/Brenden Matthews - Code Like a Pro in Rust (2024, Manning) - libgen.li.pdf",
+      "bytes": 11478018,
+      "sha256": "31071369f5cc4f2b97b9a877deed29d6ceba16e7e08650514ce2ac2341ed7ede",
+      "title": "Code Like a Pro in Rust — Brenden Matthews",
+      "edition_evidence": "2024 PDF; contents inspected",
+      "proposed_reading": "Ch. 4–5 data structures/memory → 6–7 tests → 8–9 async/services → 11 optimizations",
+      "inspection": "Metadata/front matter and contents; not full-book review"
+    },
+    {
+      "id": "servers-services-apps",
+      "path": "/var/mnt/STORAGE-10TB/Book Library/Prabhu Eshwarla - Rust Servers, Services, and Apps (Final Release) (2023, Manning) - libgen.li.pdf",
+      "bytes": 9951514,
+      "sha256": "968cccfbd9f5e110e27e2301b04122a8a28770ce923253364cc26c5098eac472",
+      "title": "Rust Servers, Services, and Apps — Prabhu Eshwarla",
+      "edition_evidence": "2023-named final-release PDF; 330 PDF pages",
+      "proposed_reading": "Ch. 5 errors → 6 API refactoring → 10 async → 12 Docker deployment",
+      "inspection": "Metadata/front matter and contents; not full-book review"
+    },
+    {
+      "id": "smart-pointers",
+      "path": "/var/mnt/STORAGE-10TB/Book Library/Tim McNamara - Smart Pointers in Rust (2023, Accelerant Press) - libgen.li.pdf",
+      "bytes": 618312,
+      "sha256": "b9eca3e85dc9771ee6c9f9bb53353262261fe22686da5e5b10d8d993ce42c3bc",
+      "title": "The Accelerated Guide to Smart Pointers in Rust — Tim McNamara",
+      "edition_evidence": "2023-named PDF; 75 PDF pages",
+      "proposed_reading": "§6 standard pointers/locks → §7 Drop and Deref → §8 cycles and extensions",
+      "inspection": "Metadata/front matter and contents; not full-book review"
+    },
+    {
+      "id": "macros",
+      "path": "/var/mnt/STORAGE-10TB/Book Library/Van Overmeire, Sam_ - Write Powerful Rust Macros (2024, Manning Publications Co. LLC) - libgen.li.epub",
+      "bytes": 9611996,
+      "sha256": "a9aea5c8f10f2cebae65afecda23f64fc94c44a7233c1ed26fab72f969d54f20",
+      "title": "Write Powerful Rust Macros — Sam Van Overmeire",
+      "edition_evidence": "2024 EPUB; contents inspected",
+      "proposed_reading": "Ch. 3 procedural macros → 6 testing → 7 errors → 9 infrastructure DSL",
+      "inspection": "Metadata/front matter and contents; not full-book review"
+    },
+    {
+      "id": "containers",
+      "path": "/var/mnt/STORAGE-10TB/Book Library/Shashank Mohan Jain - Linux Containers and Virtualization_ Utilizing Rust for Linux Containers (2023, Apress) [10.1007_978-1-4842-9768-1] - libgen.li.epub",
+      "bytes": 2619115,
+      "sha256": "d3f55191cd958f06faa3f4860a0fc8d7c6621dbc9104ae8c57b6085b76c29f18",
+      "title": "Linux Containers and Virtualization — Shashank Mohan Jain",
+      "edition_evidence": "2023 EPUB; contents inspected",
+      "proposed_reading": "Ch. 3 namespaces → 4 cgroups → 5 layered filesystems → 8 containers with Rust",
+      "inspection": "Metadata/front matter and contents; not full-book review"
+    },
+    {
+      "id": "rust-book-2023",
+      "path": "/var/mnt/STORAGE-10TB/Book Library/Steve Klabnik_ Carol Nichols - The Rust Programming Language, 2nd Edition (2023, No Starch Press) - libgen.li.epub",
+      "bytes": 1671000,
+      "sha256": "0fd73ada6fae488cdf11ead95356ef0b08bd1bc4fce535c7d87a28350b4d795e",
+      "title": "The Rust Programming Language, 2nd edition — Klabnik and Nichols",
+      "edition_evidence": "2023-named EPUB; contents list 20 chapters",
+      "proposed_reading": "Ch. 4 ownership, 8 collections, 10 lifetimes, 13 iterators, 15 smart pointers, 16 concurrency",
+      "inspection": "Metadata/front matter and contents; not full-book review"
+    }
+  ]
+}

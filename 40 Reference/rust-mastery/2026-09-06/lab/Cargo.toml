@@ -1,0 +1,25 @@
+[package]
+name = "rust-mastery-lab"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[workspace]
+
+[features]
+dhat-heap = ["dep:dhat"]
+
+[dependencies]
+dhat = { version = "=0.3.3", optional = true }
+
+[dev-dependencies]
+criterion = "=0.8.2"
+
+[[bench]]
+name = "allocations"
+harness = false
+
+[profile.profiling]
+inherits = "release"
+debug = "line-tables-only"
+strip = "none"

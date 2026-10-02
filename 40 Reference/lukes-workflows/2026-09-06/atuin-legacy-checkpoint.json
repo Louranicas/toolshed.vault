@@ -1,0 +1,944 @@
+{
+  "archive": "/var/mnt/STORAGE-10TB/habitat-archive/tier2-substrates/atuin/latest/atuin.tar.zst",
+  "checkpoint_sha256": "487d7e6ce0cf109ab8fc2c2a9118a5566d559c2e4811aaa66a2c22435c619ed6",
+  "history_bytes": 317566976,
+  "member_headers": [
+    {
+      "name": "atuin",
+      "bytes": 0
+    },
+    {
+      "name": "atuin/last_version_check_time",
+      "bytes": 30
+    },
+    {
+      "name": "atuin/kv.db-shm",
+      "bytes": 32768
+    },
+    {
+      "name": "atuin/atuin-daemon.pid",
+      "bytes": 13
+    },
+    {
+      "name": "atuin/records.db",
+      "bytes": 2083463168
+    },
+    {
+      "name": "atuin/key",
+      "bytes": 68
+    },
+    {
+      "name": "atuin/scripts.db-shm",
+      "bytes": 32768
+    },
+    {
+      "name": "atuin/host_id",
+      "bytes": 32
+    },
+    {
+      "name": "atuin/records.db-shm",
+      "bytes": 32768
+    },
+    {
+      "name": "atuin/scripts",
+      "bytes": 0
+    },
+    {
+      "name": "atuin/scripts/watcher-cli.sh",
+      "bytes": 264
+    },
+    {
+      "name": "atuin/scripts.db-wal",
+      "bytes": 0
+    },
+    {
+      "name": "atuin/records.db-wal",
+      "bytes": 2270152
+    },
+    {
+      "name": "atuin/meta.db",
+      "bytes": 28672
+    },
+    {
+      "name": "atuin/latest_version",
+      "bytes": 7
+    },
+    {
+      "name": "atuin/scripts.db",
+      "bytes": 495616
+    },
+    {
+      "name": "atuin/kv.db-wal",
+      "bytes": 3440232
+    },
+    {
+      "name": "atuin/kv.db",
+      "bytes": 4694016
+    },
+    {
+      "name": "atuin/history.db",
+      "bytes": 317566976
+    },
+    {
+      "name": "atuin/workflow_tracking.db",
+      "bytes": 0
+    },
+    {
+      "name": "atuin/hebbian_pulse.db",
+      "bytes": 0
+    }
+  ],
+  "archive_headers_complete": true,
+  "wal_present_not_applied": false,
+  "scope": "Archived base checkpoint only; any uncheckpointed WAL history omitted. Temporary in-memory format header changed for SQLite deserialize; original archive untouched. No credentials or payload files extracted.",
+  "summary": {
+    "source": "/var/mnt/STORAGE-10TB/habitat-archive/tier2-substrates/atuin/latest/atuin.tar.zst::atuin/history.db",
+    "records": 127613,
+    "unique_ids": 127613,
+    "first_utc": "2026-01-10T01:14:04.176619+00:00",
+    "last_utc": "2026-08-30T22:24:02.878026+00:00",
+    "sessions": 1661,
+    "host_counts": {
+      "ORAC7:louranicas": 102863,
+      "ORAC7": 24750
+    },
+    "primary_tool_counts": {
+      "other": 45364,
+      "cd": 38137,
+      "empty": 5539,
+      "echo": 5120,
+      "git": 3782,
+      "ls": 3743,
+      "cargo": 3320,
+      "rg": 3250,
+      "unparsed": 2989,
+      "find": 2776,
+      "python3": 2568,
+      "cat": 2038,
+      "claude": 1551,
+      "herdr": 707,
+      "source": 594,
+      "atuin": 546,
+      "tail": 463,
+      "zellij": 447,
+      "mkdir": 443,
+      "head": 438,
+      "just": 426,
+      "fd": 373,
+      "curl": 368,
+      "bash": 247,
+      "printf": 200,
+      "pwd": 167,
+      "cp": 162,
+      "pi": 159,
+      "which": 145,
+      "ps": 143,
+      "rm": 139,
+      "codex": 126,
+      "node": 116,
+      "gh": 111,
+      "command": 110,
+      "exit": 91,
+      "mempalace": 90,
+      "chmod": 78,
+      "sudo": 61,
+      "systemctl": 47,
+      "rustup": 45,
+      "hermes": 33,
+      "du": 30,
+      "npm": 28,
+      "clear": 27,
+      "watch": 24,
+      "rustc": 23,
+      "kill": 23,
+      "yazi": 21,
+      "df": 21,
+      "uv": 18,
+      "journalctl": 13,
+      "pkill": 12,
+      "nvim": 10,
+      "mv": 10,
+      "lazygit": 8,
+      "npx": 8,
+      "python": 8,
+      "tar": 7,
+      "tmux": 7,
+      "bacon": 7,
+      "btm": 7,
+      "free": 6,
+      "podman": 6,
+      "docker": 5,
+      "type": 4,
+      "htop": 3,
+      "nano": 3,
+      "top": 3,
+      "make": 3,
+      "pnpm": 2,
+      "rsync": 2,
+      "nu": 2,
+      "xdg-open": 2,
+      "killall": 1,
+      "apt": 1,
+      "wget": 1,
+      "vim": 1,
+      "exec": 1,
+      "tv": 1,
+      "tuicr": 1,
+      "glab": 1
+    },
+    "keyword_record_counts": {
+      "zellij": 4628,
+      "htop": 9,
+      "tmux": 32,
+      "btm": 25,
+      "free -h": 43,
+      "CARGO_TARGET_DIR": 11541,
+      "mempalace": 1050,
+      "TMPDIR": 67,
+      "swapon": 2,
+      "ollama": 13,
+      "herdr": 6738,
+      "cargo mutants": 241,
+      "systemd-run": 11
+    },
+    "exit_counts": {
+      "0": 123331,
+      "-1": 2969,
+      "127": 377,
+      "143": 93,
+      "1": 543,
+      "126": 8,
+      "130": 11,
+      "134": 4,
+      "147": 5,
+      "2": 102,
+      "137": 21,
+      "22": 1,
+      "100": 5,
+      "8": 1,
+      "132": 5,
+      "74": 1,
+      "128": 2,
+      "148": 9,
+      "32": 3,
+      "101": 106,
+      "124": 10,
+      "3": 2,
+      "141": 2,
+      "5": 2
+    },
+    "top_cwds": {
+      "/home/louranicas/claude-code-workspace": 54845,
+      "/home/louranicas": 14820,
+      "/home/louranicas/claude-code-workspace/loom-lattice-habitat": 7779,
+      "/mnt/mint-nvme15t/advanced-claude-workspace": 5087,
+      "/mnt/mint-nvme15t/advanced-claude-workspace/heb": 4296,
+      "/mnt/mint-nvme15t/advanced-claude-workspace/.worktrees/heb-residual-6-closure": 2878,
+      "/home/louranicas/claude-code-workspace/torus-gyroid-loom": 2629,
+      "/home/louranicas/claude-code-workspace/orac-sidecar": 2387,
+      "/home/louranicas/claude-code-workspace/habitat-graph": 2041,
+      "/home/louranicas/.no-mistakes/worktrees/d95e3d74d426/01M0AE029M8YK0CE1S06A3WWX2": 1930,
+      "/home/louranicas/claude-code-workspace/stacked-search-loom": 1532,
+      "/home/louranicas/claude-code-workspace/deep-diff-forge": 1401,
+      "/home/louranicas/.no-mistakes/worktrees/e4eb2d8f8af8/01M0C9GDYD46BVGZND48FENQT3": 1096,
+      "/home/louranicas/claude-code-workspace/loom-lattice-habitat/crates/ll-ultramap": 1073,
+      "/home/louranicas/claude-code-workspace/synthex-v2": 1030
+    },
+    "records_by_day": {
+      "2026-01-10": 81,
+      "2026-01-11": 128,
+      "2026-01-12": 24,
+      "2026-01-16": 162,
+      "2026-01-17": 40,
+      "2026-01-18": 38,
+      "2026-01-20": 7,
+      "2026-01-23": 11,
+      "2026-01-24": 10,
+      "2026-01-27": 42,
+      "2026-01-28": 12,
+      "2026-01-29": 21,
+      "2026-01-30": 62,
+      "2026-01-31": 20,
+      "2026-02-02": 7,
+      "2026-02-06": 23,
+      "2026-02-07": 6,
+      "2026-02-08": 15,
+      "2026-02-09": 23,
+      "2026-02-15": 35,
+      "2026-02-18": 6,
+      "2026-02-20": 34,
+      "2026-02-21": 29,
+      "2026-02-22": 67,
+      "2026-02-23": 12,
+      "2026-02-24": 33,
+      "2026-02-25": 17,
+      "2026-02-26": 3,
+      "2026-02-27": 5,
+      "2026-02-28": 22,
+      "2026-03-01": 1,
+      "2026-03-02": 9,
+      "2026-03-03": 17,
+      "2026-03-04": 37,
+      "2026-03-06": 105,
+      "2026-03-07": 40,
+      "2026-03-08": 38,
+      "2026-03-09": 28,
+      "2026-03-10": 95,
+      "2026-03-11": 65,
+      "2026-03-12": 6,
+      "2026-03-13": 21,
+      "2026-03-14": 210,
+      "2026-03-15": 102,
+      "2026-03-16": 41,
+      "2026-03-17": 36,
+      "2026-03-18": 44,
+      "2026-03-19": 4,
+      "2026-03-20": 79,
+      "2026-03-21": 115,
+      "2026-03-22": 144,
+      "2026-03-23": 20,
+      "2026-03-24": 19,
+      "2026-03-25": 48,
+      "2026-03-26": 48,
+      "2026-03-27": 187,
+      "2026-03-28": 183,
+      "2026-03-29": 297,
+      "2026-03-30": 463,
+      "2026-03-31": 410,
+      "2026-04-01": 118,
+      "2026-04-02": 1,
+      "2026-04-03": 147,
+      "2026-04-04": 381,
+      "2026-04-05": 153,
+      "2026-04-06": 8,
+      "2026-04-07": 81,
+      "2026-04-08": 3,
+      "2026-04-10": 74,
+      "2026-04-11": 372,
+      "2026-04-12": 210,
+      "2026-04-13": 105,
+      "2026-04-14": 15,
+      "2026-04-16": 127,
+      "2026-04-17": 33,
+      "2026-04-18": 130,
+      "2026-04-19": 157,
+      "2026-04-20": 6,
+      "2026-04-21": 134,
+      "2026-04-22": 50,
+      "2026-04-23": 35,
+      "2026-04-24": 321,
+      "2026-04-25": 243,
+      "2026-04-26": 429,
+      "2026-04-27": 243,
+      "2026-04-28": 178,
+      "2026-04-29": 149,
+      "2026-04-30": 50,
+      "2026-05-01": 181,
+      "2026-05-02": 271,
+      "2026-05-03": 185,
+      "2026-05-04": 93,
+      "2026-05-05": 284,
+      "2026-05-06": 42,
+      "2026-05-07": 125,
+      "2026-05-08": 64,
+      "2026-05-09": 75,
+      "2026-05-10": 214,
+      "2026-05-11": 39,
+      "2026-05-12": 12,
+      "2026-05-13": 107,
+      "2026-05-14": 67,
+      "2026-05-15": 109,
+      "2026-05-16": 190,
+      "2026-05-17": 151,
+      "2026-05-18": 38,
+      "2026-05-19": 48,
+      "2026-05-20": 30,
+      "2026-05-21": 145,
+      "2026-05-22": 72,
+      "2026-05-23": 105,
+      "2026-05-24": 103,
+      "2026-05-25": 207,
+      "2026-05-26": 195,
+      "2026-05-27": 29,
+      "2026-05-28": 68,
+      "2026-05-29": 168,
+      "2026-05-30": 257,
+      "2026-05-31": 272,
+      "2026-06-01": 5,
+      "2026-06-02": 9,
+      "2026-06-03": 183,
+      "2026-06-04": 259,
+      "2026-06-05": 153,
+      "2026-06-06": 116,
+      "2026-06-07": 114,
+      "2026-06-08": 140,
+      "2026-06-09": 58,
+      "2026-06-10": 324,
+      "2026-06-11": 978,
+      "2026-06-12": 296,
+      "2026-06-13": 6,
+      "2026-06-14": 3888,
+      "2026-06-15": 1452,
+      "2026-06-16": 2255,
+      "2026-06-17": 89,
+      "2026-06-18": 165,
+      "2026-06-19": 3535,
+      "2026-06-20": 9419,
+      "2026-06-21": 1813,
+      "2026-06-22": 893,
+      "2026-06-23": 494,
+      "2026-06-24": 4044,
+      "2026-06-25": 83,
+      "2026-06-26": 78,
+      "2026-06-27": 1087,
+      "2026-06-28": 1370,
+      "2026-06-29": 3743,
+      "2026-06-30": 2689,
+      "2026-07-01": 784,
+      "2026-07-02": 2277,
+      "2026-07-03": 2660,
+      "2026-07-04": 226,
+      "2026-07-05": 1617,
+      "2026-07-06": 2284,
+      "2026-07-07": 2187,
+      "2026-07-08": 1246,
+      "2026-07-09": 1404,
+      "2026-07-10": 1020,
+      "2026-07-11": 3858,
+      "2026-07-12": 711,
+      "2026-07-13": 910,
+      "2026-07-14": 1028,
+      "2026-07-15": 1089,
+      "2026-07-16": 2,
+      "2026-07-17": 2,
+      "2026-07-18": 2,
+      "2026-07-19": 439,
+      "2026-07-20": 384,
+      "2026-07-21": 583,
+      "2026-07-22": 602,
+      "2026-07-23": 439,
+      "2026-07-24": 2060,
+      "2026-07-25": 509,
+      "2026-07-26": 4000,
+      "2026-07-27": 907,
+      "2026-07-28": 1405,
+      "2026-07-29": 1051,
+      "2026-07-30": 299,
+      "2026-07-31": 286,
+      "2026-08-01": 293,
+      "2026-08-02": 1312,
+      "2026-08-03": 1407,
+      "2026-08-04": 1576,
+      "2026-08-05": 666,
+      "2026-08-06": 1257,
+      "2026-08-07": 931,
+      "2026-08-08": 459,
+      "2026-08-09": 2765,
+      "2026-08-10": 993,
+      "2026-08-11": 350,
+      "2026-08-12": 321,
+      "2026-08-13": 440,
+      "2026-08-14": 1529,
+      "2026-08-15": 978,
+      "2026-08-16": 1630,
+      "2026-08-17": 499,
+      "2026-08-18": 4308,
+      "2026-08-19": 6551,
+      "2026-08-20": 2392,
+      "2026-08-21": 733,
+      "2026-08-22": 1129,
+      "2026-08-23": 2874,
+      "2026-08-24": 2154,
+      "2026-08-25": 837,
+      "2026-08-26": 399,
+      "2026-08-27": 182,
+      "2026-08-28": 474,
+      "2026-08-29": 68,
+      "2026-08-30": 291
+    },
+    "transitions_in_same_recorded_session": [
+      {
+        "from": "other",
+        "to": "cd",
+        "count": 3731
+      },
+      {
+        "from": "cd",
+        "to": "other",
+        "count": 3683
+      },
+      {
+        "from": "echo",
+        "to": "cd",
+        "count": 1227
+      },
+      {
+        "from": "cd",
+        "to": "echo",
+        "count": 1190
+      },
+      {
+        "from": "other",
+        "to": "unparsed",
+        "count": 1159
+      },
+      {
+        "from": "unparsed",
+        "to": "other",
+        "count": 1156
+      },
+      {
+        "from": "cd",
+        "to": "unparsed",
+        "count": 931
+      },
+      {
+        "from": "unparsed",
+        "to": "cd",
+        "count": 926
+      },
+      {
+        "from": "other",
+        "to": "echo",
+        "count": 846
+      },
+      {
+        "from": "echo",
+        "to": "other",
+        "count": 820
+      },
+      {
+        "from": "ls",
+        "to": "other",
+        "count": 812
+      },
+      {
+        "from": "git",
+        "to": "other",
+        "count": 806
+      },
+      {
+        "from": "ls",
+        "to": "cd",
+        "count": 790
+      },
+      {
+        "from": "other",
+        "to": "git",
+        "count": 784
+      },
+      {
+        "from": "cd",
+        "to": "ls",
+        "count": 751
+      }
+    ],
+    "closed_command_durations": {
+      "atuin": {
+        "closed_records": 538,
+        "max_seconds": 82349.79,
+        "upper_median_seconds": 0.01
+      },
+      "cargo": {
+        "closed_records": 3291,
+        "max_seconds": 78.57,
+        "upper_median_seconds": 0.01
+      },
+      "other": {
+        "closed_records": 44362,
+        "max_seconds": 932300.86,
+        "upper_median_seconds": 0.0
+      },
+      "cd": {
+        "closed_records": 38114,
+        "max_seconds": 27573.44,
+        "upper_median_seconds": 0.01
+      },
+      "python3": {
+        "closed_records": 2505,
+        "max_seconds": 573.31,
+        "upper_median_seconds": 0.05
+      },
+      "source": {
+        "closed_records": 585,
+        "max_seconds": 292.07,
+        "upper_median_seconds": 0.0
+      },
+      "claude": {
+        "closed_records": 949,
+        "max_seconds": 694579.23,
+        "upper_median_seconds": 20572.14
+      },
+      "zellij": {
+        "closed_records": 263,
+        "max_seconds": 932283.28,
+        "upper_median_seconds": 0.02
+      },
+      "echo": {
+        "closed_records": 5120,
+        "max_seconds": 6165.41,
+        "upper_median_seconds": 0.02
+      },
+      "rm": {
+        "closed_records": 136,
+        "max_seconds": 938.92,
+        "upper_median_seconds": 0.02
+      },
+      "git": {
+        "closed_records": 3670,
+        "max_seconds": 109.55,
+        "upper_median_seconds": 0.02
+      },
+      "sudo": {
+        "closed_records": 60,
+        "max_seconds": 164.35,
+        "upper_median_seconds": 7.53
+      },
+      "mkdir": {
+        "closed_records": 436,
+        "max_seconds": 602.11,
+        "upper_median_seconds": 0.02
+      },
+      "yazi": {
+        "closed_records": 4,
+        "max_seconds": 3159.03,
+        "upper_median_seconds": 1595.84
+      },
+      "exit": {
+        "closed_records": 43,
+        "max_seconds": 0.01,
+        "upper_median_seconds": 0.0
+      },
+      "npm": {
+        "closed_records": 24,
+        "max_seconds": 25.22,
+        "upper_median_seconds": 0.29
+      },
+      "curl": {
+        "closed_records": 364,
+        "max_seconds": 337.07,
+        "upper_median_seconds": 0.01
+      },
+      "nano": {
+        "closed_records": 2,
+        "max_seconds": 631.78,
+        "upper_median_seconds": 631.78
+      },
+      "killall": {
+        "closed_records": 1,
+        "max_seconds": 0.01,
+        "upper_median_seconds": 0.01
+      },
+      "ls": {
+        "closed_records": 3739,
+        "max_seconds": 120.07,
+        "upper_median_seconds": 0.01
+      },
+      "which": {
+        "closed_records": 145,
+        "max_seconds": 30.72,
+        "upper_median_seconds": 0.01
+      },
+      "apt": {
+        "closed_records": 1,
+        "max_seconds": 0.67,
+        "upper_median_seconds": 0.67
+      },
+      "pnpm": {
+        "closed_records": 2,
+        "max_seconds": 0.08,
+        "upper_median_seconds": 0.08
+      },
+      "docker": {
+        "closed_records": 5,
+        "max_seconds": 2.91,
+        "upper_median_seconds": 2.3
+      },
+      "systemctl": {
+        "closed_records": 36,
+        "max_seconds": 6.18,
+        "upper_median_seconds": 0.02
+      },
+      "wget": {
+        "closed_records": 1,
+        "max_seconds": 0.46,
+        "upper_median_seconds": 0.46
+      },
+      "tar": {
+        "closed_records": 7,
+        "max_seconds": 64.49,
+        "upper_median_seconds": 0.02
+      },
+      "cat": {
+        "closed_records": 2036,
+        "max_seconds": 765.29,
+        "upper_median_seconds": 0.02
+      },
+      "tmux": {
+        "closed_records": 5,
+        "max_seconds": 8.3,
+        "upper_median_seconds": 0.0
+      },
+      "clear": {
+        "closed_records": 27,
+        "max_seconds": 0.02,
+        "upper_median_seconds": 0.0
+      },
+      "pi": {
+        "closed_records": 72,
+        "max_seconds": 934328.54,
+        "upper_median_seconds": 393.45
+      },
+      "nvim": {
+        "closed_records": 5,
+        "max_seconds": 2739.43,
+        "upper_median_seconds": 0.01
+      },
+      "bacon": {
+        "closed_records": 2,
+        "max_seconds": 25.47,
+        "upper_median_seconds": 25.47
+      },
+      "btm": {
+        "closed_records": 1,
+        "max_seconds": 87.98,
+        "upper_median_seconds": 87.98
+      },
+      "df": {
+        "closed_records": 19,
+        "max_seconds": 2.08,
+        "upper_median_seconds": 0.01
+      },
+      "fd": {
+        "closed_records": 373,
+        "max_seconds": 0.58,
+        "upper_median_seconds": 0.01
+      },
+      "rg": {
+        "closed_records": 3031,
+        "max_seconds": 3.81,
+        "upper_median_seconds": 0.01
+      },
+      "du": {
+        "closed_records": 27,
+        "max_seconds": 31.34,
+        "upper_median_seconds": 0.02
+      },
+      "bash": {
+        "closed_records": 245,
+        "max_seconds": 335.38,
+        "upper_median_seconds": 0.01
+      },
+      "watch": {
+        "closed_records": 6,
+        "max_seconds": 235170.12,
+        "upper_median_seconds": 182471.58
+      },
+      "lazygit": {
+        "closed_records": 4,
+        "max_seconds": 260573.27,
+        "upper_median_seconds": 6925.78
+      },
+      "unparsed": {
+        "closed_records": 2986,
+        "max_seconds": 1152.29,
+        "upper_median_seconds": 0.01
+      },
+      "hermes": {
+        "closed_records": 19,
+        "max_seconds": 647415.5,
+        "upper_median_seconds": 223.12
+      },
+      "pkill": {
+        "closed_records": 12,
+        "max_seconds": 5.16,
+        "upper_median_seconds": 1.79
+      },
+      "codex": {
+        "closed_records": 68,
+        "max_seconds": 606166.51,
+        "upper_median_seconds": 490.56
+      },
+      "npx": {
+        "closed_records": 8,
+        "max_seconds": 15.94,
+        "upper_median_seconds": 0.04
+      },
+      "find": {
+        "closed_records": 2708,
+        "max_seconds": 122.15,
+        "upper_median_seconds": 0.01
+      },
+      "type": {
+        "closed_records": 4,
+        "max_seconds": 0.06,
+        "upper_median_seconds": 0.03
+      },
+      "chmod": {
+        "closed_records": 76,
+        "max_seconds": 121.89,
+        "upper_median_seconds": 0.01
+      },
+      "cp": {
+        "closed_records": 161,
+        "max_seconds": 600.05,
+        "upper_median_seconds": 0.02
+      },
+      "tail": {
+        "closed_records": 450,
+        "max_seconds": 551.09,
+        "upper_median_seconds": 0.02
+      },
+      "just": {
+        "closed_records": 286,
+        "max_seconds": 481.02,
+        "upper_median_seconds": 0.03
+      },
+      "head": {
+        "closed_records": 438,
+        "max_seconds": 4.96,
+        "upper_median_seconds": 0.02
+      },
+      "printf": {
+        "closed_records": 157,
+        "max_seconds": 20.01,
+        "upper_median_seconds": 0.02
+      },
+      "ps": {
+        "closed_records": 125,
+        "max_seconds": 2.79,
+        "upper_median_seconds": 0.01
+      },
+      "empty": {
+        "closed_records": 5539,
+        "max_seconds": 0.55,
+        "upper_median_seconds": 0.01
+      },
+      "mempalace": {
+        "closed_records": 58,
+        "max_seconds": 429.45,
+        "upper_median_seconds": 0.02
+      },
+      "command": {
+        "closed_records": 98,
+        "max_seconds": 572.31,
+        "upper_median_seconds": 0.02
+      },
+      "rustc": {
+        "closed_records": 22,
+        "max_seconds": 1.96,
+        "upper_median_seconds": 0.01
+      },
+      "kill": {
+        "closed_records": 22,
+        "max_seconds": 3.13,
+        "upper_median_seconds": 0.02
+      },
+      "pwd": {
+        "closed_records": 166,
+        "max_seconds": 0.41,
+        "upper_median_seconds": 0.03
+      },
+      "node": {
+        "closed_records": 93,
+        "max_seconds": 11.43,
+        "upper_median_seconds": 0.02
+      },
+      "mv": {
+        "closed_records": 10,
+        "max_seconds": 596.47,
+        "upper_median_seconds": 0.01
+      },
+      "rustup": {
+        "closed_records": 45,
+        "max_seconds": 2.1,
+        "upper_median_seconds": 0.01
+      },
+      "gh": {
+        "closed_records": 92,
+        "max_seconds": 592.35,
+        "upper_median_seconds": 2.63
+      },
+      "free": {
+        "closed_records": 6,
+        "max_seconds": 0.03,
+        "upper_median_seconds": 0.02
+      },
+      "journalctl": {
+        "closed_records": 13,
+        "max_seconds": 2.35,
+        "upper_median_seconds": 0.02
+      },
+      "top": {
+        "closed_records": 3,
+        "max_seconds": 0.03,
+        "upper_median_seconds": 0.02
+      },
+      "python": {
+        "closed_records": 1,
+        "max_seconds": 0.0,
+        "upper_median_seconds": 0.0
+      },
+      "exec": {
+        "closed_records": 1,
+        "max_seconds": 0.01,
+        "upper_median_seconds": 0.01
+      },
+      "rsync": {
+        "closed_records": 2,
+        "max_seconds": 1.53,
+        "upper_median_seconds": 1.53
+      },
+      "herdr": {
+        "closed_records": 706,
+        "max_seconds": 1800.13,
+        "upper_median_seconds": 0.06
+      },
+      "tv": {
+        "closed_records": 1,
+        "max_seconds": 1.93,
+        "upper_median_seconds": 1.93
+      },
+      "nu": {
+        "closed_records": 2,
+        "max_seconds": 2.09,
+        "upper_median_seconds": 2.09
+      },
+      "tuicr": {
+        "closed_records": 1,
+        "max_seconds": 0.01,
+        "upper_median_seconds": 0.01
+      },
+      "xdg-open": {
+        "closed_records": 2,
+        "max_seconds": 7.76,
+        "upper_median_seconds": 7.76
+      },
+      "glab": {
+        "closed_records": 1,
+        "max_seconds": 1.63,
+        "upper_median_seconds": 1.63
+      },
+      "podman": {
+        "closed_records": 6,
+        "max_seconds": 2560.45,
+        "upper_median_seconds": 7.33
+      }
+    },
+    "closed_over_one_hour_by_tool": {
+      "other": 99,
+      "zellij": 21,
+      "claude": 591,
+      "echo": 1,
+      "cd": 4,
+      "watch": 4,
+      "atuin": 1,
+      "lazygit": 2,
+      "pi": 22,
+      "hermes": 6,
+      "codex": 23
+    },
+    "limitations": "Primary tool is a conservative first-token classification; wrappers and multiline commands may conceal later tools. Keyword counts are mentions, not executions. Durations are wall-clock spans, not CPU/RAM use. Exit -1 is unknown/unfinished, not a proven failure. History does not establish human authorship or capture GUI activity/all agent tool calls. Saved duration order statistic is the upper median (not the mean of the middle pair for even samples). Archive classification inspected only the first 4096 characters per command, so keyword mentions are lower bounds for long commands."
+  },
+  "normalization_note": "Duration field relabeled upper_median_seconds to describe the recorded calculation correctly; values unchanged. No historical command text retained."
+}

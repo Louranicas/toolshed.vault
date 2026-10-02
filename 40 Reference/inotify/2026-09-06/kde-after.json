@@ -1,0 +1,384 @@
+{
+  "processes": [
+    {
+      "instances": 1,
+      "pid": 2373,
+      "uid": 1000,
+      "watches": 4,
+      "executable": "/usr/bin/dbus-broker-launch"
+    },
+    {
+      "instances": 1,
+      "pid": 2380,
+      "uid": 1000,
+      "watches": 1,
+      "executable": "/usr/bin/ksecretd"
+    },
+    {
+      "instances": 1,
+      "pid": 2479,
+      "uid": 1000,
+      "watches": 61,
+      "executable": "/usr/libexec/uresourced"
+    },
+    {
+      "instances": 3,
+      "pid": 2490,
+      "uid": 1000,
+      "watches": 8,
+      "executable": "/usr/libexec/kf6/baloo_file"
+    },
+    {
+      "instances": 3,
+      "pid": 2493,
+      "uid": 1000,
+      "watches": 3,
+      "executable": "/usr/bin/wireplumber"
+    },
+    {
+      "instances": 1,
+      "pid": 2561,
+      "uid": 1000,
+      "watches": 1,
+      "executable": "/usr/bin/plasma-keyboard"
+    },
+    {
+      "instances": 1,
+      "pid": 2643,
+      "uid": 1000,
+      "watches": 1,
+      "executable": "/usr/bin/dbus-broker-launch"
+    },
+    {
+      "instances": 4,
+      "pid": 2664,
+      "uid": 1000,
+      "watches": 40,
+      "executable": "/usr/bin/kded6"
+    },
+    {
+      "instances": 10,
+      "pid": 2692,
+      "uid": 1000,
+      "watches": 18,
+      "executable": "/usr/bin/plasmashell"
+    },
+    {
+      "instances": 1,
+      "pid": 2764,
+      "uid": 1000,
+      "watches": 1,
+      "executable": "/usr/libexec/kactivitymanagerd"
+    },
+    {
+      "instances": 1,
+      "pid": 2775,
+      "uid": 1000,
+      "watches": 1,
+      "executable": "/usr/bin/gmenudbusmenuproxy"
+    },
+    {
+      "instances": 2,
+      "pid": 2780,
+      "uid": 1000,
+      "watches": 2,
+      "executable": "/usr/libexec/org_kde_powerdevil"
+    },
+    {
+      "instances": 1,
+      "pid": 2795,
+      "uid": 1000,
+      "watches": 1,
+      "executable": "/usr/libexec/bluetooth/obexd"
+    },
+    {
+      "instances": 2,
+      "pid": 2966,
+      "uid": 1000,
+      "watches": 2,
+      "executable": "/usr/bin/kunifiedpush-distributor"
+    },
+    {
+      "instances": 1,
+      "pid": 2971,
+      "uid": 1000,
+      "watches": 11,
+      "executable": "/usr/libexec/xdg-desktop-portal"
+    },
+    {
+      "instances": 2,
+      "pid": 2975,
+      "uid": 1000,
+      "watches": 3,
+      "executable": "/usr/libexec/DiscoverNotifier"
+    },
+    {
+      "instances": 1,
+      "pid": 3089,
+      "uid": 1000,
+      "watches": 36,
+      "executable": "/usr/libexec/xdg-desktop-portal-gtk"
+    },
+    {
+      "instances": 1,
+      "pid": 5485,
+      "uid": 1000,
+      "watches": 3,
+      "executable": "yazi"
+    },
+    {
+      "instances": 2,
+      "pid": 5495,
+      "uid": 1000,
+      "watches": 33,
+      "executable": "bacon"
+    },
+    {
+      "instances": 1,
+      "pid": 6349,
+      "uid": 1000,
+      "watches": 3,
+      "executable": "/usr/bin/podman"
+    },
+    {
+      "instances": 1,
+      "pid": 8681,
+      "uid": 1000,
+      "watches": 3,
+      "executable": "/usr/libexec/flatpak-session-helper"
+    },
+    {
+      "instances": 1,
+      "pid": 8709,
+      "uid": 1000,
+      "watches": 1,
+      "executable": "/usr/libexec/flatpak-portal"
+    },
+    {
+      "instances": 8,
+      "pid": 328583,
+      "uid": 1000,
+      "watches": 10,
+      "executable": "/usr/bin/krunner"
+    },
+    {
+      "instances": 1,
+      "pid": 473184,
+      "uid": 1000,
+      "watches": 1,
+      "executable": "/usr/bin/conmon"
+    },
+    {
+      "instances": 2,
+      "pid": 904956,
+      "uid": 1000,
+      "watches": 39,
+      "executable": "codex"
+    },
+    {
+      "instances": 4,
+      "pid": 1386850,
+      "uid": 1000,
+      "watches": 11,
+      "executable": "/app/extra/chrome"
+    },
+    {
+      "instances": 1,
+      "pid": 1387555,
+      "uid": 1000,
+      "watches": 3,
+      "executable": "/app/extra/chrome"
+    },
+    {
+      "instances": 1,
+      "pid": 1475830,
+      "uid": 1000,
+      "watches": 2,
+      "executable": "claude"
+    },
+    {
+      "instances": 4,
+      "pid": 1523885,
+      "uid": 1000,
+      "watches": 14,
+      "executable": "/app/obsidian"
+    },
+    {
+      "instances": 1,
+      "pid": 1524971,
+      "uid": 1000,
+      "watches": 3,
+      "executable": "/app/obsidian"
+    },
+    {
+      "instances": 1,
+      "pid": 1527623,
+      "uid": 1000,
+      "watches": 10,
+      "executable": "/app/obsidian"
+    },
+    {
+      "instances": 2,
+      "pid": 1583959,
+      "uid": 1000,
+      "watches": 39,
+      "executable": "codex"
+    },
+    {
+      "instances": 8,
+      "pid": 1669753,
+      "uid": 1000,
+      "watches": 8,
+      "executable": "/usr/lib/chatgpt/ChatGPT"
+    },
+    {
+      "instances": 1,
+      "pid": 1670533,
+      "uid": 1000,
+      "watches": 4,
+      "executable": "/usr/lib/chatgpt/ChatGPT"
+    },
+    {
+      "instances": 8,
+      "pid": 1671734,
+      "uid": 1000,
+      "watches": 10,
+      "executable": "/usr/lib/chatgpt/resources/codex"
+    },
+    {
+      "instances": 1,
+      "pid": 1675587,
+      "uid": 1000,
+      "watches": 1,
+      "executable": "/usr/bin/plasma-browser-integration-host"
+    },
+    {
+      "instances": 1,
+      "pid": 1675588,
+      "uid": 1000,
+      "watches": 1,
+      "executable": "/usr/bin/plasma-browser-integration-host"
+    },
+    {
+      "instances": 6,
+      "pid": 1685362,
+      "uid": 1000,
+      "watches": 6,
+      "executable": "/usr/lib/chatgpt/resources/codex-code-mode-host"
+    },
+    {
+      "instances": 2,
+      "pid": 1707742,
+      "uid": 1000,
+      "watches": 1,
+      "executable": "konsole"
+    },
+    {
+      "instances": 1,
+      "pid": 2271010,
+      "uid": 1000,
+      "watches": 1,
+      "executable": "/usr/bin/pasta"
+    },
+    {
+      "instances": 1,
+      "pid": 2271025,
+      "uid": 1000,
+      "watches": 1,
+      "executable": "/usr/bin/conmon"
+    },
+    {
+      "instances": 2,
+      "pid": 3791616,
+      "uid": 1000,
+      "watches": 39,
+      "executable": "codex"
+    },
+    {
+      "instances": 2,
+      "pid": 3926011,
+      "uid": 1000,
+      "watches": 39,
+      "executable": "codex"
+    },
+    {
+      "instances": 2,
+      "pid": 3932488,
+      "uid": 1000,
+      "watches": 1,
+      "executable": "/usr/bin/konsole"
+    },
+    {
+      "instances": 2,
+      "pid": 3932689,
+      "uid": 1000,
+      "watches": 1,
+      "executable": "/usr/bin/konsole"
+    },
+    {
+      "instances": 2,
+      "pid": 3932870,
+      "uid": 1000,
+      "watches": 1,
+      "executable": "/usr/bin/konsole"
+    },
+    {
+      "instances": 4,
+      "pid": 3936630,
+      "uid": 1000,
+      "watches": 11,
+      "executable": "/app/extra/chrome"
+    },
+    {
+      "instances": 1,
+      "pid": 3936716,
+      "uid": 1000,
+      "watches": 3,
+      "executable": "/app/extra/chrome"
+    },
+    {
+      "instances": 2,
+      "pid": 3966637,
+      "uid": 1000,
+      "watches": 1,
+      "executable": "konsole"
+    },
+    {
+      "instances": 1,
+      "pid": 3984838,
+      "uid": 1000,
+      "watches": 18,
+      "executable": "/app/obsidian"
+    },
+    {
+      "instances": 2,
+      "pid": 3989064,
+      "uid": 1000,
+      "watches": 39,
+      "executable": "codex"
+    },
+    {
+      "instances": 2,
+      "pid": 4001402,
+      "uid": 1000,
+      "watches": 39,
+      "executable": "codex"
+    },
+    {
+      "instances": 2,
+      "pid": 4030433,
+      "uid": 1000,
+      "watches": 39,
+      "executable": "codex"
+    }
+  ],
+  "totals": {
+    "instancePercent": 5,
+    "instances": 120,
+    "maxInstances": 2048,
+    "maxWatches": 827880,
+    "watchPercent": 0,
+    "watches": 633
+  },
+  "capture_note": "Captured after both bounded verification tests, 2026-09-06 ~05:40 Australia/ACT; command arguments removed before archival."
+}

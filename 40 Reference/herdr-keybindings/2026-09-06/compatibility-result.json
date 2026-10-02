@@ -1,0 +1,59 @@
+{
+  "timestamp_utc": "2026-09-05T21:22:50.288592+00:00",
+  "steps": [
+    {
+      "argv": [
+        "herdr",
+        "config",
+        "check"
+      ],
+      "exit_code": 0,
+      "stdout": "config: ok\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "herdr",
+        "server",
+        "reload-config"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"id\":\"cli:server:reload-config\",\"result\":{\"diagnostics\":[],\"status\":\"applied\",\"type\":\"config_reload\"}}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "flatpak-spawn",
+        "--host",
+        "ghostty",
+        "+validate-config"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "flatpak-spawn",
+        "--host",
+        "gdbus",
+        "call",
+        "--session",
+        "--dest",
+        "com.mitchellh.ghostty",
+        "--object-path",
+        "/com/mitchellh/ghostty",
+        "--method",
+        "org.gtk.Actions.Activate",
+        "reload-config",
+        "[]",
+        "{}"
+      ],
+      "exit_code": 0,
+      "stdout": "()\n",
+      "stderr": ""
+    }
+  ],
+  "ghostty_backup": "/var/home/Louranicas/.config/ghostty/config.before-ctrl-alt-end-20260906",
+  "ghostty_reload_requested": true
+}

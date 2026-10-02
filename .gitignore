@@ -1,0 +1,15 @@
+# Obsidian app/plugin state — minified JS, not knowledge.
+# Keeps `mempalace mine` from filing plugin bundles as drawers (lesson: 2026-09-02,
+# the kinoite vault's .obsidian tree would have filed 13,881 junk drawers).
+.obsidian/
+.trash/
+
+# Local review recovery copies.
+.note-review-backups/
+
+# Raw --help dumps: a lookup appendix, not knowledge.
+# 4,800 lines of flag text out-scores the curated notes on bm25 and dilutes
+# semantic retrieval (verified 2026-09-02: a query about atuin scripts hit
+# just's help dump). Files stay in the vault to READ; they are kept out of
+# the palace so `mempalace search` returns the written notes.
+40 Reference/help/

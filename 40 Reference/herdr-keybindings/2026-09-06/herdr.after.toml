@@ -1,0 +1,56 @@
+onboarding = false
+# herdr config — plugin action keybindings (2026-09-01).
+# Vetting + docs: herdr vault → "50 Automation/Vetted Plugins".
+# Defaults apply for everything not set here.
+
+# Ctrl+Alt+End in Ghostty is translated to this supported Herdr chord.
+# Ghostty mapping: ctrl+alt+end=csi:110;7u (Ctrl+Alt+N).
+[keys]
+next_tab = ["prefix+n", "ctrl+alt+n"]
+
+# reviewr: toggle the diff-review sidebar ("d" for diff)
+[[keys.command]]
+key = "prefix+d"
+type = "plugin_action"
+command = "persiyanov.reviewr.toggle"
+description = "reviewr: toggle diff review"
+
+# memex: session palette overlay — search past agent sessions, resume into a tab
+[[keys.command]]
+key = "prefix+m"
+type = "plugin_action"
+command = "nicosuave.memex.palette"
+description = "memex: session palette"
+
+# Herdr Plus: Projects — fuzzy-pick a workspace template ("t" for template)
+[[keys.command]]
+key = "prefix+t"
+type = "plugin_action"
+command = "cloudmanic.herdr-plus.projects"
+description = "herdr-plus: projects"
+
+# Herdr Plus: Quick Actions launcher
+[[keys.command]]
+key = "prefix+a"
+type = "plugin_action"
+command = "cloudmanic.herdr-plus.quick-actions"
+description = "herdr-plus: quick actions"
+
+[ui.toast]
+delivery = "herdr"
+
+[ui]
+status_indicators = "symbols"
+
+agent_panel_sort = "priority"
+[[keys.command]]
+key = "prefix+s"
+type = "plugin_action"
+command = "local.habitat-services.status"
+description = "habitat: service status"
+
+[[keys.command]]
+key = "prefix+r"
+type = "plugin_action"
+command = "local.habitat-services.respawn"
+description = "habitat: respawn workspace services"

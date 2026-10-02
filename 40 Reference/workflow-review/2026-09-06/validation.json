@@ -1,0 +1,27 @@
+{
+  "timestamp_utc": "2026-09-05T21:07:23.252470+00:00",
+  "existing_notes_updated": 17,
+  "new_or_changed_wikilinks_checked": 60,
+  "changed_bash_blocks_syntax_checked": 14,
+  "placeholder_bash_blocks_not_syntax_checked": 3,
+  "changed_toml_blocks_parsed": 2,
+  "pipeline_fixture_checks": [
+    {
+      "simulated_cargo_exit": 0,
+      "pipeline_exit": 0,
+      "diagnostic_preserved": true,
+      "passed": true
+    },
+    {
+      "simulated_cargo_exit": 42,
+      "pipeline_exit": 42,
+      "diagnostic_preserved": true,
+      "passed": true
+    }
+  ],
+  "source_hashes_unchanged": true,
+  "reviewed_note_hashes_match": true,
+  "errors": [],
+  "passed": true,
+  "scope": "Documentation delta; no builds, histories, supervisors, triggers or cleanup examples executed."
+}

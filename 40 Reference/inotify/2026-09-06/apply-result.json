@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-09-05T19:38:32.792468+00:00",
+  "action": "apply",
+  "host": "orac",
+  "path": "/etc/sysctl.d/90-herdr-inotify.conf",
+  "before": 128,
+  "after": 2048,
+  "other_limits": {
+    "max_user_watches": 827880,
+    "max_queued_events": 16384
+  },
+  "file_present": true,
+  "sysctl_output": "fs.inotify.max_user_instances = 2048",
+  "result": "PASS"
+}

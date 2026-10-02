@@ -1,0 +1,21 @@
+Testing line_counts/owned/repeated/100
+Success
+Testing line_counts/reused/repeated/100
+Success
+Testing line_counts/owned/unique/100
+Success
+Testing line_counts/reused/unique/100
+Success
+Testing line_counts/owned/repeated/10000
+Success
+Testing line_counts/reused/repeated/10000
+Success
+Testing line_counts/owned/unique/10000
+Success
+Testing line_counts/reused/unique/10000
+Success
+
+   Compiling rust-mastery-lab v0.1.0 (/var/home/Louranicas/rust-mastery-20260906/lab)
+    Finished `bench` profile [optimized] target(s) in 0.71s
+     Running benches/allocations.rs (target/release/deps/allocations-4a260c2ee58a127b)
+Gnuplot not found, using plotters backend

@@ -1,0 +1,39 @@
+{
+  "timestamp_utc": "2026-09-05T20:03:27.412330+00:00",
+  "deployments": [
+    {
+      "version": "44.20260831.0",
+      "booted": false,
+      "staged": true,
+      "pinned": false,
+      "unlocked": "none",
+      "origin": "fedora:fedora/44/x86_64/kinoite",
+      "pending-base-version": "44.20260903.0"
+    },
+    {
+      "version": "44.20260831.0",
+      "booted": true,
+      "staged": false,
+      "pinned": false,
+      "unlocked": "transient",
+      "live-replaced": "33c0e74de1b4d41a389b7bdd1aeec588048c6f1f55738c504d36f97b1dc44ef0",
+      "origin": "fedora:fedora/44/x86_64/kinoite",
+      "pending-base-version": "44.20260903.0"
+    },
+    {
+      "version": "44.20260831.0",
+      "booted": false,
+      "staged": false,
+      "pinned": false,
+      "unlocked": "none",
+      "origin": "fedora:fedora/44/x86_64/kinoite",
+      "pending-base-version": "44.20260903.0"
+    }
+  ],
+  "podman_observed": "cgroups v2; cgroup manager systemd",
+  "herdr_service_observed": {
+    "FragmentPath": "/var/home/Louranicas/.config/systemd/user/herdr-server.service",
+    "ControlGroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/herdr-server.service"
+  },
+  "note": "Read-only state capture. No upgrades, reboots, service changes or cgroup changes performed."
+}

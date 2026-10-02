@@ -1,0 +1,442 @@
+{
+  "timestamp": "2026-09-05T19:35:01.029220+00:00",
+  "uid": 1000,
+  "hostname": "orac",
+  "pid_namespace": "pid:[4026531836]",
+  "user_namespace": "user:[4026531837]",
+  "limits": {
+    "fs.inotify.max_user_instances": 128,
+    "fs.inotify.max_user_watches": 827880,
+    "fs.inotify.max_queued_events": 16384,
+    "user.max_inotify_instances": 128,
+    "user.max_inotify_watches": 827880
+  },
+  "processes_scanned": 334,
+  "inotify_processes": 52,
+  "fd_references": 118,
+  "watch_references": 594,
+  "limitations": "Non-atomic FD-reference census; inherited/duplicated FDs can overcount; inaccessible or exiting processes can undercount. Not an exact quota-usage counter.",
+  "errors": {
+    "fd_permission_denied": 177,
+    "process_permission_denied": 37,
+    "fd_exited_during_scan": 1
+  },
+  "processes": [
+    {
+      "pid": 2692,
+      "name": "plasmashell",
+      "fd_references": 10,
+      "watch_references": 18,
+      "cwd": "/var/home/Louranicas",
+      "user_namespace": "user:[4026531837]"
+    },
+    {
+      "pid": 328583,
+      "name": "krunner",
+      "fd_references": 8,
+      "watch_references": 10,
+      "cwd": "/var/home/Louranicas",
+      "user_namespace": "user:[4026531837]"
+    },
+    {
+      "pid": 1671734,
+      "name": "codex",
+      "fd_references": 8,
+      "watch_references": 10,
+      "cwd": "/var/home/Louranicas",
+      "user_namespace": "user:[4026531837]"
+    },
+    {
+      "pid": 1669753,
+      "name": "ChatGPT",
+      "fd_references": 8,
+      "watch_references": 8,
+      "cwd": "/var/home/Louranicas",
+      "user_namespace": "user:[4026531837]"
+    },
+    {
+      "pid": 1685362,
+      "name": "codex-code-mode",
+      "fd_references": 6,
+      "watch_references": 6,
+      "cwd": "/var/home/Louranicas",
+      "user_namespace": "user:[4026531837]"
+    },
+    {
+      "pid": 2664,
+      "name": "kded6",
+      "fd_references": 4,
+      "watch_references": 40,
+      "cwd": "/var/home/Louranicas",
+      "user_namespace": "user:[4026531837]"
+    },
+    {
+      "pid": 1523885,
+      "name": "obsidian",
+      "fd_references": 4,
+      "watch_references": 14,
+      "cwd": "/var/home/Louranicas",
+      "user_namespace": "user:[4026536482]"
+    },
+    {
+      "pid": 1386850,
+      "name": "chrome",
+      "fd_references": 4,
+      "watch_references": 11,
+      "cwd": "/var/home/Louranicas",
+      "user_namespace": "user:[4026533400]"
+    },
+    {
+      "pid": 3936630,
+      "name": "chrome",
+      "fd_references": 4,
+      "watch_references": 11,
+      "cwd": "/var/home/Louranicas",
+      "user_namespace": "user:[4026533177]"
+    },
+    {
+      "pid": 2490,
+      "name": "baloo_file",
+      "fd_references": 3,
+      "watch_references": 8,
+      "cwd": "/var/home/Louranicas",
+      "user_namespace": "user:[4026531837]"
+    },
+    {
+      "pid": 2493,
+      "name": "wireplumber",
+      "fd_references": 3,
+      "watch_references": 3,
+      "cwd": "/var/home/Louranicas",
+      "user_namespace": "user:[4026531837]"
+    },
+    {
+      "pid": 904956,
+      "name": "codex",
+      "fd_references": 2,
+      "watch_references": 39,
+      "cwd": "/var/home/Louranicas",
+      "user_namespace": "user:[4026533249]"
+    },
+    {
+      "pid": 1583959,
+      "name": "codex",
+      "fd_references": 2,
+      "watch_references": 39,
+      "cwd": "/var/home/Louranicas",
+      "user_namespace": "user:[4026533249]"
+    },
+    {
+      "pid": 3791616,
+      "name": "codex",
+      "fd_references": 2,
+      "watch_references": 39,
+      "cwd": "/var/home/Louranicas",
+      "user_namespace": "user:[4026533249]"
+    },
+    {
+      "pid": 3926011,
+      "name": "codex",
+      "fd_references": 2,
+      "watch_references": 39,
+      "cwd": "/var/home/Louranicas",
+      "user_namespace": "user:[4026533249]"
+    },
+    {
+      "pid": 3989064,
+      "name": "codex",
+      "fd_references": 2,
+      "watch_references": 39,
+      "cwd": "/var/home/Louranicas",
+      "user_namespace": "user:[4026533249]"
+    },
+    {
+      "pid": 4001402,
+      "name": "codex",
+      "fd_references": 2,
+      "watch_references": 39,
+      "cwd": "/var/home/Louranicas",
+      "user_namespace": "user:[4026533249]"
+    },
+    {
+      "pid": 5495,
+      "name": "bacon",
+      "fd_references": 2,
+      "watch_references": 33,
+      "cwd": "/var/mnt/STORAGE-10TB/repos/deep-diff-forge",
+      "user_namespace": "user:[4026533249]"
+    },
+    {
+      "pid": 2975,
+      "name": "DiscoverNotifie",
+      "fd_references": 2,
+      "watch_references": 3,
+      "cwd": "/var/home/Louranicas",
+      "user_namespace": "user:[4026531837]"
+    },
+    {
+      "pid": 2780,
+      "name": "org_kde_powerde",
+      "fd_references": 2,
+      "watch_references": 2,
+      "cwd": "/var/home/Louranicas",
+      "user_namespace": "user:[4026531837]"
+    },
+    {
+      "pid": 2966,
+      "name": "kunifiedpush-di",
+      "fd_references": 2,
+      "watch_references": 2,
+      "cwd": "/var/home/Louranicas",
+      "user_namespace": "user:[4026531837]"
+    },
+    {
+      "pid": 1707742,
+      "name": "konsole",
+      "fd_references": 2,
+      "watch_references": 1,
+      "cwd": "/var/home/Louranicas",
+      "user_namespace": "user:[4026531837]"
+    },
+    {
+      "pid": 3932488,
+      "name": "konsole",
+      "fd_references": 2,
+      "watch_references": 1,
+      "cwd": "/var/home/Louranicas",
+      "user_namespace": "user:[4026531837]"
+    },
+    {
+      "pid": 3932689,
+      "name": "konsole",
+      "fd_references": 2,
+      "watch_references": 1,
+      "cwd": "/var/home/Louranicas",
+      "user_namespace": "user:[4026531837]"
+    },
+    {
+      "pid": 3932870,
+      "name": "konsole",
+      "fd_references": 2,
+      "watch_references": 1,
+      "cwd": "/var/home/Louranicas",
+      "user_namespace": "user:[4026531837]"
+    },
+    {
+      "pid": 3966637,
+      "name": "konsole",
+      "fd_references": 2,
+      "watch_references": 1,
+      "cwd": "/var/home/Louranicas",
+      "user_namespace": "user:[4026531837]"
+    },
+    {
+      "pid": 2479,
+      "name": "uresourced",
+      "fd_references": 1,
+      "watch_references": 61,
+      "cwd": "/var/home/Louranicas",
+      "user_namespace": "user:[4026531837]"
+    },
+    {
+      "pid": 3089,
+      "name": "xdg-desktop-por",
+      "fd_references": 1,
+      "watch_references": 36,
+      "cwd": "/var/home/Louranicas",
+      "user_namespace": "user:[4026531837]"
+    },
+    {
+      "pid": 3984838,
+      "name": "obsidian",
+      "fd_references": 1,
+      "watch_references": 18,
+      "cwd": "/var/home/Louranicas",
+      "user_namespace": "user:[4026536482]"
+    },
+    {
+      "pid": 2971,
+      "name": "xdg-desktop-por",
+      "fd_references": 1,
+      "watch_references": 11,
+      "cwd": "/var/home/Louranicas",
+      "user_namespace": "user:[4026531837]"
+    },
+    {
+      "pid": 1527623,
+      "name": "obsidian",
+      "fd_references": 1,
+      "watch_references": 10,
+      "cwd": "/var/home/Louranicas",
+      "user_namespace": "user:[4026536482]"
+    },
+    {
+      "pid": 2373,
+      "name": "dbus-broker-lau",
+      "fd_references": 1,
+      "watch_references": 4,
+      "cwd": "/var/home/Louranicas",
+      "user_namespace": "user:[4026531837]"
+    },
+    {
+      "pid": 1670533,
+      "name": "ChatGPT",
+      "fd_references": 1,
+      "watch_references": 4,
+      "cwd": "/var/home/Louranicas",
+      "user_namespace": "user:[4026531837]"
+    },
+    {
+      "pid": 5485,
+      "name": "yazi",
+      "fd_references": 1,
+      "watch_references": 3,
+      "cwd": "/var/mnt/STORAGE-10TB/repos",
+      "user_namespace": "user:[4026533249]"
+    },
+    {
+      "pid": 6349,
+      "name": "podman",
+      "fd_references": 1,
+      "watch_references": 3,
+      "cwd": "/var/home/Louranicas",
+      "user_namespace": "user:[4026533245]"
+    },
+    {
+      "pid": 8681,
+      "name": "flatpak-session",
+      "fd_references": 1,
+      "watch_references": 3,
+      "cwd": "/var/home/Louranicas",
+      "user_namespace": "user:[4026531837]"
+    },
+    {
+      "pid": 1387555,
+      "name": "chrome",
+      "fd_references": 1,
+      "watch_references": 3,
+      "cwd": "/var/home/Louranicas",
+      "user_namespace": "user:[4026533400]"
+    },
+    {
+      "pid": 1524971,
+      "name": "obsidian",
+      "fd_references": 1,
+      "watch_references": 3,
+      "cwd": "/var/home/Louranicas",
+      "user_namespace": "user:[4026536482]"
+    },
+    {
+      "pid": 3936716,
+      "name": "chrome",
+      "fd_references": 1,
+      "watch_references": 3,
+      "cwd": "/var/home/Louranicas",
+      "user_namespace": "user:[4026533177]"
+    },
+    {
+      "pid": 1475830,
+      "name": "claude",
+      "fd_references": 1,
+      "watch_references": 2,
+      "cwd": "/var/home/Louranicas",
+      "user_namespace": "user:[4026533249]"
+    },
+    {
+      "pid": 2380,
+      "name": "ksecretd",
+      "fd_references": 1,
+      "watch_references": 1,
+      "cwd": "/",
+      "user_namespace": "user:[4026531837]"
+    },
+    {
+      "pid": 2561,
+      "name": "plasma-keyboard",
+      "fd_references": 1,
+      "watch_references": 1,
+      "cwd": "/var/home/Louranicas",
+      "user_namespace": "user:[4026531837]"
+    },
+    {
+      "pid": 2643,
+      "name": "dbus-broker-lau",
+      "fd_references": 1,
+      "watch_references": 1,
+      "cwd": "/var/home/Louranicas",
+      "user_namespace": "user:[4026531837]"
+    },
+    {
+      "pid": 2764,
+      "name": "kactivitymanage",
+      "fd_references": 1,
+      "watch_references": 1,
+      "cwd": "/var/home/Louranicas",
+      "user_namespace": "user:[4026531837]"
+    },
+    {
+      "pid": 2775,
+      "name": "gmenudbusmenupr",
+      "fd_references": 1,
+      "watch_references": 1,
+      "cwd": "/var/home/Louranicas",
+      "user_namespace": "user:[4026531837]"
+    },
+    {
+      "pid": 2795,
+      "name": "obexd",
+      "fd_references": 1,
+      "watch_references": 1,
+      "cwd": "/var/home/Louranicas",
+      "user_namespace": "user:[4026531837]"
+    },
+    {
+      "pid": 8709,
+      "name": "flatpak-portal",
+      "fd_references": 1,
+      "watch_references": 1,
+      "cwd": "/var/home/Louranicas",
+      "user_namespace": "user:[4026531837]"
+    },
+    {
+      "pid": 473184,
+      "name": "conmon",
+      "fd_references": 1,
+      "watch_references": 1,
+      "cwd": "/var/home/Louranicas/.local/share/containers/storage/overlay-containers/63d3c03b0b779632a4d2d8012a644517f09ff623ddc32855a6e0d8b7e4a09eda/userdata/918499abf05af7976c37c83f60f01fd5aae4fa212e577edb21f0ab725b229868",
+      "user_namespace": "user:[4026533245]"
+    },
+    {
+      "pid": 1675587,
+      "name": "plasma-browser-",
+      "fd_references": 1,
+      "watch_references": 1,
+      "cwd": "/usr/bin",
+      "user_namespace": "user:[4026531837]"
+    },
+    {
+      "pid": 1675588,
+      "name": "plasma-browser-",
+      "fd_references": 1,
+      "watch_references": 1,
+      "cwd": "/usr/bin",
+      "user_namespace": "user:[4026531837]"
+    },
+    {
+      "pid": 2271010,
+      "name": "pasta.avx2",
+      "fd_references": 1,
+      "watch_references": 1,
+      "cwd": "/",
+      "user_namespace": "user:[4026533245]"
+    },
+    {
+      "pid": 2271025,
+      "name": "conmon",
+      "fd_references": 1,
+      "watch_references": 1,
+      "cwd": "/var/home/Louranicas",
+      "user_namespace": "user:[4026533245]"
+    }
+  ]
+}

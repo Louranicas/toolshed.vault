@@ -1,0 +1,709 @@
+{
+  "timestamp_utc": "2026-09-05T20:55:56.342455+00:00",
+  "workflow_notes_scanned": [
+    "00 - Workflows.md",
+    "Arena Practice Ground.md",
+    "Assimilation - Rules That Fire.md",
+    "Autonomous Triggers.md",
+    "Axiom Conformance.md",
+    "Bridge - Coverage to Review.md",
+    "Bridge - Diagnostics to Review.md",
+    "Cascade Engine.md",
+    "Claim-Time Guard.md",
+    "Code Anchors - Notes That Land on Source.md",
+    "Cross-Workspace Review Gate.md",
+    "Fabric Bash Command Plane.md",
+    "Fabric Habitat 90-Point Promotion and Practice.md",
+    "Fabric Habitat Seven-Facet Assessment.md",
+    "Factory Roster Expansion - DevOps Toolbox.md",
+    "Habitat Introspection.md",
+    "Habitat Reactor.md",
+    "Knowledge Audit.md",
+    "Runbooks.md",
+    "Sandbox Fanout and Fusion.md",
+    "Shape-Directed Tool Chaining.md",
+    "Synchronised Review and Editor.md",
+    "Weight Matrix - Which Gate Bore the Weight.md"
+  ],
+  "target_notes": [
+    "00 - Toolshed Index.md",
+    "50 Field Notes/lukes workflows.md",
+    "20 Chaining/Workflow Recipes.md",
+    "20 Chaining/Tool Chaining Patterns.md",
+    "60 Workflows/00 - Workflows.md",
+    "60 Workflows/Cascade Engine.md",
+    "60 Workflows/Runbooks.md",
+    "60 Workflows/Autonomous Triggers.md",
+    "60 Workflows/Habitat Reactor.md",
+    "60 Workflows/Sandbox Fanout and Fusion.md",
+    "60 Workflows/Habitat Introspection.md",
+    "60 Workflows/Arena Practice Ground.md",
+    "60 Workflows/Cross-Workspace Review Gate.md",
+    "60 Workflows/Bridge - Diagnostics to Review.md",
+    "60 Workflows/Weight Matrix - Which Gate Bore the Weight.md",
+    "60 Workflows/Assimilation - Rules That Fire.md",
+    "10 Tools/atuin.md"
+  ],
+  "source_hashes": {
+    "/var/home/Louranicas/.local/bin/habitat-cascade": "9a531279e9a51a4aad143c459daf43b6f3cf66de00da77e206a25cb25eb7e87a",
+    "/var/home/Louranicas/.local/bin/habitat-trigger": "e3bc8e65648650bb55eebd742eb0e19963659f27704660bc8742f8190d3b6597",
+    "/var/home/Louranicas/.local/bin/habitat-reactor": "d1b7b9291144ad68eac92837c0564b77006efb2da171beacf3a3db8901e3cc7a",
+    "/var/home/Louranicas/.local/bin/habitat-sandbox": "14a2a02322e971ce91f8b651959eec52b04b6496fbe6f895888ca2bf06f8fcf9",
+    "/var/home/Louranicas/.local/bin/habitat-runbook": "022d0d9924af79795959b902e33f38b1d36ed0a96c53fafb23a0db8e1b857103",
+    "/var/home/Louranicas/fedora-arena/cascades/triggers.toml": "30a14777bd3c60f8c96d5d6c509a3db345b225e97f79e4c8c39ed706676cf2de",
+    "/var/mnt/STORAGE-10TB/repos/herdr-engineering-engine-v2/scripts/mutants.py": "4a49f66373c7e44c69556eeebaadf4a1538eed133f4a59e423da2444968dcff7",
+    "/usr/share/man/man5/systemd.unit.5.gz": "6288f5c468d5429288ef2c9b8e58f6461845b8ac951225d0d5dbb951944c47b3"
+  },
+  "scope": "Documentation review and source inspection; no runtime mutation or archived-history replay.",
+  "before_links": {
+    "00 - Toolshed Index.md": [
+      "podman",
+      "atuin",
+      "television",
+      "fzf",
+      "nushell",
+      "mempalace",
+      "lazyvim",
+      "bacon",
+      "just",
+      "lazygit",
+      "hunk",
+      "gh-dash",
+      "bottom",
+      "yazi",
+      "podman-tui",
+      "tuicr",
+      "jqp",
+      "repo-fleet-status",
+      "herdr",
+      "Tool Chaining Patterns",
+      "Clustering Shapes",
+      "Tool Clusters",
+      "Workflow Recipes",
+      "Most-Used Tools",
+      "Claim-Time Guard",
+      "50 Field Notes/lukes workflows|lukes workflows",
+      "50 Field Notes/Linux Inotify Capacity - Herdr Habitat|Linux Inotify Capacity \u2014 Herdr Habitat",
+      "50 Field Notes/Linux Inotify Capacity - Herdr Habitat#Future management narrative|future management",
+      "50 Field Notes/Linux Inotify Capacity - Herdr Habitat#Hardware assessment and recommendations|conditional hardware recommendations",
+      "00 - Field Findings",
+      "00 - Workflows",
+      "Bridge - Diagnostics to Review",
+      "Bridge - Coverage to Review",
+      "Cross-Workspace Review Gate",
+      "Synchronised Review and Editor",
+      "Habitat Reactor",
+      "Cascade Engine",
+      "Autonomous Triggers",
+      "Knowledge Audit",
+      "Documented Surface and Source",
+      "Cascade and Runbook Catalogue",
+      "Runbooks",
+      "Fabric Bash Command Plane",
+      "Fabric Habitat 90-Point Promotion and Practice",
+      "Factory Roster Expansion - DevOps Toolbox",
+      "Habitat Introspection",
+      "Sandbox Fanout and Fusion",
+      "Arena Practice Ground",
+      "skills",
+      "70 Toolkit/Skill Usage Guide|Skill Usage Guide",
+      "MCP Servers",
+      "Authored Skills",
+      "Code Anchors - Notes That Land on Source",
+      "Weight Matrix - Which Gate Bore the Weight",
+      "Axiom Conformance",
+      "Shape-Directed Tool Chaining",
+      "Assimilation - Rules That Fire",
+      "Forge - Deployment Framework",
+      "00 - Habitat Toolkit",
+      "40 Reference/lukes-workflows/2026-09-06/README|Luke's workflow evidence \u2014 2026-09-06",
+      "40 Reference/inotify/2026-09-06/README|Inotify capacity evidence \u2014 2026-09-06",
+      "Command Matrix",
+      "atuin",
+      "skills",
+      "skills"
+    ],
+    "50 Field Notes/lukes workflows.md": [
+      "00 - Toolshed Index",
+      "10 Tools/atuin|atuin",
+      "10 Tools/just|just",
+      "10 Tools/herdr|herdr",
+      "Most-Used Tools",
+      "50 Field Notes/Linux Inotify Capacity - Herdr Habitat|Inotify capacity and future habitat management",
+      "40 Reference/lukes-workflows/2026-09-06/README|workflow evidence bundle",
+      "00 - Field Findings",
+      "10 Tools/just|just",
+      "50 Field Notes/Linux Inotify Capacity - Herdr Habitat#Kinoite management and recovery|Kinoite management note",
+      "50 Field Notes/Linux Inotify Capacity - Herdr Habitat#Hardware assessment and recommendations|hardware and resilience assessment"
+    ],
+    "20 Chaining/Workflow Recipes.md": [
+      "Tool Chaining Patterns",
+      "Tool Clusters",
+      "Most-Used Tools",
+      "Tool Chaining Patterns",
+      "Tool Clusters",
+      "atuin",
+      "Most-Used Tools",
+      "00 - Toolshed Index",
+      "gh-dash",
+      "just",
+      "mempalace",
+      "repo-fleet-status"
+    ],
+    "20 Chaining/Tool Chaining Patterns.md": [
+      "Most-Used Tools",
+      "jqp",
+      "nushell",
+      "bottom",
+      "yazi",
+      "lazygit",
+      "television",
+      "atuin",
+      "Workflow Recipes",
+      "hunk",
+      "tuicr",
+      "Documented Surface and Source",
+      "00 - Field Findings|F3",
+      "Fabric Bash Command Plane",
+      "Tool Clusters",
+      "Workflow Recipes",
+      "Most-Used Tools",
+      "00 - Toolshed Index"
+    ],
+    "60 Workflows/00 - Workflows.md": [
+      "Most-Used Tools",
+      "Arena Practice Ground",
+      "Claim-Time Guard",
+      "Bridge - Diagnostics to Review",
+      "Bridge - Coverage to Review",
+      "Cross-Workspace Review Gate",
+      "Synchronised Review and Editor",
+      "Habitat Reactor",
+      "Cascade Engine",
+      "Autonomous Triggers",
+      "Weight Matrix - Which Gate Bore the Weight",
+      "Cascade Engine",
+      "Runbooks",
+      "Knowledge Audit",
+      "Habitat Introspection",
+      "Sandbox Fanout and Fusion",
+      "Arena Practice Ground",
+      "00 - Field Findings|F3",
+      "00 - Field Findings|F4",
+      "00 - Toolshed Index",
+      "00 - Field Findings",
+      "Tool Chaining Patterns",
+      "Tool Clusters"
+    ],
+    "60 Workflows/Cascade Engine.md": [
+      "Cross-Workspace Review Gate|gate",
+      "Clustering Shapes",
+      "00 - Field Findings|F29",
+      "stage",
+      "00 - Field Findings|F30",
+      "Habitat Reactor",
+      "Cross-Workspace Review Gate",
+      "00 - Workflows",
+      "00 - Field Findings",
+      "00 - Habitat Toolkit",
+      "00 - Toolshed Index",
+      "Assimilation - Rules That Fire",
+      "Autonomous Triggers",
+      "Cascade and Runbook Catalogue",
+      "Forge - Deployment Framework",
+      "Habitat Introspection",
+      "Runbooks",
+      "Sandbox Fanout and Fusion"
+    ],
+    "60 Workflows/Runbooks.md": [
+      "Cross-Workspace Review Gate|gate",
+      "Tool Chaining Patterns|P9",
+      "Habitat Introspection",
+      "Fabric Bash Command Plane",
+      "Factory Roster Expansion - DevOps Toolbox",
+      "Fabric Bash Command Plane",
+      "Fabric Habitat 90-Point Promotion and Practice",
+      "Cascade Engine",
+      "Clustering Shapes",
+      "MCP Servers",
+      "00 - Habitat Toolkit",
+      "atuin",
+      "just"
+    ],
+    "60 Workflows/Autonomous Triggers.md": [
+      "00 - Field Findings|F17",
+      "Cascade Engine",
+      "Habitat Reactor",
+      "00 - Field Findings",
+      "bacon",
+      "00 - Habitat Toolkit",
+      "00 - Toolshed Index",
+      "00 - Workflows"
+    ],
+    "60 Workflows/Habitat Reactor.md": [
+      "00 - Field Findings|F17",
+      "00 - Field Findings|F22",
+      "00 - Field Findings|F23",
+      "00 - Field Findings|F24",
+      "00 - Field Findings|F25",
+      "herdr",
+      "00 - Field Findings",
+      "00 - Workflows",
+      "00 - Habitat Toolkit",
+      "00 - Toolshed Index",
+      "Autonomous Triggers",
+      "Cascade Engine"
+    ],
+    "60 Workflows/Sandbox Fanout and Fusion.md": [
+      "00 - Field Findings|F33",
+      "00 - Field Findings|F34",
+      "Cascade Engine",
+      "podman-tui",
+      "00 - Field Findings",
+      "00 - Workflows",
+      "00 - Habitat Toolkit",
+      "00 - Toolshed Index",
+      "Assimilation - Rules That Fire",
+      "Clustering Shapes",
+      "Forge - Deployment Framework"
+    ],
+    "60 Workflows/Habitat Introspection.md": [
+      "Cascade Engine",
+      "Clustering Shapes",
+      "00 - Field Findings",
+      "00 - Workflows",
+      "00 - Habitat Toolkit",
+      "00 - Toolshed Index",
+      "Assimilation - Rules That Fire",
+      "Knowledge Audit",
+      "Runbooks"
+    ],
+    "60 Workflows/Arena Practice Ground.md": [
+      "00 - Field Findings",
+      "00 - Workflows",
+      "bacon",
+      "just",
+      "jqp|jq",
+      "nushell",
+      "fzf|rg",
+      "television",
+      "mempalace",
+      "lazygit",
+      "hunk",
+      "tuicr",
+      "00 - Field Findings|F6",
+      "00 - Workflows",
+      "00 - Field Findings",
+      "Cross-Workspace Review Gate"
+    ],
+    "60 Workflows/Cross-Workspace Review Gate.md": [
+      "00 - Field Findings|F66",
+      "00 - Field Findings|F69",
+      "Weight Matrix - Which Gate Bore the Weight",
+      "Weight Matrix - Which Gate Bore the Weight",
+      "Fabric Habitat 90-Point Promotion and Practice",
+      "Bridge - Diagnostics to Review",
+      "Bridge - Coverage to Review",
+      "00 - Workflows",
+      "00 - Toolshed Index",
+      "Arena Practice Ground",
+      "Cascade Engine",
+      "Runbooks"
+    ],
+    "60 Workflows/Bridge - Diagnostics to Review.md": [
+      "hunk",
+      "00 - Field Findings|F7",
+      "Bridge - Coverage to Review|coverage",
+      "00 - Field Findings|F8",
+      "00 - Field Findings|F7",
+      "Bridge - Coverage to Review",
+      "hunk",
+      "bacon",
+      "Cross-Workspace Review Gate",
+      "00 - Toolshed Index",
+      "00 - Workflows",
+      "Synchronised Review and Editor"
+    ],
+    "60 Workflows/Weight Matrix - Which Gate Bore the Weight.md": [
+      "Axioms",
+      "00 - Field Findings|F68",
+      "00 - Field Findings|F67",
+      "Assimilation - Rules That Fire",
+      "Axiom Conformance",
+      "Fabric Habitat 90-Point Promotion and Practice",
+      "Cascade Engine",
+      "Clustering Shapes",
+      "00 - Field Findings",
+      "Cross-Workspace Review Gate",
+      "00 - Workflows",
+      "00 - Toolshed Index"
+    ],
+    "60 Workflows/Assimilation - Rules That Fire.md": [
+      "00 - Field Findings|field findings",
+      "Habitat Introspection",
+      "Cascade Engine",
+      "Claim-Time Guard",
+      "Claim-Time Guard",
+      "00 - Field Findings",
+      "Cascade Engine",
+      "Sandbox Fanout and Fusion",
+      "Forge - Deployment Framework",
+      "00 - Toolshed Index",
+      "Code Anchors - Notes That Land on Source",
+      "MCP Servers"
+    ],
+    "10 Tools/atuin.md": [
+      "Workflow Recipes",
+      "mempalace",
+      "fzf",
+      "mempalace",
+      "Tool Chaining Patterns",
+      "Most-Used Tools",
+      "00 - Toolshed Index",
+      "Command Matrix",
+      "Documented Surface and Source",
+      "Runbooks",
+      "Tool Clusters",
+      "nushell",
+      "television"
+    ]
+  },
+  "before_blocks": {
+    "00 - Toolshed Index.md": [],
+    "50 Field Notes/lukes workflows.md": [
+      [
+        "text",
+        "/var/home/Louranicas/.cache/herdr-runs/\n  <project>/<worktree>/<run-id>/\n    tmp/       -> task-local TMPDIR\n    target/    -> task-local CARGO_TARGET_DIR\n    receipt    -> owner, command identity, completion and retention status\n"
+      ],
+      [
+        "bash",
+        "atuin search --filter-mode global --search-mode full-text \\\n  --include-duplicates --limit 5 \\\n  --format '{time} | {host} | {directory} | {exit} | {duration}' herdr\n"
+      ],
+      [
+        "mermaid",
+        "flowchart LR\n    A[Choose project and worktree] --> B[Herdr focus pane]\n    B --> C[Reviewed project task recipe]\n    C --> D[Bounded build or review workers]\n    D --> E[NVMe run directories]\n    D --> F[Memory and I/O measurements]\n    E --> G[Save result and handoff]\n    F --> G\n    G --> H[Retire completed sessions and eligible scratch]\n    H --> A\n"
+      ]
+    ],
+    "20 Chaining/Workflow Recipes.md": [
+      [
+        "bash",
+        "recall() {\n  echo \"\u2500\u2500 shell history \u2500\u2500\";   atuin search --cmd-only \"$1\" | tail -15\n  echo \"\u2500\u2500 knowledge \u2500\u2500\";        mempalace search \"$*\"\n  echo \"\u2500\u2500 sessions \u2500\u2500\";         echo \"(memex: ctrl+b m \u2014 plugin-only, no CLI)\"\n}\nrecall \"podman socket\"\n"
+      ],
+      [
+        "bash",
+        "cd <repo>\njust --summary 2>/dev/null || echo \"(no justfile)\"\nbacon --list-jobs 2>/dev/null\ngit log --oneline -10 ; git status --short\ngh repo view --json description,topics 2>/dev/null\nmempalace search \"$(basename $PWD)\"        # have we been here before?\n"
+      ],
+      [
+        "bash",
+        "# 1. bacon is already watching (W2 pJ). Edit files.\nhabitat pane bacon                       # P3: read the verdict, no rebuild\n# 2. when green, review the diff\nhunk diff                                # live, watches further edits\n# 3. or one-shot for a script\ncargo check --message-format json | jq -r 'select(.reason==\"compiler-message\") | .message.rendered'\n"
+      ],
+      [
+        "bash",
+        "hunk session comment add --repo . --file src/lib.rs --new-line 88 \\\n  --summary \"unchecked index\" --rationale \"len can be 0 here\" --focus\nhunk session comment list --repo . --type user     # then read your reply\n"
+      ],
+      [
+        "bash",
+        "repo-fleet-status                        # 31 repos: what's dirty?\nhabitat status                           # 16 services: what's live?\nflatpak-spawn --host rpm-ostree status | head -6\nmempalace status                         # palace intact?\nhabitat-settings-backup                  # snapshot, then proceed\n"
+      ],
+      [
+        "bash",
+        "gh run list --limit 5 --json databaseId,status,conclusion,headBranch\ngh run view <id> --log-failed | tail -60          # \u2b50 straight to the failure\ngh pr checks <n> --json name,state,link\n"
+      ],
+      [
+        "bash",
+        "cd \"$REPOS_DIR/$(repo-fleet-status | awk '$3 ~ /\u00b1/ {print $1}' | fzf)\" && lazygit\n"
+      ],
+      [
+        "bash",
+        "atuin history list --cmd-only > /tmp/hist.txt\npython3 - <<'PY'\nimport re,collections,itertools,os\nTOOLS={\"atuin\",\"fzf\",\"nu\",\"tv\",\"mempalace\",\"nvim\",\"bacon\",\"just\",\"lazygit\",\"hunk\",\"gh\",\"btm\",\n       \"yazi\",\"podman-tui\",\"podman\",\"tuicr\",\"jqp\",\"jq\",\"herdr\",\"rg\",\"fd\",\"git\",\"cargo\",\"habitat\"}\nlines=[l.strip() for l in open(\"/tmp/hist.txt\") if l.strip()]\ndef toks(l):\n    out=[]\n    for s in re.split(r'\\|\\||&&|\\||;', l):\n        w=s.strip().split(); i=0\n        while i<len(w) and \"=\" in w[i] and not w[i].startswith(\"-\"): i+=1\n        if i<len(w) and os.path.basename(w[i]) in TOOLS: out.append(os.path.basename(w[i]))\n    return out\nfreq=collections.Counter(); pipe=collections.Counter(); adj=collections.Counter(); prev=None\nfor l in lines:\n    t=toks(l)\n    for x in t: freq[x]+=1\n    for a,b in itertools.combinations(sorted(set(t)),2): pipe[(a,b)]+=1\n    if t:\n        if prev: adj[(prev,t[0])]+=1\n        prev=t[-1]\nprint(\"FREQ\",freq.most_common(15)); print(\"PIPES\",pipe.most_common(10))\nprint(\"ADJ\",[(k,v) for k,v in adj.most_common(12) if k[0]!=k[1]])\nPY\n"
+      ],
+      [
+        "bash",
+        "herdr pane list | jq '.result.panes[] | {pane_id, tab_id, cwd}'\nherdr pane list | nu -c 'from json | get result.panes | select pane_id tab_id | table'\nherdr api schema --json > /tmp/schema.json && jqp -f /tmp/schema.json   # explore the API interactively\nhabitat map                                   # service \u2192 live pane\n"
+      ],
+      [
+        "bash",
+        "atuin scripts new <name> --last <N> -t <tag> -d \"<what it does>\"\natuin scripts list\natuin scripts run <name> -v key=value\natuin scripts get <name> -s        # the executable body, for review or export\n"
+      ],
+      [
+        "bash",
+        "for d in \"$REPOS_DIR\"/*/; do\n  [ -d \"$d/.git\" ] || continue\n  [ -f \"$d/justfile\" ] || continue\n  echo \"\u2500\u2500 $(basename $d)\"; ( cd \"$d\" && just --summary 2>/dev/null )\ndone\n"
+      ]
+    ],
+    "20 Chaining/Tool Chaining Patterns.md": [
+      [
+        "bash",
+        "git branch | fzf | xargs git switch\npodman ps --format '{{.Names}}' | fzf | xargs -r podman logs\nrepo-fleet-status | awk '$3 ~ /\u00b1/ {print $1}' | fzf | xargs -I{} sh -c 'cd $REPOS_DIR/{} && lazygit'\natuin search --cmd-only --exit 0 cargo | fzf | bash        # rerun a *proven* command\n"
+      ],
+      [
+        "bash",
+        "herdr pane list | jq '.result.panes[] | select(.tab_id==\"w1:t4\") | .pane_id'\ngh pr list --json number,title,statusCheckRollup | nu -c 'from json | where statusCheckRollup != []'\njust --dump --dump-format json | jq '.recipes | keys'\npodman ps --format json | nu -c 'from json | select Names State'\ncargo check --message-format json | jq -r 'select(.reason==\"compiler-message\") | .message.rendered'\n"
+      ],
+      [
+        "bash",
+        "habitat pane bacon      # current Rust verdict \u2014 no rebuild\nhabitat pane bottom     # live vitals incl. per-agent processes\nhabitat pane gh-dash    # the PR radar as the human sees it\nherdr pane wait-output w1:pJ --regex \"(error|warning|Finished)\" --timeout 300000\n"
+      ],
+      [
+        "bash",
+        "# ... you experiment: three commands that finally work ...\natuin scripts new ship --last 3 -t release -d \"Tag, build, publish\"\natuin scripts run ship -v version=0.3.0\n"
+      ],
+      [
+        "bash",
+        "habitat q gh-dash pr list --json number,title    # data I can compute on\nhabitat pane gh-dash                             # what YOU are looking at right now\n"
+      ],
+      [
+        "bash",
+        "flatpak-spawn --host podman ps                       # podman is NOT in the toolbox\nflatpak-spawn --host rpm-ostree status\nflatpak-spawn --host systemctl --user status podman.socket\ntoolbox run --container fedora-toolbox-44 <cmd>      # the reverse: host \u2192 toolbox\n"
+      ],
+      [
+        "bash",
+        "just --summary                       # what can I do here?\njust --dump --dump-format json       # the whole justfile as data\njust -n <recipe>                     # dry-run: print without executing\nbacon --list-jobs                    # what checks exist\ngh repo view --json description,topics\nmempalace wake-up                    # ~600-900 token orientation brief\n"
+      ],
+      [
+        "bash",
+        "hunk session list --json\nhunk session comment list --repo . --type user          # read YOUR comments\nhunk session comment add --repo . --file src/x.rs --new-line 42 \\\n  --summary \"off-by-one\" --rationale \"\u2026\" --focus        # write into your live diff, move your cursor\nhunk session navigate --repo . --next-comment\ntuicr review comments  \u00b7  tuicr review add\n"
+      ],
+      [
+        "",
+        "act \u2500\u25ba verify \u2500\u252c\u2500 pass \u2500\u25ba done\n               \u2514\u2500 fail \u2500\u25ba remediate \u2500\u25ba RE-verify \u2500\u252c\u2500 pass \u2500\u25ba done (n attempts)\n                                                  \u2514\u2500 fail \u2500\u25ba report UNVERIFIED\n"
+      ],
+      [
+        "toml",
+        "[verify]\nrun       = \"just gate\"\ncontains  = \"READY\"\nretries   = 2\nremediate = \"just annotate-all\"     # runs only BETWEEN attempts\nbackoff   = 1\n"
+      ],
+      [
+        "bash",
+        "just until \"<check>\" \"<want>\" \"<fix>\" <tries> <backoff>   # the generic form\njust verify-cockpit \u00b7 verify-build \u00b7 verify-review \u00b7 verify-docs \u00b7 verify-source \u00b7 verify-all\n"
+      ]
+    ],
+    "60 Workflows/00 - Workflows.md": [
+      [
+        "",
+        "atuin script          synced \u00b7 minijinja-templated \u00b7 capturable with --last N\n      \u2502  -v repo=\u2026 -v recipe=\u2026\n      \u25bc\njust recipe           the project's own verb; discoverable (--summary, --dump --dump-format json)\n      \u2502\n      \u25bc\nbridge script         cross-workspace orchestration (annotate \u00b7 coverage \u00b7 gate \u00b7 goto)\n      \u2502\n      \u25bc\ntools                 cargo \u00b7 rg \u00b7 hunk \u00b7 nvim \u00b7 herdr event bus \u00b7 podman \u00b7 jq\n"
+      ],
+      [
+        "",
+        "        edit a file\n             \u2502\n   habitat-trigger        probe: cargo check ... (edge-detected)\n             \u2502\n   habitat-cascade        DAG: 11 stages parallel \u2192 2 \u2192 1\n        \u250c\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n       W2        W3        W4        W5\n     build   annotate    system     fleet\n             \u2502\n   hunk session          notes appear in the live diff\n             \u2502\n   nvim --server         cursor follows (just goto)\n             \u2502\n   receipt \u2192 palace      the habitat remembers the run\n"
+      ],
+      [
+        "",
+        "[W2-build]   check \u00b7 test \u00b7 lint \u00b7 diagnostics\n[W3-review]  annotate \u00b7 coverage \u00b7 annotate-all \u00b7 retract \u00b7 goto \u00b7 walk\n[W4-W5]      gate \u00b7 pulse \u00b7 telemetry \u00b7 fleet\n[cascade]    doctor \u00b7 sweep \u00b7 dag \u00b7 bench \u00b7 fleet-agents\n[composite]  review (check \u25b6 annotate-all \u25b6 gate) \u00b7 survey (all four workspaces)\n"
+      ]
+    ],
+    "60 Workflows/Cascade Engine.md": [
+      [
+        "bash",
+        "habitat-cascade graph <spec.toml>          # the DAG and its parallel waves\nhabitat-cascade run   <spec.toml> [-v K=V] [--dry-run] [--seq] [--json]\njust dag doctor \u00b7 just doctor \u00b7 just sweep \u00b7 just bench\natuin scripts run cascade -v name=doctor\n"
+      ],
+      [
+        "toml",
+        "name = \"doctor\"\ncwd  = \"/var/home/Louranicas/fedora-arena\"\nreceipts = \"/var/home/Louranicas/fedora-arena/receipts\"\nverdict  = \"services={{services.running}} palace={{palace.drawers}} broken={{vault_links}}\"\n\n[[stage]]\nid      = \"palace\"\nws      = \"W1\"\ncapture = \"json\"          # json | int | text\nrun     = \"mempalace status | ...\"\n\n[[stage]]\nid    = \"annotate\"\nws    = \"W3\"\nneeds = [\"lints\"]          # waits only for what it actually needs\nrun   = \"./scripts/clippy-to-hunk.sh . clippy\"\n"
+      ],
+      [
+        "",
+        "services=12/0stopped reactor=active agents=5(0blocked) palace=1026\nbrokenlinks=0 backup=0h dirty=3 disk=26% podman=active\n"
+      ],
+      [
+        "toml",
+        "foreach = \"discover\"                                   # one child per element of that stage's list\nmatrix  = { repo = \"repos\", check = [\"test\",\"ci\"] }    # cartesian product of two axes\n"
+      ],
+      [
+        "bash",
+        "habitat recall \"cascade receipt total ms waves stages\"\n# \u2192 on-break-20260902-210323.md  (cosine 0.616)\n"
+      ]
+    ],
+    "60 Workflows/Runbooks.md": [
+      [
+        "bash",
+        "habitat-runbook list | show <name> | run <name> [-v K=V] [--dry-run] | export <name>\n"
+      ],
+      [
+        "toml",
+        "name    = \"ship\"\npurpose = \"Verify a change, annotate it for review, and gate it\"\n\n[[precondition]]\ncheck      = \"git rev-parse --abbrev-ref HEAD\"\nexpect_not = \"master\"\nmessage    = \"ship runs on a feature branch \u2014 you are on master\"\n\n[[step]]\nname = \"build\"\njust = \"check\"                # \u2190 a just recipe\n\n[[step]]\nname    = \"review\"\ncascade = \"web-review\"        # \u2190 a parallel DAG\n\n[[step]]\nname = \"topology\"\nmcp  = \"cockpit call ws_overview\"   # \u2190 an MCP tool\n\n[verify]\nrun      = \"just gate\"\ncontains = \"READY\"\n"
+      ],
+      [
+        "",
+        "\u25b6 ship \u2014 Verify a change, annotate it for review, and gate it\n  \u2713 pre   git rev-parse --abbrev-ref HEAD          feature/stats\n  \u2713 pre   habitat status | tail -1                 12 running \u00b7 4 shell \u00b7 0 stopped\n  \u2713 1. build       [just]      69 ms   Finished `dev` profile\n  \u2713 2. test        [just]      64 ms   Doc-tests arena_core\n  \u2713 3. review      [cascade]  933 ms   agent=0 human=1 \u2014 human-only review\n  \u2713 4. topology    [mcp]      127 ms   12 running \u00b7 4 shell \u00b7 0 stopped\n  VERIFIED  expected 'READY'\n  ship complete in 1889 ms\n"
+      ],
+      [
+        "",
+        "  \u2717 pre   git rev-parse --abbrev-ref HEAD          master\n  BLOCKED \u2014 ship runs on a feature branch \u2014 you are on master\n"
+      ],
+      [
+        "bash",
+        "habitat-runbook run audit          # direct\njust rb-audit                      # GENERATED recipe\natuin scripts run rb-audit         # GENERATED script (synced, portable)\nmcpc cockpit call ws_runbook action=run name=audit    # via MCP\n"
+      ],
+      [
+        "",
+        "\u2717 1. machine     11 running \u00b7 4 shell \u00b7 1 stopped\n  \u21bb remediate habitat respawn\n\u2713 1. machine     12 running \u00b7 4 shell \u00b7 0 stopped  (attempt 2/3)\n"
+      ]
+    ],
+    "60 Workflows/Autonomous Triggers.md": [
+      [
+        "bash",
+        "habitat-trigger <triggers.toml> [--dry-run] [--once]\nHABITAT_TRIGGER_POLL=3 habitat-trigger ...       # poll interval, default 4s\n"
+      ],
+      [
+        "",
+        "21:02:03  armed 2 trigger(s): build-broke@probe, fleet-dirty@probe\n21:02:13  \u26a1 build-broke \u2190 error: could not compile `arena-core` (lib) due to 6 previous errors\n21:02:15     \u2713 W4 when         32 ms  2026-09-02T21:02:13+10:00\n21:02:15        wave 1: 90 ms wall vs 122 ms serial\n21:02:15     \u2713 W3 annotate   1280 ms\n21:02:15     total 1372 ms  \u2192 rc=0\n"
+      ],
+      [
+        "toml",
+        "[[trigger]]\nname  = \"build-broke\"\nprobe = \"cargo check --message-format short 2>&1 | tail -5\"\ncwd   = \"/var/home/Louranicas/fedora-arena\"\nregex = \"^error|could not compile\"\nrun   = \"habitat-cascade run .../on-break.toml\"\ndebounce = 20\n"
+      ]
+    ],
+    "60 Workflows/Habitat Reactor.md": [
+      [
+        "bash",
+        "systemctl --user status habitat-reactor        # via flatpak-spawn --host\njournalctl --user -u habitat-reactor -f\ntail -f ~/.local/state/habitat/reactor.log\nhabitat-reactor --dry-run                      # report, change nothing\nhabitat-reactor --once                         # print the next event and exit\n"
+      ],
+      [
+        "",
+        "pane.created  pane.closed  pane.exited  pane.updated  pane.moved  pane.focused\npane.agent_detected  pane.agent_status_changed  pane.output_matched  pane.scroll_changed\ntab.created/closed/focused/moved/renamed\nworkspace.created/updated/renamed/moved/closed/focused/reordered/metadata_updated\nworktree.created/opened/removed        layout.updated\n"
+      ],
+      [
+        "json",
+        "{\"id\":\"sub\",\"method\":\"events.subscribe\",\"params\":{\"subscriptions\":[{\"type\":\"pane.exited\"}]}}\n\u2192 {\"id\":\"sub\",\"result\":{\"type\":\"subscription_started\"}}\n"
+      ],
+      [
+        "python",
+        "POLL_SECONDS = 20\ns.settimeout(POLL_SECONDS)\nwhile True:\n    try:\n        chunk = s.recv(65536)          # topology events keep the map fresh\n    except socket.timeout:\n        sweep()                        # liveness: process-info vs registry `proc`\n        continue\n"
+      ],
+      [
+        "json",
+        "{\"event\": \"pane_updated\", \"data\": {\"pane\": {...}, \"type\": \"...\"}}\n"
+      ],
+      [
+        "ini",
+        "[Unit]\nAfter=herdr-server.service\nBindsTo=herdr-server.service\nPartOf=graphical-session.target\n\n[Service]\nType=exec\nExecStart=/usr/bin/toolbox run --container fedora-toolbox-44 %h/.local/bin/habitat-reactor\nRestart=always\nRestartSec=10\n\n[Install]\nWantedBy=graphical-session.target\n"
+      ],
+      [
+        "",
+        "20:35:32  subscribed: 5 topology events + 16 prompt watches\n20:35:32  pane_created: re-resolved service map (16 panes)\n20:35:52  poll: tuicr down in w1:pR -- respawning\n20:35:52    ->   1 started \u00b7 0 already running \u00b7 0 missing\n"
+      ]
+    ],
+    "60 Workflows/Sandbox Fanout and Fusion.md": [
+      [
+        "bash",
+        "just sb-create 4          # habitat-sandbox create --n 4 --src <dir>\njust sb-fanout            # one task per sandbox, in parallel\njust sb-fuse              # consolidate into one keyed document\njust sb-codegen           # generate modules in isolation \u2192 fuse into the crate \u2192 verify\njust sb-destroy\n"
+      ],
+      [
+        "",
+        "fusing 4 module(s) from hbx-1 hbx-2 hbx-3 hbx-4\nwrote crates/arena-core/src/generated.rs (108 lines)\n\u2500\u2500 verifying the join \u2500\u2500\ntest result: ok. 13 passed; 0 failed\nFUSION OK\n"
+      ]
+    ],
+    "60 Workflows/Habitat Introspection.md": [
+      [
+        "bash",
+        "just introspect            # habitat-introspect\njust reprofile 4           # run doctor N times, then profile \u2014 verify a change\nhabitat-introspect --json --top 10\n"
+      ],
+      [
+        "sql",
+        "select count(e.id) from collections c\n  join embeddings e on e.segment_id in (select id from segments where collection = c.id)\n where c.name = 'mempalace_drawers';     -- 1208, exactly what `mempalace status` reports\n"
+      ]
+    ],
+    "60 Workflows/Arena Practice Ground.md": [
+      [
+        "json",
+        "{\n  \"C4_build\":  {\"errors\": 0, \"tests_passed\": 5, \"recipes\": 6},\n  \"C5_data\":   {\"rows\": 120, \"failures\": 16, \"slowest\": {\"tool\":\"herdr\",\"duration_ms\":4171},\n                \"by_cluster\": {\"C1\":15,\"C2\":24,\"C3\":29,\"C4\":18,\"C5\":12,\"C6\":12,\"C7\":10}},\n  \"C6_system\": {\"loadavg\": \"0.41 0.48 1.25\", \"containers\": 1},\n  \"C7_spine\":  {\"arena_panes\": 5, \"services_running\": 12},\n  \"verdict\":   \"green\"\n}\n"
+      ],
+      [
+        "bash",
+        "cd /var/home/Louranicas/fedora-arena\njust --list        # every verb\njust survey        # all four workspaces at a glance\njust review        # build \u25b6 annotate \u25b6 coverage \u25b6 gate\n"
+      ]
+    ],
+    "60 Workflows/Cross-Workspace Review Gate.md": [
+      [
+        "bash",
+        "just gate                      # against the default base\njust gate base=main\natuin scripts run gate -v repo=/path -v base=master\n"
+      ],
+      [
+        "",
+        "BLOCKED: build errors        errors > 0\nBLOCKED: no passing tests    tests == 0\nHOLD:    diff not reviewed   notes == 0\nHOLD:    no human note yet   human == 0        \u2190 the interesting one\nREADY (with N lint(s) noted) lints > 0\nREADY\n"
+      ],
+      [
+        "json",
+        "{\n  \"W2_build\":  {\"errors\": 0, \"tests_passed\": 5, \"clippy_lints\": 0},\n  \"W3_review\": {\"notes\": 4, \"agent\": 3, \"human\": 1, \"files_changed\": 2},\n  \"W4_system\": {\"load1\": 0.46, \"mem_avail_gb\": 81.4, \"containers\": 1, \"todos\": 1},\n  \"W5_fleet\":  {\"dirty_repos\": 3},\n  \"gate\": \"READY\"\n}\n"
+      ],
+      [
+        "just",
+        "review base=BASE: check annotate-all (gate base)\n"
+      ]
+    ],
+    "60 Workflows/Bridge - Diagnostics to Review.md": [
+      [
+        "bash",
+        "just annotate                          # clippy (default)\njust annotate job=check                # or any cargo job\n./scripts/clippy-to-hunk.sh <repo> <job>\natuin scripts run annotate -v repo=/path -v job=clippy\n"
+      ],
+      [
+        "bash",
+        "hunk diff master --agent-notes\n"
+      ],
+      [
+        "bash",
+        "# 1. W2 \u2014 diagnostics as structured data\ncargo clippy --all-targets --message-format json \\\n  | jq -s '[.[] | select(.reason==\"compiler-message\") | .message\n      | select(.level==\"warning\" or .level==\"error\")\n      | select((.spans|length) > 0)\n      | {level, lint: (.code.code // .level), msg: .message,\n         file: .spans[0].file_name, line: .spans[0].line_start,\n         hint: (((.children // []) | map(select(.level==\"help\")) | .[0].message) // \"\")}]\n    | unique_by([.file,.line,.lint])'\n\n# 2. W3 \u2014 retract our previous pass FIRST (even when there are zero findings)\nhunk session comment list --repo \"$REPO\" --json \\\n  | jq -r '.comments[]? | select(.author==\"clippy\") | .commentId' \\\n  | while read -r id; do hunk session comment rm --repo \"$REPO\" \"$id\"; done\n\n# 3. W3 \u2014 annotate\nhunk session comment add --repo \"$REPO\" --file \"$file\" --new-line \"$line\" \\\n  --summary \"$lint: $msg\" --rationale \"$hint\" --author clippy --json\n"
+      ],
+      [
+        "",
+        "\u258c   11 +      if n % 2 == 0 {\n    \u256d\u2500 clippy note - crates/arena-core/src/stats.rs (new) R11 \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u256e\n    \u2502 clippy::manual_is_multiple_of: manual implementation of           \u2502\n    \u2502 `.is_multiple_of()`                                               \u2502\n    \u2570\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u256f\n"
+      ]
+    ],
+    "60 Workflows/Weight Matrix - Which Gate Bore the Weight.md": [
+      [
+        "bash",
+        "just weight-matrix            # 15 faults x 8 gates, ~10.6 s\natuin scripts run weight-matrix\nhabitat-cascade run cascades/weightweb.toml\n"
+      ],
+      [
+        "",
+        "matrix \u2500\u25ba discover \u2500\u25ba probe[detect] \u2510\n  (dimensional)  (TREE: width      \u251c\u2500\u25ba probe_ok \u2500\u25ba synth \u2500\u25ba push \u2500\u2500\u25ba balance\n                  discovered at    \u2502                        (W3 out)  (W3 back in)\n                  runtime, 8 \u2225)    \u2518\n"
+      ]
+    ],
+    "60 Workflows/Assimilation - Rules That Fire.md": [
+      [
+        "bash",
+        "just detect-verify          # prove the detectors fire \u2014 always first\njust detect [path]          # scan; exit 1 on any finding\njust detect-session         # the agent's own commands\njust detect-history [days]  # the human's shell\njust detect-gate            # W3 pre-commit\njust receipt \"<claim>\" [t]  # W5 receipt that cannot self-certify\nhabitat-cascade run cascades/assimilation.toml\n"
+      ],
+      [
+        "",
+        "controls=all_tripped session=26hits build=PASS detect=1hits cold=PASS claim=PASS_WITH_GAPS\n"
+      ]
+    ],
+    "10 Tools/atuin.md": [
+      [
+        "bash",
+        "# capture what you just did \u2014 the killer move\natuin scripts new deploy --last 3 -t infra -d \"Deploys the prod stack\"\natuin scripts new quickfix --last          # just the last command\natuin scripts new x --last 5 --no-edit     # skip the editor\n\n# author directly\natuin scripts new hello-py --shebang '/usr/bin/env python3'\natuin scripts new build --script ./scripts/build.sh   # \u26a0\ufe0f --script takes a FILE PATH, not inline text\n\natuin scripts run deploy                   # prompts for any missing variables\natuin scripts run deploy -v env=production -v region=eu-west-1\natuin scripts list\natuin scripts get deploy            # full record\natuin scripts get deploy -s         # just the executable script + shebang\natuin scripts edit deploy --rename ship -t infra,prod\natuin scripts delete deploy -f\n"
+      ],
+      [
+        "bash",
+        "atuin search --cmd-only <term>                    # bare commands, no formatting\natuin search --cwd . --limit 10                   # this directory's history\natuin search --exit 0 --after \"1 day ago\" cargo   # only successful cargo runs, last 24h\natuin search --before \"2026-09-01\" --exclude-exit 0 --format \"{time} {command}\"\natuin history list --cmd-only --print0            # NUL-terminated, multiline-safe\natuin stats day\n"
+      ],
+      [
+        "bash",
+        "atuin search --cmd-only --exit 0 cargo | fzf | bash        # rerun a proven command\natuin search --cmd-only --cwd . | tv                       # directory history through television\n"
+      ],
+      [
+        "bash",
+        "claude mcp add atuin -- atuin mcp        # the whole setup, once atuin is new enough\n"
+      ]
+    ]
+  },
+  "after_hashes": {
+    "00 - Toolshed Index.md": "36217407bcda75bdecfd964e2b554470c89c9bfbc37b6721783a1446cb6d9f18",
+    "50 Field Notes/lukes workflows.md": "8985fce331c31e52d7f431bcf8598883f59fe1e2fe814673a84e8600ddddaef1",
+    "20 Chaining/Workflow Recipes.md": "0f156c98c96bd385a1aa042c4759c9222de9a33c7e74ce10543651e07f11519e",
+    "20 Chaining/Tool Chaining Patterns.md": "e7f14c00b2ada9e7b7566cc55011bec5a458b32d89b25f00362e6e6ba60581dc",
+    "60 Workflows/00 - Workflows.md": "cf7cc40b94f6bf4037f17e72524aaff157f9542a3bc80ecac9da3498c71d9a3e",
+    "60 Workflows/Cascade Engine.md": "f9a7289de295751dc24df47c8459ab6ee4f283a5aac11ceff4c52c33338d7e1a",
+    "60 Workflows/Runbooks.md": "a30cebfcae4578db19651fe5383d3862382303f16f2bf50967af3079474bbbec",
+    "60 Workflows/Autonomous Triggers.md": "ab8c45f5f2d005531cb61e5ef4673fd198eae4b00fe6a6f9103091a54f93b429",
+    "60 Workflows/Habitat Reactor.md": "f2d4fd5a61d4f9e29486817d69a6a50a54caaec6da906f288b7c1d62b843af81",
+    "60 Workflows/Sandbox Fanout and Fusion.md": "afe1101de3f5bc95a98a1ecde742db855a3ac1d13c79b71e343e16197df01c59",
+    "60 Workflows/Habitat Introspection.md": "b1309b9779dc58552577497489ddb3d1a218c8cb585abbc27a17f82e7cff6ef1",
+    "60 Workflows/Arena Practice Ground.md": "1e3ecf775b5f30a0f8e63538302065970b651b5fcb6a55381d1d33443c583865",
+    "60 Workflows/Cross-Workspace Review Gate.md": "b2ce07ef794ac533ae435e12d13bb637305f3f0607922f78f7ed60c039651d9e",
+    "60 Workflows/Bridge - Diagnostics to Review.md": "87b397363b19fcd597d6e71c75023afbddaa64ba1dabc8f5368720ce2d179fce",
+    "60 Workflows/Weight Matrix - Which Gate Bore the Weight.md": "79dcacb88644b3472c57623eb6e053b89b17de6c30b065e83249a544629c273c",
+    "60 Workflows/Assimilation - Rules That Fire.md": "58cd401d21c8f077abcaaa2f50a6cc38f5f57f0e5357f74bb3f5474859f58ba4",
+    "10 Tools/atuin.md": "d0d5dea6b179d7ea23e8161853c27354713b24834e74804c256d7572dd1d9616"
+  }
+}

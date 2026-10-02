@@ -1,0 +1,3053 @@
+{
+  "timestamp_utc": "2026-09-05T20:22:03.975152+00:00",
+  "databases": [
+    {
+      "source": "/var/home/Louranicas/.local/share/atuin/history.db",
+      "records": 287,
+      "unique_ids": 287,
+      "first_utc": "2026-09-01T10:58:45.182104+00:00",
+      "last_utc": "2026-09-05T19:40:06.508079+00:00",
+      "sessions": 80,
+      "host_counts": {
+        "toolbx:Louranicas": 287
+      },
+      "primary_tool_counts": {
+        "cd": 105,
+        "codex": 26,
+        "mempalace": 23,
+        "other": 16,
+        "exec": 11,
+        "claude": 9,
+        "herdr": 8,
+        "tv": 7,
+        "hunk": 7,
+        "podman-tui": 7,
+        "hermes": 7,
+        "repo-fleet-status": 7,
+        "lazygit": 6,
+        "atuin": 6,
+        "just": 6,
+        "nvim": 5,
+        "yazi": 5,
+        "gh": 5,
+        "pi": 5,
+        "command": 3,
+        "nu": 3,
+        "btm": 3,
+        "curl": 3,
+        "rpm-ostree": 1,
+        "flatpak-spawn": 1,
+        "echo": 1,
+        "printf": 1
+      },
+      "keyword_record_counts": {
+        "herdr": 25,
+        "mempalace": 34,
+        "btm": 4
+      },
+      "exit_counts": {
+        "127": 5,
+        "1": 5,
+        "-1": 104,
+        "143": 22,
+        "0": 148,
+        "137": 3
+      },
+      "top_cwds": {
+        "/var/home/Louranicas": 92,
+        "unknown": 59,
+        "/var/mnt/STORAGE-10TB/repos": 36,
+        "/var/mnt/STORAGE-10TB/fedora-obsidian-vaults": 33,
+        "/var/mnt/STORAGE-10TB/repos/deep-diff-forge": 30,
+        "/var/mnt/STORAGE-10TB/repos/herdr": 18,
+        "/var/home/Louranicas/fedora-arena": 16,
+        "/var/home/Louranicas/fabric": 2,
+        "/var/home/Louranicas/fedora-fabric.vault": 1
+      },
+      "records_by_day": {
+        "2026-09-01": 32,
+        "2026-09-02": 198,
+        "2026-09-03": 31,
+        "2026-09-04": 16,
+        "2026-09-05": 10
+      },
+      "transitions_in_same_recorded_session": [
+        {
+          "from": "cd",
+          "to": "hunk",
+          "count": 2
+        },
+        {
+          "from": "cd",
+          "to": "exec",
+          "count": 2
+        },
+        {
+          "from": "exec",
+          "to": "command",
+          "count": 2
+        },
+        {
+          "from": "just",
+          "to": "cd",
+          "count": 2
+        },
+        {
+          "from": "lazygit",
+          "to": "cd",
+          "count": 2
+        },
+        {
+          "from": "hunk",
+          "to": "cd",
+          "count": 2
+        },
+        {
+          "from": "codex",
+          "to": "other",
+          "count": 2
+        },
+        {
+          "from": "other",
+          "to": "codex",
+          "count": 2
+        },
+        {
+          "from": "tv",
+          "to": "exec",
+          "count": 1
+        },
+        {
+          "from": "exec",
+          "to": "tv",
+          "count": 1
+        },
+        {
+          "from": "cd",
+          "to": "mempalace",
+          "count": 1
+        },
+        {
+          "from": "command",
+          "to": "gh",
+          "count": 1
+        },
+        {
+          "from": "cd",
+          "to": "lazygit",
+          "count": 1
+        },
+        {
+          "from": "cd",
+          "to": "just",
+          "count": 1
+        },
+        {
+          "from": "atuin",
+          "to": "cd",
+          "count": 1
+        }
+      ],
+      "closed_command_durations": {
+        "tv": {
+          "closed_records": 3,
+          "max_seconds": 83204.47,
+          "upper_median_seconds": 76238.55
+        },
+        "nvim": {
+          "closed_records": 2,
+          "max_seconds": 83166.62,
+          "upper_median_seconds": 83166.62
+        },
+        "lazygit": {
+          "closed_records": 4,
+          "max_seconds": 76819.18,
+          "upper_median_seconds": 3660.56
+        },
+        "hunk": {
+          "closed_records": 5,
+          "max_seconds": 76238.53,
+          "upper_median_seconds": 218.15
+        },
+        "yazi": {
+          "closed_records": 2,
+          "max_seconds": 83149.9,
+          "upper_median_seconds": 83149.9
+        },
+        "podman-tui": {
+          "closed_records": 4,
+          "max_seconds": 81437.13,
+          "upper_median_seconds": 76818.11
+        },
+        "command": {
+          "closed_records": 2,
+          "max_seconds": 0.0,
+          "upper_median_seconds": 0.0
+        },
+        "mempalace": {
+          "closed_records": 22,
+          "max_seconds": 26.15,
+          "upper_median_seconds": 2.59
+        },
+        "gh": {
+          "closed_records": 3,
+          "max_seconds": 83149.87,
+          "upper_median_seconds": 75321.72
+        },
+        "claude": {
+          "closed_records": 5,
+          "max_seconds": 83491.9,
+          "upper_median_seconds": 21550.57
+        },
+        "codex": {
+          "closed_records": 18,
+          "max_seconds": 136197.26,
+          "upper_median_seconds": 35522.65
+        },
+        "pi": {
+          "closed_records": 2,
+          "max_seconds": 146272.08,
+          "upper_median_seconds": 146272.08
+        },
+        "hermes": {
+          "closed_records": 3,
+          "max_seconds": 47146.82,
+          "upper_median_seconds": 41.16
+        },
+        "nu": {
+          "closed_records": 1,
+          "max_seconds": 83204.45,
+          "upper_median_seconds": 83204.45
+        },
+        "atuin": {
+          "closed_records": 5,
+          "max_seconds": 0.02,
+          "upper_median_seconds": 0.01
+        },
+        "cd": {
+          "closed_records": 80,
+          "max_seconds": 77508.96,
+          "upper_median_seconds": 0.52
+        },
+        "just": {
+          "closed_records": 5,
+          "max_seconds": 0.02,
+          "upper_median_seconds": 0.0
+        },
+        "btm": {
+          "closed_records": 1,
+          "max_seconds": 83149.86,
+          "upper_median_seconds": 83149.86
+        },
+        "repo-fleet-status": {
+          "closed_records": 6,
+          "max_seconds": 0.36,
+          "upper_median_seconds": 0.35
+        },
+        "herdr": {
+          "closed_records": 2,
+          "max_seconds": 4922.77,
+          "upper_median_seconds": 4922.77
+        },
+        "other": {
+          "closed_records": 6,
+          "max_seconds": 0.04,
+          "upper_median_seconds": 0.0
+        },
+        "echo": {
+          "closed_records": 1,
+          "max_seconds": 0.0,
+          "upper_median_seconds": 0.0
+        },
+        "printf": {
+          "closed_records": 1,
+          "max_seconds": 0.0,
+          "upper_median_seconds": 0.0
+        }
+      },
+      "closed_over_one_hour_by_tool": {
+        "nvim": 2,
+        "lazygit": 2,
+        "yazi": 2,
+        "podman-tui": 2,
+        "tv": 2,
+        "hunk": 2,
+        "gh": 2,
+        "claude": 3,
+        "codex": 10,
+        "pi": 2,
+        "hermes": 1,
+        "nu": 1,
+        "btm": 1,
+        "herdr": 1,
+        "cd": 10
+      },
+      "limitations": "Primary tool is a conservative first-token classification; wrappers and multiline commands may conceal later tools. Keyword counts are mentions, not executions. Durations are wall-clock spans, not CPU/RAM use. Exit -1 is unknown/unfinished, not a proven failure. History does not establish human authorship or capture GUI activity/all agent tool calls. Saved duration order statistic is the upper median (not the mean of the middle pair for even samples).",
+      "ids_not_in_active": 0
+    },
+    {
+      "source": "/var/mnt/STORAGE-10TB/habitat-corpus-backup/20260904-014009Z/shell-history/history.db",
+      "records": 261,
+      "unique_ids": 261,
+      "first_utc": "2026-09-01T10:58:45.182104+00:00",
+      "last_utc": "2026-09-03T20:48:22.943697+00:00",
+      "sessions": 74,
+      "host_counts": {
+        "toolbx:Louranicas": 261
+      },
+      "primary_tool_counts": {
+        "cd": 105,
+        "mempalace": 23,
+        "exec": 11,
+        "other": 11,
+        "codex": 10,
+        "herdr": 8,
+        "tv": 7,
+        "hunk": 7,
+        "podman-tui": 7,
+        "hermes": 7,
+        "repo-fleet-status": 7,
+        "lazygit": 6,
+        "claude": 6,
+        "atuin": 6,
+        "just": 6,
+        "nvim": 5,
+        "yazi": 5,
+        "gh": 5,
+        "pi": 4,
+        "command": 3,
+        "nu": 3,
+        "btm": 3,
+        "curl": 3,
+        "rpm-ostree": 1,
+        "flatpak-spawn": 1,
+        "echo": 1
+      },
+      "keyword_record_counts": {
+        "herdr": 25,
+        "mempalace": 34,
+        "btm": 4
+      },
+      "exit_counts": {
+        "127": 2,
+        "1": 5,
+        "-1": 100,
+        "143": 22,
+        "0": 129,
+        "137": 3
+      },
+      "top_cwds": {
+        "/var/home/Louranicas": 69,
+        "unknown": 59,
+        "/var/mnt/STORAGE-10TB/repos": 36,
+        "/var/mnt/STORAGE-10TB/fedora-obsidian-vaults": 33,
+        "/var/mnt/STORAGE-10TB/repos/deep-diff-forge": 30,
+        "/var/mnt/STORAGE-10TB/repos/herdr": 18,
+        "/var/home/Louranicas/fedora-arena": 16
+      },
+      "records_by_day": {
+        "2026-09-01": 32,
+        "2026-09-02": 198,
+        "2026-09-03": 31
+      },
+      "transitions_in_same_recorded_session": [
+        {
+          "from": "cd",
+          "to": "hunk",
+          "count": 2
+        },
+        {
+          "from": "cd",
+          "to": "exec",
+          "count": 2
+        },
+        {
+          "from": "exec",
+          "to": "command",
+          "count": 2
+        },
+        {
+          "from": "just",
+          "to": "cd",
+          "count": 2
+        },
+        {
+          "from": "lazygit",
+          "to": "cd",
+          "count": 2
+        },
+        {
+          "from": "hunk",
+          "to": "cd",
+          "count": 2
+        },
+        {
+          "from": "tv",
+          "to": "exec",
+          "count": 1
+        },
+        {
+          "from": "exec",
+          "to": "tv",
+          "count": 1
+        },
+        {
+          "from": "cd",
+          "to": "mempalace",
+          "count": 1
+        },
+        {
+          "from": "command",
+          "to": "gh",
+          "count": 1
+        },
+        {
+          "from": "cd",
+          "to": "lazygit",
+          "count": 1
+        },
+        {
+          "from": "cd",
+          "to": "just",
+          "count": 1
+        },
+        {
+          "from": "atuin",
+          "to": "cd",
+          "count": 1
+        },
+        {
+          "from": "mempalace",
+          "to": "cd",
+          "count": 1
+        },
+        {
+          "from": "repo-fleet-status",
+          "to": "cd",
+          "count": 1
+        }
+      ],
+      "closed_command_durations": {
+        "tv": {
+          "closed_records": 3,
+          "max_seconds": 83204.47,
+          "upper_median_seconds": 76238.55
+        },
+        "nvim": {
+          "closed_records": 2,
+          "max_seconds": 83166.62,
+          "upper_median_seconds": 83166.62
+        },
+        "lazygit": {
+          "closed_records": 4,
+          "max_seconds": 76819.18,
+          "upper_median_seconds": 3660.56
+        },
+        "hunk": {
+          "closed_records": 5,
+          "max_seconds": 76238.53,
+          "upper_median_seconds": 218.15
+        },
+        "yazi": {
+          "closed_records": 2,
+          "max_seconds": 83149.9,
+          "upper_median_seconds": 83149.9
+        },
+        "podman-tui": {
+          "closed_records": 4,
+          "max_seconds": 81437.13,
+          "upper_median_seconds": 76818.11
+        },
+        "command": {
+          "closed_records": 2,
+          "max_seconds": 0.0,
+          "upper_median_seconds": 0.0
+        },
+        "mempalace": {
+          "closed_records": 22,
+          "max_seconds": 26.15,
+          "upper_median_seconds": 2.59
+        },
+        "gh": {
+          "closed_records": 3,
+          "max_seconds": 83149.87,
+          "upper_median_seconds": 75321.72
+        },
+        "claude": {
+          "closed_records": 2,
+          "max_seconds": 83491.9,
+          "upper_median_seconds": 83491.9
+        },
+        "codex": {
+          "closed_records": 6,
+          "max_seconds": 83321.65,
+          "upper_median_seconds": 186.9
+        },
+        "pi": {
+          "closed_records": 1,
+          "max_seconds": 83248.59,
+          "upper_median_seconds": 83248.59
+        },
+        "hermes": {
+          "closed_records": 3,
+          "max_seconds": 47146.82,
+          "upper_median_seconds": 41.16
+        },
+        "nu": {
+          "closed_records": 1,
+          "max_seconds": 83204.45,
+          "upper_median_seconds": 83204.45
+        },
+        "atuin": {
+          "closed_records": 5,
+          "max_seconds": 0.02,
+          "upper_median_seconds": 0.01
+        },
+        "cd": {
+          "closed_records": 80,
+          "max_seconds": 77508.96,
+          "upper_median_seconds": 0.52
+        },
+        "just": {
+          "closed_records": 5,
+          "max_seconds": 0.02,
+          "upper_median_seconds": 0.0
+        },
+        "btm": {
+          "closed_records": 1,
+          "max_seconds": 83149.86,
+          "upper_median_seconds": 83149.86
+        },
+        "repo-fleet-status": {
+          "closed_records": 6,
+          "max_seconds": 0.36,
+          "upper_median_seconds": 0.35
+        },
+        "herdr": {
+          "closed_records": 2,
+          "max_seconds": 4922.77,
+          "upper_median_seconds": 4922.77
+        },
+        "other": {
+          "closed_records": 1,
+          "max_seconds": 0.0,
+          "upper_median_seconds": 0.0
+        },
+        "echo": {
+          "closed_records": 1,
+          "max_seconds": 0.0,
+          "upper_median_seconds": 0.0
+        }
+      },
+      "closed_over_one_hour_by_tool": {
+        "nvim": 2,
+        "lazygit": 2,
+        "yazi": 2,
+        "podman-tui": 2,
+        "tv": 2,
+        "hunk": 2,
+        "gh": 2,
+        "claude": 2,
+        "codex": 2,
+        "pi": 1,
+        "hermes": 1,
+        "nu": 1,
+        "btm": 1,
+        "herdr": 1,
+        "cd": 10
+      },
+      "limitations": "Primary tool is a conservative first-token classification; wrappers and multiline commands may conceal later tools. Keyword counts are mentions, not executions. Durations are wall-clock spans, not CPU/RAM use. Exit -1 is unknown/unfinished, not a proven failure. History does not establish human authorship or capture GUI activity/all agent tool calls. Saved duration order statistic is the upper median (not the mean of the middle pair for even samples).",
+      "ids_not_in_active": 0
+    },
+    {
+      "source": "/var/mnt/STORAGE-10TB/habitat-corpus-backup/20260903-213733Z/shell-history/history.db",
+      "records": 261,
+      "unique_ids": 261,
+      "first_utc": "2026-09-01T10:58:45.182104+00:00",
+      "last_utc": "2026-09-03T20:48:22.943697+00:00",
+      "sessions": 74,
+      "host_counts": {
+        "toolbx:Louranicas": 261
+      },
+      "primary_tool_counts": {
+        "cd": 105,
+        "mempalace": 23,
+        "exec": 11,
+        "other": 11,
+        "codex": 10,
+        "herdr": 8,
+        "tv": 7,
+        "hunk": 7,
+        "podman-tui": 7,
+        "hermes": 7,
+        "repo-fleet-status": 7,
+        "lazygit": 6,
+        "claude": 6,
+        "atuin": 6,
+        "just": 6,
+        "nvim": 5,
+        "yazi": 5,
+        "gh": 5,
+        "pi": 4,
+        "command": 3,
+        "nu": 3,
+        "btm": 3,
+        "curl": 3,
+        "rpm-ostree": 1,
+        "flatpak-spawn": 1,
+        "echo": 1
+      },
+      "keyword_record_counts": {
+        "herdr": 25,
+        "mempalace": 34,
+        "btm": 4
+      },
+      "exit_counts": {
+        "127": 2,
+        "1": 5,
+        "-1": 100,
+        "143": 22,
+        "0": 129,
+        "137": 3
+      },
+      "top_cwds": {
+        "/var/home/Louranicas": 69,
+        "unknown": 59,
+        "/var/mnt/STORAGE-10TB/repos": 36,
+        "/var/mnt/STORAGE-10TB/fedora-obsidian-vaults": 33,
+        "/var/mnt/STORAGE-10TB/repos/deep-diff-forge": 30,
+        "/var/mnt/STORAGE-10TB/repos/herdr": 18,
+        "/var/home/Louranicas/fedora-arena": 16
+      },
+      "records_by_day": {
+        "2026-09-01": 32,
+        "2026-09-02": 198,
+        "2026-09-03": 31
+      },
+      "transitions_in_same_recorded_session": [
+        {
+          "from": "cd",
+          "to": "hunk",
+          "count": 2
+        },
+        {
+          "from": "cd",
+          "to": "exec",
+          "count": 2
+        },
+        {
+          "from": "exec",
+          "to": "command",
+          "count": 2
+        },
+        {
+          "from": "just",
+          "to": "cd",
+          "count": 2
+        },
+        {
+          "from": "lazygit",
+          "to": "cd",
+          "count": 2
+        },
+        {
+          "from": "hunk",
+          "to": "cd",
+          "count": 2
+        },
+        {
+          "from": "tv",
+          "to": "exec",
+          "count": 1
+        },
+        {
+          "from": "exec",
+          "to": "tv",
+          "count": 1
+        },
+        {
+          "from": "cd",
+          "to": "mempalace",
+          "count": 1
+        },
+        {
+          "from": "command",
+          "to": "gh",
+          "count": 1
+        },
+        {
+          "from": "cd",
+          "to": "lazygit",
+          "count": 1
+        },
+        {
+          "from": "cd",
+          "to": "just",
+          "count": 1
+        },
+        {
+          "from": "atuin",
+          "to": "cd",
+          "count": 1
+        },
+        {
+          "from": "mempalace",
+          "to": "cd",
+          "count": 1
+        },
+        {
+          "from": "repo-fleet-status",
+          "to": "cd",
+          "count": 1
+        }
+      ],
+      "closed_command_durations": {
+        "tv": {
+          "closed_records": 3,
+          "max_seconds": 83204.47,
+          "upper_median_seconds": 76238.55
+        },
+        "nvim": {
+          "closed_records": 2,
+          "max_seconds": 83166.62,
+          "upper_median_seconds": 83166.62
+        },
+        "lazygit": {
+          "closed_records": 4,
+          "max_seconds": 76819.18,
+          "upper_median_seconds": 3660.56
+        },
+        "hunk": {
+          "closed_records": 5,
+          "max_seconds": 76238.53,
+          "upper_median_seconds": 218.15
+        },
+        "yazi": {
+          "closed_records": 2,
+          "max_seconds": 83149.9,
+          "upper_median_seconds": 83149.9
+        },
+        "podman-tui": {
+          "closed_records": 4,
+          "max_seconds": 81437.13,
+          "upper_median_seconds": 76818.11
+        },
+        "command": {
+          "closed_records": 2,
+          "max_seconds": 0.0,
+          "upper_median_seconds": 0.0
+        },
+        "mempalace": {
+          "closed_records": 22,
+          "max_seconds": 26.15,
+          "upper_median_seconds": 2.59
+        },
+        "gh": {
+          "closed_records": 3,
+          "max_seconds": 83149.87,
+          "upper_median_seconds": 75321.72
+        },
+        "claude": {
+          "closed_records": 2,
+          "max_seconds": 83491.9,
+          "upper_median_seconds": 83491.9
+        },
+        "codex": {
+          "closed_records": 6,
+          "max_seconds": 83321.65,
+          "upper_median_seconds": 186.9
+        },
+        "pi": {
+          "closed_records": 1,
+          "max_seconds": 83248.59,
+          "upper_median_seconds": 83248.59
+        },
+        "hermes": {
+          "closed_records": 3,
+          "max_seconds": 47146.82,
+          "upper_median_seconds": 41.16
+        },
+        "nu": {
+          "closed_records": 1,
+          "max_seconds": 83204.45,
+          "upper_median_seconds": 83204.45
+        },
+        "atuin": {
+          "closed_records": 5,
+          "max_seconds": 0.02,
+          "upper_median_seconds": 0.01
+        },
+        "cd": {
+          "closed_records": 80,
+          "max_seconds": 77508.96,
+          "upper_median_seconds": 0.52
+        },
+        "just": {
+          "closed_records": 5,
+          "max_seconds": 0.02,
+          "upper_median_seconds": 0.0
+        },
+        "btm": {
+          "closed_records": 1,
+          "max_seconds": 83149.86,
+          "upper_median_seconds": 83149.86
+        },
+        "repo-fleet-status": {
+          "closed_records": 6,
+          "max_seconds": 0.36,
+          "upper_median_seconds": 0.35
+        },
+        "herdr": {
+          "closed_records": 2,
+          "max_seconds": 4922.77,
+          "upper_median_seconds": 4922.77
+        },
+        "other": {
+          "closed_records": 1,
+          "max_seconds": 0.0,
+          "upper_median_seconds": 0.0
+        },
+        "echo": {
+          "closed_records": 1,
+          "max_seconds": 0.0,
+          "upper_median_seconds": 0.0
+        }
+      },
+      "closed_over_one_hour_by_tool": {
+        "nvim": 2,
+        "lazygit": 2,
+        "yazi": 2,
+        "podman-tui": 2,
+        "tv": 2,
+        "hunk": 2,
+        "gh": 2,
+        "claude": 2,
+        "codex": 2,
+        "pi": 1,
+        "hermes": 1,
+        "nu": 1,
+        "btm": 1,
+        "herdr": 1,
+        "cd": 10
+      },
+      "limitations": "Primary tool is a conservative first-token classification; wrappers and multiline commands may conceal later tools. Keyword counts are mentions, not executions. Durations are wall-clock spans, not CPU/RAM use. Exit -1 is unknown/unfinished, not a proven failure. History does not establish human authorship or capture GUI activity/all agent tool calls. Saved duration order statistic is the upper median (not the mean of the middle pair for even samples).",
+      "ids_not_in_active": 0
+    },
+    {
+      "source": "/var/mnt/STORAGE-10TB/habitat-corpus-backup/20260905-183423Z/shell-history/history.db",
+      "records": 282,
+      "unique_ids": 282,
+      "first_utc": "2026-09-01T10:58:45.182104+00:00",
+      "last_utc": "2026-09-05T04:53:16.951643+00:00",
+      "sessions": 80,
+      "host_counts": {
+        "toolbx:Louranicas": 282
+      },
+      "primary_tool_counts": {
+        "cd": 105,
+        "mempalace": 23,
+        "codex": 22,
+        "other": 15,
+        "exec": 11,
+        "claude": 9,
+        "herdr": 8,
+        "tv": 7,
+        "hunk": 7,
+        "podman-tui": 7,
+        "hermes": 7,
+        "repo-fleet-status": 7,
+        "lazygit": 6,
+        "atuin": 6,
+        "just": 6,
+        "nvim": 5,
+        "yazi": 5,
+        "gh": 5,
+        "pi": 5,
+        "command": 3,
+        "nu": 3,
+        "btm": 3,
+        "curl": 3,
+        "rpm-ostree": 1,
+        "flatpak-spawn": 1,
+        "echo": 1,
+        "printf": 1
+      },
+      "keyword_record_counts": {
+        "herdr": 25,
+        "mempalace": 34,
+        "btm": 4
+      },
+      "exit_counts": {
+        "127": 4,
+        "1": 5,
+        "-1": 100,
+        "143": 22,
+        "0": 148,
+        "137": 3
+      },
+      "top_cwds": {
+        "/var/home/Louranicas": 87,
+        "unknown": 59,
+        "/var/mnt/STORAGE-10TB/repos": 36,
+        "/var/mnt/STORAGE-10TB/fedora-obsidian-vaults": 33,
+        "/var/mnt/STORAGE-10TB/repos/deep-diff-forge": 30,
+        "/var/mnt/STORAGE-10TB/repos/herdr": 18,
+        "/var/home/Louranicas/fedora-arena": 16,
+        "/var/home/Louranicas/fabric": 2,
+        "/var/home/Louranicas/fedora-fabric.vault": 1
+      },
+      "records_by_day": {
+        "2026-09-01": 32,
+        "2026-09-02": 198,
+        "2026-09-03": 31,
+        "2026-09-04": 16,
+        "2026-09-05": 5
+      },
+      "transitions_in_same_recorded_session": [
+        {
+          "from": "cd",
+          "to": "hunk",
+          "count": 2
+        },
+        {
+          "from": "cd",
+          "to": "exec",
+          "count": 2
+        },
+        {
+          "from": "exec",
+          "to": "command",
+          "count": 2
+        },
+        {
+          "from": "just",
+          "to": "cd",
+          "count": 2
+        },
+        {
+          "from": "lazygit",
+          "to": "cd",
+          "count": 2
+        },
+        {
+          "from": "hunk",
+          "to": "cd",
+          "count": 2
+        },
+        {
+          "from": "tv",
+          "to": "exec",
+          "count": 1
+        },
+        {
+          "from": "exec",
+          "to": "tv",
+          "count": 1
+        },
+        {
+          "from": "cd",
+          "to": "mempalace",
+          "count": 1
+        },
+        {
+          "from": "command",
+          "to": "gh",
+          "count": 1
+        },
+        {
+          "from": "cd",
+          "to": "lazygit",
+          "count": 1
+        },
+        {
+          "from": "cd",
+          "to": "just",
+          "count": 1
+        },
+        {
+          "from": "atuin",
+          "to": "cd",
+          "count": 1
+        },
+        {
+          "from": "mempalace",
+          "to": "cd",
+          "count": 1
+        },
+        {
+          "from": "repo-fleet-status",
+          "to": "cd",
+          "count": 1
+        }
+      ],
+      "closed_command_durations": {
+        "tv": {
+          "closed_records": 3,
+          "max_seconds": 83204.47,
+          "upper_median_seconds": 76238.55
+        },
+        "nvim": {
+          "closed_records": 2,
+          "max_seconds": 83166.62,
+          "upper_median_seconds": 83166.62
+        },
+        "lazygit": {
+          "closed_records": 4,
+          "max_seconds": 76819.18,
+          "upper_median_seconds": 3660.56
+        },
+        "hunk": {
+          "closed_records": 5,
+          "max_seconds": 76238.53,
+          "upper_median_seconds": 218.15
+        },
+        "yazi": {
+          "closed_records": 2,
+          "max_seconds": 83149.9,
+          "upper_median_seconds": 83149.9
+        },
+        "podman-tui": {
+          "closed_records": 4,
+          "max_seconds": 81437.13,
+          "upper_median_seconds": 76818.11
+        },
+        "command": {
+          "closed_records": 2,
+          "max_seconds": 0.0,
+          "upper_median_seconds": 0.0
+        },
+        "mempalace": {
+          "closed_records": 22,
+          "max_seconds": 26.15,
+          "upper_median_seconds": 2.59
+        },
+        "gh": {
+          "closed_records": 3,
+          "max_seconds": 83149.87,
+          "upper_median_seconds": 75321.72
+        },
+        "claude": {
+          "closed_records": 5,
+          "max_seconds": 83491.9,
+          "upper_median_seconds": 21550.57
+        },
+        "codex": {
+          "closed_records": 18,
+          "max_seconds": 136197.26,
+          "upper_median_seconds": 35522.65
+        },
+        "pi": {
+          "closed_records": 2,
+          "max_seconds": 146272.08,
+          "upper_median_seconds": 146272.08
+        },
+        "hermes": {
+          "closed_records": 3,
+          "max_seconds": 47146.82,
+          "upper_median_seconds": 41.16
+        },
+        "nu": {
+          "closed_records": 1,
+          "max_seconds": 83204.45,
+          "upper_median_seconds": 83204.45
+        },
+        "atuin": {
+          "closed_records": 5,
+          "max_seconds": 0.02,
+          "upper_median_seconds": 0.01
+        },
+        "cd": {
+          "closed_records": 80,
+          "max_seconds": 77508.96,
+          "upper_median_seconds": 0.52
+        },
+        "just": {
+          "closed_records": 5,
+          "max_seconds": 0.02,
+          "upper_median_seconds": 0.0
+        },
+        "btm": {
+          "closed_records": 1,
+          "max_seconds": 83149.86,
+          "upper_median_seconds": 83149.86
+        },
+        "repo-fleet-status": {
+          "closed_records": 6,
+          "max_seconds": 0.36,
+          "upper_median_seconds": 0.35
+        },
+        "herdr": {
+          "closed_records": 2,
+          "max_seconds": 4922.77,
+          "upper_median_seconds": 4922.77
+        },
+        "other": {
+          "closed_records": 5,
+          "max_seconds": 0.04,
+          "upper_median_seconds": 0.0
+        },
+        "echo": {
+          "closed_records": 1,
+          "max_seconds": 0.0,
+          "upper_median_seconds": 0.0
+        },
+        "printf": {
+          "closed_records": 1,
+          "max_seconds": 0.0,
+          "upper_median_seconds": 0.0
+        }
+      },
+      "closed_over_one_hour_by_tool": {
+        "nvim": 2,
+        "lazygit": 2,
+        "yazi": 2,
+        "podman-tui": 2,
+        "tv": 2,
+        "hunk": 2,
+        "gh": 2,
+        "claude": 3,
+        "codex": 10,
+        "pi": 2,
+        "hermes": 1,
+        "nu": 1,
+        "btm": 1,
+        "herdr": 1,
+        "cd": 10
+      },
+      "limitations": "Primary tool is a conservative first-token classification; wrappers and multiline commands may conceal later tools. Keyword counts are mentions, not executions. Durations are wall-clock spans, not CPU/RAM use. Exit -1 is unknown/unfinished, not a proven failure. History does not establish human authorship or capture GUI activity/all agent tool calls. Saved duration order statistic is the upper median (not the mean of the middle pair for even samples).",
+      "ids_not_in_active": 0
+    },
+    {
+      "source": "/var/mnt/STORAGE-10TB/habitat-corpus-backup/20260903-213741Z/shell-history/history.db",
+      "records": 261,
+      "unique_ids": 261,
+      "first_utc": "2026-09-01T10:58:45.182104+00:00",
+      "last_utc": "2026-09-03T20:48:22.943697+00:00",
+      "sessions": 74,
+      "host_counts": {
+        "toolbx:Louranicas": 261
+      },
+      "primary_tool_counts": {
+        "cd": 105,
+        "mempalace": 23,
+        "exec": 11,
+        "other": 11,
+        "codex": 10,
+        "herdr": 8,
+        "tv": 7,
+        "hunk": 7,
+        "podman-tui": 7,
+        "hermes": 7,
+        "repo-fleet-status": 7,
+        "lazygit": 6,
+        "claude": 6,
+        "atuin": 6,
+        "just": 6,
+        "nvim": 5,
+        "yazi": 5,
+        "gh": 5,
+        "pi": 4,
+        "command": 3,
+        "nu": 3,
+        "btm": 3,
+        "curl": 3,
+        "rpm-ostree": 1,
+        "flatpak-spawn": 1,
+        "echo": 1
+      },
+      "keyword_record_counts": {
+        "herdr": 25,
+        "mempalace": 34,
+        "btm": 4
+      },
+      "exit_counts": {
+        "127": 2,
+        "1": 5,
+        "-1": 100,
+        "143": 22,
+        "0": 129,
+        "137": 3
+      },
+      "top_cwds": {
+        "/var/home/Louranicas": 69,
+        "unknown": 59,
+        "/var/mnt/STORAGE-10TB/repos": 36,
+        "/var/mnt/STORAGE-10TB/fedora-obsidian-vaults": 33,
+        "/var/mnt/STORAGE-10TB/repos/deep-diff-forge": 30,
+        "/var/mnt/STORAGE-10TB/repos/herdr": 18,
+        "/var/home/Louranicas/fedora-arena": 16
+      },
+      "records_by_day": {
+        "2026-09-01": 32,
+        "2026-09-02": 198,
+        "2026-09-03": 31
+      },
+      "transitions_in_same_recorded_session": [
+        {
+          "from": "cd",
+          "to": "hunk",
+          "count": 2
+        },
+        {
+          "from": "cd",
+          "to": "exec",
+          "count": 2
+        },
+        {
+          "from": "exec",
+          "to": "command",
+          "count": 2
+        },
+        {
+          "from": "just",
+          "to": "cd",
+          "count": 2
+        },
+        {
+          "from": "lazygit",
+          "to": "cd",
+          "count": 2
+        },
+        {
+          "from": "hunk",
+          "to": "cd",
+          "count": 2
+        },
+        {
+          "from": "tv",
+          "to": "exec",
+          "count": 1
+        },
+        {
+          "from": "exec",
+          "to": "tv",
+          "count": 1
+        },
+        {
+          "from": "cd",
+          "to": "mempalace",
+          "count": 1
+        },
+        {
+          "from": "command",
+          "to": "gh",
+          "count": 1
+        },
+        {
+          "from": "cd",
+          "to": "lazygit",
+          "count": 1
+        },
+        {
+          "from": "cd",
+          "to": "just",
+          "count": 1
+        },
+        {
+          "from": "atuin",
+          "to": "cd",
+          "count": 1
+        },
+        {
+          "from": "mempalace",
+          "to": "cd",
+          "count": 1
+        },
+        {
+          "from": "repo-fleet-status",
+          "to": "cd",
+          "count": 1
+        }
+      ],
+      "closed_command_durations": {
+        "tv": {
+          "closed_records": 3,
+          "max_seconds": 83204.47,
+          "upper_median_seconds": 76238.55
+        },
+        "nvim": {
+          "closed_records": 2,
+          "max_seconds": 83166.62,
+          "upper_median_seconds": 83166.62
+        },
+        "lazygit": {
+          "closed_records": 4,
+          "max_seconds": 76819.18,
+          "upper_median_seconds": 3660.56
+        },
+        "hunk": {
+          "closed_records": 5,
+          "max_seconds": 76238.53,
+          "upper_median_seconds": 218.15
+        },
+        "yazi": {
+          "closed_records": 2,
+          "max_seconds": 83149.9,
+          "upper_median_seconds": 83149.9
+        },
+        "podman-tui": {
+          "closed_records": 4,
+          "max_seconds": 81437.13,
+          "upper_median_seconds": 76818.11
+        },
+        "command": {
+          "closed_records": 2,
+          "max_seconds": 0.0,
+          "upper_median_seconds": 0.0
+        },
+        "mempalace": {
+          "closed_records": 22,
+          "max_seconds": 26.15,
+          "upper_median_seconds": 2.59
+        },
+        "gh": {
+          "closed_records": 3,
+          "max_seconds": 83149.87,
+          "upper_median_seconds": 75321.72
+        },
+        "claude": {
+          "closed_records": 2,
+          "max_seconds": 83491.9,
+          "upper_median_seconds": 83491.9
+        },
+        "codex": {
+          "closed_records": 6,
+          "max_seconds": 83321.65,
+          "upper_median_seconds": 186.9
+        },
+        "pi": {
+          "closed_records": 1,
+          "max_seconds": 83248.59,
+          "upper_median_seconds": 83248.59
+        },
+        "hermes": {
+          "closed_records": 3,
+          "max_seconds": 47146.82,
+          "upper_median_seconds": 41.16
+        },
+        "nu": {
+          "closed_records": 1,
+          "max_seconds": 83204.45,
+          "upper_median_seconds": 83204.45
+        },
+        "atuin": {
+          "closed_records": 5,
+          "max_seconds": 0.02,
+          "upper_median_seconds": 0.01
+        },
+        "cd": {
+          "closed_records": 80,
+          "max_seconds": 77508.96,
+          "upper_median_seconds": 0.52
+        },
+        "just": {
+          "closed_records": 5,
+          "max_seconds": 0.02,
+          "upper_median_seconds": 0.0
+        },
+        "btm": {
+          "closed_records": 1,
+          "max_seconds": 83149.86,
+          "upper_median_seconds": 83149.86
+        },
+        "repo-fleet-status": {
+          "closed_records": 6,
+          "max_seconds": 0.36,
+          "upper_median_seconds": 0.35
+        },
+        "herdr": {
+          "closed_records": 2,
+          "max_seconds": 4922.77,
+          "upper_median_seconds": 4922.77
+        },
+        "other": {
+          "closed_records": 1,
+          "max_seconds": 0.0,
+          "upper_median_seconds": 0.0
+        },
+        "echo": {
+          "closed_records": 1,
+          "max_seconds": 0.0,
+          "upper_median_seconds": 0.0
+        }
+      },
+      "closed_over_one_hour_by_tool": {
+        "nvim": 2,
+        "lazygit": 2,
+        "yazi": 2,
+        "podman-tui": 2,
+        "tv": 2,
+        "hunk": 2,
+        "gh": 2,
+        "claude": 2,
+        "codex": 2,
+        "pi": 1,
+        "hermes": 1,
+        "nu": 1,
+        "btm": 1,
+        "herdr": 1,
+        "cd": 10
+      },
+      "limitations": "Primary tool is a conservative first-token classification; wrappers and multiline commands may conceal later tools. Keyword counts are mentions, not executions. Durations are wall-clock spans, not CPU/RAM use. Exit -1 is unknown/unfinished, not a proven failure. History does not establish human authorship or capture GUI activity/all agent tool calls. Saved duration order statistic is the upper median (not the mean of the middle pair for even samples).",
+      "ids_not_in_active": 0
+    },
+    {
+      "source": "/var/mnt/STORAGE-10TB/habitat-corpus-backup/20260904-010441Z/shell-history/history.db",
+      "records": 261,
+      "unique_ids": 261,
+      "first_utc": "2026-09-01T10:58:45.182104+00:00",
+      "last_utc": "2026-09-03T20:48:22.943697+00:00",
+      "sessions": 74,
+      "host_counts": {
+        "toolbx:Louranicas": 261
+      },
+      "primary_tool_counts": {
+        "cd": 105,
+        "mempalace": 23,
+        "exec": 11,
+        "other": 11,
+        "codex": 10,
+        "herdr": 8,
+        "tv": 7,
+        "hunk": 7,
+        "podman-tui": 7,
+        "hermes": 7,
+        "repo-fleet-status": 7,
+        "lazygit": 6,
+        "claude": 6,
+        "atuin": 6,
+        "just": 6,
+        "nvim": 5,
+        "yazi": 5,
+        "gh": 5,
+        "pi": 4,
+        "command": 3,
+        "nu": 3,
+        "btm": 3,
+        "curl": 3,
+        "rpm-ostree": 1,
+        "flatpak-spawn": 1,
+        "echo": 1
+      },
+      "keyword_record_counts": {
+        "herdr": 25,
+        "mempalace": 34,
+        "btm": 4
+      },
+      "exit_counts": {
+        "127": 2,
+        "1": 5,
+        "-1": 100,
+        "143": 22,
+        "0": 129,
+        "137": 3
+      },
+      "top_cwds": {
+        "/var/home/Louranicas": 69,
+        "unknown": 59,
+        "/var/mnt/STORAGE-10TB/repos": 36,
+        "/var/mnt/STORAGE-10TB/fedora-obsidian-vaults": 33,
+        "/var/mnt/STORAGE-10TB/repos/deep-diff-forge": 30,
+        "/var/mnt/STORAGE-10TB/repos/herdr": 18,
+        "/var/home/Louranicas/fedora-arena": 16
+      },
+      "records_by_day": {
+        "2026-09-01": 32,
+        "2026-09-02": 198,
+        "2026-09-03": 31
+      },
+      "transitions_in_same_recorded_session": [
+        {
+          "from": "cd",
+          "to": "hunk",
+          "count": 2
+        },
+        {
+          "from": "cd",
+          "to": "exec",
+          "count": 2
+        },
+        {
+          "from": "exec",
+          "to": "command",
+          "count": 2
+        },
+        {
+          "from": "just",
+          "to": "cd",
+          "count": 2
+        },
+        {
+          "from": "lazygit",
+          "to": "cd",
+          "count": 2
+        },
+        {
+          "from": "hunk",
+          "to": "cd",
+          "count": 2
+        },
+        {
+          "from": "tv",
+          "to": "exec",
+          "count": 1
+        },
+        {
+          "from": "exec",
+          "to": "tv",
+          "count": 1
+        },
+        {
+          "from": "cd",
+          "to": "mempalace",
+          "count": 1
+        },
+        {
+          "from": "command",
+          "to": "gh",
+          "count": 1
+        },
+        {
+          "from": "cd",
+          "to": "lazygit",
+          "count": 1
+        },
+        {
+          "from": "cd",
+          "to": "just",
+          "count": 1
+        },
+        {
+          "from": "atuin",
+          "to": "cd",
+          "count": 1
+        },
+        {
+          "from": "mempalace",
+          "to": "cd",
+          "count": 1
+        },
+        {
+          "from": "repo-fleet-status",
+          "to": "cd",
+          "count": 1
+        }
+      ],
+      "closed_command_durations": {
+        "tv": {
+          "closed_records": 3,
+          "max_seconds": 83204.47,
+          "upper_median_seconds": 76238.55
+        },
+        "nvim": {
+          "closed_records": 2,
+          "max_seconds": 83166.62,
+          "upper_median_seconds": 83166.62
+        },
+        "lazygit": {
+          "closed_records": 4,
+          "max_seconds": 76819.18,
+          "upper_median_seconds": 3660.56
+        },
+        "hunk": {
+          "closed_records": 5,
+          "max_seconds": 76238.53,
+          "upper_median_seconds": 218.15
+        },
+        "yazi": {
+          "closed_records": 2,
+          "max_seconds": 83149.9,
+          "upper_median_seconds": 83149.9
+        },
+        "podman-tui": {
+          "closed_records": 4,
+          "max_seconds": 81437.13,
+          "upper_median_seconds": 76818.11
+        },
+        "command": {
+          "closed_records": 2,
+          "max_seconds": 0.0,
+          "upper_median_seconds": 0.0
+        },
+        "mempalace": {
+          "closed_records": 22,
+          "max_seconds": 26.15,
+          "upper_median_seconds": 2.59
+        },
+        "gh": {
+          "closed_records": 3,
+          "max_seconds": 83149.87,
+          "upper_median_seconds": 75321.72
+        },
+        "claude": {
+          "closed_records": 2,
+          "max_seconds": 83491.9,
+          "upper_median_seconds": 83491.9
+        },
+        "codex": {
+          "closed_records": 6,
+          "max_seconds": 83321.65,
+          "upper_median_seconds": 186.9
+        },
+        "pi": {
+          "closed_records": 1,
+          "max_seconds": 83248.59,
+          "upper_median_seconds": 83248.59
+        },
+        "hermes": {
+          "closed_records": 3,
+          "max_seconds": 47146.82,
+          "upper_median_seconds": 41.16
+        },
+        "nu": {
+          "closed_records": 1,
+          "max_seconds": 83204.45,
+          "upper_median_seconds": 83204.45
+        },
+        "atuin": {
+          "closed_records": 5,
+          "max_seconds": 0.02,
+          "upper_median_seconds": 0.01
+        },
+        "cd": {
+          "closed_records": 80,
+          "max_seconds": 77508.96,
+          "upper_median_seconds": 0.52
+        },
+        "just": {
+          "closed_records": 5,
+          "max_seconds": 0.02,
+          "upper_median_seconds": 0.0
+        },
+        "btm": {
+          "closed_records": 1,
+          "max_seconds": 83149.86,
+          "upper_median_seconds": 83149.86
+        },
+        "repo-fleet-status": {
+          "closed_records": 6,
+          "max_seconds": 0.36,
+          "upper_median_seconds": 0.35
+        },
+        "herdr": {
+          "closed_records": 2,
+          "max_seconds": 4922.77,
+          "upper_median_seconds": 4922.77
+        },
+        "other": {
+          "closed_records": 1,
+          "max_seconds": 0.0,
+          "upper_median_seconds": 0.0
+        },
+        "echo": {
+          "closed_records": 1,
+          "max_seconds": 0.0,
+          "upper_median_seconds": 0.0
+        }
+      },
+      "closed_over_one_hour_by_tool": {
+        "nvim": 2,
+        "lazygit": 2,
+        "yazi": 2,
+        "podman-tui": 2,
+        "tv": 2,
+        "hunk": 2,
+        "gh": 2,
+        "claude": 2,
+        "codex": 2,
+        "pi": 1,
+        "hermes": 1,
+        "nu": 1,
+        "btm": 1,
+        "herdr": 1,
+        "cd": 10
+      },
+      "limitations": "Primary tool is a conservative first-token classification; wrappers and multiline commands may conceal later tools. Keyword counts are mentions, not executions. Durations are wall-clock spans, not CPU/RAM use. Exit -1 is unknown/unfinished, not a proven failure. History does not establish human authorship or capture GUI activity/all agent tool calls. Saved duration order statistic is the upper median (not the mean of the middle pair for even samples).",
+      "ids_not_in_active": 0
+    },
+    {
+      "source": "/var/mnt/STORAGE-10TB/habitat-corpus-backup/20260904-014703Z/shell-history/history.db",
+      "records": 261,
+      "unique_ids": 261,
+      "first_utc": "2026-09-01T10:58:45.182104+00:00",
+      "last_utc": "2026-09-03T20:48:22.943697+00:00",
+      "sessions": 74,
+      "host_counts": {
+        "toolbx:Louranicas": 261
+      },
+      "primary_tool_counts": {
+        "cd": 105,
+        "mempalace": 23,
+        "exec": 11,
+        "other": 11,
+        "codex": 10,
+        "herdr": 8,
+        "tv": 7,
+        "hunk": 7,
+        "podman-tui": 7,
+        "hermes": 7,
+        "repo-fleet-status": 7,
+        "lazygit": 6,
+        "claude": 6,
+        "atuin": 6,
+        "just": 6,
+        "nvim": 5,
+        "yazi": 5,
+        "gh": 5,
+        "pi": 4,
+        "command": 3,
+        "nu": 3,
+        "btm": 3,
+        "curl": 3,
+        "rpm-ostree": 1,
+        "flatpak-spawn": 1,
+        "echo": 1
+      },
+      "keyword_record_counts": {
+        "herdr": 25,
+        "mempalace": 34,
+        "btm": 4
+      },
+      "exit_counts": {
+        "127": 2,
+        "1": 5,
+        "-1": 100,
+        "143": 22,
+        "0": 129,
+        "137": 3
+      },
+      "top_cwds": {
+        "/var/home/Louranicas": 69,
+        "unknown": 59,
+        "/var/mnt/STORAGE-10TB/repos": 36,
+        "/var/mnt/STORAGE-10TB/fedora-obsidian-vaults": 33,
+        "/var/mnt/STORAGE-10TB/repos/deep-diff-forge": 30,
+        "/var/mnt/STORAGE-10TB/repos/herdr": 18,
+        "/var/home/Louranicas/fedora-arena": 16
+      },
+      "records_by_day": {
+        "2026-09-01": 32,
+        "2026-09-02": 198,
+        "2026-09-03": 31
+      },
+      "transitions_in_same_recorded_session": [
+        {
+          "from": "cd",
+          "to": "hunk",
+          "count": 2
+        },
+        {
+          "from": "cd",
+          "to": "exec",
+          "count": 2
+        },
+        {
+          "from": "exec",
+          "to": "command",
+          "count": 2
+        },
+        {
+          "from": "just",
+          "to": "cd",
+          "count": 2
+        },
+        {
+          "from": "lazygit",
+          "to": "cd",
+          "count": 2
+        },
+        {
+          "from": "hunk",
+          "to": "cd",
+          "count": 2
+        },
+        {
+          "from": "tv",
+          "to": "exec",
+          "count": 1
+        },
+        {
+          "from": "exec",
+          "to": "tv",
+          "count": 1
+        },
+        {
+          "from": "cd",
+          "to": "mempalace",
+          "count": 1
+        },
+        {
+          "from": "command",
+          "to": "gh",
+          "count": 1
+        },
+        {
+          "from": "cd",
+          "to": "lazygit",
+          "count": 1
+        },
+        {
+          "from": "cd",
+          "to": "just",
+          "count": 1
+        },
+        {
+          "from": "atuin",
+          "to": "cd",
+          "count": 1
+        },
+        {
+          "from": "mempalace",
+          "to": "cd",
+          "count": 1
+        },
+        {
+          "from": "repo-fleet-status",
+          "to": "cd",
+          "count": 1
+        }
+      ],
+      "closed_command_durations": {
+        "tv": {
+          "closed_records": 3,
+          "max_seconds": 83204.47,
+          "upper_median_seconds": 76238.55
+        },
+        "nvim": {
+          "closed_records": 2,
+          "max_seconds": 83166.62,
+          "upper_median_seconds": 83166.62
+        },
+        "lazygit": {
+          "closed_records": 4,
+          "max_seconds": 76819.18,
+          "upper_median_seconds": 3660.56
+        },
+        "hunk": {
+          "closed_records": 5,
+          "max_seconds": 76238.53,
+          "upper_median_seconds": 218.15
+        },
+        "yazi": {
+          "closed_records": 2,
+          "max_seconds": 83149.9,
+          "upper_median_seconds": 83149.9
+        },
+        "podman-tui": {
+          "closed_records": 4,
+          "max_seconds": 81437.13,
+          "upper_median_seconds": 76818.11
+        },
+        "command": {
+          "closed_records": 2,
+          "max_seconds": 0.0,
+          "upper_median_seconds": 0.0
+        },
+        "mempalace": {
+          "closed_records": 22,
+          "max_seconds": 26.15,
+          "upper_median_seconds": 2.59
+        },
+        "gh": {
+          "closed_records": 3,
+          "max_seconds": 83149.87,
+          "upper_median_seconds": 75321.72
+        },
+        "claude": {
+          "closed_records": 2,
+          "max_seconds": 83491.9,
+          "upper_median_seconds": 83491.9
+        },
+        "codex": {
+          "closed_records": 6,
+          "max_seconds": 83321.65,
+          "upper_median_seconds": 186.9
+        },
+        "pi": {
+          "closed_records": 1,
+          "max_seconds": 83248.59,
+          "upper_median_seconds": 83248.59
+        },
+        "hermes": {
+          "closed_records": 3,
+          "max_seconds": 47146.82,
+          "upper_median_seconds": 41.16
+        },
+        "nu": {
+          "closed_records": 1,
+          "max_seconds": 83204.45,
+          "upper_median_seconds": 83204.45
+        },
+        "atuin": {
+          "closed_records": 5,
+          "max_seconds": 0.02,
+          "upper_median_seconds": 0.01
+        },
+        "cd": {
+          "closed_records": 80,
+          "max_seconds": 77508.96,
+          "upper_median_seconds": 0.52
+        },
+        "just": {
+          "closed_records": 5,
+          "max_seconds": 0.02,
+          "upper_median_seconds": 0.0
+        },
+        "btm": {
+          "closed_records": 1,
+          "max_seconds": 83149.86,
+          "upper_median_seconds": 83149.86
+        },
+        "repo-fleet-status": {
+          "closed_records": 6,
+          "max_seconds": 0.36,
+          "upper_median_seconds": 0.35
+        },
+        "herdr": {
+          "closed_records": 2,
+          "max_seconds": 4922.77,
+          "upper_median_seconds": 4922.77
+        },
+        "other": {
+          "closed_records": 1,
+          "max_seconds": 0.0,
+          "upper_median_seconds": 0.0
+        },
+        "echo": {
+          "closed_records": 1,
+          "max_seconds": 0.0,
+          "upper_median_seconds": 0.0
+        }
+      },
+      "closed_over_one_hour_by_tool": {
+        "nvim": 2,
+        "lazygit": 2,
+        "yazi": 2,
+        "podman-tui": 2,
+        "tv": 2,
+        "hunk": 2,
+        "gh": 2,
+        "claude": 2,
+        "codex": 2,
+        "pi": 1,
+        "hermes": 1,
+        "nu": 1,
+        "btm": 1,
+        "herdr": 1,
+        "cd": 10
+      },
+      "limitations": "Primary tool is a conservative first-token classification; wrappers and multiline commands may conceal later tools. Keyword counts are mentions, not executions. Durations are wall-clock spans, not CPU/RAM use. Exit -1 is unknown/unfinished, not a proven failure. History does not establish human authorship or capture GUI activity/all agent tool calls. Saved duration order statistic is the upper median (not the mean of the middle pair for even samples).",
+      "ids_not_in_active": 0
+    },
+    {
+      "source": "/var/mnt/STORAGE-10TB/habitat-corpus-backup/20260904-004442Z/shell-history/history.db",
+      "records": 261,
+      "unique_ids": 261,
+      "first_utc": "2026-09-01T10:58:45.182104+00:00",
+      "last_utc": "2026-09-03T20:48:22.943697+00:00",
+      "sessions": 74,
+      "host_counts": {
+        "toolbx:Louranicas": 261
+      },
+      "primary_tool_counts": {
+        "cd": 105,
+        "mempalace": 23,
+        "exec": 11,
+        "other": 11,
+        "codex": 10,
+        "herdr": 8,
+        "tv": 7,
+        "hunk": 7,
+        "podman-tui": 7,
+        "hermes": 7,
+        "repo-fleet-status": 7,
+        "lazygit": 6,
+        "claude": 6,
+        "atuin": 6,
+        "just": 6,
+        "nvim": 5,
+        "yazi": 5,
+        "gh": 5,
+        "pi": 4,
+        "command": 3,
+        "nu": 3,
+        "btm": 3,
+        "curl": 3,
+        "rpm-ostree": 1,
+        "flatpak-spawn": 1,
+        "echo": 1
+      },
+      "keyword_record_counts": {
+        "herdr": 25,
+        "mempalace": 34,
+        "btm": 4
+      },
+      "exit_counts": {
+        "127": 2,
+        "1": 5,
+        "-1": 100,
+        "143": 22,
+        "0": 129,
+        "137": 3
+      },
+      "top_cwds": {
+        "/var/home/Louranicas": 69,
+        "unknown": 59,
+        "/var/mnt/STORAGE-10TB/repos": 36,
+        "/var/mnt/STORAGE-10TB/fedora-obsidian-vaults": 33,
+        "/var/mnt/STORAGE-10TB/repos/deep-diff-forge": 30,
+        "/var/mnt/STORAGE-10TB/repos/herdr": 18,
+        "/var/home/Louranicas/fedora-arena": 16
+      },
+      "records_by_day": {
+        "2026-09-01": 32,
+        "2026-09-02": 198,
+        "2026-09-03": 31
+      },
+      "transitions_in_same_recorded_session": [
+        {
+          "from": "cd",
+          "to": "hunk",
+          "count": 2
+        },
+        {
+          "from": "cd",
+          "to": "exec",
+          "count": 2
+        },
+        {
+          "from": "exec",
+          "to": "command",
+          "count": 2
+        },
+        {
+          "from": "just",
+          "to": "cd",
+          "count": 2
+        },
+        {
+          "from": "lazygit",
+          "to": "cd",
+          "count": 2
+        },
+        {
+          "from": "hunk",
+          "to": "cd",
+          "count": 2
+        },
+        {
+          "from": "tv",
+          "to": "exec",
+          "count": 1
+        },
+        {
+          "from": "exec",
+          "to": "tv",
+          "count": 1
+        },
+        {
+          "from": "cd",
+          "to": "mempalace",
+          "count": 1
+        },
+        {
+          "from": "command",
+          "to": "gh",
+          "count": 1
+        },
+        {
+          "from": "cd",
+          "to": "lazygit",
+          "count": 1
+        },
+        {
+          "from": "cd",
+          "to": "just",
+          "count": 1
+        },
+        {
+          "from": "atuin",
+          "to": "cd",
+          "count": 1
+        },
+        {
+          "from": "mempalace",
+          "to": "cd",
+          "count": 1
+        },
+        {
+          "from": "repo-fleet-status",
+          "to": "cd",
+          "count": 1
+        }
+      ],
+      "closed_command_durations": {
+        "tv": {
+          "closed_records": 3,
+          "max_seconds": 83204.47,
+          "upper_median_seconds": 76238.55
+        },
+        "nvim": {
+          "closed_records": 2,
+          "max_seconds": 83166.62,
+          "upper_median_seconds": 83166.62
+        },
+        "lazygit": {
+          "closed_records": 4,
+          "max_seconds": 76819.18,
+          "upper_median_seconds": 3660.56
+        },
+        "hunk": {
+          "closed_records": 5,
+          "max_seconds": 76238.53,
+          "upper_median_seconds": 218.15
+        },
+        "yazi": {
+          "closed_records": 2,
+          "max_seconds": 83149.9,
+          "upper_median_seconds": 83149.9
+        },
+        "podman-tui": {
+          "closed_records": 4,
+          "max_seconds": 81437.13,
+          "upper_median_seconds": 76818.11
+        },
+        "command": {
+          "closed_records": 2,
+          "max_seconds": 0.0,
+          "upper_median_seconds": 0.0
+        },
+        "mempalace": {
+          "closed_records": 22,
+          "max_seconds": 26.15,
+          "upper_median_seconds": 2.59
+        },
+        "gh": {
+          "closed_records": 3,
+          "max_seconds": 83149.87,
+          "upper_median_seconds": 75321.72
+        },
+        "claude": {
+          "closed_records": 2,
+          "max_seconds": 83491.9,
+          "upper_median_seconds": 83491.9
+        },
+        "codex": {
+          "closed_records": 6,
+          "max_seconds": 83321.65,
+          "upper_median_seconds": 186.9
+        },
+        "pi": {
+          "closed_records": 1,
+          "max_seconds": 83248.59,
+          "upper_median_seconds": 83248.59
+        },
+        "hermes": {
+          "closed_records": 3,
+          "max_seconds": 47146.82,
+          "upper_median_seconds": 41.16
+        },
+        "nu": {
+          "closed_records": 1,
+          "max_seconds": 83204.45,
+          "upper_median_seconds": 83204.45
+        },
+        "atuin": {
+          "closed_records": 5,
+          "max_seconds": 0.02,
+          "upper_median_seconds": 0.01
+        },
+        "cd": {
+          "closed_records": 80,
+          "max_seconds": 77508.96,
+          "upper_median_seconds": 0.52
+        },
+        "just": {
+          "closed_records": 5,
+          "max_seconds": 0.02,
+          "upper_median_seconds": 0.0
+        },
+        "btm": {
+          "closed_records": 1,
+          "max_seconds": 83149.86,
+          "upper_median_seconds": 83149.86
+        },
+        "repo-fleet-status": {
+          "closed_records": 6,
+          "max_seconds": 0.36,
+          "upper_median_seconds": 0.35
+        },
+        "herdr": {
+          "closed_records": 2,
+          "max_seconds": 4922.77,
+          "upper_median_seconds": 4922.77
+        },
+        "other": {
+          "closed_records": 1,
+          "max_seconds": 0.0,
+          "upper_median_seconds": 0.0
+        },
+        "echo": {
+          "closed_records": 1,
+          "max_seconds": 0.0,
+          "upper_median_seconds": 0.0
+        }
+      },
+      "closed_over_one_hour_by_tool": {
+        "nvim": 2,
+        "lazygit": 2,
+        "yazi": 2,
+        "podman-tui": 2,
+        "tv": 2,
+        "hunk": 2,
+        "gh": 2,
+        "claude": 2,
+        "codex": 2,
+        "pi": 1,
+        "hermes": 1,
+        "nu": 1,
+        "btm": 1,
+        "herdr": 1,
+        "cd": 10
+      },
+      "limitations": "Primary tool is a conservative first-token classification; wrappers and multiline commands may conceal later tools. Keyword counts are mentions, not executions. Durations are wall-clock spans, not CPU/RAM use. Exit -1 is unknown/unfinished, not a proven failure. History does not establish human authorship or capture GUI activity/all agent tool calls. Saved duration order statistic is the upper median (not the mean of the middle pair for even samples).",
+      "ids_not_in_active": 0
+    },
+    {
+      "source": "/var/mnt/STORAGE-10TB/habitat-corpus-backup/20260903-213745Z/shell-history/history.db",
+      "records": 261,
+      "unique_ids": 261,
+      "first_utc": "2026-09-01T10:58:45.182104+00:00",
+      "last_utc": "2026-09-03T20:48:22.943697+00:00",
+      "sessions": 74,
+      "host_counts": {
+        "toolbx:Louranicas": 261
+      },
+      "primary_tool_counts": {
+        "cd": 105,
+        "mempalace": 23,
+        "exec": 11,
+        "other": 11,
+        "codex": 10,
+        "herdr": 8,
+        "tv": 7,
+        "hunk": 7,
+        "podman-tui": 7,
+        "hermes": 7,
+        "repo-fleet-status": 7,
+        "lazygit": 6,
+        "claude": 6,
+        "atuin": 6,
+        "just": 6,
+        "nvim": 5,
+        "yazi": 5,
+        "gh": 5,
+        "pi": 4,
+        "command": 3,
+        "nu": 3,
+        "btm": 3,
+        "curl": 3,
+        "rpm-ostree": 1,
+        "flatpak-spawn": 1,
+        "echo": 1
+      },
+      "keyword_record_counts": {
+        "herdr": 25,
+        "mempalace": 34,
+        "btm": 4
+      },
+      "exit_counts": {
+        "127": 2,
+        "1": 5,
+        "-1": 100,
+        "143": 22,
+        "0": 129,
+        "137": 3
+      },
+      "top_cwds": {
+        "/var/home/Louranicas": 69,
+        "unknown": 59,
+        "/var/mnt/STORAGE-10TB/repos": 36,
+        "/var/mnt/STORAGE-10TB/fedora-obsidian-vaults": 33,
+        "/var/mnt/STORAGE-10TB/repos/deep-diff-forge": 30,
+        "/var/mnt/STORAGE-10TB/repos/herdr": 18,
+        "/var/home/Louranicas/fedora-arena": 16
+      },
+      "records_by_day": {
+        "2026-09-01": 32,
+        "2026-09-02": 198,
+        "2026-09-03": 31
+      },
+      "transitions_in_same_recorded_session": [
+        {
+          "from": "cd",
+          "to": "hunk",
+          "count": 2
+        },
+        {
+          "from": "cd",
+          "to": "exec",
+          "count": 2
+        },
+        {
+          "from": "exec",
+          "to": "command",
+          "count": 2
+        },
+        {
+          "from": "just",
+          "to": "cd",
+          "count": 2
+        },
+        {
+          "from": "lazygit",
+          "to": "cd",
+          "count": 2
+        },
+        {
+          "from": "hunk",
+          "to": "cd",
+          "count": 2
+        },
+        {
+          "from": "tv",
+          "to": "exec",
+          "count": 1
+        },
+        {
+          "from": "exec",
+          "to": "tv",
+          "count": 1
+        },
+        {
+          "from": "cd",
+          "to": "mempalace",
+          "count": 1
+        },
+        {
+          "from": "command",
+          "to": "gh",
+          "count": 1
+        },
+        {
+          "from": "cd",
+          "to": "lazygit",
+          "count": 1
+        },
+        {
+          "from": "cd",
+          "to": "just",
+          "count": 1
+        },
+        {
+          "from": "atuin",
+          "to": "cd",
+          "count": 1
+        },
+        {
+          "from": "mempalace",
+          "to": "cd",
+          "count": 1
+        },
+        {
+          "from": "repo-fleet-status",
+          "to": "cd",
+          "count": 1
+        }
+      ],
+      "closed_command_durations": {
+        "tv": {
+          "closed_records": 3,
+          "max_seconds": 83204.47,
+          "upper_median_seconds": 76238.55
+        },
+        "nvim": {
+          "closed_records": 2,
+          "max_seconds": 83166.62,
+          "upper_median_seconds": 83166.62
+        },
+        "lazygit": {
+          "closed_records": 4,
+          "max_seconds": 76819.18,
+          "upper_median_seconds": 3660.56
+        },
+        "hunk": {
+          "closed_records": 5,
+          "max_seconds": 76238.53,
+          "upper_median_seconds": 218.15
+        },
+        "yazi": {
+          "closed_records": 2,
+          "max_seconds": 83149.9,
+          "upper_median_seconds": 83149.9
+        },
+        "podman-tui": {
+          "closed_records": 4,
+          "max_seconds": 81437.13,
+          "upper_median_seconds": 76818.11
+        },
+        "command": {
+          "closed_records": 2,
+          "max_seconds": 0.0,
+          "upper_median_seconds": 0.0
+        },
+        "mempalace": {
+          "closed_records": 22,
+          "max_seconds": 26.15,
+          "upper_median_seconds": 2.59
+        },
+        "gh": {
+          "closed_records": 3,
+          "max_seconds": 83149.87,
+          "upper_median_seconds": 75321.72
+        },
+        "claude": {
+          "closed_records": 2,
+          "max_seconds": 83491.9,
+          "upper_median_seconds": 83491.9
+        },
+        "codex": {
+          "closed_records": 6,
+          "max_seconds": 83321.65,
+          "upper_median_seconds": 186.9
+        },
+        "pi": {
+          "closed_records": 1,
+          "max_seconds": 83248.59,
+          "upper_median_seconds": 83248.59
+        },
+        "hermes": {
+          "closed_records": 3,
+          "max_seconds": 47146.82,
+          "upper_median_seconds": 41.16
+        },
+        "nu": {
+          "closed_records": 1,
+          "max_seconds": 83204.45,
+          "upper_median_seconds": 83204.45
+        },
+        "atuin": {
+          "closed_records": 5,
+          "max_seconds": 0.02,
+          "upper_median_seconds": 0.01
+        },
+        "cd": {
+          "closed_records": 80,
+          "max_seconds": 77508.96,
+          "upper_median_seconds": 0.52
+        },
+        "just": {
+          "closed_records": 5,
+          "max_seconds": 0.02,
+          "upper_median_seconds": 0.0
+        },
+        "btm": {
+          "closed_records": 1,
+          "max_seconds": 83149.86,
+          "upper_median_seconds": 83149.86
+        },
+        "repo-fleet-status": {
+          "closed_records": 6,
+          "max_seconds": 0.36,
+          "upper_median_seconds": 0.35
+        },
+        "herdr": {
+          "closed_records": 2,
+          "max_seconds": 4922.77,
+          "upper_median_seconds": 4922.77
+        },
+        "other": {
+          "closed_records": 1,
+          "max_seconds": 0.0,
+          "upper_median_seconds": 0.0
+        },
+        "echo": {
+          "closed_records": 1,
+          "max_seconds": 0.0,
+          "upper_median_seconds": 0.0
+        }
+      },
+      "closed_over_one_hour_by_tool": {
+        "nvim": 2,
+        "lazygit": 2,
+        "yazi": 2,
+        "podman-tui": 2,
+        "tv": 2,
+        "hunk": 2,
+        "gh": 2,
+        "claude": 2,
+        "codex": 2,
+        "pi": 1,
+        "hermes": 1,
+        "nu": 1,
+        "btm": 1,
+        "herdr": 1,
+        "cd": 10
+      },
+      "limitations": "Primary tool is a conservative first-token classification; wrappers and multiline commands may conceal later tools. Keyword counts are mentions, not executions. Durations are wall-clock spans, not CPU/RAM use. Exit -1 is unknown/unfinished, not a proven failure. History does not establish human authorship or capture GUI activity/all agent tool calls. Saved duration order statistic is the upper median (not the mean of the middle pair for even samples).",
+      "ids_not_in_active": 0
+    },
+    {
+      "source": "/var/mnt/STORAGE-10TB/habitat-corpus-backup/20260904-141433Z/shell-history/history.db",
+      "records": 274,
+      "unique_ids": 274,
+      "first_utc": "2026-09-01T10:58:45.182104+00:00",
+      "last_utc": "2026-09-04T11:44:38.851951+00:00",
+      "sessions": 80,
+      "host_counts": {
+        "toolbx:Louranicas": 274
+      },
+      "primary_tool_counts": {
+        "cd": 105,
+        "mempalace": 23,
+        "codex": 16,
+        "other": 14,
+        "exec": 11,
+        "claude": 9,
+        "herdr": 8,
+        "tv": 7,
+        "hunk": 7,
+        "podman-tui": 7,
+        "hermes": 7,
+        "repo-fleet-status": 7,
+        "lazygit": 6,
+        "atuin": 6,
+        "just": 6,
+        "nvim": 5,
+        "yazi": 5,
+        "gh": 5,
+        "pi": 4,
+        "command": 3,
+        "nu": 3,
+        "btm": 3,
+        "curl": 3,
+        "rpm-ostree": 1,
+        "flatpak-spawn": 1,
+        "echo": 1,
+        "printf": 1
+      },
+      "keyword_record_counts": {
+        "herdr": 25,
+        "mempalace": 34,
+        "btm": 4
+      },
+      "exit_counts": {
+        "127": 3,
+        "1": 5,
+        "-1": 104,
+        "143": 22,
+        "0": 137,
+        "137": 3
+      },
+      "top_cwds": {
+        "/var/home/Louranicas": 79,
+        "unknown": 59,
+        "/var/mnt/STORAGE-10TB/repos": 36,
+        "/var/mnt/STORAGE-10TB/fedora-obsidian-vaults": 33,
+        "/var/mnt/STORAGE-10TB/repos/deep-diff-forge": 30,
+        "/var/mnt/STORAGE-10TB/repos/herdr": 18,
+        "/var/home/Louranicas/fedora-arena": 16,
+        "/var/home/Louranicas/fabric": 2,
+        "/var/home/Louranicas/fedora-fabric.vault": 1
+      },
+      "records_by_day": {
+        "2026-09-01": 32,
+        "2026-09-02": 198,
+        "2026-09-03": 31,
+        "2026-09-04": 13
+      },
+      "transitions_in_same_recorded_session": [
+        {
+          "from": "cd",
+          "to": "hunk",
+          "count": 2
+        },
+        {
+          "from": "cd",
+          "to": "exec",
+          "count": 2
+        },
+        {
+          "from": "exec",
+          "to": "command",
+          "count": 2
+        },
+        {
+          "from": "just",
+          "to": "cd",
+          "count": 2
+        },
+        {
+          "from": "lazygit",
+          "to": "cd",
+          "count": 2
+        },
+        {
+          "from": "hunk",
+          "to": "cd",
+          "count": 2
+        },
+        {
+          "from": "tv",
+          "to": "exec",
+          "count": 1
+        },
+        {
+          "from": "exec",
+          "to": "tv",
+          "count": 1
+        },
+        {
+          "from": "cd",
+          "to": "mempalace",
+          "count": 1
+        },
+        {
+          "from": "command",
+          "to": "gh",
+          "count": 1
+        },
+        {
+          "from": "cd",
+          "to": "lazygit",
+          "count": 1
+        },
+        {
+          "from": "cd",
+          "to": "just",
+          "count": 1
+        },
+        {
+          "from": "atuin",
+          "to": "cd",
+          "count": 1
+        },
+        {
+          "from": "mempalace",
+          "to": "cd",
+          "count": 1
+        },
+        {
+          "from": "repo-fleet-status",
+          "to": "cd",
+          "count": 1
+        }
+      ],
+      "closed_command_durations": {
+        "tv": {
+          "closed_records": 3,
+          "max_seconds": 83204.47,
+          "upper_median_seconds": 76238.55
+        },
+        "nvim": {
+          "closed_records": 2,
+          "max_seconds": 83166.62,
+          "upper_median_seconds": 83166.62
+        },
+        "lazygit": {
+          "closed_records": 4,
+          "max_seconds": 76819.18,
+          "upper_median_seconds": 3660.56
+        },
+        "hunk": {
+          "closed_records": 5,
+          "max_seconds": 76238.53,
+          "upper_median_seconds": 218.15
+        },
+        "yazi": {
+          "closed_records": 2,
+          "max_seconds": 83149.9,
+          "upper_median_seconds": 83149.9
+        },
+        "podman-tui": {
+          "closed_records": 4,
+          "max_seconds": 81437.13,
+          "upper_median_seconds": 76818.11
+        },
+        "command": {
+          "closed_records": 2,
+          "max_seconds": 0.0,
+          "upper_median_seconds": 0.0
+        },
+        "mempalace": {
+          "closed_records": 22,
+          "max_seconds": 26.15,
+          "upper_median_seconds": 2.59
+        },
+        "gh": {
+          "closed_records": 3,
+          "max_seconds": 83149.87,
+          "upper_median_seconds": 75321.72
+        },
+        "claude": {
+          "closed_records": 5,
+          "max_seconds": 83491.9,
+          "upper_median_seconds": 21550.57
+        },
+        "codex": {
+          "closed_records": 8,
+          "max_seconds": 83321.65,
+          "upper_median_seconds": 186.9
+        },
+        "pi": {
+          "closed_records": 1,
+          "max_seconds": 83248.59,
+          "upper_median_seconds": 83248.59
+        },
+        "hermes": {
+          "closed_records": 3,
+          "max_seconds": 47146.82,
+          "upper_median_seconds": 41.16
+        },
+        "nu": {
+          "closed_records": 1,
+          "max_seconds": 83204.45,
+          "upper_median_seconds": 83204.45
+        },
+        "atuin": {
+          "closed_records": 5,
+          "max_seconds": 0.02,
+          "upper_median_seconds": 0.01
+        },
+        "cd": {
+          "closed_records": 80,
+          "max_seconds": 77508.96,
+          "upper_median_seconds": 0.52
+        },
+        "just": {
+          "closed_records": 5,
+          "max_seconds": 0.02,
+          "upper_median_seconds": 0.0
+        },
+        "btm": {
+          "closed_records": 1,
+          "max_seconds": 83149.86,
+          "upper_median_seconds": 83149.86
+        },
+        "repo-fleet-status": {
+          "closed_records": 6,
+          "max_seconds": 0.36,
+          "upper_median_seconds": 0.35
+        },
+        "herdr": {
+          "closed_records": 2,
+          "max_seconds": 4922.77,
+          "upper_median_seconds": 4922.77
+        },
+        "other": {
+          "closed_records": 4,
+          "max_seconds": 0.04,
+          "upper_median_seconds": 0.01
+        },
+        "echo": {
+          "closed_records": 1,
+          "max_seconds": 0.0,
+          "upper_median_seconds": 0.0
+        },
+        "printf": {
+          "closed_records": 1,
+          "max_seconds": 0.0,
+          "upper_median_seconds": 0.0
+        }
+      },
+      "closed_over_one_hour_by_tool": {
+        "nvim": 2,
+        "lazygit": 2,
+        "yazi": 2,
+        "podman-tui": 2,
+        "tv": 2,
+        "hunk": 2,
+        "gh": 2,
+        "claude": 3,
+        "codex": 3,
+        "pi": 1,
+        "hermes": 1,
+        "nu": 1,
+        "btm": 1,
+        "herdr": 1,
+        "cd": 10
+      },
+      "limitations": "Primary tool is a conservative first-token classification; wrappers and multiline commands may conceal later tools. Keyword counts are mentions, not executions. Durations are wall-clock spans, not CPU/RAM use. Exit -1 is unknown/unfinished, not a proven failure. History does not establish human authorship or capture GUI activity/all agent tool calls. Saved duration order statistic is the upper median (not the mean of the middle pair for even samples).",
+      "ids_not_in_active": 0
+    },
+    {
+      "source": "/var/mnt/STORAGE-10TB/habitat-corpus-backup/20260903-213738Z/shell-history/history.db",
+      "records": 261,
+      "unique_ids": 261,
+      "first_utc": "2026-09-01T10:58:45.182104+00:00",
+      "last_utc": "2026-09-03T20:48:22.943697+00:00",
+      "sessions": 74,
+      "host_counts": {
+        "toolbx:Louranicas": 261
+      },
+      "primary_tool_counts": {
+        "cd": 105,
+        "mempalace": 23,
+        "exec": 11,
+        "other": 11,
+        "codex": 10,
+        "herdr": 8,
+        "tv": 7,
+        "hunk": 7,
+        "podman-tui": 7,
+        "hermes": 7,
+        "repo-fleet-status": 7,
+        "lazygit": 6,
+        "claude": 6,
+        "atuin": 6,
+        "just": 6,
+        "nvim": 5,
+        "yazi": 5,
+        "gh": 5,
+        "pi": 4,
+        "command": 3,
+        "nu": 3,
+        "btm": 3,
+        "curl": 3,
+        "rpm-ostree": 1,
+        "flatpak-spawn": 1,
+        "echo": 1
+      },
+      "keyword_record_counts": {
+        "herdr": 25,
+        "mempalace": 34,
+        "btm": 4
+      },
+      "exit_counts": {
+        "127": 2,
+        "1": 5,
+        "-1": 100,
+        "143": 22,
+        "0": 129,
+        "137": 3
+      },
+      "top_cwds": {
+        "/var/home/Louranicas": 69,
+        "unknown": 59,
+        "/var/mnt/STORAGE-10TB/repos": 36,
+        "/var/mnt/STORAGE-10TB/fedora-obsidian-vaults": 33,
+        "/var/mnt/STORAGE-10TB/repos/deep-diff-forge": 30,
+        "/var/mnt/STORAGE-10TB/repos/herdr": 18,
+        "/var/home/Louranicas/fedora-arena": 16
+      },
+      "records_by_day": {
+        "2026-09-01": 32,
+        "2026-09-02": 198,
+        "2026-09-03": 31
+      },
+      "transitions_in_same_recorded_session": [
+        {
+          "from": "cd",
+          "to": "hunk",
+          "count": 2
+        },
+        {
+          "from": "cd",
+          "to": "exec",
+          "count": 2
+        },
+        {
+          "from": "exec",
+          "to": "command",
+          "count": 2
+        },
+        {
+          "from": "just",
+          "to": "cd",
+          "count": 2
+        },
+        {
+          "from": "lazygit",
+          "to": "cd",
+          "count": 2
+        },
+        {
+          "from": "hunk",
+          "to": "cd",
+          "count": 2
+        },
+        {
+          "from": "tv",
+          "to": "exec",
+          "count": 1
+        },
+        {
+          "from": "exec",
+          "to": "tv",
+          "count": 1
+        },
+        {
+          "from": "cd",
+          "to": "mempalace",
+          "count": 1
+        },
+        {
+          "from": "command",
+          "to": "gh",
+          "count": 1
+        },
+        {
+          "from": "cd",
+          "to": "lazygit",
+          "count": 1
+        },
+        {
+          "from": "cd",
+          "to": "just",
+          "count": 1
+        },
+        {
+          "from": "atuin",
+          "to": "cd",
+          "count": 1
+        },
+        {
+          "from": "mempalace",
+          "to": "cd",
+          "count": 1
+        },
+        {
+          "from": "repo-fleet-status",
+          "to": "cd",
+          "count": 1
+        }
+      ],
+      "closed_command_durations": {
+        "tv": {
+          "closed_records": 3,
+          "max_seconds": 83204.47,
+          "upper_median_seconds": 76238.55
+        },
+        "nvim": {
+          "closed_records": 2,
+          "max_seconds": 83166.62,
+          "upper_median_seconds": 83166.62
+        },
+        "lazygit": {
+          "closed_records": 4,
+          "max_seconds": 76819.18,
+          "upper_median_seconds": 3660.56
+        },
+        "hunk": {
+          "closed_records": 5,
+          "max_seconds": 76238.53,
+          "upper_median_seconds": 218.15
+        },
+        "yazi": {
+          "closed_records": 2,
+          "max_seconds": 83149.9,
+          "upper_median_seconds": 83149.9
+        },
+        "podman-tui": {
+          "closed_records": 4,
+          "max_seconds": 81437.13,
+          "upper_median_seconds": 76818.11
+        },
+        "command": {
+          "closed_records": 2,
+          "max_seconds": 0.0,
+          "upper_median_seconds": 0.0
+        },
+        "mempalace": {
+          "closed_records": 22,
+          "max_seconds": 26.15,
+          "upper_median_seconds": 2.59
+        },
+        "gh": {
+          "closed_records": 3,
+          "max_seconds": 83149.87,
+          "upper_median_seconds": 75321.72
+        },
+        "claude": {
+          "closed_records": 2,
+          "max_seconds": 83491.9,
+          "upper_median_seconds": 83491.9
+        },
+        "codex": {
+          "closed_records": 6,
+          "max_seconds": 83321.65,
+          "upper_median_seconds": 186.9
+        },
+        "pi": {
+          "closed_records": 1,
+          "max_seconds": 83248.59,
+          "upper_median_seconds": 83248.59
+        },
+        "hermes": {
+          "closed_records": 3,
+          "max_seconds": 47146.82,
+          "upper_median_seconds": 41.16
+        },
+        "nu": {
+          "closed_records": 1,
+          "max_seconds": 83204.45,
+          "upper_median_seconds": 83204.45
+        },
+        "atuin": {
+          "closed_records": 5,
+          "max_seconds": 0.02,
+          "upper_median_seconds": 0.01
+        },
+        "cd": {
+          "closed_records": 80,
+          "max_seconds": 77508.96,
+          "upper_median_seconds": 0.52
+        },
+        "just": {
+          "closed_records": 5,
+          "max_seconds": 0.02,
+          "upper_median_seconds": 0.0
+        },
+        "btm": {
+          "closed_records": 1,
+          "max_seconds": 83149.86,
+          "upper_median_seconds": 83149.86
+        },
+        "repo-fleet-status": {
+          "closed_records": 6,
+          "max_seconds": 0.36,
+          "upper_median_seconds": 0.35
+        },
+        "herdr": {
+          "closed_records": 2,
+          "max_seconds": 4922.77,
+          "upper_median_seconds": 4922.77
+        },
+        "other": {
+          "closed_records": 1,
+          "max_seconds": 0.0,
+          "upper_median_seconds": 0.0
+        },
+        "echo": {
+          "closed_records": 1,
+          "max_seconds": 0.0,
+          "upper_median_seconds": 0.0
+        }
+      },
+      "closed_over_one_hour_by_tool": {
+        "nvim": 2,
+        "lazygit": 2,
+        "yazi": 2,
+        "podman-tui": 2,
+        "tv": 2,
+        "hunk": 2,
+        "gh": 2,
+        "claude": 2,
+        "codex": 2,
+        "pi": 1,
+        "hermes": 1,
+        "nu": 1,
+        "btm": 1,
+        "herdr": 1,
+        "cd": 10
+      },
+      "limitations": "Primary tool is a conservative first-token classification; wrappers and multiline commands may conceal later tools. Keyword counts are mentions, not executions. Durations are wall-clock spans, not CPU/RAM use. Exit -1 is unknown/unfinished, not a proven failure. History does not establish human authorship or capture GUI activity/all agent tool calls. Saved duration order statistic is the upper median (not the mean of the middle pair for even samples).",
+      "ids_not_in_active": 0
+    }
+  ],
+  "union_distinct_ids": 287,
+  "active_distinct_ids": 287,
+  "backup_ids_not_in_active": 0,
+  "note": "Sources read via SQLite mode=ro/query_only with WAL visibility. Backups deduplicated by ID; counts must not be added as independent behavior.",
+  "normalization_note": "Duration field relabeled upper_median_seconds to describe the recorded calculation correctly; values unchanged. No historical command text retained."
+}

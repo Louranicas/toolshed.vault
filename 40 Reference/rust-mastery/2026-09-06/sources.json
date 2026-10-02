@@ -1,0 +1,405 @@
+{
+  "research_date": "2026-09-06",
+  "primary_corpus": {
+    "url": "https://nnethercote.github.io/perf-book/",
+    "repository": "https://github.com/nnethercote/perf-book",
+    "commit": "a05dd0f15595e98aef45e5a15072c2a71dbe37ba",
+    "commit_date": "2026-04-23",
+    "license": "MIT OR Apache-2.0",
+    "chapters": [
+      {
+        "title": "Benchmarking",
+        "path": "src/benchmarking.md",
+        "sha256": "ade47afe39debd038fa7343dc280497b2adf9b0fe0980b2525dfe55d7a5899ed",
+        "url": "https://nnethercote.github.io/perf-book/benchmarking.html",
+        "review_scope": "Chapter read at pinned source revision"
+      },
+      {
+        "title": "Bounds Checks",
+        "path": "src/bounds-checks.md",
+        "sha256": "cc873a34841da6c4053b873c162e0e02534126810b56bf48d450d7a99d316640",
+        "url": "https://nnethercote.github.io/perf-book/bounds-checks.html",
+        "review_scope": "Chapter read at pinned source revision"
+      },
+      {
+        "title": "Build Configuration",
+        "path": "src/build-configuration.md",
+        "sha256": "fde14fab2ec5189e2bd68bba90b490cf87290179dacc486f82dd140a8b10afa5",
+        "url": "https://nnethercote.github.io/perf-book/build-configuration.html",
+        "review_scope": "Chapter read at pinned source revision"
+      },
+      {
+        "title": "Compile Times",
+        "path": "src/compile-times.md",
+        "sha256": "4a249d4aee2da6a458a67bb7cf54d7c85b42db8764876d55e8b601bb58ee94ba",
+        "url": "https://nnethercote.github.io/perf-book/compile-times.html",
+        "review_scope": "Chapter read at pinned source revision"
+      },
+      {
+        "title": "General Tips",
+        "path": "src/general-tips.md",
+        "sha256": "d8081b12259c03251287de0593dc7c0b373f1ce7612a9c89bf8c1a28d3acf03f",
+        "url": "https://nnethercote.github.io/perf-book/general-tips.html",
+        "review_scope": "Chapter read at pinned source revision"
+      },
+      {
+        "title": "Hashing",
+        "path": "src/hashing.md",
+        "sha256": "bf284cb365b89f6fe2cb1e9d9c1ab928129fd97b7f0294a1becc98037dba94e3",
+        "url": "https://nnethercote.github.io/perf-book/hashing.html",
+        "review_scope": "Chapter read at pinned source revision"
+      },
+      {
+        "title": "Heap Allocations",
+        "path": "src/heap-allocations.md",
+        "sha256": "ab826a6a9f1917a4250d9f85279571f94605fdfde5afa5ec283b19ec52d233f2",
+        "url": "https://nnethercote.github.io/perf-book/heap-allocations.html",
+        "review_scope": "Chapter read at pinned source revision"
+      },
+      {
+        "title": "Inlining",
+        "path": "src/inlining.md",
+        "sha256": "8d6e3354ac72d61c8279a113bf85f8abfb50dacf690169ccc3ff9020d792f817",
+        "url": "https://nnethercote.github.io/perf-book/inlining.html",
+        "review_scope": "Chapter read at pinned source revision"
+      },
+      {
+        "title": "Introduction",
+        "path": "src/introduction.md",
+        "sha256": "c283e6362fc11e289bd4e5ffd4820bd60a88b4438bd3afde444c4e006761fbbd",
+        "url": "https://nnethercote.github.io/perf-book/introduction.html",
+        "review_scope": "Chapter read at pinned source revision"
+      },
+      {
+        "title": "I/O",
+        "path": "src/io.md",
+        "sha256": "967a5b6df59a7210096ebca2399000fb9fc3cfc2cce3317eb10e4c1556f3d276",
+        "url": "https://nnethercote.github.io/perf-book/io.html",
+        "review_scope": "Chapter read at pinned source revision"
+      },
+      {
+        "title": "Iterators",
+        "path": "src/iterators.md",
+        "sha256": "7a465f197cbd67a2e461d3f1b2199f06311a9ecc11598e11ce458e617e0d7277",
+        "url": "https://nnethercote.github.io/perf-book/iterators.html",
+        "review_scope": "Chapter read at pinned source revision"
+      },
+      {
+        "title": "Linting",
+        "path": "src/linting.md",
+        "sha256": "e5c697b6bc3609f33b252140e58f9b4e3bac195eed979d4dd34e3bcc024a54d5",
+        "url": "https://nnethercote.github.io/perf-book/linting.html",
+        "review_scope": "Chapter read at pinned source revision"
+      },
+      {
+        "title": "Logging and Debugging",
+        "path": "src/logging-and-debugging.md",
+        "sha256": "a3af0d478858aa542bb0b610f99a61f801b0fc8692ce2c46cbdd61ff0c2674a7",
+        "url": "https://nnethercote.github.io/perf-book/logging-and-debugging.html",
+        "review_scope": "Chapter read at pinned source revision"
+      },
+      {
+        "title": "Machine Code",
+        "path": "src/machine-code.md",
+        "sha256": "5d88569850b6a31fa9c94bf3321b579d81037cdef82db1c882cf8160ed3336a6",
+        "url": "https://nnethercote.github.io/perf-book/machine-code.html",
+        "review_scope": "Chapter read at pinned source revision"
+      },
+      {
+        "title": "Parallelism",
+        "path": "src/parallelism.md",
+        "sha256": "748094cbd16ed5c8701a67bf8c8afe50d72fa8aae2b0b3457f86ab9bfdedcae0",
+        "url": "https://nnethercote.github.io/perf-book/parallelism.html",
+        "review_scope": "Chapter read at pinned source revision"
+      },
+      {
+        "title": "Profiling",
+        "path": "src/profiling.md",
+        "sha256": "a4a3286b94bf55368b1a494c9895bd5b7773ea9b8bf82b9d323063bc6b565510",
+        "url": "https://nnethercote.github.io/perf-book/profiling.html",
+        "review_scope": "Chapter read at pinned source revision"
+      },
+      {
+        "title": "Standard Library Types",
+        "path": "src/standard-library-types.md",
+        "sha256": "9aa3ba701734354f5a0526e88b69b714eda2a832c4d3175a7ce1364a92faab1d",
+        "url": "https://nnethercote.github.io/perf-book/standard-library-types.html",
+        "review_scope": "Chapter read at pinned source revision"
+      },
+      {
+        "title": "Type Sizes",
+        "path": "src/type-sizes.md",
+        "sha256": "1f9e4a832c99c806e3b5e2e781dfbd8ccff19e370360240b3df96d79dca376d5",
+        "url": "https://nnethercote.github.io/perf-book/type-sizes.html",
+        "review_scope": "Chapter read at pinned source revision"
+      },
+      {
+        "title": "Wrapper Types",
+        "path": "src/wrapper-types.md",
+        "sha256": "5b1e258aa0d54fdc83129468e713858cc2fd6f6383fee357f37871598e6134b9",
+        "url": "https://nnethercote.github.io/perf-book/wrapper-types.html",
+        "review_scope": "Chapter read at pinned source revision"
+      }
+    ]
+  },
+  "historical_diffs": [
+    {
+      "url": "https://github.com/nnethercote/counts/commit/7d39bbb1867720ef3b9799fee739cd717ad1539a",
+      "download_url": "https://github.com/nnethercote/counts/commit/7d39bbb1867720ef3b9799fee739cd717ad1539a.patch",
+      "sha256": "1069026462eb5488501dd359de3ac8f7819234025d7d6447f7ef5e00d04167a2",
+      "review_scope": "Patch read; historical author results distinguished from current claims.",
+      "archive": "Not duplicated; available at pinned commit URL"
+    },
+    {
+      "url": "https://github.com/rust-lang/rust/commit/660d8a6550a126797aa66a417137e39a5639451b",
+      "download_url": "https://github.com/rust-lang/rust/commit/660d8a6550a126797aa66a417137e39a5639451b.patch",
+      "sha256": "aaeb3a2465571960b81104102aecf5324a5be6c56929919b8405c70ecceabe44",
+      "review_scope": "Patch read; historical author results distinguished from current claims.",
+      "archive": "Not duplicated; available at pinned commit URL"
+    },
+    {
+      "url": "https://github.com/rust-lang/rust/commit/a920e355ea837a950b484b5791051337cd371f5d",
+      "download_url": "https://github.com/rust-lang/rust/commit/a920e355ea837a950b484b5791051337cd371f5d.patch",
+      "sha256": "323a7b1904844ee7412150f4c68f92dfd92296d5a8e67620c54bd2930e9631f3",
+      "review_scope": "Patch read; historical author results distinguished from current claims.",
+      "archive": "Not duplicated; available at pinned commit URL"
+    }
+  ],
+  "web_links": [
+    {
+      "url": "https://bheisler.github.io/criterion.rs/book/user_guide/timing_loops.html",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://blog.rust-lang.org/2025/09/10/rust-compiler-performance-survey-2025-results/",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://burntsushi.net/bstr/",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://burntsushi.net/ripgrep/",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://doc.rust-lang.org/book/",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://doc.rust-lang.org/cargo/reference/profiles.html",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://doc.rust-lang.org/nomicon/",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://doc.rust-lang.org/reference/",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://doc.rust-lang.org/std/hint/fn.black_box.html",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://doc.rust-lang.org/std/io/trait.BufRead.html",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://doc.rust-lang.org/std/sync/struct.Arc.html",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://doc.rust-lang.org/std/vec/struct.Vec.html",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://docs.rs/criterion/0.8.2/criterion/",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://docs.rs/dhat/0.3.3/dhat/",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://docs.rs/dhat/0.3.3/dhat/#heap-usage-testing",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://embarkstudios.github.io/cargo-deny/",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://git-cliff.org/blog/",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://github.com/Shnatsel/bounds-check-cookbook",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://github.com/dtolnay/quote",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://github.com/dtolnay/syn",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://github.com/kyclark/command-line-rust",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://github.com/matklad",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://github.com/mstange/samply",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://github.com/nnethercote/counts/commit/7d39bbb1867720ef3b9799fee739cd717ad1539a",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://github.com/nnethercote/dhat-rs/",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://github.com/nnethercote/perf-book/tree/a05dd0f15595e98aef45e5a15072c2a71dbe37ba",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://github.com/rust-lang/rust/commit/660d8a6550a126797aa66a417137e39a5639451b",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://github.com/rust-lang/rust/commit/a920e355ea837a950b484b5791051337cd371f5d",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://github.com/sharkdp/hyperfine",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://github.com/sunshowers",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://google.github.io/comprehensive-rust/",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://gungraun.github.io/gungraun/latest/html/intro.html",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://jemalloc.net/jemalloc.3.html#implementation_notes",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://kobzol.github.io/rust/rustc/2024/03/15/rustc-what-takes-so-long.html",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://lpalmieri.com/posts/zero-downtime-deployments/",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://mara.nl/atomics/",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://mara.nl/atomics/hardware.html",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://matklad.github.io/",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://nexte.st/",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/torvalds/linux/master/tools/perf/Documentation/perf-record.txt",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/torvalds/linux/master/tools/perf/Documentation/perf-stat.txt",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://rust-for-rustaceans.com/",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://rust-lang.github.io/api-guidelines/",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://rust-lang.org/learn/",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://rust-unofficial.github.io/patterns/",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://rustlings.rust-lang.org/",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://ryhl.io/blog/async-what-is-blocking/",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://serde.rs/",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://smallcultfollowing.com/babysteps/about/",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://this-week-in-rust.org/",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://tokio.rs/tokio/tutorial",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://valgrind.org/docs/manual/dh-manual.html",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://www.brendangregg.com/flamegraphs.html",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://www.lpalmieri.com/",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://www.lurklurk.org/effective-rust/",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://www.rustinaction.com/",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    },
+    {
+      "url": "https://www.zero2prod.com/",
+      "scope": "Cited primary resource or project documentation; see the linked statement in the main note for the review claim. Entire external books/repositories were not exhaustively reviewed."
+    }
+  ],
+  "local_library": "local-library.json",
+  "limits": [
+    "Local library chapter routes reflect inspected copies, including partial early releases.",
+    "Web content outside the pinned book and historical commits can change.",
+    "A source or filename date does not prove a local book is complete.",
+    "Source code examples were not all executed; only the original attached lab was validated."
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "timestamp_utc": "2026-09-05T21:23:46.460877+00:00",
+  "ghostty_keybind": [
+    "keybind = ctrl+alt+end=csi:110;7u"
+  ],
+  "other_herdr_settings_unchanged": true,
+  "workspaces": [
+    {
+      "label": "herdr-habitat",
+      "tabs": 13,
+      "panes": 34
+    },
+    {
+      "label": "~",
+      "tabs": 1,
+      "panes": 1
+    }
+  ],
+  "herdr_config_sha256": "cbfc63a6c1823107aea37e6425bab34347173605ff0175127aad4c127c1309e2",
+  "ghostty_config_sha256": "9508153ef1ca3e22f91cc4c0f99f1fd572cc8f884bb682dba3eea99a83275dbf",
+  "validation_limit": "Configuration checks and live reload acknowledgements; physical keyboard/GUI-to-tab behavior not injected or observed."
+}

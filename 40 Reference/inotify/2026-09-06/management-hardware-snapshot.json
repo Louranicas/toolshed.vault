@@ -1,0 +1,254 @@
+{
+  "started_utc": "2026-09-05T20:02:04.491993+00:00",
+  "hostname": "orac",
+  "elapsed_seconds": 5.000066306005465,
+  "cpu": {
+    "CPU(s):": "16",
+    "Model name:": "AMD Ryzen 7 7800X3D 8-Core Processor",
+    "Thread(s) per core:": "2",
+    "Core(s) per socket:": "8",
+    "Socket(s):": "1"
+  },
+  "memory": {
+    "MemTotal": "98561264 kB",
+    "MemAvailable": "69663400 kB",
+    "SwapTotal": "8388604 kB",
+    "SwapFree": "415308 kB",
+    "Dirty": "5544 kB",
+    "Writeback": "0 kB",
+    "Shmem": "11227312 kB"
+  },
+  "pressure_before": {
+    "cpu": "some avg10=0.00 avg60=0.00 avg300=0.00 total=1882584035\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0",
+    "memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=168598113\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=160255452",
+    "io": "some avg10=77.83 avg60=75.32 avg300=75.81 total=133274329618\nfull avg10=76.14 avg60=73.64 avg300=74.05 total=126410505460"
+  },
+  "pressure_after": {
+    "cpu": "some avg10=0.00 avg60=0.00 avg300=0.00 total=1882589956\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0",
+    "memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=168602959\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=160260274",
+    "io": "some avg10=74.31 avg60=74.81 avg300=75.69 total=133277872282\nfull avg10=72.55 avg60=73.11 avg300=73.93 total=126413973423"
+  },
+  "disk_interval": {
+    "sda": {
+      "read_iops": 0,
+      "write_iops": 0,
+      "read_mib_per_s": 0,
+      "write_mib_per_s": 0,
+      "busy_time_percent": 0,
+      "average_outstanding_io": 0,
+      "approx_completed_io_wait_ms": null,
+      "inflight_at_end": 0
+    },
+    "sdb": {
+      "read_iops": 0.6,
+      "write_iops": 0.4,
+      "read_mib_per_s": 0,
+      "write_mib_per_s": 0.01,
+      "busy_time_percent": 1.42,
+      "average_outstanding_io": 0.03,
+      "approx_completed_io_wait_ms": 25.2,
+      "inflight_at_end": 0
+    },
+    "sdc": {
+      "read_iops": 0,
+      "write_iops": 0,
+      "read_mib_per_s": 0,
+      "write_mib_per_s": 0,
+      "busy_time_percent": 0,
+      "average_outstanding_io": 0,
+      "approx_completed_io_wait_ms": null,
+      "inflight_at_end": 0
+    },
+    "nvme0n1": {
+      "read_iops": 0,
+      "write_iops": 159.6,
+      "read_mib_per_s": 0,
+      "write_mib_per_s": 2.33,
+      "busy_time_percent": 1.22,
+      "average_outstanding_io": 0.81,
+      "approx_completed_io_wait_ms": 5.05,
+      "inflight_at_end": 0
+    }
+  },
+  "disk_topology": {
+    "blockdevices": [
+      {
+        "name": "sda",
+        "size": "931.5G",
+        "rota": false,
+        "model": "Samsung SSD 850 EVO 1TB",
+        "fstype": null,
+        "mountpoints": [],
+        "children": [
+          {
+            "name": "sda1",
+            "size": "186.3G",
+            "rota": false,
+            "model": null,
+            "fstype": "ext4",
+            "mountpoints": [
+              "/run/media/Louranicas/5c91eede-23b2-4f35-953c-634a15c4f3fa"
+            ]
+          },
+          {
+            "name": "sda2",
+            "size": "1K",
+            "rota": false,
+            "model": null,
+            "fstype": null,
+            "mountpoints": []
+          },
+          {
+            "name": "sda5",
+            "size": "714.9G",
+            "rota": false,
+            "model": null,
+            "fstype": "ext4",
+            "mountpoints": [
+              "/run/media/Louranicas/e9f853f4-2a56-42b4-83bd-1a296bcc088e"
+            ]
+          },
+          {
+            "name": "sda6",
+            "size": "29.8G",
+            "rota": false,
+            "model": null,
+            "fstype": "swap",
+            "mountpoints": []
+          },
+          {
+            "name": "sda7",
+            "size": "572M",
+            "rota": false,
+            "model": null,
+            "fstype": "vfat",
+            "mountpoints": []
+          }
+        ]
+      },
+      {
+        "name": "sdb",
+        "size": "9.1T",
+        "rota": true,
+        "model": "WDC WD101FZBX-00ATAA0",
+        "fstype": null,
+        "mountpoints": [],
+        "children": [
+          {
+            "name": "sdb1",
+            "size": "9.1T",
+            "rota": true,
+            "model": null,
+            "fstype": "ext4",
+            "mountpoints": [
+              "/var/mnt/STORAGE-10TB"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "sdc",
+        "size": "3.6T",
+        "rota": true,
+        "model": "WDC WD40EZRX-00SPEB0",
+        "fstype": null,
+        "mountpoints": [],
+        "children": [
+          {
+            "name": "sdc1",
+            "size": "3.6T",
+            "rota": true,
+            "model": null,
+            "fstype": "ntfs",
+            "mountpoints": [
+              "/run/media/Louranicas/External HDD"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "zram0",
+        "size": "8G",
+        "rota": false,
+        "model": null,
+        "fstype": "swap",
+        "mountpoints": [
+          "[SWAP]"
+        ]
+      },
+      {
+        "name": "nvme0n1",
+        "size": "1.8T",
+        "rota": false,
+        "model": "Samsung SSD 990 PRO with Heatsink 2TB",
+        "fstype": null,
+        "mountpoints": [],
+        "children": [
+          {
+            "name": "nvme0n1p1",
+            "size": "1M",
+            "rota": false,
+            "model": null,
+            "fstype": null,
+            "mountpoints": []
+          },
+          {
+            "name": "nvme0n1p2",
+            "size": "2G",
+            "rota": false,
+            "model": null,
+            "fstype": "ext4",
+            "mountpoints": [
+              "/boot"
+            ]
+          },
+          {
+            "name": "nvme0n1p3",
+            "size": "1.8T",
+            "rota": false,
+            "model": null,
+            "fstype": "crypto_LUKS",
+            "mountpoints": [],
+            "children": [
+              {
+                "name": "luks-97a2c76e-e11a-4782-8bfe-4370fadfa706",
+                "size": "1.8T",
+                "rota": false,
+                "model": null,
+                "fstype": "btrfs",
+                "mountpoints": [
+                  "/var/home",
+                  "/var",
+                  "/sysroot/ostree/deploy/fedora/var",
+                  "/sysroot",
+                  "/etc"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "filesystem_capacity": {
+    "/var/home/Louranicas": {
+      "total_bytes": 1998232485888,
+      "available_bytes": 1763157934080,
+      "available_inodes": 0,
+      "inode_caveat": "Btrfs reports no fixed inode total through statvfs; the returned zero is not evidence of inode exhaustion."
+    },
+    "/var/mnt/STORAGE-10TB": {
+      "total_bytes": 9920820580352,
+      "available_bytes": 7351341785088,
+      "available_inodes": 291890475
+    },
+    "/tmp": {
+      "total_bytes": 50463367168,
+      "available_bytes": 32886878208,
+      "available_inodes": 956762
+    }
+  },
+  "blocked_processes": [],
+  "blocked_process_count": 0,
+  "limitations": "Five-second observation of an uncontrolled workload, not a performance benchmark. Block-device counters do not attribute individual processes or prove hardware health. Busy time is not a universal SSD saturation metric. No command arguments, file contents, serial numbers or destructive tests collected."
+}

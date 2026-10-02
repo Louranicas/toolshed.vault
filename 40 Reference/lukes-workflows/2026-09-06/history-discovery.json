@@ -1,0 +1,23 @@
+{
+  "paths": [
+    "/var/mnt/STORAGE-10TB/habitat-corpus-backup/20260904-014009Z/shell-history/history.db",
+    "/var/mnt/STORAGE-10TB/habitat-corpus-backup/20260903-213733Z/shell-history/history.db",
+    "/var/mnt/STORAGE-10TB/habitat-corpus-backup/20260905-183423Z/shell-history/history.db",
+    "/var/mnt/STORAGE-10TB/habitat-corpus-backup/20260903-213741Z/shell-history/history.db",
+    "/var/mnt/STORAGE-10TB/habitat-corpus-backup/20260904-010441Z/shell-history/history.db",
+    "/var/mnt/STORAGE-10TB/habitat-corpus-backup/20260904-014703Z/shell-history/history.db",
+    "/var/mnt/STORAGE-10TB/habitat-corpus-backup/20260904-004442Z/shell-history/history.db",
+    "/var/mnt/STORAGE-10TB/habitat-corpus-backup/20260903-213745Z/shell-history/history.db",
+    "/var/mnt/STORAGE-10TB/habitat-corpus-backup/20260904-141433Z/shell-history/history.db",
+    "/var/mnt/STORAGE-10TB/habitat-corpus-backup/20260903-213738Z/shell-history/history.db"
+  ],
+  "returncode": 0,
+  "truncated": false,
+  "roots": [
+    "/var/mnt/STORAGE-10TB/habitat-archive/tier2-substrates/atuin",
+    "/var/mnt/STORAGE-10TB/for-new-linux-install/advanced-claude-workspace/Atuin-herdr",
+    "/var/mnt/STORAGE-10TB/habitat-corpus-backup",
+    "/var/mnt/mint-nvme15t"
+  ],
+  "error_lines": []
+}

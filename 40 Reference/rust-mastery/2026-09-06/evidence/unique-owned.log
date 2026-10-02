@@ -1,0 +1,5 @@
+lines=10000 distinct=10000
+dhat: Total:     1,241,167 bytes in 10,037 blocks
+dhat: At t-gmax: 927,055 bytes in 7,176 blocks
+dhat: At t-end:  1,024 bytes in 1 blocks
+dhat: The data has been saved to dhat-heap.json, and is viewable with dhat/dh_view.html
